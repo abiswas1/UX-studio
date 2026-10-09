@@ -30,10 +30,17 @@ interface ActiveRun {
 
 const g = globalThis as unknown as { __uxActive?: Map<string, ActiveRun> };
 const active = (g.__uxActive ??= new Map());
-// Runs left "running" by a previous server process can't continue; mark them stopped once.
-markOrphanedRuns(new Set(active.keys()));
+// Runs left "running" by a previous server process can't continue; mark them stopped once,
+// on first use (not at import, so the database location can still be configured).
+let orphansChecked = false;
+function checkOrphans(): void {
+  if (orphansChecked) return;
+  orphansChecked = true;
+  markOrphanedRuns(new Set(active.keys()));
+}
 
 export function runningStages(slug: string): Set<StageId> {
+  checkOrphans();
   const set = new Set<StageId>();
   for (const [id, run] of active) {
     if (run.stage && getRun(id)?.project === slug) set.add(run.stage);
@@ -61,6 +68,7 @@ export interface StartRunOptions {
 
 /** Start a run in the background. Returns the run id immediately. */
 export async function startRun(slug: string, opts: StartRunOptions = {}): Promise<string> {
+  checkOrphans();
   const project = await getProject(slug);
   if (!project) throw new Error("Project not found");
   for (const r of listRuns(slug, 5)) {

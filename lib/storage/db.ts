@@ -16,6 +16,7 @@ function open(): Db {
   const db = new DatabaseSync(path.join(homeDir(), "index.db"));
   db.exec(`
     PRAGMA journal_mode = WAL;
+    PRAGMA busy_timeout = 5000;
     CREATE TABLE IF NOT EXISTS runs (
       id TEXT PRIMARY KEY, project TEXT NOT NULL, mode TEXT NOT NULL, stages TEXT NOT NULL,
       status TEXT NOT NULL, current_stage TEXT, error TEXT, replay INTEGER NOT NULL DEFAULT 0,
