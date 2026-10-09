@@ -1,0 +1,1174 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the clinic-booking sample brief.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Building ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "approved ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "research: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "two ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "journeys ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "new ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "patient ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "pain ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "returning ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "patient), ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "five ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "task ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "flows, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "nine ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screens. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Booking ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "is ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "three ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "short ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "steps: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "type ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "clinic, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "time, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "then ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "details. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Details ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "come ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "last, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "so ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "nobody ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "types ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "before ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "they ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "know ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "time ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "is ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "free.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Seven ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screens ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "P0: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Home, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Book, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Choose ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "time, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Confirm, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Booked, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Appointment ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Cancel ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "sheet. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Each ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "covers ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "empty, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "loading ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "error, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "or ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "says ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "why ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "not. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "The ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Appointment ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screen ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "has ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "'partial' ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "state ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "last ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "24 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "hours, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "when ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "online ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "changes ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "switch ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "off ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "call ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "takes ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "over.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Intake ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Clinics ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "P1. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Navigation ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "is ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "three ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "tabs ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "app ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(Home, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Book, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Clinics) ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "side ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "navigation ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "web.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "journeys": [
+      {
+        "id": "J1",
+        "persona": "The new patient in pain",
+        "goal": "Book a first assessment soon, without phoning",
+        "stages": [
+          {
+            "stage": "Discover",
+            "actions": [
+              "Searches for a physio nearby on a phone",
+              "Lands on the clinic's booking page"
+            ],
+            "painPoints": [
+              "Clinic is closed, so calling isn't an option",
+              "Unsure which appointment type to choose"
+            ],
+            "opportunities": [
+              "Open straight on 'Book an appointment' with a plain hint on which type to pick"
+            ]
+          },
+          {
+            "stage": "Book",
+            "actions": [
+              "Picks Initial assessment and a clinic",
+              "Takes the first available time",
+              "Enters name, mobile and email"
+            ],
+            "painPoints": [
+              "Dense time grids and small targets",
+              "Worry about being charged if they can't make it"
+            ],
+            "opportunities": [
+              "First available by default; large time rows; policy stated before confirming; time held while they type"
+            ]
+          },
+          {
+            "stage": "Prepare",
+            "actions": [
+              "Gets a confirmation",
+              "Answers a few intake questions",
+              "Gets a reminder the day before"
+            ],
+            "painPoints": [
+              "Paper forms in the waiting room",
+              "Not knowing where to go or whether there are stairs"
+            ],
+            "opportunities": [
+              "Short intake straight after booking or from the reminder; access details on the confirmation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "J2",
+        "persona": "The returning patient mid-treatment",
+        "goal": "Keep weekly follow-ups on track around work",
+        "stages": [
+          {
+            "stage": "Plan",
+            "actions": [
+              "Opens the app or a reminder link",
+              "Books the next follow-up with the same physio"
+            ],
+            "painPoints": [
+              "Their physio's times fill quickly"
+            ],
+            "opportunities": [
+              "Show their physio first; offer anyone available when there are no times"
+            ]
+          },
+          {
+            "stage": "Change",
+            "actions": [
+              "Something comes up",
+              "Moves the appointment to another day"
+            ],
+            "painPoints": [
+              "Has to call reception in working hours"
+            ],
+            "opportunities": [
+              "Change date or time online up to 24 hours before"
+            ]
+          },
+          {
+            "stage": "Late change",
+            "actions": [
+              "Needs to cancel the morning of the appointment"
+            ],
+            "painPoints": [
+              "Doesn't know what it will cost",
+              "Can't change it online"
+            ],
+            "opportunities": [
+              "Explain the 24-hour policy and fee plainly and offer a one-tap call"
+            ]
+          }
+        ]
+      }
+    ],
+    "flows": [
+      {
+        "id": "F1",
+        "name": "Book a first appointment",
+        "trigger": "A new patient wants to be seen",
+        "mermaid": "flowchart TD\n  A[Home or Book tab] --> B[Choose appointment type and clinic]\n  B --> C[Choose a time]\n  C --> D{Times available?}\n  D -->|No| E[Show next week or all physios] --> C\n  D -->|Yes| F[Check details and confirm]\n  F --> G{Time still free?}\n  G -->|No| H[Keep details and show other times] --> C\n  G -->|Yes| I[Booked: confirmation sent]\n  I --> J{First visit?}\n  J -->|Yes| K[Intake questions]\n  J -->|No| L[Home]\n  K --> L",
+        "screens": [
+          "home",
+          "choose-service",
+          "choose-time",
+          "confirm-booking",
+          "booking-confirmed",
+          "intake-form"
+        ],
+        "steps": [
+          "Tap Book an appointment",
+          "Choose Initial assessment and a clinic",
+          "Pick the first available time",
+          "Enter name, mobile and email",
+          "Confirm booking",
+          "Answer the intake questions"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Reschedule an appointment",
+        "trigger": "The patient can't make an upcoming appointment",
+        "mermaid": "flowchart TD\n  A[Home] --> B[Appointment]\n  B --> C{More than 24 hours away?}\n  C -->|No| D[Explain policy and offer a call]\n  C -->|Yes| E[Choose a new time]\n  E --> F[Confirm the new time]\n  F --> G{Saved?}\n  G -->|No| H[Keep the old time and offer Try again] --> F\n  G -->|Yes| I[Booked: new time confirmed]",
+        "screens": [
+          "home",
+          "appointment-detail",
+          "choose-time",
+          "confirm-booking",
+          "booking-confirmed"
+        ],
+        "steps": [
+          "Open the appointment from Home",
+          "Change date or time",
+          "Pick a new time",
+          "Confirm the change"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Cancel an appointment",
+        "trigger": "The patient no longer needs the appointment",
+        "mermaid": "flowchart TD\n  A[Home] --> B[Appointment]\n  B --> C{More than 24 hours away?}\n  C -->|No| D[Explain fee and offer a call]\n  C -->|Yes| E[Cancel sheet]\n  E --> F{Cancel or keep?}\n  F -->|Keep| B\n  F -->|Change time instead| G[Choose a time]\n  F -->|Cancel| H{Cancelled?}\n  H -->|No| I[Error with Try again] --> E\n  H -->|Yes| J[Cancelled: confirmation sent]",
+        "screens": [
+          "home",
+          "appointment-detail",
+          "cancel-appointment"
+        ],
+        "steps": [
+          "Open the appointment from Home",
+          "Tap Cancel appointment",
+          "Confirm in the sheet",
+          "See the cancellation confirmed"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Answer intake questions before a first visit",
+        "trigger": "Booking confirmed, or the reminder 2 days before",
+        "mermaid": "flowchart TD\n  A[Reminder or Booked screen] --> B[Intake questions]\n  B --> C{Problem area chosen and consent given?}\n  C -->|No| D[Show what is missing] --> B\n  C -->|Yes| E[Send to physio]\n  E --> F{Sent?}\n  F -->|No| G[Keep answers and offer Try again] --> E\n  F -->|Yes| H[Thanks: physio has your answers]",
+        "screens": [
+          "booking-confirmed",
+          "intake-form",
+          "home"
+        ],
+        "steps": [
+          "Tap Answer 4 questions",
+          "Choose the problem area and how long",
+          "Add anything else (optional)",
+          "Send to my physio"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Get help from a person",
+        "trigger": "Something is unclear, or online changes aren't allowed",
+        "mermaid": "flowchart TD\n  A[Any step] --> B[Call the clinic]\n  B --> C{Clinic open?}\n  C -->|Yes| D[Reception helps]\n  C -->|No| E[Clinics tab: hours and addresses]",
+        "screens": [
+          "clinic-info",
+          "appointment-detail"
+        ],
+        "steps": [
+          "Tap Call the clinic",
+          "Talk to reception, or check opening hours"
+        ]
+      }
+    ],
+    "sitemap": [
+      {
+        "screenId": "home",
+        "parent": null,
+        "navigation": "tab"
+      },
+      {
+        "screenId": "choose-service",
+        "parent": null,
+        "navigation": "tab"
+      },
+      {
+        "screenId": "clinic-info",
+        "parent": null,
+        "navigation": "tab"
+      },
+      {
+        "screenId": "choose-time",
+        "parent": "choose-service",
+        "navigation": "stack"
+      },
+      {
+        "screenId": "confirm-booking",
+        "parent": "choose-time",
+        "navigation": "stack"
+      },
+      {
+        "screenId": "booking-confirmed",
+        "parent": "confirm-booking",
+        "navigation": "stack"
+      },
+      {
+        "screenId": "appointment-detail",
+        "parent": "home",
+        "navigation": "stack"
+      },
+      {
+        "screenId": "cancel-appointment",
+        "parent": "appointment-detail",
+        "navigation": "sheet"
+      },
+      {
+        "screenId": "intake-form",
+        "parent": "home",
+        "navigation": "stack"
+      }
+    ],
+    "screens": [
+      {
+        "id": "home",
+        "name": "Home",
+        "purpose": "See upcoming appointments and start a booking.",
+        "priority": "P0",
+        "primaryAction": "Book an appointment",
+        "keyContent": [
+          "Next appointment: date, time, type, physio and clinic",
+          "Intake reminder before a first visit",
+          "Later appointments",
+          "Call the clinic"
+        ],
+        "entryPoints": [
+          "App launch",
+          "Tab bar",
+          "Links in confirmation and reminder messages"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Next appointment card and later appointments"
+          },
+          {
+            "state": "empty",
+            "description": "No appointments booked"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching appointments"
+          },
+          {
+            "state": "error",
+            "description": "Appointments couldn't load"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "choose-service",
+        "name": "Book",
+        "purpose": "Choose the appointment type and the clinic.",
+        "priority": "P0",
+        "primaryAction": "See available times",
+        "keyContent": [
+          "Appointment types with length",
+          "Hint on which type to choose",
+          "Clinic location with access notes",
+          "Step 1 of 3"
+        ],
+        "entryPoints": [
+          "Book tab",
+          "Home: Book an appointment"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Types and clinics, first options preselected"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching appointment types"
+          },
+          {
+            "state": "error",
+            "description": "Types couldn't load"
+          }
+        ],
+        "statesNotNeeded": [
+          {
+            "state": "empty",
+            "reason": "The clinic always has at least one bookable type; if online booking is switched off, the Book tab is hidden."
+          }
+        ]
+      },
+      {
+        "id": "choose-time",
+        "name": "Choose a time",
+        "purpose": "See real availability and pick a time, with anyone or a chosen physio.",
+        "priority": "P0",
+        "primaryAction": "Continue with the chosen time",
+        "keyContent": [
+          "Physio filter, 'First available' by default",
+          "Days with availability",
+          "Time rows with physio name",
+          "How long a chosen time is held"
+        ],
+        "entryPoints": [
+          "Book: See available times",
+          "Appointment: Change date or time"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Times for the selected day"
+          },
+          {
+            "state": "empty",
+            "description": "No times for this physio this week"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching live availability"
+          },
+          {
+            "state": "error",
+            "description": "Availability couldn't load"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "confirm-booking",
+        "name": "Confirm",
+        "purpose": "Check the appointment, give contact details and confirm.",
+        "priority": "P0",
+        "primaryAction": "Confirm booking",
+        "keyContent": [
+          "Appointment summary",
+          "Name, mobile, email",
+          "Been here before?",
+          "Why we ask for this",
+          "Time held for 10 minutes"
+        ],
+        "entryPoints": [
+          "Choose a time"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Summary and details form"
+          },
+          {
+            "state": "loading",
+            "description": "Confirming with the clinic diary"
+          },
+          {
+            "state": "error",
+            "description": "Time was taken meanwhile, or details are missing"
+          }
+        ],
+        "statesNotNeeded": [
+          {
+            "state": "empty",
+            "reason": "Only opens once a time has been chosen."
+          }
+        ]
+      },
+      {
+        "id": "booking-confirmed",
+        "name": "Booked",
+        "purpose": "Confirm the booking and invite first-visit patients to answer intake questions.",
+        "priority": "P0",
+        "primaryAction": "Answer the intake questions",
+        "keyContent": [
+          "Booked confirmation",
+          "Summary with address",
+          "Add to calendar",
+          "Intake prompt for first visits"
+        ],
+        "entryPoints": [
+          "Confirm booking"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Booking confirmed"
+          }
+        ],
+        "statesNotNeeded": [
+          {
+            "state": "empty",
+            "reason": "Only shown after a successful booking."
+          },
+          {
+            "state": "loading",
+            "reason": "Loading happens on the Confirm screen."
+          },
+          {
+            "state": "error",
+            "reason": "Booking errors are shown on the Confirm screen, where the person can act on them."
+          }
+        ]
+      },
+      {
+        "id": "appointment-detail",
+        "name": "Appointment",
+        "purpose": "See one appointment and change or cancel it within the policy.",
+        "priority": "P0",
+        "primaryAction": "Change date or time",
+        "keyContent": [
+          "Date, time, type, physio",
+          "Clinic address and access",
+          "24-hour policy",
+          "Change, cancel or call"
+        ],
+        "entryPoints": [
+          "Home: next appointment",
+          "Home: later appointments",
+          "Reminder message link"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "More than 24 hours away: change and cancel online"
+          },
+          {
+            "state": "partial",
+            "description": "Less than 24 hours away: online changes off, call the clinic instead"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching the appointment"
+          },
+          {
+            "state": "error",
+            "description": "Appointment couldn't load"
+          }
+        ],
+        "statesNotNeeded": [
+          {
+            "state": "empty",
+            "reason": "Only opens for a specific appointment."
+          }
+        ]
+      },
+      {
+        "id": "cancel-appointment",
+        "name": "Cancel appointment",
+        "purpose": "Confirm a cancellation, with a chance to keep or move it instead.",
+        "priority": "P0",
+        "primaryAction": "Confirm the choice to cancel or keep",
+        "keyContent": [
+          "What is being cancelled",
+          "That it's free outside 24 hours",
+          "Keep, change time, or cancel"
+        ],
+        "entryPoints": [
+          "Appointment: Cancel appointment"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Confirmation sheet"
+          },
+          {
+            "state": "loading",
+            "description": "Cancelling"
+          },
+          {
+            "state": "error",
+            "description": "Cancellation didn't go through"
+          },
+          {
+            "state": "success",
+            "description": "Cancelled"
+          }
+        ],
+        "statesNotNeeded": [
+          {
+            "state": "empty",
+            "reason": "Only opens for a specific appointment."
+          }
+        ]
+      },
+      {
+        "id": "intake-form",
+        "name": "Before your visit",
+        "purpose": "Collect the few details a physio needs before a first visit.",
+        "priority": "P1",
+        "primaryAction": "Send to my physio",
+        "keyContent": [
+          "Problem area",
+          "How long",
+          "Anything else (optional)",
+          "Consent and who sees the answers"
+        ],
+        "entryPoints": [
+          "Booked: Answer the intake questions",
+          "Home: intake reminder",
+          "Reminder message link"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Four short questions"
+          },
+          {
+            "state": "loading",
+            "description": "Sending"
+          },
+          {
+            "state": "error",
+            "description": "Area or consent missing, or sending failed"
+          },
+          {
+            "state": "success",
+            "description": "Answers sent"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "clinic-info",
+        "name": "Clinics",
+        "purpose": "Addresses, access, opening hours and a way to call.",
+        "priority": "P1",
+        "primaryAction": "Call the clinic",
+        "keyContent": [
+          "Both clinics with address and step-free access",
+          "Parking",
+          "Opening hours",
+          "Phone number"
+        ],
+        "entryPoints": [
+          "Clinics tab",
+          "Call links on error states"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Both clinics listed"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching clinic details"
+          },
+          {
+            "state": "error",
+            "description": "Details couldn't load"
+          }
+        ],
+        "statesNotNeeded": []
+      }
+    ],
+    "assumptions": [
+      "No patient account or password: returning patients are matched by mobile number and email, and manage bookings from Home in the app or from links in messages",
+      "The booking steps are the same on web and in the app shells; the app adds the tab bar, web uses side navigation",
+      "Reschedule reuses the time and confirm steps rather than a separate flow",
+      "A chosen time is held for 10 minutes while the person enters their details"
+    ],
+    "openQuestions": [
+      "What is the late-cancellation fee, and is it charged automatically or at the next visit?",
+      "Should returning patients see their own physio first by default, instead of 'First available'?",
+      "Do some appointment types need a call before booking (for example, post-surgery rehab)?"
+    ]
+  }
+}

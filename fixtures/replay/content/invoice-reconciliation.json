@@ -1,0 +1,1507 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the invoice-reconciliation sample brief.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Setting ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "precise, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "calm ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "voice ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "accountants ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "under ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "month-end ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "pressure. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Every ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "explanation ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "names ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rule ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "values; ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "glossary ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "terms ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "exception, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "match, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "resolution ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "reviewer.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Writing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "copy ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "six ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "P0 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screens ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Matching ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rules, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "seventeen ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "error ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "messages ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(including ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "import ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "validation ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "errors) ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "two ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "emails.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "voice": {
+      "principles": [
+        "Precise: name the document, the field and the number",
+        "Explain, don't assert: every automatic decision says which rule and which values",
+        "Calm under month-end pressure; no exclamation marks, no blame",
+        "Use the accounting words our users already use (PO, short-pay, credit note), never internal system terms"
+      ],
+      "toneByContext": [
+        {
+          "context": "Explanations of matches and exceptions",
+          "tone": "Factual and complete: rule, values compared, tolerance"
+        },
+        {
+          "context": "Errors",
+          "tone": "Say what happened, that nothing was lost when that's true, and one next step"
+        },
+        {
+          "context": "Success",
+          "tone": "Short confirmation that names what changed and where it was recorded"
+        },
+        {
+          "context": "Empty states",
+          "tone": "Say what will appear here and how to get it there"
+        },
+        {
+          "context": "Permissions",
+          "tone": "Neutral; explain the control and who can change it"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "exception",
+          "use": "An invoice that couldn't be matched automatically and needs a person",
+          "avoid": [
+            "error",
+            "issue",
+            "flag",
+            "problem"
+          ]
+        },
+        {
+          "term": "match / matched",
+          "use": "An invoice linked to its purchase order and bank payment",
+          "avoid": [
+            "pair",
+            "link",
+            "reconciled item"
+          ]
+        },
+        {
+          "term": "resolution",
+          "use": "What the preparer proposes to do about an exception",
+          "avoid": [
+            "fix",
+            "decision",
+            "outcome"
+          ]
+        },
+        {
+          "term": "reviewer",
+          "use": "The second person who approves a resolution",
+          "avoid": [
+            "approver",
+            "checker",
+            "admin"
+          ]
+        },
+        {
+          "term": "purchase order (PO)",
+          "use": "Spell out once per screen, then PO",
+          "avoid": [
+            "order",
+            "requisition"
+          ]
+        },
+        {
+          "term": "bank payment",
+          "use": "A line from the bank statement export",
+          "avoid": [
+            "transaction",
+            "remittance",
+            "transfer"
+          ]
+        },
+        {
+          "term": "rule",
+          "use": "The named, versioned criteria behind an automatic match",
+          "avoid": [
+            "algorithm",
+            "AI",
+            "model"
+          ]
+        }
+      ]
+    },
+    "screens": [
+      {
+        "screenId": "exceptions",
+        "strings": [
+          {
+            "key": "exceptions.title",
+            "kind": "title",
+            "text": "Exceptions",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.nav-exceptions",
+            "kind": "nav",
+            "text": "Exceptions",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.nav-matches",
+            "kind": "nav",
+            "text": "Matched",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.nav-approvals",
+            "kind": "nav",
+            "text": "Approvals",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.nav-import",
+            "kind": "nav",
+            "text": "Import files",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.nav-audit",
+            "kind": "nav",
+            "text": "Audit trail",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.nav-rules",
+            "kind": "nav",
+            "text": "Matching rules",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.period-label",
+            "kind": "label",
+            "text": "Accounting period",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.stat-open",
+            "kind": "label",
+            "text": "Open exceptions",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.stat-matched",
+            "kind": "label",
+            "text": "Matched automatically",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.stat-awaiting",
+            "kind": "label",
+            "text": "Waiting for approval",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.stat-value",
+            "kind": "label",
+            "text": "Value in exceptions",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.search-label",
+            "kind": "label",
+            "text": "Search by invoice, PO, supplier or amount",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.filter-all",
+            "kind": "label",
+            "text": "All types",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.filter-quantity",
+            "kind": "label",
+            "text": "Quantity",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.filter-price",
+            "kind": "label",
+            "text": "Price",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.filter-partial",
+            "kind": "label",
+            "text": "Partial delivery",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.filter-duplicate",
+            "kind": "label",
+            "text": "Possible duplicate",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.filter-currency",
+            "kind": "label",
+            "text": "Currency",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.filter-no-po",
+            "kind": "label",
+            "text": "No PO",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.open-next-button",
+            "kind": "button",
+            "text": "Open next exception",
+            "state": "default",
+            "notes": "Opens the oldest open exception in the current filter"
+          },
+          {
+            "key": "exceptions.import-button",
+            "kind": "button",
+            "text": "Import files",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.shortcuts-hint",
+            "kind": "helper",
+            "text": "J and K move between rows · Enter opens · / searches",
+            "state": "default",
+            "notes": "Shortcuts only work when the list has focus"
+          },
+          {
+            "key": "exceptions.row-a11y",
+            "kind": "a11y",
+            "text": "{invoice}, {supplier}, {reason}, {amount}, open for {age}",
+            "state": "default",
+            "notes": "Accessible name for each queue row"
+          },
+          {
+            "key": "exceptions.empty-title",
+            "kind": "empty",
+            "text": "No open exceptions",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.empty-body",
+            "kind": "empty",
+            "text": "Every imported invoice for this period is matched or resolved. Import more files, or export the audit trail when you're ready to close.",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.empty-import-button",
+            "kind": "button",
+            "text": "Import files",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.export-button",
+            "kind": "button",
+            "text": "Export audit trail",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.loading-a11y",
+            "kind": "a11y",
+            "text": "Loading exceptions",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.col-invoice",
+            "kind": "label",
+            "text": "Invoice",
+            "state": "loading",
+            "notes": "Column header, also used in the default view"
+          },
+          {
+            "key": "exceptions.col-supplier",
+            "kind": "label",
+            "text": "Supplier",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.col-reason",
+            "kind": "label",
+            "text": "Exception",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.col-amount",
+            "kind": "label",
+            "text": "Amount",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.col-age",
+            "kind": "label",
+            "text": "Open for",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.retry-button",
+            "kind": "button",
+            "text": "Try again",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.partial-banner",
+            "kind": "body",
+            "text": "{rejected} rows from the last import weren't imported, so some invoices may show as exceptions until those rows are fixed.",
+            "state": "partial",
+            "notes": ""
+          },
+          {
+            "key": "exceptions.review-rejected-button",
+            "kind": "button",
+            "text": "Review rejected rows",
+            "state": "partial",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "exception-detail",
+        "strings": [
+          {
+            "key": "exception-detail.title",
+            "kind": "title",
+            "text": "{invoice} · {reason}",
+            "state": "default",
+            "notes": "Invoice number first, then the exception type"
+          },
+          {
+            "key": "exception-detail.reason-label",
+            "kind": "label",
+            "text": "Why this is an exception",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.reason-quantity",
+            "kind": "body",
+            "text": "Invoiced quantity ({invoiced}) is more than the quantity received ({received}). Rule Q1 allows no quantity difference.",
+            "state": "default",
+            "notes": "Always name the rule and both values"
+          },
+          {
+            "key": "exception-detail.reason-price",
+            "kind": "body",
+            "text": "Unit price on the invoice ({invoiced}) is {difference} more than the PO price ({ordered}). Rule P1 allows up to {tolerance}.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.reason-duplicate",
+            "kind": "body",
+            "text": "Possible duplicate of {other}: same supplier, amount and invoice date. {other} was paid on {date}.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.reason-currency",
+            "kind": "body",
+            "text": "Paid {paid} against an invoice of {invoiced}. At the ECB rate on the payment date that's {difference} short, more than the 1% allowed by rule C1.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.stat-difference",
+            "kind": "label",
+            "text": "Difference",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.stat-age",
+            "kind": "label",
+            "text": "Open for",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.stat-rule",
+            "kind": "label",
+            "text": "Rule",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.invoice-heading",
+            "kind": "label",
+            "text": "Invoice",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.po-heading",
+            "kind": "label",
+            "text": "Purchase order",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.payment-heading",
+            "kind": "label",
+            "text": "Bank payment",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.diff-label",
+            "kind": "label",
+            "text": "Differs",
+            "state": "default",
+            "notes": "Shown with a warning icon next to every value that doesn't match"
+          },
+          {
+            "key": "exception-detail.not-paid",
+            "kind": "label",
+            "text": "No payment found yet",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.resolution-label",
+            "kind": "label",
+            "text": "Resolution",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.resolution-helper",
+            "kind": "helper",
+            "text": "The reviewer sees your resolution, your note and the evidence on this page.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.note-label",
+            "kind": "label",
+            "text": "Note for the reviewer",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.note-placeholder",
+            "kind": "placeholder",
+            "text": "What did you check, and with whom?",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.submit-button",
+            "kind": "button",
+            "text": "Submit for approval",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.next-button",
+            "kind": "button",
+            "text": "Next exception",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.back-button",
+            "kind": "button",
+            "text": "Back to exceptions",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.shortcuts-hint",
+            "kind": "helper",
+            "text": "Ctrl+Enter submits · J opens the next exception · Esc goes back",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.loading-a11y",
+            "kind": "a11y",
+            "text": "Loading the evidence for this exception",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.retry-button",
+            "kind": "button",
+            "text": "Try again",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "exception-detail.success-banner",
+            "kind": "success",
+            "text": "Sent for approval. A reviewer will see it in Approvals with your note and the evidence.",
+            "state": "success",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "matches",
+        "strings": [
+          {
+            "key": "matches.title",
+            "kind": "title",
+            "text": "Matched",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "matches.intro",
+            "kind": "body",
+            "text": "Invoices matched to a purchase order and a payment. Select a row to see why it was matched.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "matches.filter-all",
+            "kind": "label",
+            "text": "All rules",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "matches.filter-exact",
+            "kind": "label",
+            "text": "Exact match",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "matches.filter-tolerance",
+            "kind": "label",
+            "text": "Within tolerance",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "matches.filter-reviewer",
+            "kind": "label",
+            "text": "Resolved by a reviewer",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "matches.why-title",
+            "kind": "label",
+            "text": "Why these were matched",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "matches.why-summary",
+            "kind": "body",
+            "text": "Matched automatically · {confidence}% confidence",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "matches.check-button",
+            "kind": "button",
+            "text": "Mark as checked",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "matches.unmatch-button",
+            "kind": "button",
+            "text": "Unmatch and review",
+            "state": "default",
+            "notes": "Moves the invoice back to Exceptions"
+          },
+          {
+            "key": "matches.check-helper",
+            "kind": "helper",
+            "text": "Spot checks are recorded in the audit trail with your name.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "matches.empty-title",
+            "kind": "empty",
+            "text": "Nothing matched yet",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "matches.empty-body",
+            "kind": "empty",
+            "text": "Matches appear here after you import invoices with their purchase orders and payments.",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "matches.empty-button",
+            "kind": "button",
+            "text": "Import files",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "matches.loading-a11y",
+            "kind": "a11y",
+            "text": "Loading matches",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "matches.retry-button",
+            "kind": "button",
+            "text": "Try again",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "matches.success-banner",
+            "kind": "success",
+            "text": "Marked as checked. Recorded in the audit trail.",
+            "state": "success",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "approvals",
+        "strings": [
+          {
+            "key": "approvals.title",
+            "kind": "title",
+            "text": "Approvals",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "approvals.intro",
+            "kind": "body",
+            "text": "Resolutions proposed by your team. A second person approves each one before it's final.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "approvals.selected-label",
+            "kind": "label",
+            "text": "Resolution",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "approvals.approve-button",
+            "kind": "button",
+            "text": "Approve resolution",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "approvals.return-button",
+            "kind": "button",
+            "text": "Send back with comment",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "approvals.own-helper",
+            "kind": "helper",
+            "text": "You can't approve a resolution you proposed. Another reviewer will see it here.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "approvals.shortcuts-hint",
+            "kind": "helper",
+            "text": "A approves · R sends back · J and K move between rows",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "approvals.empty-title",
+            "kind": "empty",
+            "text": "Nothing waiting for approval",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "approvals.empty-body",
+            "kind": "empty",
+            "text": "When someone submits a resolution, it appears here with their note and the evidence.",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "approvals.empty-button",
+            "kind": "button",
+            "text": "Go to exceptions",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "approvals.loading-a11y",
+            "kind": "a11y",
+            "text": "Loading resolutions",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "approvals.retry-button",
+            "kind": "button",
+            "text": "Try again",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "approvals.success-banner",
+            "kind": "success",
+            "text": "Approved. {invoice} is resolved and recorded in the audit trail.",
+            "state": "success",
+            "notes": ""
+          },
+          {
+            "key": "approvals.next-button",
+            "kind": "button",
+            "text": "Open next resolution",
+            "state": "success",
+            "notes": ""
+          },
+          {
+            "key": "approvals.permission-title",
+            "kind": "title",
+            "text": "You need the Reviewer role to approve",
+            "state": "permission",
+            "notes": ""
+          },
+          {
+            "key": "approvals.permission-body",
+            "kind": "body",
+            "text": "Ask a finance admin to give you the Reviewer role. Until then you can read resolutions but not approve them.",
+            "state": "permission",
+            "notes": ""
+          },
+          {
+            "key": "approvals.permission-button",
+            "kind": "button",
+            "text": "Go to exceptions",
+            "state": "permission",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "import",
+        "strings": [
+          {
+            "key": "import.title",
+            "kind": "title",
+            "text": "Import files",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "import.intro",
+            "kind": "body",
+            "text": "Add invoices, purchase orders and bank payments as CSV files. Every row is checked before anything is matched.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "import.period-label",
+            "kind": "label",
+            "text": "Accounting period",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "import.mapping-label",
+            "kind": "label",
+            "text": "Column mapping",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "import.mapping-helper",
+            "kind": "helper",
+            "text": "Saved for each file type. Change it if your export's columns have moved.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "import.files-label",
+            "kind": "label",
+            "text": "Files",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "import.choose-button",
+            "kind": "button",
+            "text": "Choose files",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "import.start-button",
+            "kind": "button",
+            "text": "Start import",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "import.file-helper",
+            "kind": "helper",
+            "text": "CSV files up to 20 MB each. Dates, amounts and currency codes are checked on every row.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "import.loading-a11y",
+            "kind": "a11y",
+            "text": "Checking and importing rows",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "import.loading-body",
+            "kind": "body",
+            "text": "Checking each row, then matching. A month of data usually takes under a minute.",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "import.choose-other-button",
+            "kind": "button",
+            "text": "Choose another file",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "import.partial-banner",
+            "kind": "body",
+            "text": "{imported} of {total} rows imported. {rejected} rows weren't imported; each is listed below with the reason.",
+            "state": "partial",
+            "notes": ""
+          },
+          {
+            "key": "import.download-rejected-button",
+            "kind": "button",
+            "text": "Download rejected rows",
+            "state": "partial",
+            "notes": "CSV with the original columns plus a Reason column"
+          },
+          {
+            "key": "import.go-exceptions-button",
+            "kind": "button",
+            "text": "Go to exceptions",
+            "state": "partial",
+            "notes": ""
+          },
+          {
+            "key": "import.success-banner",
+            "kind": "success",
+            "text": "Import complete. {matched} invoices matched automatically and {exceptions} need review.",
+            "state": "success",
+            "notes": ""
+          },
+          {
+            "key": "import.stat-imported",
+            "kind": "label",
+            "text": "Rows imported",
+            "state": "success",
+            "notes": ""
+          },
+          {
+            "key": "import.stat-matched",
+            "kind": "label",
+            "text": "Matched automatically",
+            "state": "success",
+            "notes": ""
+          },
+          {
+            "key": "import.stat-exceptions",
+            "kind": "label",
+            "text": "Exceptions to review",
+            "state": "success",
+            "notes": ""
+          },
+          {
+            "key": "import.review-button",
+            "kind": "button",
+            "text": "Review exceptions",
+            "state": "success",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "audit-export",
+        "strings": [
+          {
+            "key": "audit-export.title",
+            "kind": "title",
+            "text": "Audit trail",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.intro",
+            "kind": "body",
+            "text": "Every import, automatic match, resolution and approval, with who made it (or which rule and version) and the values compared.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.filter-all",
+            "kind": "label",
+            "text": "All events",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.filter-imports",
+            "kind": "label",
+            "text": "Imports",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.filter-matches",
+            "kind": "label",
+            "text": "Automatic matches",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.filter-resolutions",
+            "kind": "label",
+            "text": "Resolutions",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.filter-approvals",
+            "kind": "label",
+            "text": "Approvals",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.period-label",
+            "kind": "label",
+            "text": "Period",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.format-label",
+            "kind": "label",
+            "text": "Format",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.format-helper",
+            "kind": "helper",
+            "text": "CSV has one row per event. PDF summarises the period, with totals by exception type.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.export-button",
+            "kind": "button",
+            "text": "Export audit trail",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.empty-title",
+            "kind": "empty",
+            "text": "No events for this period yet",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.empty-body",
+            "kind": "empty",
+            "text": "Events appear here once files are imported for the period.",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.empty-button",
+            "kind": "button",
+            "text": "Import files",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.loading-a11y",
+            "kind": "a11y",
+            "text": "Loading the audit trail",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.retry-button",
+            "kind": "button",
+            "text": "Try again",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.success-banner",
+            "kind": "success",
+            "text": "Export ready: {file} ({count} events).",
+            "state": "success",
+            "notes": ""
+          },
+          {
+            "key": "audit-export.download-button",
+            "kind": "button",
+            "text": "Download export",
+            "state": "success",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "rules",
+        "strings": [
+          {
+            "key": "rules.title",
+            "kind": "title",
+            "text": "Matching rules",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "rules.intro",
+            "kind": "body",
+            "text": "These rules decide what Ledgerline matches automatically. Every match records the rule and version it used.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "rules.admin-helper",
+            "kind": "helper",
+            "text": "Only finance admins can change rules. Changes apply to new matches; past matches keep the version they used.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "rules.history-button",
+            "kind": "button",
+            "text": "Download rule history",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "rules.loading-a11y",
+            "kind": "a11y",
+            "text": "Loading matching rules",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "rules.retry-button",
+            "kind": "button",
+            "text": "Try again",
+            "state": "error",
+            "notes": ""
+          }
+        ]
+      }
+    ],
+    "errors": [
+      {
+        "id": "exceptions-load",
+        "screenId": "exceptions",
+        "situation": "The exception queue couldn't load",
+        "message": "We couldn't load the exceptions. Nothing has changed. Check your connection and try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "exception-detail-load",
+        "screenId": "exception-detail",
+        "situation": "The evidence for an exception couldn't load",
+        "message": "We couldn't load the evidence for this exception. Try again, or go back to the list.",
+        "action": "Try again"
+      },
+      {
+        "id": "exception-detail-submit-failed",
+        "screenId": "exception-detail",
+        "situation": "The resolution couldn't be sent for approval",
+        "message": "We couldn't send this for approval. Your resolution and note are still here. Try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "exception-detail-no-resolution",
+        "screenId": "exception-detail",
+        "situation": "Submitted without choosing a resolution",
+        "message": "Choose a resolution before sending this for approval.",
+        "action": ""
+      },
+      {
+        "id": "exception-detail-no-note",
+        "screenId": "exception-detail",
+        "situation": "Submitted without a note",
+        "message": "Enter a note for the reviewer. It's kept in the audit trail with the resolution.",
+        "action": ""
+      },
+      {
+        "id": "matches-load",
+        "screenId": "matches",
+        "situation": "Matches couldn't load",
+        "message": "We couldn't load the matches. Check your connection and try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "matches-check-failed",
+        "screenId": "matches",
+        "situation": "A spot check couldn't be saved",
+        "message": "We couldn't record this check. The match hasn't changed. Try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "approvals-load",
+        "screenId": "approvals",
+        "situation": "Resolutions couldn't load",
+        "message": "We couldn't load the resolutions waiting for approval. Try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "approvals-save-failed",
+        "screenId": "approvals",
+        "situation": "An approval couldn't be saved",
+        "message": "We couldn't save your approval. The resolution is still waiting. Try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "approvals-own",
+        "screenId": "approvals",
+        "situation": "A reviewer tries to approve their own resolution",
+        "message": "You proposed this resolution, so another reviewer needs to approve it. Choose another resolution to review.",
+        "action": ""
+      },
+      {
+        "id": "import-not-csv",
+        "screenId": "import",
+        "situation": "A chosen file isn't a CSV file",
+        "message": "We couldn't read {file}. It doesn't look like a CSV file. Export it again as CSV and choose it here.",
+        "action": "Choose another file"
+      },
+      {
+        "id": "import-missing-columns",
+        "screenId": "import",
+        "situation": "A file is missing required columns",
+        "message": "{file} has no column for {columns}. Check the column mapping, or export the file again with those columns.",
+        "action": "Check column mapping"
+      },
+      {
+        "id": "import-too-large",
+        "screenId": "import",
+        "situation": "A file is larger than 20 MB",
+        "message": "This file is larger than 20 MB. Export a shorter date range, or split it by month, and choose it again.",
+        "action": "Choose another file"
+      },
+      {
+        "id": "import-stopped",
+        "screenId": "import",
+        "situation": "The import stopped before it finished",
+        "message": "The import stopped before it finished. No rows from this import were matched or kept. Try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "audit-export-load",
+        "screenId": "audit-export",
+        "situation": "The audit trail couldn't load",
+        "message": "We couldn't load the audit trail. Try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "audit-export-failed",
+        "screenId": "audit-export",
+        "situation": "The export couldn't be created",
+        "message": "We couldn't create the export. Nothing was lost. Try again, or choose a shorter period.",
+        "action": "Try again"
+      },
+      {
+        "id": "rules-load",
+        "screenId": "rules",
+        "situation": "Matching rules couldn't load",
+        "message": "We couldn't load the matching rules. Try again.",
+        "action": "Try again"
+      }
+    ],
+    "notifications": [
+      {
+        "id": "approvals-waiting",
+        "trigger": "Resolutions have waited more than one working day for approval (email to reviewers, once a day)",
+        "title": "{count} resolutions waiting for your approval",
+        "body": "Open Approvals in Ledgerline to review them before the {period} close."
+      },
+      {
+        "id": "resolution-returned",
+        "trigger": "A reviewer sends a resolution back (email to the preparer)",
+        "title": "{invoice} was sent back",
+        "body": "{reviewer} commented: \"{comment}\". Open the exception to update the resolution."
+      }
+    ],
+    "assumptions": [
+      "Amounts are shown in the company's base currency with the original currency alongside when different",
+      "Rule ids (Q1, P1, C1, R1–R4) are short and stable enough to show to users and auditors",
+      "Email is the only notification channel in the first release"
+    ],
+    "openQuestions": [
+      "Which resolution options should be offered for each exception type (short-pay, request credit note, accept variance, mark as duplicate)?",
+      "Should 'Send back with comment' require a comment of a minimum length?"
+    ]
+  }
+}

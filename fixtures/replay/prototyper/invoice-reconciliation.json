@@ -1,0 +1,1689 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the invoice-reconciliation sample brief.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Wiring ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "pages ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "along ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "task ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "flows: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "resolving ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "an ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "exception ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "moving ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "to ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "next, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "importing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "month ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "of ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "data, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "approving ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "resolution, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "spot-checking ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "match ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "exporting ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "audit ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "trail. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Loading ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "states ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "move ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "by ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "themselves.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Writing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "handoff ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "behaviour, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "data, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "edge ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "cases ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "acceptance ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "criteria ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "every ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "page, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "listing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "five ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "remaining ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "minor ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "critique ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "findings ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "plan ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "each.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "entry": {
+      "screenId": "exceptions",
+      "state": "default"
+    },
+    "links": [
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "*"
+        },
+        "element": "exceptions.nav-exceptions",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "*"
+        },
+        "element": "exceptions.nav-matches",
+        "to": {
+          "screenId": "matches",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "*"
+        },
+        "element": "exceptions.nav-approvals",
+        "to": {
+          "screenId": "approvals",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "*"
+        },
+        "element": "exceptions.nav-import",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "*"
+        },
+        "element": "exceptions.nav-audit",
+        "to": {
+          "screenId": "audit-export",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "*"
+        },
+        "element": "exceptions.nav-rules",
+        "to": {
+          "screenId": "rules",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "exception-detail",
+          "state": "*"
+        },
+        "element": "exceptions.nav-exceptions",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "exception-detail",
+          "state": "*"
+        },
+        "element": "exceptions.nav-matches",
+        "to": {
+          "screenId": "matches",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "exception-detail",
+          "state": "*"
+        },
+        "element": "exceptions.nav-approvals",
+        "to": {
+          "screenId": "approvals",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "exception-detail",
+          "state": "*"
+        },
+        "element": "exceptions.nav-import",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "exception-detail",
+          "state": "*"
+        },
+        "element": "exceptions.nav-audit",
+        "to": {
+          "screenId": "audit-export",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "exception-detail",
+          "state": "*"
+        },
+        "element": "exceptions.nav-rules",
+        "to": {
+          "screenId": "rules",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "*"
+        },
+        "element": "exceptions.nav-exceptions",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "*"
+        },
+        "element": "exceptions.nav-matches",
+        "to": {
+          "screenId": "matches",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "*"
+        },
+        "element": "exceptions.nav-approvals",
+        "to": {
+          "screenId": "approvals",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "*"
+        },
+        "element": "exceptions.nav-import",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "*"
+        },
+        "element": "exceptions.nav-audit",
+        "to": {
+          "screenId": "audit-export",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "*"
+        },
+        "element": "exceptions.nav-rules",
+        "to": {
+          "screenId": "rules",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "*"
+        },
+        "element": "exceptions.nav-exceptions",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "*"
+        },
+        "element": "exceptions.nav-matches",
+        "to": {
+          "screenId": "matches",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "*"
+        },
+        "element": "exceptions.nav-approvals",
+        "to": {
+          "screenId": "approvals",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "*"
+        },
+        "element": "exceptions.nav-import",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "*"
+        },
+        "element": "exceptions.nav-audit",
+        "to": {
+          "screenId": "audit-export",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "*"
+        },
+        "element": "exceptions.nav-rules",
+        "to": {
+          "screenId": "rules",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "import",
+          "state": "*"
+        },
+        "element": "exceptions.nav-exceptions",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "import",
+          "state": "*"
+        },
+        "element": "exceptions.nav-matches",
+        "to": {
+          "screenId": "matches",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "import",
+          "state": "*"
+        },
+        "element": "exceptions.nav-approvals",
+        "to": {
+          "screenId": "approvals",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "import",
+          "state": "*"
+        },
+        "element": "exceptions.nav-import",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "import",
+          "state": "*"
+        },
+        "element": "exceptions.nav-audit",
+        "to": {
+          "screenId": "audit-export",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "import",
+          "state": "*"
+        },
+        "element": "exceptions.nav-rules",
+        "to": {
+          "screenId": "rules",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "audit-export",
+          "state": "*"
+        },
+        "element": "exceptions.nav-exceptions",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "audit-export",
+          "state": "*"
+        },
+        "element": "exceptions.nav-matches",
+        "to": {
+          "screenId": "matches",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "audit-export",
+          "state": "*"
+        },
+        "element": "exceptions.nav-approvals",
+        "to": {
+          "screenId": "approvals",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "audit-export",
+          "state": "*"
+        },
+        "element": "exceptions.nav-import",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "audit-export",
+          "state": "*"
+        },
+        "element": "exceptions.nav-audit",
+        "to": {
+          "screenId": "audit-export",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "audit-export",
+          "state": "*"
+        },
+        "element": "exceptions.nav-rules",
+        "to": {
+          "screenId": "rules",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "rules",
+          "state": "*"
+        },
+        "element": "exceptions.nav-exceptions",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "rules",
+          "state": "*"
+        },
+        "element": "exceptions.nav-matches",
+        "to": {
+          "screenId": "matches",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "rules",
+          "state": "*"
+        },
+        "element": "exceptions.nav-approvals",
+        "to": {
+          "screenId": "approvals",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "rules",
+          "state": "*"
+        },
+        "element": "exceptions.nav-import",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "rules",
+          "state": "*"
+        },
+        "element": "exceptions.nav-audit",
+        "to": {
+          "screenId": "audit-export",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "rules",
+          "state": "*"
+        },
+        "element": "exceptions.nav-rules",
+        "to": {
+          "screenId": "rules",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Side navigation"
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "element": "exceptions.open-next-button",
+        "to": {
+          "screenId": "exception-detail",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Opens INV-20418, the oldest open exception"
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "element": "INV-20418 — Northwind Packaging Ltd · Quantity: invoiced 120, received 100 · £1,440.00 · 6 days",
+        "to": {
+          "screenId": "exception-detail",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "element": "exceptions.import-button",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "error"
+        },
+        "element": "exceptions.retry-button",
+        "to": {
+          "screenId": "exceptions",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "empty"
+        },
+        "element": "exceptions.empty-import-button",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "empty"
+        },
+        "element": "exceptions.export-button",
+        "to": {
+          "screenId": "audit-export",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "partial"
+        },
+        "element": "exceptions.review-rejected-button",
+        "to": {
+          "screenId": "import",
+          "state": "partial"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "partial"
+        },
+        "element": "exceptions.open-next-button",
+        "to": {
+          "screenId": "exception-detail",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exceptions",
+          "state": "partial"
+        },
+        "element": "INV-20418 — Northwind Packaging Ltd · Quantity: invoiced 120, received 100 · £1,440.00 · 6 days",
+        "to": {
+          "screenId": "exception-detail",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exception-detail",
+          "state": "default"
+        },
+        "element": "exception-detail.submit-button",
+        "to": {
+          "screenId": "exception-detail",
+          "state": "success"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exception-detail",
+          "state": "default"
+        },
+        "element": "exception-detail.next-button",
+        "to": {
+          "screenId": "exception-detail",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": "Loads the next exception"
+      },
+      {
+        "from": {
+          "screenId": "exception-detail",
+          "state": "*"
+        },
+        "element": "exception-detail.back-button",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exception-detail",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "exception-detail",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exception-detail",
+          "state": "error"
+        },
+        "element": "exception-detail.retry-button",
+        "to": {
+          "screenId": "exception-detail",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "exception-detail",
+          "state": "success"
+        },
+        "element": "exception-detail.next-button",
+        "to": {
+          "screenId": "exception-detail",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": "Focus starts here; Enter continues the queue"
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "default"
+        },
+        "element": "matches.check-button",
+        "to": {
+          "screenId": "matches",
+          "state": "success"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "default"
+        },
+        "element": "matches.unmatch-button",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "The invoice moves back to Exceptions"
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "success"
+        },
+        "element": "matches.check-button",
+        "to": {
+          "screenId": "matches",
+          "state": "success"
+        },
+        "trigger": "tap",
+        "note": "Checks the next selected match"
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "success"
+        },
+        "element": "matches.unmatch-button",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "empty"
+        },
+        "element": "matches.empty-button",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "matches",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "matches",
+          "state": "error"
+        },
+        "element": "matches.retry-button",
+        "to": {
+          "screenId": "matches",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "default"
+        },
+        "element": "approvals.approve-button",
+        "to": {
+          "screenId": "approvals",
+          "state": "success"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "default"
+        },
+        "element": "approvals.return-button",
+        "to": {
+          "screenId": "approvals",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Asks for a comment, then removes the row"
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "success"
+        },
+        "element": "approvals.next-button",
+        "to": {
+          "screenId": "approvals",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "empty"
+        },
+        "element": "approvals.empty-button",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "permission"
+        },
+        "element": "approvals.permission-button",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "approvals",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "approvals",
+          "state": "error"
+        },
+        "element": "approvals.retry-button",
+        "to": {
+          "screenId": "approvals",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "element": "import.start-button",
+        "to": {
+          "screenId": "import",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "element": "import.choose-button",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Opens the system file picker"
+      },
+      {
+        "from": {
+          "screenId": "import",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "import",
+          "state": "success"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "import",
+          "state": "error"
+        },
+        "element": "import.choose-other-button",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "import",
+          "state": "partial"
+        },
+        "element": "import.go-exceptions-button",
+        "to": {
+          "screenId": "exceptions",
+          "state": "partial"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "import",
+          "state": "success"
+        },
+        "element": "import.review-button",
+        "to": {
+          "screenId": "exceptions",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "audit-export",
+          "state": "default"
+        },
+        "element": "audit-export.export-button",
+        "to": {
+          "screenId": "audit-export",
+          "state": "success"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "audit-export",
+          "state": "empty"
+        },
+        "element": "audit-export.empty-button",
+        "to": {
+          "screenId": "import",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "audit-export",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "audit-export",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "audit-export",
+          "state": "error"
+        },
+        "element": "audit-export.retry-button",
+        "to": {
+          "screenId": "audit-export",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "rules",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "rules",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "rules",
+          "state": "error"
+        },
+        "element": "rules.retry-button",
+        "to": {
+          "screenId": "rules",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      }
+    ],
+    "staticActions": [
+      {
+        "screenId": "import",
+        "state": "partial",
+        "element": "import.download-rejected-button",
+        "reason": "Downloads a CSV of the rejected rows; there is no screen to go to."
+      },
+      {
+        "screenId": "audit-export",
+        "state": "success",
+        "element": "audit-export.download-button",
+        "reason": "Downloads the export file; the page stays as it is."
+      },
+      {
+        "screenId": "rules",
+        "state": "default",
+        "element": "rules.history-button",
+        "reason": "Downloads the rule history as CSV; editing rules is outside the first release."
+      }
+    ],
+    "handoff": {
+      "overview": "Ledgerline helps accounts-payable teams at companies with 50–500 people match supplier invoices to purchase orders and bank payments, resolve the exceptions with evidence side by side, get a second person's approval and export an audit trail. This handoff covers the six P0 pages and Matching rules for desktop web, in light and dark mode. Every automatic decision records its rule and version and the values compared.",
+      "screens": [
+        {
+          "screenId": "exceptions",
+          "purpose": "Home page: the queue of invoices that couldn't be matched automatically, for one accounting period.",
+          "behaviour": [
+            "'Open next exception' opens the oldest exception in the current filter",
+            "J/K or arrow keys move the selection, Enter opens it, / focuses search; single-key shortcuts only work while the list has focus",
+            "Chips filter by exception type; search matches invoice number, PO number, supplier or amount",
+            "Partial: a warning explains that rejected import rows may cause extra exceptions, with a link to them"
+          ],
+          "data": [
+            "Reads exceptions for the period with reason, amount and age",
+            "Reads period totals: open, matched automatically, waiting for approval, value in exceptions"
+          ],
+          "edgeCases": [
+            "Exception resolved by a colleague while the list is open: the row is removed on the next refresh and opening it shows it was resolved",
+            "Amounts in another currency show the original currency and the base-currency value"
+          ],
+          "acceptanceCriteria": [
+            "Each row's reason names the type and both values in words",
+            "Open next exception opens the oldest exception in the current filter",
+            "The queue is fully usable without a mouse",
+            "Loading keeps the column headers and announces 'Loading exceptions'"
+          ]
+        },
+        {
+          "screenId": "exception-detail",
+          "purpose": "Resolve one exception with the invoice, purchase order and bank payment side by side.",
+          "behaviour": [
+            "The reason banner names the rule and the values that broke it",
+            "Values that differ carry a warning icon and 'Differs' with the size of the difference",
+            "Submit for approval needs a resolution and a note; missing ones are named next to the field and focus moves to the first",
+            "On success, focus moves to Next exception; Ctrl+Enter submits, J opens the next exception, Esc goes back",
+            "If sending fails, the resolution and note are kept and Try again is offered"
+          ],
+          "data": [
+            "Reads the invoice, PO lines with quantity received, and any linked bank payment",
+            "Writes the resolution, note, author and time; creates an audit event"
+          ],
+          "edgeCases": [
+            "No payment found yet: the payment card says so",
+            "The PO has several partial receipts: all receipt dates are listed",
+            "Another person resolves the same exception first: show who and when, and stop the second submission"
+          ],
+          "acceptanceCriteria": [
+            "A resolution can't be submitted without a note",
+            "Every differing value is identifiable without colour",
+            "After submitting, pressing Enter opens the next exception"
+          ]
+        },
+        {
+          "screenId": "matches",
+          "purpose": "Spot-check automatic and reviewer matches and see exactly why each was made.",
+          "behaviour": [
+            "Selecting a row shows the rule, its version and the date, then each field compared (supplier, PO number, amount, payment reference) as Same or Within tolerance, then the tolerance applied",
+            "Mark as checked records a spot check with the reviewer's name and selects the next row",
+            "Unmatch and review moves the invoice back to Exceptions; the original match stays in the audit trail"
+          ],
+          "data": [
+            "Reads matched sets with rule id, rule version and the compared values",
+            "Writes spot checks and unmatches as audit events"
+          ],
+          "edgeCases": [
+            "Rule changed since the match: the explanation shows the version used at the time",
+            "Match made by a reviewer rather than a rule: show the person and the approved resolution instead"
+          ],
+          "acceptanceCriteria": [
+            "No match is shown without its rule, version and compared values",
+            "Checking a match creates an audit event naming the reviewer"
+          ]
+        },
+        {
+          "screenId": "approvals",
+          "purpose": "Second-person approval of proposed resolutions.",
+          "behaviour": [
+            "Approve resolution resolves the exception and records the approver",
+            "Send back with comment requires a comment and notifies the preparer by email",
+            "Resolutions the signed-in person proposed can be read but not approved; the reason is shown",
+            "People without the Reviewer role see the permission state"
+          ],
+          "data": [
+            "Reads resolutions waiting, with evidence summary, note and proposer",
+            "Writes approvals and returns with comments"
+          ],
+          "edgeCases": [
+            "The only reviewer is also the preparer: the resolution waits until another reviewer is added",
+            "Resolution withdrawn while being reviewed"
+          ],
+          "acceptanceCriteria": [
+            "A person can never approve their own resolution",
+            "Every approval and return creates an audit event",
+            "Single-key shortcuts only work while the list or selected resolution has focus"
+          ]
+        },
+        {
+          "screenId": "import",
+          "purpose": "Import invoices, purchase orders and bank payments from CSV files for a period.",
+          "behaviour": [
+            "Every row is checked (dates, amounts, currency codes, required columns) before matching",
+            "Valid rows are imported and matched even if some are rejected",
+            "Rejected rows are listed with the file, row number and reason, and can be downloaded as CSV",
+            "Column mapping is saved per file type"
+          ],
+          "data": [
+            "Reads CSV files up to 20 MB each",
+            "Writes imported rows, rejected rows with reasons, and an import audit event"
+          ],
+          "edgeCases": [
+            "The same file imported twice: rows already imported are skipped and counted",
+            "Mixed date formats in one file",
+            "Files from different periods"
+          ],
+          "acceptanceCriteria": [
+            "One bad row never blocks the rest of the file",
+            "Each rejected row names its file, row number and reason",
+            "A file that can't be read is named in the error"
+          ]
+        },
+        {
+          "screenId": "audit-export",
+          "purpose": "Every import, match, resolution and approval for a period, and the export for auditors.",
+          "behaviour": [
+            "Events newest first, filterable by type",
+            "Each event shows time, person or rule and version, and the values compared",
+            "Export creates a CSV (one row per event) or a PDF summary for the chosen period"
+          ],
+          "data": [
+            "Reads audit events for the period",
+            "Writes an export file and an export audit event"
+          ],
+          "edgeCases": [
+            "Very large periods: export runs in the background and the page says when it's ready",
+            "Events from a rule version that has since changed"
+          ],
+          "acceptanceCriteria": [
+            "The CSV export alone lets an auditor trace any match or resolution to its rule or person and the values compared",
+            "Exporting is itself recorded in the audit trail"
+          ]
+        },
+        {
+          "screenId": "rules",
+          "purpose": "Read the rules and tolerances that drive automatic matching.",
+          "behaviour": [
+            "Lists each rule with its id, criteria, tolerance and current version",
+            "Rule history downloads as CSV"
+          ],
+          "data": [
+            "Reads rules and their version history"
+          ],
+          "edgeCases": [
+            "A rule is retired: it stays listed as retired so past matches can still be traced"
+          ],
+          "acceptanceCriteria": [
+            "Every rule id used in a match explanation appears on this page"
+          ]
+        }
+      ],
+      "components": [
+        {
+          "name": "Side navigation",
+          "notes": "220 px, current page marked with aria-current=page. Counts for Exceptions and Approvals are planned (C4)."
+        },
+        {
+          "name": "Queue list",
+          "notes": "Dense 40 px rows with a full accessible name per row; J/K and arrow keys move selection; aria-selected on the selected row."
+        },
+        {
+          "name": "Evidence cards",
+          "notes": "Three cards in a row (invoice, PO, payment); differing values carry a warning icon and 'Differs' with the difference."
+        },
+        {
+          "name": "Match explanation",
+          "notes": "Rule and version line, then a field-by-field list (Same / Within tolerance), then the tolerance sentence."
+        },
+        {
+          "name": "Banners",
+          "notes": "Error banners use role=alert; info, success and warning use role=status."
+        }
+      ],
+      "accessibility": [
+        "Everything works with the keyboard; focus order follows the visual order: navigation, page header, filters, list, detail, actions",
+        "Single-key shortcuts only work while the relevant list or panel has focus, and can be turned off in settings",
+        "Visible 2 px focus ring on every interactive element, including list rows",
+        "Status and differences are always given in words and icons, never colour alone",
+        "Loading regions are aria-busy and announce their loading text; confirmations use polite live regions",
+        "Text scales to 200% without loss; evidence cards stack below 1024 px"
+      ],
+      "analytics": [
+        "import_completed (rows_imported, rows_rejected, files)",
+        "exception_opened (reason, source: next | row)",
+        "resolution_submitted (reason, resolution_type, time_on_page)",
+        "resolution_approved / resolution_returned",
+        "match_checked / match_unmatched (rule, rule_version)",
+        "audit_exported (format, period, event_count)"
+      ],
+      "openIssues": [
+        {
+          "findingId": "C4",
+          "severity": 2,
+          "title": "Side navigation hides how much is waiting",
+          "plan": "Add counts to Exceptions and Approvals in the build; copy needed from content."
+        },
+        {
+          "findingId": "C5",
+          "severity": 2,
+          "title": "The exception queue can't be sorted",
+          "plan": "Add sort by amount and age in the next iteration; default stays oldest first."
+        },
+        {
+          "findingId": "C6",
+          "severity": 1,
+          "title": "Amounts don't line up",
+          "plan": "Set tabular-nums on amount styles in the CSS tokens."
+        },
+        {
+          "findingId": "C7",
+          "severity": 2,
+          "title": "Single-key shortcuts on Approvals need a focus condition",
+          "plan": "Implemented as specified in Accessibility above; verify with speech input."
+        },
+        {
+          "findingId": "C8",
+          "severity": 1,
+          "title": "'Unmatch and review' doesn't say where the invoice goes",
+          "plan": "Add the helper text under the button."
+        }
+      ]
+    }
+  }
+}

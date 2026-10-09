@@ -1,0 +1,2348 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the clinic-booking sample brief.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Drawing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "all ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "seven ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "P0 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screens ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "every ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "state ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "from ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "architecture, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "plus ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Intake ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Clinics. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "The ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "project ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "ships ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "iOS ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Android, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "so ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "every ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screen ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "uses ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "mobile ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "layout; ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "web ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "same ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "column ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "sits ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "640px ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "content ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "area.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Booking ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "is ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "three ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "steps ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "one ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "primary ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "action ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "each. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Times ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "full-width ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rows ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rather ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "than ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "grid, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "so ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "they're ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "easy ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "to ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "hit ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "when ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "someone ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "is ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "pain. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "All ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "words ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "come ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "from ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "content ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "deck.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "screens": [
+      {
+        "screenId": "home",
+        "name": "Home",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "notes": "The next appointment is the largest element; booking is the one primary action. Web: content sits in a 640px column beside the side navigation.",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "home.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "home.intake-banner",
+                "text": "Your first visit is on Tuesday 14 October. Please answer 4 short questions before you come.",
+                "variant": "info",
+                "items": [],
+                "count": 0,
+                "note": "Only before a first visit with intake not yet sent",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "home.intake-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "home.next-label",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Tue 14 Oct, 9:00 AM",
+                  "Initial assessment with Tom Okafor · 45 min",
+                  "Harbour Road clinic, step-free"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "home.manage-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "home.book-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "home.later-label",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Follow-up with Tom Okafor · Tue 21 Oct, 9:00 AM",
+                  "Follow-up with Tom Okafor · Tue 28 Oct, 9:00 AM"
+                ],
+                "count": 0,
+                "note": "Each row opens the Appointment screen",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "home.tab-home",
+                  "home.tab-book",
+                  "home.tab-clinics"
+                ],
+                "count": 0,
+                "note": "App shells only; web shows the same three links as side navigation",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "empty",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "home.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "empty",
+                "copy": "home.empty-title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "home.empty-body"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "home.empty-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "home.call-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "home.tab-home",
+                  "home.tab-book",
+                  "home.tab-clinics"
+                ],
+                "count": 0,
+                "note": "App shells only; web shows the same three links as side navigation",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "home.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "skeleton",
+                "copy": "home.loading-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 5,
+                "note": "Announces home.loading-a11y politely",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "home.tab-home",
+                  "home.tab-book",
+                  "home.tab-clinics"
+                ],
+                "count": 0,
+                "note": "App shells only; web shows the same three links as side navigation",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "home.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "home-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "home.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "home.call-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "home.tab-home",
+                  "home.tab-book",
+                  "home.tab-clinics"
+                ],
+                "count": 0,
+                "note": "App shells only; web shows the same three links as side navigation",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "choose-service",
+        "name": "Book",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "notes": "First type and first clinic are preselected, so a returning patient can go straight to times.",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "choose-service.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "choose-service.step",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "choose-service.type-heading",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "chips",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "choose-service.type-initial",
+                  "choose-service.type-follow-up",
+                  "choose-service.type-massage"
+                ],
+                "count": 0,
+                "note": "Large single-choice chips that wrap; selected shows a check",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "choose-service.type-helper",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "choose-service.location-heading",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "chips",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Harbour Road",
+                  "Mill Street"
+                ],
+                "count": 0,
+                "note": "Clinic names from the clinic's settings",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "choose-service.location-helper",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "choose-service.next-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "home.tab-home",
+                  "home.tab-book",
+                  "home.tab-clinics"
+                ],
+                "count": 0,
+                "note": "App shells only; web shows the same three links as side navigation",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "choose-service.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "skeleton",
+                "copy": "choose-service.loading-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 4,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "home.tab-home",
+                  "home.tab-book",
+                  "home.tab-clinics"
+                ],
+                "count": 0,
+                "note": "App shells only; web shows the same three links as side navigation",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "choose-service.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "service-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "choose-service.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "choose-service.call-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "home.tab-home",
+                  "home.tab-book",
+                  "home.tab-clinics"
+                ],
+                "count": 0,
+                "note": "App shells only; web shows the same three links as side navigation",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "choose-time",
+        "name": "Choose a time",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "notes": "No tab bar inside the booking steps, to keep attention on the task. Times are list rows, not a grid, so each is a full-width target.",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "choose-time.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "choose-time.step",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "choose-time.who-heading",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "chips",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "choose-time.any-practitioner",
+                  "Priya Shah",
+                  "Tom Okafor",
+                  "Elena Rossi",
+                  "James Whitfield",
+                  "Hannah Lee",
+                  "Marcus Bell"
+                ],
+                "count": 0,
+                "note": "'First available' selected by default",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "choose-time.day-heading",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "chips",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Tue 14 Oct",
+                  "Wed 15",
+                  "Thu 16",
+                  "Fri 17",
+                  "Sat 18"
+                ],
+                "count": 0,
+                "note": "Only days with times are shown",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "choose-time.times-heading",
+                "text": "Times on Tuesday 14 October",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "9:00 AM · Tom Okafor · Selected",
+                  "10:30 AM · Priya Shah",
+                  "1:15 PM · Elena Rossi",
+                  "4:45 PM · Priya Shah",
+                  "6:30 PM · Marcus Bell"
+                ],
+                "count": 0,
+                "note": "Selected row shows a check and the word 'Selected' (choose-time.selected)",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "choose-time.live-note",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "choose-time.next-button",
+                "text": "Continue with 9:00 AM",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "empty",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "choose-time.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "choose-time.step",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "chips",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Priya Shah",
+                  "choose-time.any-practitioner",
+                  "Tom Okafor",
+                  "Elena Rossi",
+                  "James Whitfield",
+                  "Hannah Lee",
+                  "Marcus Bell"
+                ],
+                "count": 0,
+                "note": "Priya Shah selected",
+                "children": []
+              },
+              {
+                "type": "empty",
+                "copy": "choose-time.empty-title",
+                "text": "No times left this week",
+                "variant": "none",
+                "items": [
+                  "choose-time.empty-body"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "choose-time.empty-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "choose-time.any-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "choose-time.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "choose-time.step",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "skeleton",
+                "copy": "choose-time.loading-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 6,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "choose-time.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "times-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "choose-time.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "choose-time.call-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "confirm-booking",
+        "name": "Confirm",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Three fields only. Returning patients are matched by mobile and email; no account or password.",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "confirm-booking.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "confirm-booking.step",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "confirm-booking.summary-label",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Initial assessment · 45 min",
+                  "Tue 14 Oct, 9:00 AM with Tom Okafor",
+                  "Harbour Road clinic, 12 Harbour Road"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "confirm-booking.change-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "confirm-booking.details-heading",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "input",
+                "copy": "confirm-booking.name-label",
+                "text": "Sam Taylor",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "autocomplete=name",
+                "children": []
+              },
+              {
+                "type": "input",
+                "copy": "confirm-booking.phone-label",
+                "text": "07700 900123",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "Helper: confirm-booking.phone-helper; autocomplete=tel",
+                "children": []
+              },
+              {
+                "type": "input",
+                "copy": "confirm-booking.email-label",
+                "text": "sam.taylor@example.com",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "autocomplete=email",
+                "children": []
+              },
+              {
+                "type": "checkbox",
+                "copy": "confirm-booking.returning-label",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "confirm-booking.privacy-note",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "confirm-booking.confirm-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "confirm-booking.hold-note",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "confirm-booking.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "confirm-booking.summary-label",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Initial assessment · 45 min",
+                  "Tue 14 Oct, 9:00 AM with Tom Okafor",
+                  "Harbour Road clinic, 12 Harbour Road"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "spinner",
+                "copy": "confirm-booking.confirming-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "confirm-booking.confirm-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "Keeps its width; can't be pressed twice",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "Shown when the time was taken meanwhile. Field errors (confirm-booking.name-error, confirm-booking.phone-error) appear under each field and the first gets focus.",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "confirm-booking.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "slot-taken",
+                "text": "Sorry, someone else has just booked 9:00 AM. Your details are saved, so choose another time and you're nearly done.",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "confirm-booking.summary-label",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Initial assessment · 45 min",
+                  "Harbour Road clinic"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "confirm-booking.other-times-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "confirm-booking.details-kept",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "booking-confirmed",
+        "name": "Booked",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Confirmation is announced as a status message when the screen opens. The intake prompt shows only for first visits.",
+            "blocks": [
+              {
+                "type": "banner",
+                "copy": "booking-confirmed.title",
+                "text": "",
+                "variant": "success",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "booking-confirmed.sent-note",
+                "text": "We've sent the details to sam.taylor@example.com and a text to 07700 900123.",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "booking-confirmed.summary-label",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Initial assessment · 45 min",
+                  "Tue 14 Oct, 9:00 AM with Tom Okafor",
+                  "Harbour Road clinic, 12 Harbour Road"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "booking-confirmed.calendar-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "booking-confirmed.intake-heading",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "booking-confirmed.intake-body",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "booking-confirmed.intake-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "booking-confirmed.done-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "appointment-detail",
+        "name": "Appointment",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "appointment-detail.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "appointment-detail.when-label",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Tue 14 Oct, 9:00 AM",
+                  "Initial assessment with Tom Okafor · 45 min",
+                  "Harbour Road clinic, step-free"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "appointment-detail.policy-helper",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "appointment-detail.reschedule-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "appointment-detail.cancel-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "partial",
+            "notes": "Inside 24 hours: change and cancel are replaced by a call.",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "appointment-detail.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "appointment-detail.when-label",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Tomorrow, 9:00 AM",
+                  "Follow-up with Tom Okafor · 30 min",
+                  "Harbour Road clinic, step-free"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "appointment-detail.late-banner",
+                "text": "",
+                "variant": "warning",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "appointment-detail.call-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "appointment-detail.late-fee-note",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "appointment-detail.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "skeleton",
+                "copy": "appointment-detail.loading-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 4,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "appointment-detail.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "appointment-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "appointment-detail.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "appointment-detail.call-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "cancel-appointment",
+        "name": "Cancel appointment",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Bottom sheet in the app shells; a centred dialog on web. Focus moves to the title when it opens and returns to 'Cancel appointment' when it closes; the screen behind is inert.",
+            "blocks": [
+              {
+                "type": "heading",
+                "copy": "cancel-appointment.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "cancel-appointment.body",
+                "text": "Initial assessment with Tom Okafor on Tue 14 Oct at 9:00 AM.",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "cancel-appointment.free-note",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "cancel-appointment.cancel-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "cancel-appointment.reschedule-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "cancel-appointment.keep-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "heading",
+                "copy": "cancel-appointment.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "spinner",
+                "copy": "cancel-appointment.cancelling-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "heading",
+                "copy": "cancel-appointment.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "cancel-failed",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "cancel-appointment.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "cancel-appointment.keep-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "success",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "banner",
+                "copy": "cancel-appointment.success-title",
+                "text": "",
+                "variant": "success",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "cancel-appointment.success-body",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "cancel-appointment.book-again-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "cancel-appointment.done-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "intake-form",
+        "name": "Before your visit",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Four questions on one short page; nothing times out, and answers are kept if the person leaves.",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "intake-form.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "intake-form.intro",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "select",
+                "copy": "intake-form.area-label",
+                "text": "Lower back",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "Body areas as plain words, not a body map",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "intake-form.since-label",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "chips",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "intake-form.since-short",
+                  "intake-form.since-medium",
+                  "intake-form.since-long"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "input",
+                "copy": "intake-form.notes-label",
+                "text": "Worse after sitting for a long time",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "Optional, multi-line, voice input friendly",
+                "children": []
+              },
+              {
+                "type": "checkbox",
+                "copy": "intake-form.consent",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "intake-form.privacy",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "intake-form.submit-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "intake-form.later-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "intake-form.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "spinner",
+                "copy": "intake-form.sending-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "The error summary gets focus; the area field shows its own message.",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "intake-form.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "intake-missing-area",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "select",
+                "copy": "intake-form.area-label",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "Error: intake-form.area-error",
+                "children": []
+              },
+              {
+                "type": "checkbox",
+                "copy": "intake-form.consent",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "intake-form.submit-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "success",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "banner",
+                "copy": "intake-form.success-title",
+                "text": "",
+                "variant": "success",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "intake-form.success-body",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "intake-form.done-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "clinic-info",
+        "name": "Clinics",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "clinic-info.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Harbour Road · 12 Harbour Road, step-free, free parking outside",
+                  "Mill Street · 3 Mill Street, ground floor, step-free, 2 accessible bays"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "clinic-info.hours-heading",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "",
+                "text": "Mon to Fri 7:30 AM to 7:30 PM · Sat 8:00 AM to 1:00 PM",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "clinic-info.call-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "clinic-info.book-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "home.tab-home",
+                  "home.tab-book",
+                  "home.tab-clinics"
+                ],
+                "count": 0,
+                "note": "App shells only; web shows the same three links as side navigation",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "clinic-info.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "skeleton",
+                "copy": "clinic-info.loading-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 4,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "home.tab-home",
+                  "home.tab-book",
+                  "home.tab-clinics"
+                ],
+                "count": 0,
+                "note": "App shells only; web shows the same three links as side navigation",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "clinic-info.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "clinics-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "clinic-info.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "home.tab-home",
+                  "home.tab-book",
+                  "home.tab-clinics"
+                ],
+                "count": 0,
+                "note": "App shells only; web shows the same three links as side navigation",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      "One layout for every platform: a single column that is the full width on phones and a 640px column on web. The app shells add a three-item tab bar (Home, Book, Clinics); web shows the same three as side navigation.",
+      "Booking is three steps with a step counter and no tab bar, so attention stays on the task. The system back button (or browser back) returns to the previous step with choices kept.",
+      "Every interactive element is at least 48 × 48 pt. Choices are chips and full-width list rows, never small grids or date pickers.",
+      "A way to call the clinic is offered on every error state and whenever online changes aren't allowed.",
+      "Nothing times out while the person is typing; the 10-minute hold on a time is shown, and if it lapses the person keeps their details.",
+      "Every loading state announces what is loading to screen readers."
+    ],
+    "assumptions": [
+      "The clinic diary can return availability for a week at a time quickly enough to feel live",
+      "A returning patient's details can be prefilled in the app shells"
+    ],
+    "openQuestions": [
+      "Should 'Book again with the same physio' appear on Home for returning patients?",
+      "Should the cancel sheet ask for a reason (optional), or is that unnecessary data?"
+    ]
+  }
+}

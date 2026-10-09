@@ -1,0 +1,1143 @@
+{
+  "note": "Recorded sample output for demos and tests. Written for the clinic-booking sample brief; competitor details come from general product knowledge and were not re-checked on the web.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Reading ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "brief: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "an ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "independent ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "physio ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "clinic ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "6 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "practitioners ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "2 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "locations, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "responsive ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "web ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "first ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "plus ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "iOS ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Android ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "app ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "shells. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "No ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "research ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "files ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "were ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "uploaded, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "so ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "personas ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "will ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "be ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "marked ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "as ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "assumptions.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "Agent",
+      "summary": "competitors: clinic booking tools and alternatives",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "Agent",
+      "summary": "market-signals: accessibility guidance and health data minimisation",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "Jane App online booking physiotherapy clinic",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "Cliniko online bookings cancellation window reminders",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "Zocdoc next available appointment booking flow",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "Physitrack patient app",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "WCAG 2.2 target size motor impairment booking forms",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://jane.app",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.cliniko.com",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.zocdoc.com",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.physitrack.com",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.w3.org/WAI/people-use-web/user-stories/",
+      "delayMs": 600
+    },
+    {
+      "kind": "text",
+      "text": "Running ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "two ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "research ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "helpers ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "parallel: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "one ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "clinic ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "booking ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "tools ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "alternatives ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(Jane ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "App, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Cliniko, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Zocdoc, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Physitrack, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "phone ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "booking), ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "one ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "accessibility ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "guidance ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "minimal ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "health ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "data. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Competitor ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "details ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "come ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "from ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "general ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "product ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "knowledge ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "were ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "not ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "re-checked ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "web.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Both ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "helpers ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "back. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "The ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "pattern ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "that ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "works: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "type ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "length ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "first, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "then ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "real ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "times, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "then ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "details. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Marketplaces ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "lead ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "'next ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "available'. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "When ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "changing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "needs ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "phone ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "call, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "people ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "simply ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "don't ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "show ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "up. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "And ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "many ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "patients ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "booking ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "pain, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "so ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "large ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "targets, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "few ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "steps ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "no ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "timeouts ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "matter.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Writing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "three ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "personas, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "five ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "jobs, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "five ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "insights ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "five ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "How ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "might ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "we ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "questions ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "now.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "problem": {
+      "statement": "Patients of an independent physiotherapy clinic can only book, move or cancel appointments by phone during opening hours, so people in pain wait on hold or give up, and the clinic loses evening and weekend demand while reception is tied up.",
+      "context": "The clinic has 6 practitioners across 2 locations. Most patients find the clinic on a phone browser; returning patients also have the clinic's iOS or Android app. Many are in pain or have limited mobility when they book, and first visits need a few intake details that are currently collected on paper in the waiting room.",
+      "whoIsAffected": [
+        "New patients with a recent injury or flare-up, often booking from a phone while in pain",
+        "Returning patients partway through a course of treatment who need to fit follow-ups around work",
+        "Patients with limited mobility or dexterity who need step-free access and large, forgiving controls",
+        "Reception staff who spend much of the day on booking calls"
+      ],
+      "currentAlternatives": [
+        "Phoning reception during opening hours, often leaving a voicemail after hours",
+        "Emailing or messaging the clinic and waiting for a reply",
+        "Booking at the desk at the end of a visit",
+        "Booking with a larger chain or marketplace that shows availability online"
+      ],
+      "constraints": [
+        "Responsive web first (most traffic is mobile browsers), plus the clinic's existing iOS and Android app shells",
+        "Collect the minimum health data needed; intake questions only before a first visit",
+        "Availability must be real-time from the clinic's diary, with instant confirmation",
+        "Rescheduling and cancellation follow the clinic's 24-hour policy",
+        "Usable by people in pain or with limited mobility: large targets, few steps, nothing time-pressured"
+      ],
+      "successSignals": [
+        "A growing share of bookings are made online, including outside opening hours",
+        "New patients complete a booking in under 2 minutes from a phone",
+        "Fewer reschedule and cancellation calls to reception",
+        "Fewer late cancellations and no-shows, because changes are easy and reminders are clear",
+        "Most first-visit patients complete intake before they arrive"
+      ]
+    },
+    "competitors": [
+      {
+        "name": "Jane App",
+        "url": "https://jane.app",
+        "category": "direct",
+        "summary": "Practice management system popular with physiotherapy and allied health clinics, with a patient-facing online booking site and an app.",
+        "strengths": [
+          "Online booking shows real availability per practitioner and location",
+          "Intake forms are sent automatically before a first visit",
+          "Patients can manage their own appointments from a confirmation link"
+        ],
+        "weaknesses": [
+          "Booking site is a generic template the clinic can only lightly brand",
+          "Many choices on one page (discipline, location, practitioner, treatment) can feel busy on a small screen"
+        ],
+        "notablePatterns": [
+          "Treatment types listed with their length before times are shown",
+          "Cancellation window enforced online, with a message to contact the clinic inside it"
+        ],
+        "sources": [
+          {
+            "title": "Jane App website",
+            "url": "https://jane.app",
+            "accessed": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "name": "Cliniko",
+        "url": "https://www.cliniko.com",
+        "category": "direct",
+        "summary": "Practice management software for allied health clinics, including an online bookings page and automated appointment reminders by SMS and email.",
+        "strengths": [
+          "Simple, linear online booking steps",
+          "SMS and email reminders reduce no-shows",
+          "Online patient forms for intake"
+        ],
+        "weaknesses": [
+          "Booking page is web-only and separate from any clinic app",
+          "Rescheduling online depends on clinic settings and is not always offered"
+        ],
+        "notablePatterns": [
+          "Step-by-step flow: appointment type, practitioner, time, details",
+          "Reminder messages carry a link back to the booking"
+        ],
+        "sources": [
+          {
+            "title": "Cliniko website",
+            "url": "https://www.cliniko.com",
+            "accessed": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "name": "Zocdoc",
+        "url": "https://www.zocdoc.com",
+        "category": "indirect",
+        "summary": "US marketplace for finding and booking healthcare providers, with real-time availability and verified reviews.",
+        "strengths": [
+          "Availability shown up front, next to each provider",
+          "Instant confirmation and reminders",
+          "Polished mobile experience"
+        ],
+        "weaknesses": [
+          "Marketplace framing pushes comparison between providers rather than loyalty to one clinic",
+          "Asks for insurance and visit reason early, which is more data than a small clinic needs"
+        ],
+        "notablePatterns": [
+          "Next available time shown on each provider",
+          "'Book' from a time slot in one tap, then details"
+        ],
+        "sources": [
+          {
+            "title": "Zocdoc website",
+            "url": "https://www.zocdoc.com",
+            "accessed": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "name": "Physitrack",
+        "url": "https://www.physitrack.com",
+        "category": "indirect",
+        "summary": "Exercise prescription, telehealth and patient-engagement platform for physiotherapists, with a patient app.",
+        "strengths": [
+          "Patients already use an app between sessions for exercises",
+          "Clear, large-format exercise content designed for people in pain"
+        ],
+        "weaknesses": [
+          "Not a booking tool; patients still book elsewhere"
+        ],
+        "notablePatterns": [
+          "Short, single-purpose screens that work one-handed",
+          "Progress shown in plain words rather than clinical terms"
+        ],
+        "sources": [
+          {
+            "title": "Physitrack website",
+            "url": "https://www.physitrack.com",
+            "accessed": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "name": "Phone and voicemail booking",
+        "url": "https://www.w3.org/WAI/people-use-web/user-stories/",
+        "category": "substitute",
+        "summary": "Today's main channel: patients call reception, or leave a voicemail out of hours and wait for a call back.",
+        "strengths": [
+          "Personal and reassuring, especially for a first visit",
+          "Reception can advise on the right appointment type"
+        ],
+        "weaknesses": [
+          "Only works in opening hours",
+          "Hold times are hard when someone is in pain",
+          "Changes and cancellations also need a call, so people no-show instead"
+        ],
+        "notablePatterns": [
+          "Reception asks 'have you been here before?' and adjusts the appointment length"
+        ],
+        "sources": [
+          {
+            "title": "W3C WAI — Stories of web users (people with physical and cognitive disabilities)",
+            "url": "https://www.w3.org/WAI/people-use-web/user-stories/",
+            "accessed": "2026-10-09"
+          }
+        ]
+      }
+    ],
+    "personas": [
+      {
+        "name": "The new patient in pain",
+        "context": "Hurt their back or knee in the last week, is searching on a phone, often in the evening, and wants to be seen soon by someone good.",
+        "goals": [
+          "See the earliest suitable time without phoning",
+          "Know what kind of appointment to choose",
+          "Know exactly where to go and what to bring"
+        ],
+        "frustrations": [
+          "Calling during working hours and waiting on hold",
+          "Long forms before they can even see a time",
+          "Not knowing whether they will be charged if they cancel"
+        ],
+        "behaviours": [
+          "Books from a phone browser, sometimes lying down",
+          "Picks the earliest time over a specific practitioner",
+          "Uses voice input or one thumb"
+        ],
+        "basis": "assumption",
+        "basisNote": "No user research was uploaded. Based on the brief (patients in pain, mostly mobile browsers) and on patterns in competitor booking sites; validate with interviews and analytics."
+      },
+      {
+        "name": "The returning patient mid-treatment",
+        "context": "Has a weekly or fortnightly follow-up with a physio they trust, and fits appointments around work and childcare.",
+        "goals": [
+          "Book the next session with the same physio",
+          "Move an appointment without calling",
+          "Get a reminder the day before"
+        ],
+        "frustrations": [
+          "Their physio's times fill up",
+          "Having to call to move a session by a day",
+          "Re-entering details they gave last time"
+        ],
+        "behaviours": [
+          "Uses the clinic app or the link in a reminder",
+          "Books several sessions ahead"
+        ],
+        "basis": "assumption",
+        "basisNote": "No user research was uploaded. Derived from the brief's rescheduling requirement; validate with returning patients and reception staff."
+      },
+      {
+        "name": "The patient with limited mobility",
+        "context": "Older adult or someone with a long-term condition, who finds small controls and long pages tiring and needs step-free access.",
+        "goals": [
+          "Book with a few large, clear choices",
+          "Check that the clinic is accessible before travelling",
+          "Ask a person when unsure"
+        ],
+        "frustrations": [
+          "Small date pickers and dense time grids",
+          "Timeouts that lose their progress",
+          "Being asked for medical detail they would rather give in person"
+        ],
+        "behaviours": [
+          "Uses larger text settings",
+          "Prefers to call if anything looks complicated"
+        ],
+        "basis": "assumption",
+        "basisNote": "No user research was uploaded. Based on the brief's mobility constraint and WCAG guidance; validate with patients who use assistive settings."
+      }
+    ],
+    "jobs": [
+      {
+        "situation": "I've just hurt myself and the clinic is closed",
+        "motivation": "see real times and book one now",
+        "outcome": "know I'll be seen soon without waiting until morning to call",
+        "basis": "assumption"
+      },
+      {
+        "situation": "I'm booking my first visit",
+        "motivation": "know which appointment type to pick and what happens if I need to cancel",
+        "outcome": "book with confidence and no surprise charges",
+        "basis": "assumption"
+      },
+      {
+        "situation": "something comes up the day before my follow-up",
+        "motivation": "move it to another time with the same physio",
+        "outcome": "keep my treatment on track without a phone call",
+        "basis": "assumption"
+      },
+      {
+        "situation": "my first appointment is coming up",
+        "motivation": "answer the clinic's questions at home, in my own time",
+        "outcome": "spend the session on treatment, not paperwork",
+        "basis": "assumption"
+      },
+      {
+        "situation": "I find walking or stairs difficult",
+        "motivation": "check which clinic is step-free and where to park",
+        "outcome": "arrive without stress",
+        "basis": "assumption"
+      }
+    ],
+    "insights": [
+      {
+        "id": "I1",
+        "insight": "Clinic booking tools that work show appointment types with their length first, then real times, then personal details; asking for details first loses people.",
+        "implication": "Order the flow as type and location, then time, then details; ask for details only once a time is chosen, and hold that time while they finish.",
+        "basis": "evidence",
+        "supportedBy": [
+          "https://jane.app",
+          "https://www.cliniko.com"
+        ]
+      },
+      {
+        "id": "I2",
+        "insight": "Marketplaces win on showing the next available time immediately; most new patients in pain care more about 'soon' than 'who'.",
+        "implication": "Default to 'first available' across practitioners, with choosing a specific physio one tap away.",
+        "basis": "evidence",
+        "supportedBy": [
+          "https://www.zocdoc.com"
+        ]
+      },
+      {
+        "id": "I3",
+        "insight": "When changing or cancelling needs a phone call, people no-show instead; enforcing the window online keeps the policy without the call.",
+        "implication": "Let people reschedule and cancel online until 24 hours before, and say clearly, before they book, what happens inside that window.",
+        "basis": "evidence",
+        "supportedBy": [
+          "https://jane.app",
+          "https://www.cliniko.com"
+        ]
+      },
+      {
+        "id": "I4",
+        "insight": "People booking in pain or with limited dexterity struggle with dense date grids, small targets and time limits.",
+        "implication": "Use large chips and list rows (48pt minimum), few choices per step, no timeouts that lose progress, and a visible way to call the clinic at every step.",
+        "basis": "evidence",
+        "supportedBy": [
+          "https://www.w3.org/WAI/people-use-web/user-stories/",
+          "https://www.physitrack.com"
+        ]
+      },
+      {
+        "id": "I5",
+        "insight": "Health questions asked during booking add friction and collect data the clinic only needs for first visits.",
+        "implication": "Keep booking to name and contact details; ask a few intake questions after booking, only for first visits, and say who sees the answers.",
+        "basis": "assumption",
+        "supportedBy": []
+      }
+    ],
+    "hmw": [
+      {
+        "question": "How might we let someone in pain book a suitable time in under two minutes, one-handed?",
+        "linkedInsights": [
+          "I1",
+          "I4"
+        ]
+      },
+      {
+        "question": "How might we show the earliest time without making people choose a practitioner first?",
+        "linkedInsights": [
+          "I2"
+        ]
+      },
+      {
+        "question": "How might we make rescheduling as easy as booking, while keeping the 24-hour policy fair and clear?",
+        "linkedInsights": [
+          "I3"
+        ]
+      },
+      {
+        "question": "How might we collect only the intake details a first visit needs, at a calmer moment?",
+        "linkedInsights": [
+          "I5"
+        ]
+      },
+      {
+        "question": "How might we make sure no one gets stuck, by keeping a person one tap away?",
+        "linkedInsights": [
+          "I4"
+        ]
+      }
+    ],
+    "uploadsSynthesis": [],
+    "assumptions": [
+      "Most new patients will choose the first available time over a specific practitioner",
+      "The clinic's diary system can provide real-time availability and hold a slot for a few minutes",
+      "Returning patients can be recognised from their mobile number and email without an account or password",
+      "A short intake (problem area, how long, anything else) is enough before a first visit",
+      "The 24-hour policy has a fixed late-cancellation fee that can be shown up front"
+    ],
+    "openQuestions": [
+      "What is the late-cancellation fee, and does it apply to follow-ups as well as first visits?",
+      "Which appointment types should be bookable online, and which need a call first (for example, post-surgery rehab)?",
+      "Should returning patients be able to book only with their own physio, or with anyone?",
+      "What intake questions does each physio actually use before a first visit?",
+      "Does the clinic want payment or a card on file at booking? (Not assumed for the first release.)"
+    ]
+  }
+}

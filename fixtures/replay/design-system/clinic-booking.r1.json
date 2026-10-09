@@ -1,0 +1,889 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the clinic-booking sample brief. Critique round 1: unchanged copy of the base recording (no findings owned by this stage).",
+  "model": "claude-opus-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Critique ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "round ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "1: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "no ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "design-system ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "findings. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Tokens ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "component ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "mapping ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "unchanged.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "source": {
+      "kind": "generated",
+      "fileKey": "",
+      "notes": "No Figma file is connected, so this is a minimal generated token system: one brand palette shared by web, iOS and Android, each platform's own system font and type scale, and targets larger than the platform minimums because many patients book while in pain or with limited dexterity."
+    },
+    "libraries": [],
+    "themes": [
+      {
+        "platform": "web",
+        "library": "Generated",
+        "fontFamily": "Inter",
+        "fallbackFont": "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "color": {
+          "light": {
+            "background": "#F6F8FA",
+            "surface": "#FFFFFF",
+            "surfaceAlt": "#EAEFF3",
+            "text": "#14212B",
+            "textMuted": "#4A5866",
+            "primary": "#0B5A85",
+            "onPrimary": "#FFFFFF",
+            "primaryContainer": "#D8EAF6",
+            "onPrimaryContainer": "#083D5B",
+            "border": "#7A8794",
+            "danger": "#B3261E",
+            "onDanger": "#FFFFFF",
+            "dangerContainer": "#FCE8E6",
+            "onDangerContainer": "#7A1A14",
+            "success": "#1D7A3B",
+            "warning": "#8A5200",
+            "focus": "#0B5A85"
+          },
+          "dark": {
+            "background": "#0E1419",
+            "surface": "#172028",
+            "surfaceAlt": "#212B34",
+            "text": "#E7EDF2",
+            "textMuted": "#A8B4BF",
+            "primary": "#8DC9EF",
+            "onPrimary": "#062A40",
+            "primaryContainer": "#114767",
+            "onPrimaryContainer": "#D5ECFA",
+            "border": "#6D7A86",
+            "danger": "#FFB4AB",
+            "onDanger": "#561E19",
+            "dangerContainer": "#5C1A16",
+            "onDangerContainer": "#FFDAD6",
+            "success": "#7BD69A",
+            "warning": "#F0B765",
+            "focus": "#8DC9EF"
+          }
+        },
+        "type": {
+          "display": {
+            "size": 36,
+            "lineHeight": 44,
+            "weight": 700
+          },
+          "headline": {
+            "size": 28,
+            "lineHeight": 36,
+            "weight": 700
+          },
+          "title": {
+            "size": 22,
+            "lineHeight": 30,
+            "weight": 600
+          },
+          "body": {
+            "size": 17,
+            "lineHeight": 26,
+            "weight": 400
+          },
+          "label": {
+            "size": 16,
+            "lineHeight": 22,
+            "weight": 600
+          },
+          "caption": {
+            "size": 14,
+            "lineHeight": 20,
+            "weight": 400
+          }
+        },
+        "radius": {
+          "sm": 6,
+          "md": 10,
+          "lg": 14,
+          "full": 999
+        },
+        "spacing": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "minTarget": 44,
+        "provenance": [
+          {
+            "token": "color.primary",
+            "from": "Generated: deep blue #0B5A85 (7.5:1 with white), lightened to #8DC9EF for dark mode"
+          },
+          {
+            "token": "color.textMuted",
+            "from": "Generated: #4A5866, chosen to stay above 6.5:1 on both background and surface"
+          },
+          {
+            "token": "color.border",
+            "from": "Generated: #7A8794, 3.7:1 on surface so field outlines meet 1.4.11"
+          },
+          {
+            "token": "type.body",
+            "from": "17/26 on web, above the 16px browser default, for people reading in discomfort"
+          },
+          {
+            "token": "minTarget",
+            "from": "44px on web (WCAG 2.5.8 needs 24px; 2.5.5 AAA suggests 44px)"
+          }
+        ]
+      },
+      {
+        "platform": "ios",
+        "library": "Generated",
+        "fontFamily": "SF Pro Text",
+        "fallbackFont": "-apple-system, system-ui, sans-serif",
+        "color": {
+          "light": {
+            "background": "#F2F4F7",
+            "surface": "#FFFFFF",
+            "surfaceAlt": "#EAEFF3",
+            "text": "#14212B",
+            "textMuted": "#4A5866",
+            "primary": "#0B5A85",
+            "onPrimary": "#FFFFFF",
+            "primaryContainer": "#D8EAF6",
+            "onPrimaryContainer": "#083D5B",
+            "border": "#7A8794",
+            "danger": "#B3261E",
+            "onDanger": "#FFFFFF",
+            "dangerContainer": "#FCE8E6",
+            "onDangerContainer": "#7A1A14",
+            "success": "#1D7A3B",
+            "warning": "#8A5200",
+            "focus": "#0B5A85"
+          },
+          "dark": {
+            "background": "#0E1419",
+            "surface": "#172028",
+            "surfaceAlt": "#212B34",
+            "text": "#E7EDF2",
+            "textMuted": "#A8B4BF",
+            "primary": "#8DC9EF",
+            "onPrimary": "#062A40",
+            "primaryContainer": "#114767",
+            "onPrimaryContainer": "#D5ECFA",
+            "border": "#6D7A86",
+            "danger": "#FFB4AB",
+            "onDanger": "#561E19",
+            "dangerContainer": "#5C1A16",
+            "onDangerContainer": "#FFDAD6",
+            "success": "#7BD69A",
+            "warning": "#F0B765",
+            "focus": "#8DC9EF"
+          }
+        },
+        "type": {
+          "display": {
+            "size": 34,
+            "lineHeight": 41,
+            "weight": 700
+          },
+          "headline": {
+            "size": 22,
+            "lineHeight": 28,
+            "weight": 700
+          },
+          "title": {
+            "size": 20,
+            "lineHeight": 25,
+            "weight": 600
+          },
+          "body": {
+            "size": 17,
+            "lineHeight": 24,
+            "weight": 400
+          },
+          "label": {
+            "size": 17,
+            "lineHeight": 22,
+            "weight": 600
+          },
+          "caption": {
+            "size": 13,
+            "lineHeight": 18,
+            "weight": 400
+          }
+        },
+        "radius": {
+          "sm": 8,
+          "md": 12,
+          "lg": 14,
+          "full": 999
+        },
+        "spacing": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "minTarget": 48,
+        "provenance": [
+          {
+            "token": "color.primary",
+            "from": "Generated: deep blue #0B5A85 (7.5:1 with white), lightened to #8DC9EF for dark mode"
+          },
+          {
+            "token": "color.textMuted",
+            "from": "Generated: #4A5866, chosen to stay above 6.5:1 on both background and surface"
+          },
+          {
+            "token": "color.border",
+            "from": "Generated: #7A8794, 3.7:1 on surface so field outlines meet 1.4.11"
+          },
+          {
+            "token": "type",
+            "from": "Apple Dynamic Type defaults at the Large size (Body 17, Large Title 34), body line height raised to 24"
+          },
+          {
+            "token": "color.background (light)",
+            "from": "Grouped background tinted towards the brand blue (#F2F4F7)"
+          },
+          {
+            "token": "minTarget",
+            "from": "48pt, above Apple's 44pt minimum"
+          }
+        ]
+      },
+      {
+        "platform": "android",
+        "library": "Generated",
+        "fontFamily": "Roboto",
+        "fallbackFont": "Roboto, system-ui, sans-serif",
+        "color": {
+          "light": {
+            "background": "#F6F8FA",
+            "surface": "#FFFFFF",
+            "surfaceAlt": "#EAEFF3",
+            "text": "#14212B",
+            "textMuted": "#4A5866",
+            "primary": "#0B5A85",
+            "onPrimary": "#FFFFFF",
+            "primaryContainer": "#D8EAF6",
+            "onPrimaryContainer": "#083D5B",
+            "border": "#7A8794",
+            "danger": "#B3261E",
+            "onDanger": "#FFFFFF",
+            "dangerContainer": "#FCE8E6",
+            "onDangerContainer": "#7A1A14",
+            "success": "#1D7A3B",
+            "warning": "#8A5200",
+            "focus": "#0B5A85"
+          },
+          "dark": {
+            "background": "#0E1419",
+            "surface": "#172028",
+            "surfaceAlt": "#212B34",
+            "text": "#E7EDF2",
+            "textMuted": "#A8B4BF",
+            "primary": "#8DC9EF",
+            "onPrimary": "#062A40",
+            "primaryContainer": "#114767",
+            "onPrimaryContainer": "#D5ECFA",
+            "border": "#6D7A86",
+            "danger": "#FFB4AB",
+            "onDanger": "#561E19",
+            "dangerContainer": "#5C1A16",
+            "onDangerContainer": "#FFDAD6",
+            "success": "#7BD69A",
+            "warning": "#F0B765",
+            "focus": "#8DC9EF"
+          }
+        },
+        "type": {
+          "display": {
+            "size": 36,
+            "lineHeight": 44,
+            "weight": 400
+          },
+          "headline": {
+            "size": 28,
+            "lineHeight": 36,
+            "weight": 400
+          },
+          "title": {
+            "size": 22,
+            "lineHeight": 28,
+            "weight": 500
+          },
+          "body": {
+            "size": 16,
+            "lineHeight": 24,
+            "weight": 400
+          },
+          "label": {
+            "size": 14,
+            "lineHeight": 20,
+            "weight": 500
+          },
+          "caption": {
+            "size": 12,
+            "lineHeight": 16,
+            "weight": 400
+          }
+        },
+        "radius": {
+          "sm": 8,
+          "md": 12,
+          "lg": 16,
+          "full": 999
+        },
+        "spacing": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "minTarget": 48,
+        "provenance": [
+          {
+            "token": "color.primary",
+            "from": "Generated: deep blue #0B5A85 (7.5:1 with white), lightened to #8DC9EF for dark mode"
+          },
+          {
+            "token": "color.textMuted",
+            "from": "Generated: #4A5866, chosen to stay above 6.5:1 on both background and surface"
+          },
+          {
+            "token": "color.border",
+            "from": "Generated: #7A8794, 3.7:1 on surface so field outlines meet 1.4.11"
+          },
+          {
+            "token": "type",
+            "from": "Material 3 type scale defaults (Body Large 16/24, Title Large 22/28)"
+          },
+          {
+            "token": "minTarget",
+            "from": "48dp, the Material minimum"
+          }
+        ]
+      }
+    ],
+    "components": [
+      {
+        "block": "appbar",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Page header (H1 + actions)",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "appbar",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Navigation bar, large title",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "appbar",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Top app bar (small)",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "heading",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Text, title role",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "heading",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Text, Title 3",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "heading",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Text, Title Medium",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "text",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Text, body role",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "text",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Text, Body",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "text",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Text, Body Large",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "button",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Button (filled, outlined, text, destructive)",
+        "componentKey": "",
+        "notes": "Primary = filled; secondary = outlined (tinted on iOS); tertiary = text; destructive = danger text, never filled"
+      },
+      {
+        "block": "button",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Button (filled, tinted, plain, destructive)",
+        "componentKey": "",
+        "notes": "Primary = filled; secondary = outlined (tinted on iOS); tertiary = text; destructive = danger text, never filled"
+      },
+      {
+        "block": "button",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Button (filled, outlined, text, error)",
+        "componentKey": "",
+        "notes": "Primary = filled; secondary = outlined (tinted on iOS); tertiary = text; destructive = danger text, never filled"
+      },
+      {
+        "block": "input",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Text field with visible label",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "input",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Text field in a grouped row",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "input",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Outlined text field",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "select",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Native select styled as a field",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "select",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Row with value and menu picker",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "select",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Exposed dropdown menu",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "checkbox",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Checkbox with 44px label target",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "checkbox",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Checkmark row",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "checkbox",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Checkbox row",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "chips",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Radio group styled as chips",
+        "componentKey": "",
+        "notes": "Wraps to new lines instead of scrolling sideways"
+      },
+      {
+        "block": "chips",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Choice chips (wrapping)",
+        "componentKey": "",
+        "notes": "Wraps to new lines instead of scrolling sideways"
+      },
+      {
+        "block": "chips",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Filter chips (single select)",
+        "componentKey": "",
+        "notes": "Wraps to new lines instead of scrolling sideways"
+      },
+      {
+        "block": "list",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: List of links, full-width rows",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "list",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Inset grouped list rows",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "list",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: List items (two-line)",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "card",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Card (surface, md radius)",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "card",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Card (surface, lg radius)",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "card",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Elevated card",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "banner",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Inline alert (role=status or alert)",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "banner",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Inline banner",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "banner",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Inline banner",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "empty",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Empty state",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "empty",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Empty state (ContentUnavailableView style)",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "empty",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Empty state",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "spinner",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Spinner with visually hidden status text",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "spinner",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Activity indicator",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "spinner",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Circular progress indicator",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "skeleton",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Skeleton (no shimmer with reduced motion)",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "skeleton",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Redacted placeholder",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "skeleton",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Skeleton placeholder",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "tabbar",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Side navigation (tab bar is not shown on web)",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "tabbar",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Custom: Tab bar",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "tabbar",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Custom: Navigation bar",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "sidebar",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom: Side navigation",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "sidebar",
+        "variant": "",
+        "platform": "ios",
+        "library": "Generated",
+        "component": "Not used: tab bar instead",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "sidebar",
+        "variant": "",
+        "platform": "android",
+        "library": "Generated",
+        "component": "Not used: navigation bar instead",
+        "componentKey": "",
+        "notes": ""
+      }
+    ],
+    "principles": [
+      "Big and forgiving: 48pt targets, full-width choices, generous spacing",
+      "One clear next step per screen, with calling the clinic always available",
+      "Native feel in each app shell, one brand palette everywhere",
+      "Status is never colour alone: always an icon and words"
+    ],
+    "assumptions": [
+      "The clinic has no brand guidelines; deep blue was chosen as calm and clinical without feeling cold",
+      "Inter is acceptable on web; it falls back to the system font if not loaded"
+    ],
+    "openQuestions": [
+      "Does the clinic have a logo or brand colour to replace the generated blue?",
+      "Should the web booking pages be embeddable in the clinic's existing website?"
+    ]
+  }
+}

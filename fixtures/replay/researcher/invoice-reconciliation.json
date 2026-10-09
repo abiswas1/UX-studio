@@ -1,0 +1,1046 @@
+{
+  "note": "Recorded sample output for demos and tests. Written for the invoice-reconciliation sample brief; competitor details come from general product knowledge and were not re-checked on the web.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Reading ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "brief: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "desktop ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "web, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "finance ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "teams ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "at ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "companies ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "50–500 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "people, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "matching ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "invoices ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "to ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "purchase ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "orders ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "bank ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "payments. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "No ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "files ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "were ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "uploaded, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "so ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "every ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "persona ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "will ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "be ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "marked ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "as ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "an ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "assumption.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "Agent",
+      "summary": "competitors: AP automation suites with PO matching",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "Agent",
+      "summary": "competitors: close software, spreadsheets and bank reconciliation",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "Agent",
+      "summary": "market-signals: audit evidence and segregation of duties",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "three-way invoice matching software mid-market",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "Tipalti PO matching tolerance",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "BlackLine transaction matching rules",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "Stampli invoice management PO matching",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "ISA 500 audit evidence",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.bill.com/product/accounts-payable",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://tipalti.com/procurement-software/",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.stampli.com/invoice-management/",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.avidxchange.com/accounts-payable-automation/",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.blackline.com/products/financial-close-management/transaction-matching/",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.xero.com/us/accounting-software/reconcile-bank-transactions/",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.iaasb.org/publications/international-standard-auditing-500-audit-evidence",
+      "delayMs": 600
+    },
+    {
+      "kind": "text",
+      "text": "I'll ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "run ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "three ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "research ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "helpers ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "parallel: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "two ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "competitors ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "alternatives ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(AP ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "suites, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "close ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "software, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "spreadsheets ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "accounting-system ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "bank ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rec), ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "one ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "audit ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "internal-control ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "guidance.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "The ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "helpers ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "back. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "The ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "pattern ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "is ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "clear: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "AP ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "suites ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "focus ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "paying ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "bills, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "close ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "tools ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "like ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "BlackLine ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "make ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "matches ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "defensible ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "named ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rules ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "tolerances, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "spreadsheets ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "keep ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "no ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "record ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "of ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "why. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Writing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "personas ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "AP ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "specialist, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "controller ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "auditor, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "then ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "insights ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "How ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "might ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "we ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "questions.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "problem": {
+      "statement": "Accounts-payable staff at companies with 50–500 employees match supplier invoices to purchase orders and bank payments by hand in spreadsheets, so month-end close is slow, stressful and hard to defend to auditors.",
+      "context": "Data is exported from the accounting system and the bank as CSV files and matched line by line. Most rows match cleanly; the time goes on the exceptions: quantities that differ from what was received, partial deliveries, possible duplicate invoices and payments in another currency. Whoever resolves an exception rarely records why, so the reasoning is lost by the time the auditor asks.",
+      "whoIsAffected": [
+        "Accounts-payable specialists who do the matching every month",
+        "Finance controllers or managers who review and sign off resolutions",
+        "Internal and external auditors who test the reconciliation afterwards",
+        "Suppliers who are paid late or short when exceptions sit unresolved"
+      ],
+      "currentAlternatives": [
+        "Spreadsheet matching with lookups (VLOOKUP, XLOOKUP) and colour-coding",
+        "Bank-reconciliation features in the accounting system (Xero, QuickBooks Online)",
+        "Full accounts-payable automation suites (Bill.com, Tipalti, Stampli, AvidXchange)",
+        "Enterprise close and reconciliation software (BlackLine)",
+        "Email threads with suppliers and colleagues as the record of decisions"
+      ],
+      "constraints": [
+        "Desktop web only",
+        "Imports come from CSV files exported from other systems; no live integrations in the first release",
+        "Every automated decision must be explainable for audit",
+        "Users are keyboard-heavy and work with dense data",
+        "Resolutions need a second person's approval (segregation of duties)"
+      ],
+      "successSignals": [
+        "Most imported invoice lines are matched automatically, and reviewers agree with the matches they spot-check",
+        "Exceptions are resolved within the close window instead of rolling into the next month",
+        "An auditor can trace any match or resolution to its rule or person, and the values compared, from the export alone",
+        "AP staff stop keeping a separate reconciliation spreadsheet",
+        "Time from last import to period close goes down month on month"
+      ]
+    },
+    "competitors": [
+      {
+        "name": "BILL (Bill.com)",
+        "url": "https://www.bill.com",
+        "category": "indirect",
+        "summary": "Accounts-payable and receivable automation for small and mid-sized businesses: invoice capture, approval routing and supplier payments, with sync to accounting systems.",
+        "strengths": [
+          "Approval workflows are familiar to finance teams",
+          "Syncs payments back to the accounting system"
+        ],
+        "weaknesses": [
+          "Built around paying bills rather than reconciling exceptions after the fact",
+          "Matching logic is not the focus of the product"
+        ],
+        "notablePatterns": [
+          "Approval chains with named approvers per bill",
+          "Inbox-style list of bills to act on"
+        ],
+        "sources": [
+          {
+            "title": "BILL — accounts payable software",
+            "url": "https://www.bill.com/product/accounts-payable",
+            "accessed": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "name": "Tipalti",
+        "url": "https://tipalti.com",
+        "category": "direct",
+        "summary": "Payables automation for growing companies, including purchase-order matching (two- and three-way) and global supplier payments in many currencies.",
+        "strengths": [
+          "PO matching and multi-currency payments in one product",
+          "Strong supplier onboarding and tax-form handling"
+        ],
+        "weaknesses": [
+          "A full payables suite; heavy to adopt if a team only needs reconciliation",
+          "Pricing and setup aimed at teams replacing their whole AP process"
+        ],
+        "notablePatterns": [
+          "Tolerance settings for price and quantity variances in PO matching",
+          "Exceptions held for review before payment"
+        ],
+        "sources": [
+          {
+            "title": "Tipalti — procurement and PO matching",
+            "url": "https://tipalti.com/procurement-software/",
+            "accessed": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "name": "Stampli",
+        "url": "https://www.stampli.com",
+        "category": "direct",
+        "summary": "Invoice management built around the invoice itself: comments, approvals and PO matching happen on the invoice, with an AI assistant suggesting coding.",
+        "strengths": [
+          "Conversation and decisions stay attached to the invoice",
+          "Works on top of existing ERP and accounting systems"
+        ],
+        "weaknesses": [
+          "Assistant suggestions can be hard to audit unless the reason is shown",
+          "Focus is invoice processing before payment, not bank-payment reconciliation"
+        ],
+        "notablePatterns": [
+          "Comment thread on each invoice as the audit record",
+          "Side-by-side invoice image and data fields"
+        ],
+        "sources": [
+          {
+            "title": "Stampli — invoice management",
+            "url": "https://www.stampli.com/invoice-management/",
+            "accessed": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "name": "AvidXchange",
+        "url": "https://www.avidxchange.com",
+        "category": "indirect",
+        "summary": "Accounts-payable automation and payments for mid-market companies, with invoice capture, PO matching and a supplier payment network.",
+        "strengths": [
+          "Mid-market focus matches the target company size",
+          "Payment network reduces paper cheques"
+        ],
+        "weaknesses": [
+          "Implementation is a project in itself",
+          "Matching exceptions are one step in a long AP workflow"
+        ],
+        "notablePatterns": [
+          "Exception queues split by reason",
+          "Role-based approval rules"
+        ],
+        "sources": [
+          {
+            "title": "AvidXchange — AP automation",
+            "url": "https://www.avidxchange.com/accounts-payable-automation/",
+            "accessed": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "name": "BlackLine",
+        "url": "https://www.blackline.com",
+        "category": "direct",
+        "summary": "Enterprise financial-close software, including transaction matching with configurable rules, reconciliations and task management for close.",
+        "strengths": [
+          "Rule-based matching designed for audit",
+          "Close checklists and sign-off built in"
+        ],
+        "weaknesses": [
+          "Priced and scoped for large enterprises",
+          "Rule configuration usually needs specialists"
+        ],
+        "notablePatterns": [
+          "Matching rules listed with their criteria and tolerances",
+          "Preparer and reviewer sign-off on each reconciliation"
+        ],
+        "sources": [
+          {
+            "title": "BlackLine — transaction matching",
+            "url": "https://www.blackline.com/products/financial-close-management/transaction-matching/",
+            "accessed": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "name": "Spreadsheets and accounting-system bank reconciliation",
+        "url": "https://www.xero.com/us/accounting-software/reconcile-bank-transactions/",
+        "category": "substitute",
+        "summary": "What most target teams do today: export to Excel or Google Sheets and match with lookups, or use the bank-reconciliation screen in Xero or QuickBooks for the payment side.",
+        "strengths": [
+          "Free, flexible and already known by every AP specialist",
+          "Bank-rec screens suggest matches for payments"
+        ],
+        "weaknesses": [
+          "No record of why a row was matched or who decided",
+          "Three-way matching (invoice, PO, payment) isn't supported in bank-rec screens",
+          "Errors from copied formulas are easy to miss"
+        ],
+        "notablePatterns": [
+          "Colour-coding rows as matched, queried or open",
+          "One-click 'OK' to accept a suggested bank match"
+        ],
+        "sources": [
+          {
+            "title": "Xero — reconcile bank transactions",
+            "url": "https://www.xero.com/us/accounting-software/reconcile-bank-transactions/",
+            "accessed": "2026-10-09"
+          },
+          {
+            "title": "Microsoft Support — XLOOKUP function",
+            "url": "https://support.microsoft.com/en-us/office/xlookup-function-b7fd680e-6d10-43e6-84f9-88eae8bf5929",
+            "accessed": "2026-10-09"
+          }
+        ]
+      }
+    ],
+    "personas": [
+      {
+        "name": "The month-end AP specialist",
+        "context": "Owns supplier invoices for the whole company. Spends the last week of each month exporting data, matching it in a spreadsheet and chasing suppliers about differences.",
+        "goals": [
+          "Get through the exceptions before the close deadline",
+          "Know exactly why each item is open",
+          "Never pay the same invoice twice"
+        ],
+        "frustrations": [
+          "Re-checking rows that already matched",
+          "Switching between three exports to compare one invoice",
+          "Explaining months later why something was short-paid"
+        ],
+        "behaviours": [
+          "Works with keyboard shortcuts and filters",
+          "Sorts by amount to tackle the biggest items first",
+          "Keeps notes in cell comments or email"
+        ],
+        "basis": "assumption",
+        "basisNote": "No user research was uploaded. Based on the brief and on patterns in AP products and spreadsheet workflows; validate with interviews and a month-end observation."
+      },
+      {
+        "name": "The controller who signs off",
+        "context": "Finance manager or controller responsible for the close. Reviews and approves resolutions, often in batches late in the close.",
+        "goals": [
+          "Approve resolutions quickly but with confidence",
+          "See the evidence and the reasoning in one place",
+          "Show auditors that a second person checked each resolution"
+        ],
+        "frustrations": [
+          "Approving from a spreadsheet with no context",
+          "Resolutions without a reason",
+          "Being asked to approve work they did themselves"
+        ],
+        "behaviours": [
+          "Reviews in short bursts between other tasks",
+          "Spot-checks automatic matches rather than every row"
+        ],
+        "basis": "assumption",
+        "basisNote": "No user research was uploaded. Derived from the brief's reviewer requirement and common segregation-of-duties practice; validate with controllers."
+      },
+      {
+        "name": "The auditor testing the reconciliation",
+        "context": "Internal or external auditor who samples matches and resolutions after the period, usually from an export rather than inside the product.",
+        "goals": [
+          "Trace any item to its evidence and decision",
+          "See which rule, and which version of it, made an automatic match"
+        ],
+        "frustrations": [
+          "Matches with no stated reason",
+          "Evidence spread across emails and spreadsheets"
+        ],
+        "behaviours": [
+          "Works from CSV or PDF exports",
+          "Samples high-value and unusual items"
+        ],
+        "basis": "assumption",
+        "basisNote": "No user research was uploaded. Based on the brief's audit constraint and published audit-evidence standards; validate with the customer's auditors."
+      }
+    ],
+    "jobs": [
+      {
+        "situation": "the month's exports are ready",
+        "motivation": "import invoices, purchase orders and payments in one go and see what didn't load",
+        "outcome": "start matching without cleaning files by hand",
+        "basis": "assumption"
+      },
+      {
+        "situation": "an invoice doesn't match its purchase order or payment",
+        "motivation": "see the three documents side by side with the difference highlighted",
+        "outcome": "decide on a resolution in minutes, not by searching three files",
+        "basis": "assumption"
+      },
+      {
+        "situation": "a colleague has proposed a resolution",
+        "motivation": "check the evidence and their reasoning before approving",
+        "outcome": "sign it off knowing a second person really looked",
+        "basis": "assumption"
+      },
+      {
+        "situation": "the system matched something automatically",
+        "motivation": "see which rule matched it and which values were compared",
+        "outcome": "trust the match, or catch it when it's wrong",
+        "basis": "assumption"
+      },
+      {
+        "situation": "the auditor asks about the period",
+        "motivation": "export every match and decision with its evidence",
+        "outcome": "answer from one file instead of reconstructing the month",
+        "basis": "assumption"
+      }
+    ],
+    "insights": [
+      {
+        "id": "I1",
+        "insight": "Most of the effort is in a small share of rows: the exceptions. Clean matches only need a quick, trustworthy check.",
+        "implication": "Make the exception queue the home screen, and keep matched items one step away for spot checks.",
+        "basis": "assumption",
+        "supportedBy": []
+      },
+      {
+        "id": "I2",
+        "insight": "Rule-based matching with stated tolerances is how established tools make automatic matches defensible.",
+        "implication": "Every automatic match names its rule, rule version, the fields compared and the tolerance used. No unexplained scores.",
+        "basis": "evidence",
+        "supportedBy": [
+          "https://www.blackline.com/products/financial-close-management/transaction-matching/",
+          "https://tipalti.com/procurement-software/"
+        ]
+      },
+      {
+        "id": "I3",
+        "insight": "Audit evidence has to show who did what, when and on what basis; approval by a second person is a standard internal control.",
+        "implication": "Record every action with person or rule, time and the values seen; block people from approving their own resolutions.",
+        "basis": "evidence",
+        "supportedBy": [
+          "https://www.iaasb.org/publications/international-standard-auditing-500-audit-evidence"
+        ]
+      },
+      {
+        "id": "I4",
+        "insight": "Resolving an exception means comparing the same fields across three documents; switching between exports is where mistakes happen.",
+        "implication": "Show invoice, purchase order and payment side by side, with differences labelled in words and not only by colour.",
+        "basis": "assumption",
+        "supportedBy": []
+      },
+      {
+        "id": "I5",
+        "insight": "AP specialists work fast with the keyboard in spreadsheets; a tool that forces the mouse will feel slower than the spreadsheet it replaces.",
+        "implication": "Every queue and decision is fully keyboard-operable, with visible focus and discoverable shortcuts that can be turned off.",
+        "basis": "assumption",
+        "supportedBy": []
+      },
+      {
+        "id": "I6",
+        "insight": "CSV exports differ between systems and often contain rows that can't be read (missing amounts, odd date or currency formats).",
+        "implication": "Validate every row on import, say exactly which rows were rejected and why, and let people download them to fix.",
+        "basis": "assumption",
+        "supportedBy": []
+      }
+    ],
+    "hmw": [
+      {
+        "question": "How might we make the exception queue the fastest way through month-end, faster than the spreadsheet?",
+        "linkedInsights": [
+          "I1",
+          "I5"
+        ]
+      },
+      {
+        "question": "How might we explain every automatic match so an auditor accepts it without asking?",
+        "linkedInsights": [
+          "I2",
+          "I3"
+        ]
+      },
+      {
+        "question": "How might we put the evidence for an exception side by side so the difference is obvious?",
+        "linkedInsights": [
+          "I4"
+        ]
+      },
+      {
+        "question": "How might we make second-person approval quick without making it a rubber stamp?",
+        "linkedInsights": [
+          "I3"
+        ]
+      },
+      {
+        "question": "How might we make imports forgiving, so one bad row doesn't block a whole month?",
+        "linkedInsights": [
+          "I6"
+        ]
+      }
+    ],
+    "uploadsSynthesis": [],
+    "assumptions": [
+      "The accounting system can export purchase orders with quantity received per line, so three-way matching works without a separate goods-received file",
+      "Most invoice lines in a typical month match cleanly; exceptions are a minority",
+      "Teams have at least two people who can resolve and approve, so second-person approval is possible",
+      "Auditors are satisfied by an export listing every event with its person or rule, time and values compared",
+      "Matching rules and tolerances are set once by a finance admin and rarely changed"
+    ],
+    "openQuestions": [
+      "Which accounting systems' CSV exports must be supported first, and do they include quantity received?",
+      "What tolerances do teams use today for price and amount differences, and do they differ by supplier?",
+      "Should a resolution post anything back to the accounting system, or is Ledgerline a record only in the first release?",
+      "How do small teams handle approval when only one person does AP?",
+      "What format do the customers' auditors want: CSV, PDF, or both?"
+    ]
+  }
+}

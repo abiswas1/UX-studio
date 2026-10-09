@@ -1,0 +1,639 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the invoice-reconciliation sample brief.",
+  "model": "claude-opus-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Walked ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "every ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screen ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "state ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "along ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "five ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "task ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "flows. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "The ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "automated ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "checks ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "found ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "nothing: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "contrast, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "target ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "size, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "accessible ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "names, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "loading ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "announcements ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "error ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "recovery ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "all ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "pass.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Found ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "three ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "major ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "issues: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "automatic ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "matches ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "explained ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "by ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "confidence ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "score ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rather ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "than ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rule, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "differences ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "evidence ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rely ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "colour ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "alone, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "submitting ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "resolution ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "sends ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "keyboard ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "users ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "back ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "to ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "top ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "of ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "queue. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Four ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "minor ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "findings ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "too.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "summary": "A focused, keyboard-friendly design that puts the exceptions first and keeps a full audit trail. Three things must be fixed before release: automatic matches are explained by a confidence score instead of a rule, differences in the evidence rely on colour alone, and submitting a resolution is a dead end for keyboard users.",
+    "strengths": [
+      "Exceptions is the home page, and every exception says why it was flagged, naming the rule and both values",
+      "Invoice, purchase order and payment sit side by side, so the comparison happens on one screen",
+      "Second-person approval is built in, and self-approval is blocked with a plain explanation",
+      "Import keeps valid rows and lists rejected ones with a specific reason for each",
+      "Every loading state is announced and every error state has a way forward"
+    ],
+    "findings": [
+      {
+        "id": "C1",
+        "title": "Automatic matches are explained by a confidence score",
+        "detail": "Controllers spot-checking matches and auditors sampling them can't tell what was compared, so they can't accept the match without redoing it. The brief requires every automatic decision to be explainable, and the deck's own principle is 'Explain, don't assert'.",
+        "kind": "heuristic",
+        "heuristic": "H1 Visibility of system status",
+        "wcag": "",
+        "severity": 3,
+        "locations": [
+          {
+            "screenId": "matches",
+            "state": "default"
+          },
+          {
+            "screenId": "matches",
+            "state": "success"
+          }
+        ],
+        "evidence": "'Why these were matched' shows 'Matched automatically · 98% confidence' (matches.why-summary). It doesn't name the rule, its version, the fields compared or the tolerance.",
+        "recommendation": "Replace the score with the rule and version, a field-by-field comparison (same / within tolerance) and the tolerance applied, e.g. 'Matched by rule R2, version 3' and 'Amount differs by £1.60. Rule R2 allows up to £5.00.' Add 'confidence' and 'score' to the words to avoid.",
+        "ownerStage": "content",
+        "source": "review"
+      },
+      {
+        "id": "C2",
+        "title": "Differences in the evidence are shown by colour alone",
+        "detail": "People with colour-vision deficiencies, and anyone printing or using high-contrast mode, can't see which value is wrong, which is the whole point of this screen.",
+        "kind": "wcag",
+        "heuristic": "",
+        "wcag": "1.4.1 Use of Color",
+        "severity": 3,
+        "locations": [
+          {
+            "screenId": "exception-detail",
+            "state": "default"
+          }
+        ],
+        "evidence": "The evidence row's note says values that differ are shown in the danger colour; the invoice card's 'Quantity 120' and 'Total £1,440.00' have no icon or text marking them as different. The deck's 'Differs' label (exception-detail.diff-label) isn't used.",
+        "recommendation": "Mark each differing value with a warning icon and the 'Differs' label, plus the size of the difference ('20 more than received'). Keep the colour as a secondary cue.",
+        "ownerStage": "ui",
+        "source": "review"
+      },
+      {
+        "id": "C3",
+        "title": "Submitting a resolution is a dead end for keyboard users",
+        "detail": "AP specialists work through dozens of exceptions in a row. Going back to the top of the queue and finding their place again on every item breaks the keyboard flow the research says they rely on.",
+        "kind": "heuristic",
+        "heuristic": "H7 Flexibility and efficiency of use",
+        "wcag": "",
+        "severity": 3,
+        "locations": [
+          {
+            "screenId": "exception-detail",
+            "state": "success"
+          }
+        ],
+        "evidence": "The confirmation's only action is 'Back to exceptions' as the primary button; 'Next exception' isn't offered and the focus target isn't specified.",
+        "recommendation": "Make 'Next exception' the primary action on the confirmation and move focus to it, with 'Back to exceptions' as a tertiary action.",
+        "ownerStage": "ui",
+        "source": "review"
+      },
+      {
+        "id": "C4",
+        "title": "Side navigation hides how much is waiting",
+        "detail": "A reviewer working elsewhere can't see that nine resolutions are waiting until they open Approvals.",
+        "kind": "heuristic",
+        "heuristic": "H1 Visibility of system status",
+        "wcag": "",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "exceptions",
+            "state": "default"
+          },
+          {
+            "screenId": "approvals",
+            "state": "default"
+          }
+        ],
+        "evidence": "The side navigation lists Exceptions and Approvals without counts; the numbers only appear in the stats on Exceptions.",
+        "recommendation": "Show counts next to Exceptions and Approvals in the side navigation, with an accessible name such as 'Approvals, 9 waiting'.",
+        "ownerStage": "ui",
+        "source": "review"
+      },
+      {
+        "id": "C5",
+        "title": "The exception queue can't be sorted",
+        "detail": "At month-end, AP specialists triage by value first (research persona behaviour); without a sort they fall back to filters or the spreadsheet.",
+        "kind": "heuristic",
+        "heuristic": "H7 Flexibility and efficiency of use",
+        "wcag": "",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "exceptions",
+            "state": "default"
+          }
+        ],
+        "evidence": "The queue is fixed to oldest first; there is no sort control for amount or age.",
+        "recommendation": "Add a sort control (oldest first, largest amount first) and remember the choice per person.",
+        "ownerStage": "wireframes",
+        "source": "review"
+      },
+      {
+        "id": "C6",
+        "title": "Amounts don't line up",
+        "detail": "Comparing amounts down a list is slower when digits don't align.",
+        "kind": "heuristic",
+        "heuristic": "H4 Consistency and standards",
+        "wcag": "",
+        "severity": 1,
+        "locations": [
+          {
+            "screenId": "exceptions",
+            "state": "default"
+          },
+          {
+            "screenId": "approvals",
+            "state": "default"
+          }
+        ],
+        "evidence": "The theme names tabular figures as a principle, but no type style sets them, and amounts sit at the end of list rows rather than in an aligned column.",
+        "recommendation": "Set font-variant-numeric: tabular-nums on the body, label and headline styles used for amounts, and right-align amounts in their own column.",
+        "ownerStage": "design-system",
+        "source": "review"
+      },
+      {
+        "id": "C7",
+        "title": "Single-key shortcuts on Approvals need a focus condition",
+        "detail": "If the keys are global, a stray keystroke or a speech-input command could approve a resolution. The fix is to extend the pattern Exceptions already uses.",
+        "kind": "wcag",
+        "heuristic": "",
+        "wcag": "2.1.4 Character Key Shortcuts",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "approvals",
+            "state": "default"
+          },
+          {
+            "screenId": "exception-detail",
+            "state": "default"
+          }
+        ],
+        "evidence": "Exceptions says shortcuts work only while the list has focus, but Approvals ('A approves · R sends back') and Exception ('J opens the next exception') don't say when the keys are active.",
+        "recommendation": "Make single-key shortcuts active only while the list or the selected resolution has focus, and add a setting to turn them off.",
+        "ownerStage": "ui",
+        "source": "review"
+      }
+    ],
+    "heuristicsReviewed": [
+      {
+        "heuristic": "H1 Visibility of system status",
+        "verdict": "issues",
+        "note": "Matches are explained by a score rather than a rule (C1); the navigation hides waiting counts (C4)."
+      },
+      {
+        "heuristic": "H2 Match between system and the real world",
+        "verdict": "good",
+        "note": "Accounting terms (PO, short-pay, credit note) and rule names users can trace."
+      },
+      {
+        "heuristic": "H3 User control and freedom",
+        "verdict": "good",
+        "note": "Unmatch and send back are always available; nothing is final until a second person approves."
+      },
+      {
+        "heuristic": "H4 Consistency and standards",
+        "verdict": "good",
+        "note": "One side navigation, consistent page headers and one primary action per state."
+      },
+      {
+        "heuristic": "H5 Error prevention",
+        "verdict": "good",
+        "note": "Self-approval is blocked; rows are checked on import before anything is matched."
+      },
+      {
+        "heuristic": "H6 Recognition rather than recall",
+        "verdict": "good",
+        "note": "Evidence and reasons are on screen; nothing has to be remembered between pages."
+      },
+      {
+        "heuristic": "H7 Flexibility and efficiency of use",
+        "verdict": "issues",
+        "note": "Confirmation after submitting breaks the keyboard flow (C3); the queue can't be sorted (C5)."
+      },
+      {
+        "heuristic": "H8 Aesthetic and minimalist design",
+        "verdict": "good",
+        "note": "Dense but ordered: evidence, then decision, then actions."
+      },
+      {
+        "heuristic": "H9 Help users recognize, diagnose, and recover from errors",
+        "verdict": "good",
+        "note": "Import errors name the file, the row and the reason, and say how to fix them."
+      },
+      {
+        "heuristic": "H10 Help and documentation",
+        "verdict": "good",
+        "note": "Shortcut hints on every queue; Matching rules documents the rules behind matches."
+      }
+    ],
+    "wcagChecked": [
+      {
+        "criterion": "1.3.1 Info and Relationships",
+        "result": "pass",
+        "note": "Lists, labels and headings are structured; evidence cards have headings."
+      },
+      {
+        "criterion": "1.4.1 Use of Color",
+        "result": "fail",
+        "note": "Differences in the evidence rely on colour alone (C2)."
+      },
+      {
+        "criterion": "1.4.3 Contrast (Minimum)",
+        "result": "pass",
+        "note": "All text pairs meet 4.5:1 in light and dark mode (design-system check)."
+      },
+      {
+        "criterion": "1.4.11 Non-text Contrast",
+        "result": "pass",
+        "note": "Borders and focus ring reach 3:1 against their backgrounds."
+      },
+      {
+        "criterion": "2.1.1 Keyboard",
+        "result": "pass",
+        "note": "Every queue, filter and action is reachable by keyboard."
+      },
+      {
+        "criterion": "2.1.4 Character Key Shortcuts",
+        "result": "needs testing",
+        "note": "Focus condition for single-key shortcuts isn't specified on Approvals and Exception (C7)."
+      },
+      {
+        "criterion": "2.4.3 Focus Order",
+        "result": "fail",
+        "note": "Focus after submitting a resolution isn't specified (C3)."
+      },
+      {
+        "criterion": "2.4.7 Focus Visible",
+        "result": "pass",
+        "note": "2 px focus ring defined for every interactive component, including list rows."
+      },
+      {
+        "criterion": "2.5.8 Target Size (Minimum)",
+        "result": "pass",
+        "note": "32 px minimum target, above the 24 px requirement."
+      },
+      {
+        "criterion": "3.3.1 Error Identification",
+        "result": "pass",
+        "note": "Field and import errors are described in text next to the item."
+      },
+      {
+        "criterion": "4.1.2 Name, Role, Value",
+        "result": "pass",
+        "note": "Icon buttons carry text; rows have full accessible names; chips expose selected state."
+      },
+      {
+        "criterion": "4.1.3 Status Messages",
+        "result": "pass",
+        "note": "Loading text is announced; confirmations use role=status."
+      }
+    ]
+  }
+}

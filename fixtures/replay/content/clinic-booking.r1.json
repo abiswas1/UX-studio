@@ -1,0 +1,1301 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the clinic-booking sample brief.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Critique ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "round ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "1: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "stating ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "24-hour ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "policy ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "fee ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "before ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "people ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "confirm ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(C1). ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Added ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "policy ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "line ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "to ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Confirm ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screen, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "exact ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "change ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "deadline ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Booked ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screen, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "fee ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "amount ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "late-change ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "note ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "confirmation ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "message.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "voice": {
+      "principles": [
+        "Kind and calm: people may be in pain",
+        "Plain words, short sentences, no clinical jargon",
+        "Say what happens next, and what it costs",
+        "A person is always one tap away"
+      ],
+      "toneByContext": [
+        {
+          "context": "Booking steps",
+          "tone": "Brief and practical; one question per heading"
+        },
+        {
+          "context": "Errors",
+          "tone": "Reassuring; say what was kept, then one next step, with calling as a fallback"
+        },
+        {
+          "context": "Policy and fees",
+          "tone": "Upfront and specific, never buried; no legal language"
+        },
+        {
+          "context": "Health questions",
+          "tone": "Gentle; say why we ask and who sees the answers"
+        },
+        {
+          "context": "Success",
+          "tone": "Quiet confirmation with the key facts: when, where, who"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "appointment",
+          "use": "A booked session at the clinic",
+          "avoid": [
+            "slot",
+            "session",
+            "booking (as a noun on screen)"
+          ]
+        },
+        {
+          "term": "physio",
+          "use": "The practitioner; use their first and last name where possible",
+          "avoid": [
+            "practitioner",
+            "clinician",
+            "therapist",
+            "provider"
+          ]
+        },
+        {
+          "term": "change date or time",
+          "use": "Moving an appointment",
+          "avoid": [
+            "reschedule",
+            "amend"
+          ]
+        },
+        {
+          "term": "clinic",
+          "use": "One of the two locations, named by street",
+          "avoid": [
+            "site",
+            "branch",
+            "location"
+          ]
+        },
+        {
+          "term": "first visit",
+          "use": "A patient's first appointment at the clinic",
+          "avoid": [
+            "new patient episode",
+            "onboarding"
+          ]
+        }
+      ]
+    },
+    "screens": [
+      {
+        "screenId": "home",
+        "strings": [
+          {
+            "key": "home.title",
+            "kind": "title",
+            "text": "Your appointments",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "home.next-label",
+            "kind": "label",
+            "text": "Next appointment",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "home.manage-button",
+            "kind": "button",
+            "text": "View or change",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "home.book-button",
+            "kind": "button",
+            "text": "Book an appointment",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "home.intake-banner",
+            "kind": "body",
+            "text": "Your first visit is on {day}. Please answer 4 short questions before you come.",
+            "state": "default",
+            "notes": "Shown only before a first visit with intake not yet sent"
+          },
+          {
+            "key": "home.intake-button",
+            "kind": "button",
+            "text": "Answer 4 questions",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "home.later-label",
+            "kind": "label",
+            "text": "Later",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "home.empty-title",
+            "kind": "empty",
+            "text": "No appointments booked",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "home.empty-body",
+            "kind": "empty",
+            "text": "Book online in about a minute. You'll see real times and get an instant confirmation.",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "home.empty-button",
+            "kind": "button",
+            "text": "Book an appointment",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "home.call-button",
+            "kind": "button",
+            "text": "Call the clinic",
+            "state": "default",
+            "notes": "Opens the phone dialler; shown wherever someone might get stuck"
+          },
+          {
+            "key": "home.loading-a11y",
+            "kind": "a11y",
+            "text": "Loading your appointments",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "home.retry-button",
+            "kind": "button",
+            "text": "Try again",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "home.tab-home",
+            "kind": "nav",
+            "text": "Home",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "home.tab-book",
+            "kind": "nav",
+            "text": "Book",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "home.tab-clinics",
+            "kind": "nav",
+            "text": "Clinics",
+            "state": "default",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "choose-service",
+        "strings": [
+          {
+            "key": "choose-service.title",
+            "kind": "title",
+            "text": "Book an appointment",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-service.step",
+            "kind": "label",
+            "text": "Step 1 of 3",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-service.type-heading",
+            "kind": "label",
+            "text": "What do you need?",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-service.type-initial",
+            "kind": "label",
+            "text": "Initial assessment, 45 min",
+            "state": "default",
+            "notes": "For a first visit, or a new problem"
+          },
+          {
+            "key": "choose-service.type-follow-up",
+            "kind": "label",
+            "text": "Follow-up, 30 min",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-service.type-massage",
+            "kind": "label",
+            "text": "Sports massage, 45 min",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-service.type-helper",
+            "kind": "helper",
+            "text": "Not sure? Choose Initial assessment. Your physio will adjust it if needed.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-service.location-heading",
+            "kind": "label",
+            "text": "Which clinic?",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-service.location-helper",
+            "kind": "helper",
+            "text": "Both clinics are step-free, with parking right outside.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-service.next-button",
+            "kind": "button",
+            "text": "See available times",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-service.loading-a11y",
+            "kind": "a11y",
+            "text": "Loading appointment types",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "choose-service.retry-button",
+            "kind": "button",
+            "text": "Try again",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "choose-service.call-button",
+            "kind": "button",
+            "text": "Call to book",
+            "state": "error",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "choose-time",
+        "strings": [
+          {
+            "key": "choose-time.title",
+            "kind": "title",
+            "text": "Choose a time",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.step",
+            "kind": "label",
+            "text": "Step 2 of 3",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.who-heading",
+            "kind": "label",
+            "text": "Who would you like to see?",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.any-practitioner",
+            "kind": "label",
+            "text": "First available",
+            "state": "default",
+            "notes": "Default: shows every physio's times"
+          },
+          {
+            "key": "choose-time.day-heading",
+            "kind": "label",
+            "text": "Day",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.times-heading",
+            "kind": "label",
+            "text": "Times on {day}",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.selected",
+            "kind": "label",
+            "text": "Selected",
+            "state": "default",
+            "notes": "Added to the chosen time row, with a check icon, so selection isn't shown by colour alone"
+          },
+          {
+            "key": "choose-time.live-note",
+            "kind": "helper",
+            "text": "Times are live. We'll hold the one you choose for 10 minutes while you add your details.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.next-button",
+            "kind": "button",
+            "text": "Continue with {time}",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.empty-title",
+            "kind": "empty",
+            "text": "No times left this week",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.empty-body",
+            "kind": "empty",
+            "text": "This physio is fully booked until next week. Look at next week, or see every physio's times.",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.empty-button",
+            "kind": "button",
+            "text": "Show next week",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.any-button",
+            "kind": "button",
+            "text": "Show all physios",
+            "state": "empty",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.loading-a11y",
+            "kind": "a11y",
+            "text": "Finding available times",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.retry-button",
+            "kind": "button",
+            "text": "Try again",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "choose-time.call-button",
+            "kind": "button",
+            "text": "Call to book",
+            "state": "error",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "confirm-booking",
+        "strings": [
+          {
+            "key": "confirm-booking.title",
+            "kind": "title",
+            "text": "Check and confirm",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.step",
+            "kind": "label",
+            "text": "Step 3 of 3",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.summary-label",
+            "kind": "label",
+            "text": "Your appointment",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.change-button",
+            "kind": "button",
+            "text": "Change time",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.details-heading",
+            "kind": "label",
+            "text": "Your details",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.name-label",
+            "kind": "label",
+            "text": "Full name",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.phone-label",
+            "kind": "label",
+            "text": "Mobile number",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.phone-helper",
+            "kind": "helper",
+            "text": "For your reminder text, and in case we need to reach you",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.email-label",
+            "kind": "label",
+            "text": "Email",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.returning-label",
+            "kind": "label",
+            "text": "I've been to this clinic before",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.privacy-note",
+            "kind": "helper",
+            "text": "We only ask for what we need to book you in. Questions about your health come later, and only before a first visit.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.policy",
+            "kind": "helper",
+            "text": "Free to change or cancel up to 24 hours before. After that, there's a £{fee} late-cancellation fee.",
+            "state": "default",
+            "notes": "Critique C1: shown under the summary, before the person confirms"
+          },
+          {
+            "key": "confirm-booking.confirm-button",
+            "kind": "button",
+            "text": "Confirm booking",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.hold-note",
+            "kind": "helper",
+            "text": "We're holding this time for you for 10 minutes.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.confirming-a11y",
+            "kind": "a11y",
+            "text": "Confirming your booking",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.other-times-button",
+            "kind": "button",
+            "text": "See other times",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.details-kept",
+            "kind": "helper",
+            "text": "Your details are saved, so you won't need to type them again.",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.name-error",
+            "kind": "error",
+            "text": "Enter your full name",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "confirm-booking.phone-error",
+            "kind": "error",
+            "text": "Enter a mobile number, like 07700 900123",
+            "state": "error",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "booking-confirmed",
+        "strings": [
+          {
+            "key": "booking-confirmed.title",
+            "kind": "success",
+            "text": "You're booked",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "booking-confirmed.sent-note",
+            "kind": "body",
+            "text": "We've sent the details to {email} and a text to {phone}.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "booking-confirmed.summary-label",
+            "kind": "label",
+            "text": "Appointment",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "booking-confirmed.policy",
+            "kind": "helper",
+            "text": "Need to change it? You can do it online until {deadline}.",
+            "state": "default",
+            "notes": "Critique C1: the exact deadline, not just '24 hours'"
+          },
+          {
+            "key": "booking-confirmed.calendar-button",
+            "kind": "button",
+            "text": "Add to calendar",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "booking-confirmed.intake-heading",
+            "kind": "label",
+            "text": "One more thing before your first visit",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "booking-confirmed.intake-body",
+            "kind": "body",
+            "text": "Answer 4 short questions so your physio can prepare. It takes about 2 minutes, and you can do it later.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "booking-confirmed.intake-button",
+            "kind": "button",
+            "text": "Answer 4 questions",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "booking-confirmed.done-button",
+            "kind": "button",
+            "text": "Back to home",
+            "state": "default",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "appointment-detail",
+        "strings": [
+          {
+            "key": "appointment-detail.title",
+            "kind": "title",
+            "text": "Appointment",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "appointment-detail.when-label",
+            "kind": "label",
+            "text": "When and where",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "appointment-detail.policy-helper",
+            "kind": "helper",
+            "text": "You can change or cancel online until 24 hours before.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "appointment-detail.reschedule-button",
+            "kind": "button",
+            "text": "Change date or time",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "appointment-detail.cancel-button",
+            "kind": "button",
+            "text": "Cancel appointment",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "appointment-detail.late-banner",
+            "kind": "body",
+            "text": "This appointment is less than 24 hours away, so it can't be changed online. Call us and we'll help.",
+            "state": "partial",
+            "notes": ""
+          },
+          {
+            "key": "appointment-detail.late-fee-note",
+            "kind": "helper",
+            "text": "If you can't make it, please still call. Cancelling now has a £{fee} late-cancellation fee.",
+            "state": "partial",
+            "notes": "Critique C1: state the amount instead of 'may apply'"
+          },
+          {
+            "key": "appointment-detail.call-button",
+            "kind": "button",
+            "text": "Call the clinic",
+            "state": "partial",
+            "notes": ""
+          },
+          {
+            "key": "appointment-detail.loading-a11y",
+            "kind": "a11y",
+            "text": "Loading appointment",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "appointment-detail.retry-button",
+            "kind": "button",
+            "text": "Try again",
+            "state": "error",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "cancel-appointment",
+        "strings": [
+          {
+            "key": "cancel-appointment.title",
+            "kind": "title",
+            "text": "Cancel this appointment?",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "cancel-appointment.body",
+            "kind": "body",
+            "text": "{type} with {name} on {date}.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "cancel-appointment.free-note",
+            "kind": "helper",
+            "text": "It's free to cancel, because it's more than 24 hours away.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "cancel-appointment.cancel-button",
+            "kind": "button",
+            "text": "Cancel appointment",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "cancel-appointment.reschedule-button",
+            "kind": "button",
+            "text": "Change the time instead",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "cancel-appointment.keep-button",
+            "kind": "button",
+            "text": "Keep appointment",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "cancel-appointment.cancelling-a11y",
+            "kind": "a11y",
+            "text": "Cancelling your appointment",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "cancel-appointment.retry-button",
+            "kind": "button",
+            "text": "Try again",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "cancel-appointment.success-title",
+            "kind": "success",
+            "text": "Appointment cancelled",
+            "state": "success",
+            "notes": ""
+          },
+          {
+            "key": "cancel-appointment.success-body",
+            "kind": "body",
+            "text": "We've emailed you a confirmation. The time is now free for someone else.",
+            "state": "success",
+            "notes": ""
+          },
+          {
+            "key": "cancel-appointment.book-again-button",
+            "kind": "button",
+            "text": "Book a new time",
+            "state": "success",
+            "notes": ""
+          },
+          {
+            "key": "cancel-appointment.done-button",
+            "kind": "button",
+            "text": "Back to home",
+            "state": "success",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "intake-form",
+        "strings": [
+          {
+            "key": "intake-form.title",
+            "kind": "title",
+            "text": "Before your first visit",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.intro",
+            "kind": "body",
+            "text": "4 short questions so your physio can prepare.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.area-label",
+            "kind": "label",
+            "text": "Where is the problem?",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.since-label",
+            "kind": "label",
+            "text": "How long has it bothered you?",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.since-short",
+            "kind": "label",
+            "text": "Less than 2 weeks",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.since-medium",
+            "kind": "label",
+            "text": "2 to 6 weeks",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.since-long",
+            "kind": "label",
+            "text": "More than 6 weeks",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.notes-label",
+            "kind": "label",
+            "text": "Anything else your physio should know? (optional)",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.consent",
+            "kind": "label",
+            "text": "I agree to the clinic keeping these answers in my patient record",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.privacy",
+            "kind": "helper",
+            "text": "Only your physio and the clinic team see these answers. If you cancel before your first visit, we delete them.",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.submit-button",
+            "kind": "button",
+            "text": "Send to my physio",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.later-button",
+            "kind": "button",
+            "text": "Do this later",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.sending-a11y",
+            "kind": "a11y",
+            "text": "Sending your answers",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.area-error",
+            "kind": "error",
+            "text": "Choose where the problem is",
+            "state": "error",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.success-title",
+            "kind": "success",
+            "text": "Thanks, your physio has your answers",
+            "state": "success",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.success-body",
+            "kind": "body",
+            "text": "You can add anything else when you arrive.",
+            "state": "success",
+            "notes": ""
+          },
+          {
+            "key": "intake-form.done-button",
+            "kind": "button",
+            "text": "Back to home",
+            "state": "success",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "clinic-info",
+        "strings": [
+          {
+            "key": "clinic-info.title",
+            "kind": "title",
+            "text": "Our clinics",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "clinic-info.hours-heading",
+            "kind": "label",
+            "text": "Opening hours",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "clinic-info.call-button",
+            "kind": "button",
+            "text": "Call the clinic",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "clinic-info.book-button",
+            "kind": "button",
+            "text": "Book online",
+            "state": "default",
+            "notes": ""
+          },
+          {
+            "key": "clinic-info.loading-a11y",
+            "kind": "a11y",
+            "text": "Loading clinic details",
+            "state": "loading",
+            "notes": ""
+          },
+          {
+            "key": "clinic-info.retry-button",
+            "kind": "button",
+            "text": "Try again",
+            "state": "error",
+            "notes": ""
+          }
+        ]
+      }
+    ],
+    "errors": [
+      {
+        "id": "home-load",
+        "screenId": "home",
+        "situation": "Appointments couldn't load",
+        "message": "We couldn't load your appointments. They're still booked. Check your connection and try again, or call the clinic.",
+        "action": "Try again"
+      },
+      {
+        "id": "service-load",
+        "screenId": "choose-service",
+        "situation": "Appointment types couldn't load",
+        "message": "We couldn't load the appointment types. Check your connection and try again, or call to book.",
+        "action": "Try again"
+      },
+      {
+        "id": "times-load",
+        "screenId": "choose-time",
+        "situation": "Availability couldn't load",
+        "message": "We couldn't load the latest times. Check your connection and try again, or call to book.",
+        "action": "Try again"
+      },
+      {
+        "id": "slot-taken",
+        "screenId": "confirm-booking",
+        "situation": "Someone booked the time first",
+        "message": "Sorry, someone else has just booked {time}. Your details are saved, so choose another time and you're nearly done.",
+        "action": "See other times"
+      },
+      {
+        "id": "confirm-missing-details",
+        "screenId": "confirm-booking",
+        "situation": "Name or mobile number missing",
+        "message": "Enter your full name and mobile number so we can confirm your booking.",
+        "action": ""
+      },
+      {
+        "id": "confirm-failed",
+        "screenId": "confirm-booking",
+        "situation": "Booking didn't go through",
+        "message": "We couldn't confirm your booking. You haven't been booked yet. Try again, or call the clinic.",
+        "action": "Try again"
+      },
+      {
+        "id": "appointment-load",
+        "screenId": "appointment-detail",
+        "situation": "Appointment couldn't load",
+        "message": "We couldn't load this appointment. It's still booked. Try again in a moment.",
+        "action": "Try again"
+      },
+      {
+        "id": "cancel-failed",
+        "screenId": "cancel-appointment",
+        "situation": "Cancellation didn't go through",
+        "message": "We couldn't cancel your appointment, so it's still booked. Try again, or call the clinic.",
+        "action": "Try again"
+      },
+      {
+        "id": "intake-missing-area",
+        "screenId": "intake-form",
+        "situation": "Problem area or consent missing",
+        "message": "Choose where the problem is and tick the consent box to send your answers.",
+        "action": ""
+      },
+      {
+        "id": "intake-failed",
+        "screenId": "intake-form",
+        "situation": "Answers didn't send",
+        "message": "We couldn't send your answers. They're still here, so try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "clinics-load",
+        "screenId": "clinic-info",
+        "situation": "Clinic details couldn't load",
+        "message": "We couldn't load the clinic details. Check your connection and try again.",
+        "action": "Try again"
+      }
+    ],
+    "notifications": [
+      {
+        "id": "booking-confirmed",
+        "trigger": "A booking is confirmed (email and SMS)",
+        "title": "You're booked: {day} at {time}",
+        "body": "{type} with {name} at our {clinic} clinic. Free to change or cancel until {deadline}; after that there's a £{fee} fee."
+      },
+      {
+        "id": "first-visit-intake",
+        "trigger": "2 days before a first visit, if intake hasn't been sent",
+        "title": "4 quick questions before your visit",
+        "body": "Help {name} prepare for {day}. It takes about 2 minutes."
+      },
+      {
+        "id": "reminder-day-before",
+        "trigger": "24 hours before the appointment (SMS and push)",
+        "title": "See you tomorrow at {time}",
+        "body": "{type} with {name}, {clinic} clinic. Can't make it? Please call us."
+      },
+      {
+        "id": "rescheduled",
+        "trigger": "An appointment is moved",
+        "title": "Your appointment has moved",
+        "body": "New time: {day} at {time} with {name}."
+      },
+      {
+        "id": "cancelled",
+        "trigger": "An appointment is cancelled",
+        "title": "Appointment cancelled",
+        "body": "Your {day} appointment is cancelled. Book again any time."
+      }
+    ],
+    "assumptions": [
+      "Reminders go by SMS by default, with push in the app shells; email carries the confirmation and calendar file",
+      "'First available' is the most useful default for new patients",
+      "The day-before reminder lands exactly at the 24-hour mark, so it asks people to call rather than offering an online change",
+      "The late-cancellation fee is a single fixed amount, shown as £{fee} until the clinic confirms it (sample screens use £30)"
+    ],
+    "openQuestions": [
+      "What is the exact late-cancellation fee, so the copy can state it?",
+      "Should the intake questions be worded per physio, or the same for everyone?"
+    ]
+  }
+}

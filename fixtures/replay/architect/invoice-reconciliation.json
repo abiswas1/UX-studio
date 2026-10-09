@@ -1,0 +1,917 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the invoice-reconciliation sample brief.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Building ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "approved ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "research: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "two ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "journeys ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "AP ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "specialist ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "controller), ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "five ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "task ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "flows ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "eight ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screens. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Desktop ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "web, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "so ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "pages ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "side ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "navigation ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rather ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "than ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "tabs.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Six ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screens ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "P0: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Exceptions, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Exception, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Matched, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Approvals, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Import ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "files ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Audit ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "trail, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "each ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "empty, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "loading ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "error ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "handling ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(or ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "reason ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "state ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "can't ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "happen). ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Matching ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rules ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "is ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "P1 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "read-only; ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Team ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "roles ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "is ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "P2.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "journeys": [
+      {
+        "id": "J1",
+        "persona": "The month-end AP specialist",
+        "goal": "Clear the month's exceptions before the close deadline",
+        "stages": [
+          {
+            "stage": "Import",
+            "actions": [
+              "Exports invoices, purchase orders and bank payments as CSV",
+              "Imports them for the period"
+            ],
+            "painPoints": [
+              "Exports have bad rows that break a whole spreadsheet"
+            ],
+            "opportunities": [
+              "Check every row and import the good ones; list rejected rows with reasons"
+            ]
+          },
+          {
+            "stage": "Triage",
+            "actions": [
+              "Opens the exception queue",
+              "Filters by type or sorts by amount"
+            ],
+            "painPoints": [
+              "Re-checking rows that already match"
+            ],
+            "opportunities": [
+              "Only exceptions in the queue; matched items one step away"
+            ]
+          },
+          {
+            "stage": "Resolve",
+            "actions": [
+              "Compares invoice, PO and payment",
+              "Chooses a resolution and writes a note",
+              "Sends it for approval"
+            ],
+            "painPoints": [
+              "Switching between three exports",
+              "Reasoning lost in email"
+            ],
+            "opportunities": [
+              "Evidence side by side with differences labelled",
+              "Note kept with the resolution in the audit trail"
+            ]
+          },
+          {
+            "stage": "Continue",
+            "actions": [
+              "Moves to the next exception"
+            ],
+            "painPoints": [
+              "Losing their place in a long list"
+            ],
+            "opportunities": [
+              "Go straight to the next exception from the keyboard"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "J2",
+        "persona": "The controller who signs off",
+        "goal": "Approve resolutions with confidence and close the period",
+        "stages": [
+          {
+            "stage": "Review",
+            "actions": [
+              "Opens Approvals",
+              "Reads the resolution, note and evidence"
+            ],
+            "painPoints": [
+              "Approving from a spreadsheet without context"
+            ],
+            "opportunities": [
+              "Everything needed to decide on one screen"
+            ]
+          },
+          {
+            "stage": "Decide",
+            "actions": [
+              "Approves, or sends back with a comment"
+            ],
+            "painPoints": [
+              "Being asked to approve their own work"
+            ],
+            "opportunities": [
+              "Block self-approval and say why"
+            ]
+          },
+          {
+            "stage": "Spot-check",
+            "actions": [
+              "Samples automatic matches"
+            ],
+            "painPoints": [
+              "Not knowing why something was matched"
+            ],
+            "opportunities": [
+              "Each match names its rule, fields compared and tolerance"
+            ]
+          },
+          {
+            "stage": "Close",
+            "actions": [
+              "Exports the audit trail for the period"
+            ],
+            "painPoints": [
+              "Assembling evidence for the auditor by hand"
+            ],
+            "opportunities": [
+              "One export with every event and its evidence"
+            ]
+          }
+        ]
+      }
+    ],
+    "flows": [
+      {
+        "id": "F1",
+        "name": "Import a month of data",
+        "trigger": "The month's exports are ready",
+        "mermaid": "flowchart TD\n  A[Import files] --> B[Choose CSV files and period]\n  B --> C{Files readable?}\n  C -->|No| D[Say which file and why] --> B\n  C -->|Yes| E[Check every row]\n  E --> F{All rows valid?}\n  F -->|Some rejected| G[Import valid rows and list rejected rows with reasons]\n  F -->|Yes| H[Import complete]\n  G --> I[Match automatically]\n  H --> I\n  I --> J[Exceptions queue]",
+        "screens": [
+          "import",
+          "exceptions"
+        ],
+        "steps": [
+          "Open Import files",
+          "Choose the invoice, PO and payment CSV files and the period",
+          "Start the import",
+          "Review any rejected rows",
+          "Go to the exceptions"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Resolve an exception",
+        "trigger": "An invoice couldn't be matched automatically",
+        "mermaid": "flowchart TD\n  A[Exceptions queue] --> B[Exception detail]\n  B --> C{Evidence loaded?}\n  C -->|No| D[Error with Try again] --> B\n  C -->|Yes| E[Compare invoice, PO and payment]\n  E --> F[Choose resolution and write note]\n  F --> G{Resolution and note given?}\n  G -->|No| H[Say what is missing] --> F\n  G -->|Yes| I[Submit for approval]\n  I --> J{Saved?}\n  J -->|No| K[Keep entries and offer Try again] --> I\n  J -->|Yes| L[Sent for approval]\n  L --> M[Next exception]",
+        "screens": [
+          "exceptions",
+          "exception-detail"
+        ],
+        "steps": [
+          "Open the next exception from the queue",
+          "Compare the evidence side by side",
+          "Choose a resolution and write a note",
+          "Submit for approval",
+          "Go to the next exception"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Approve a resolution",
+        "trigger": "A resolution is waiting for approval",
+        "mermaid": "flowchart TD\n  A[Approvals] --> B{Has Reviewer role?}\n  B -->|No| C[Explain how to get the role]\n  B -->|Yes| D[Read resolution, note and evidence]\n  D --> E{Proposed by me?}\n  E -->|Yes| F[Approval blocked: another reviewer must approve]\n  E -->|No| G{Agree?}\n  G -->|Yes| H[Approve resolution]\n  G -->|No| I[Send back with comment]\n  H --> J[Recorded in the audit trail]\n  I --> J",
+        "screens": [
+          "approvals"
+        ],
+        "steps": [
+          "Open Approvals",
+          "Read the resolution, note and evidence",
+          "Approve it, or send it back with a comment",
+          "Move to the next resolution"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Check why something was matched",
+        "trigger": "Spot-checking automatic matches",
+        "mermaid": "flowchart TD\n  A[Matched] --> B[Select a match]\n  B --> C[See rule, version, fields compared and tolerance]\n  C --> D{Agree?}\n  D -->|Yes| E[Mark as checked]\n  D -->|No| F[Unmatch and review]\n  F --> G[Exceptions queue]\n  E --> H[Recorded in the audit trail]",
+        "screens": [
+          "matches",
+          "exceptions"
+        ],
+        "steps": [
+          "Open Matched",
+          "Select a match",
+          "Read which rule matched it and the values compared",
+          "Mark it as checked, or unmatch it"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Export the audit trail at close",
+        "trigger": "The period is ready to close",
+        "mermaid": "flowchart TD\n  A[Exceptions: none open] --> B[Audit trail]\n  B --> C[Choose period and format]\n  C --> D[Export audit trail]\n  D --> E{Export created?}\n  E -->|No| F[Error with Try again] --> D\n  E -->|Yes| G[Download export]",
+        "screens": [
+          "exceptions",
+          "audit-export"
+        ],
+        "steps": [
+          "Confirm no exceptions are open",
+          "Open Audit trail",
+          "Choose the period and format",
+          "Export and download"
+        ]
+      }
+    ],
+    "sitemap": [
+      {
+        "screenId": "exceptions",
+        "parent": null,
+        "navigation": "page"
+      },
+      {
+        "screenId": "exception-detail",
+        "parent": "exceptions",
+        "navigation": "page"
+      },
+      {
+        "screenId": "matches",
+        "parent": null,
+        "navigation": "page"
+      },
+      {
+        "screenId": "approvals",
+        "parent": null,
+        "navigation": "page"
+      },
+      {
+        "screenId": "import",
+        "parent": null,
+        "navigation": "page"
+      },
+      {
+        "screenId": "audit-export",
+        "parent": null,
+        "navigation": "page"
+      },
+      {
+        "screenId": "rules",
+        "parent": null,
+        "navigation": "page"
+      },
+      {
+        "screenId": "settings",
+        "parent": null,
+        "navigation": "page"
+      }
+    ],
+    "screens": [
+      {
+        "id": "exceptions",
+        "name": "Exceptions",
+        "purpose": "The home screen: every invoice that couldn't be matched automatically, for the selected period, ready to work through.",
+        "priority": "P0",
+        "primaryAction": "Open the next exception",
+        "keyContent": [
+          "Period summary: open exceptions, matched automatically, waiting for approval, value in exceptions",
+          "Filters by exception type and search",
+          "Queue of exceptions with invoice, supplier, reason, amount and age",
+          "Keyboard shortcuts hint"
+        ],
+        "entryPoints": [
+          "Sign-in",
+          "Side navigation",
+          "After an import",
+          "After submitting a resolution"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Queue of open exceptions with the period summary"
+          },
+          {
+            "state": "empty",
+            "description": "No open exceptions for the period"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching the queue"
+          },
+          {
+            "state": "error",
+            "description": "Queue couldn't load"
+          },
+          {
+            "state": "partial",
+            "description": "Some rows from the last import were rejected, so the queue may be incomplete"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "exception-detail",
+        "name": "Exception",
+        "purpose": "Resolve one exception: see the invoice, purchase order and payment side by side, understand why it was flagged, and propose a resolution.",
+        "priority": "P0",
+        "primaryAction": "Submit for approval",
+        "keyContent": [
+          "Why this is an exception, naming the rule and the values",
+          "Invoice, purchase order and bank payment side by side",
+          "Differences labelled in words",
+          "Resolution choice and note for the reviewer"
+        ],
+        "entryPoints": [
+          "Exceptions queue",
+          "Approvals: sent back",
+          "Unmatch from Matched"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Evidence and resolution form"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching the evidence"
+          },
+          {
+            "state": "error",
+            "description": "Evidence couldn't load, or the resolution couldn't be sent"
+          },
+          {
+            "state": "success",
+            "description": "Resolution sent for approval"
+          }
+        ],
+        "statesNotNeeded": [
+          {
+            "state": "empty",
+            "reason": "Only opens for a specific exception, which always has an invoice."
+          }
+        ]
+      },
+      {
+        "id": "matches",
+        "name": "Matched",
+        "purpose": "Review what was matched automatically or by a reviewer, and why.",
+        "priority": "P0",
+        "primaryAction": "Mark a match as checked",
+        "keyContent": [
+          "Matched sets: invoice, purchase order and payment",
+          "Filter by rule",
+          "Why the selected set was matched: rule, version, fields compared, tolerance",
+          "Mark as checked, or unmatch"
+        ],
+        "entryPoints": [
+          "Side navigation",
+          "Import complete summary"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Matched sets with the explanation for the selected one"
+          },
+          {
+            "state": "empty",
+            "description": "Nothing matched yet"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching matches"
+          },
+          {
+            "state": "error",
+            "description": "Matches couldn't load"
+          },
+          {
+            "state": "success",
+            "description": "Spot check recorded"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "approvals",
+        "name": "Approvals",
+        "purpose": "Second-person review of proposed resolutions.",
+        "priority": "P0",
+        "primaryAction": "Approve resolution",
+        "keyContent": [
+          "Resolutions waiting, with who proposed them",
+          "Selected resolution: what, why, evidence and note",
+          "Approve, or send back with a comment",
+          "Self-approval is blocked"
+        ],
+        "entryPoints": [
+          "Side navigation",
+          "Approval reminder email"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Resolutions waiting, one selected"
+          },
+          {
+            "state": "empty",
+            "description": "Nothing waiting for approval"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching resolutions"
+          },
+          {
+            "state": "error",
+            "description": "Resolutions couldn't load, or the approval couldn't be saved"
+          },
+          {
+            "state": "success",
+            "description": "Resolution approved"
+          },
+          {
+            "state": "permission",
+            "description": "Signed-in person doesn't have the Reviewer role"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "import",
+        "name": "Import files",
+        "purpose": "Bring in invoices, purchase orders and bank payments for a period from CSV files.",
+        "priority": "P0",
+        "primaryAction": "Start import",
+        "keyContent": [
+          "Three file slots: invoices, purchase orders, bank payments",
+          "Accounting period",
+          "Column mapping",
+          "Row checks and results"
+        ],
+        "entryPoints": [
+          "Side navigation",
+          "Exceptions: Import files",
+          "Empty states"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Files chosen, ready to import"
+          },
+          {
+            "state": "loading",
+            "description": "Checking rows, importing and matching"
+          },
+          {
+            "state": "error",
+            "description": "A file couldn't be read or the import stopped"
+          },
+          {
+            "state": "partial",
+            "description": "Some rows were rejected; the rest were imported"
+          },
+          {
+            "state": "success",
+            "description": "Import complete with a summary"
+          }
+        ],
+        "statesNotNeeded": [
+          {
+            "state": "empty",
+            "reason": "The file picker is this screen's starting state; there is nothing to be empty."
+          }
+        ]
+      },
+      {
+        "id": "audit-export",
+        "name": "Audit trail",
+        "purpose": "Every import, automatic match, resolution and approval for a period, and the export for auditors.",
+        "priority": "P0",
+        "primaryAction": "Export audit trail",
+        "keyContent": [
+          "Events with time, person or rule and version, and the values compared",
+          "Filter by event type",
+          "Period and export format"
+        ],
+        "entryPoints": [
+          "Side navigation",
+          "Exceptions: nothing open"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Events for the period"
+          },
+          {
+            "state": "empty",
+            "description": "No events for the period yet"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching events"
+          },
+          {
+            "state": "error",
+            "description": "Events couldn't load, or the export failed"
+          },
+          {
+            "state": "success",
+            "description": "Export ready to download"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "rules",
+        "name": "Matching rules",
+        "purpose": "Read the rules and tolerances that drive automatic matching, so explanations can be traced back.",
+        "priority": "P1",
+        "primaryAction": "Download rule history",
+        "keyContent": [
+          "Each rule with its fields, tolerance and current version",
+          "Who can change rules"
+        ],
+        "entryPoints": [
+          "Side navigation",
+          "Rule name in a match explanation"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Rules listed"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching rules"
+          },
+          {
+            "state": "error",
+            "description": "Rules couldn't load"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "settings",
+        "name": "Team and roles",
+        "purpose": "Invite people and give them the Preparer, Reviewer or Finance admin role.",
+        "priority": "P2",
+        "primaryAction": "Invite a teammate",
+        "keyContent": [
+          "People and roles",
+          "Invite"
+        ],
+        "entryPoints": [
+          "Side navigation"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "People and their roles"
+          }
+        ],
+        "statesNotNeeded": []
+      }
+    ],
+    "assumptions": [
+      "Exceptions is the home screen because resolving them is most of the work",
+      "Matching rules are edited by a finance admin outside the first release; the Matching rules screen is read-only",
+      "Roles: Preparer (resolves), Reviewer (approves), Finance admin (rules and team); one person can hold several roles but can't approve their own resolution",
+      "One accounting period is worked on at a time, chosen on Exceptions and Import"
+    ],
+    "openQuestions": [
+      "Should approvals allow batch approval of low-value resolutions, or always one at a time?",
+      "Does 'Unmatch and review' need a reason, recorded in the audit trail?",
+      "Is a separate close checklist needed, or is 'no open exceptions plus an export' enough to call the period closed?"
+    ]
+  }
+}

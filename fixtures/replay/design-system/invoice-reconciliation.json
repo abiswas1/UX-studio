@@ -1,0 +1,713 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the invoice-reconciliation sample brief.",
+  "model": "claude-opus-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "No ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Figma ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "file ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "is ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "connected, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "so ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "I'm ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "creating ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "minimal ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "token ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "system ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "desktop ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "web: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "an ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "ink-blue ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "primary, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "neutral ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "greys, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "danger, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "success ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "warning ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "roles, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "light ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "dark ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "mode.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Checked ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "every ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "text ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "pair ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "at ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "4.5:1 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "focus ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "ring ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "borders ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "at ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "3:1; ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "darkened ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "warning ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "amber ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "border ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "grey ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "to ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "get ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "there. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Body ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "text ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "is ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "14/20 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "dense ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "lists, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "targets ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "32 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "px. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Mapped ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "all ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "17 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "block ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "types ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "used ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "wireframes ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "to ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "custom ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "components.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "source": {
+      "kind": "generated",
+      "fileKey": "",
+      "notes": "No Figma file is connected, so this is a minimal generated token system for desktop web. All colour pairs were checked against WCAG 2.2 AA in light and dark mode."
+    },
+    "libraries": [],
+    "themes": [
+      {
+        "platform": "web",
+        "library": "Generated",
+        "fontFamily": "Inter",
+        "fallbackFont": "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif",
+        "color": {
+          "light": {
+            "background": "#F6F7F9",
+            "surface": "#FFFFFF",
+            "surfaceAlt": "#ECEEF2",
+            "text": "#16191F",
+            "textMuted": "#525A67",
+            "primary": "#1F4FA8",
+            "onPrimary": "#FFFFFF",
+            "primaryContainer": "#DCE6F8",
+            "onPrimaryContainer": "#0F2A5C",
+            "border": "#7D8591",
+            "danger": "#B42318",
+            "onDanger": "#FFFFFF",
+            "dangerContainer": "#FDE8E6",
+            "onDangerContainer": "#7A1A12",
+            "success": "#1E7A45",
+            "warning": "#8F5400",
+            "focus": "#1F4FA8"
+          },
+          "dark": {
+            "background": "#111317",
+            "surface": "#1A1D23",
+            "surfaceAlt": "#252A32",
+            "text": "#E8EAEE",
+            "textMuted": "#A5ACB8",
+            "primary": "#8DB2F5",
+            "onPrimary": "#0B2250",
+            "primaryContainer": "#1E3A6E",
+            "onPrimaryContainer": "#DCE6F8",
+            "border": "#6B7380",
+            "danger": "#F28B82",
+            "onDanger": "#3B0906",
+            "dangerContainer": "#5A1A15",
+            "onDangerContainer": "#FFDAD6",
+            "success": "#6DD49A",
+            "warning": "#F0B357",
+            "focus": "#8DB2F5"
+          }
+        },
+        "type": {
+          "display": {
+            "size": 28,
+            "lineHeight": 36,
+            "weight": 600
+          },
+          "headline": {
+            "size": 20,
+            "lineHeight": 28,
+            "weight": 600
+          },
+          "title": {
+            "size": 16,
+            "lineHeight": 24,
+            "weight": 600
+          },
+          "body": {
+            "size": 14,
+            "lineHeight": 20,
+            "weight": 400
+          },
+          "label": {
+            "size": 13,
+            "lineHeight": 18,
+            "weight": 500
+          },
+          "caption": {
+            "size": 12,
+            "lineHeight": 16,
+            "weight": 400
+          }
+        },
+        "radius": {
+          "sm": 4,
+          "md": 6,
+          "lg": 8,
+          "full": 999
+        },
+        "spacing": [
+          4,
+          8,
+          12,
+          16,
+          24,
+          32,
+          48
+        ],
+        "minTarget": 32,
+        "provenance": [
+          {
+            "token": "color.primary (light)",
+            "from": "Generated: ink blue #1F4FA8, 7.7:1 with white text and 7.1:1 on the page background"
+          },
+          {
+            "token": "color.border",
+            "from": "Generated: #7D8591 (light) and #6B7380 (dark) so input and card edges reach 3:1 for non-text contrast"
+          },
+          {
+            "token": "color.warning (light)",
+            "from": "Generated: darkened amber #8F5400 so warning text reaches 4.5:1 on white"
+          },
+          {
+            "token": "type",
+            "from": "Generated: 14/20 body for dense tables, Inter for its clear figures"
+          },
+          {
+            "token": "minTarget",
+            "from": "Generated: 32 px, above the 24 px WCAG 2.5.8 minimum, compact enough for dense lists"
+          }
+        ]
+      }
+    ],
+    "components": [
+      {
+        "block": "sidebar",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "220 px side navigation on surface; current page uses primaryContainer with aria-current=page"
+      },
+      {
+        "block": "appbar",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Page header: title in title style, page actions on the right"
+      },
+      {
+        "block": "heading",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Section heading in title style"
+      },
+      {
+        "block": "text",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Body text; muted variant for helper and shortcut hints"
+      },
+      {
+        "block": "button",
+        "variant": "primary",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Filled primary, 32 px high, label style; one per view"
+      },
+      {
+        "block": "button",
+        "variant": "secondary",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Outlined with border role, primary text"
+      },
+      {
+        "block": "button",
+        "variant": "tertiary",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Text-only button in primary"
+      },
+      {
+        "block": "input",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "32 px field with 1 px border role; label above; error text below in danger"
+      },
+      {
+        "block": "select",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Same frame as input with a chevron; opens a listbox navigable by keyboard"
+      },
+      {
+        "block": "chips",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Filter chips; selected uses primaryContainer and a check icon, not colour alone"
+      },
+      {
+        "block": "list",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Dense row list (40 px rows); title plus muted second line; J/K and arrow keys move the selection"
+      },
+      {
+        "block": "table",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Dense data table with sticky header row; numbers right-aligned in tabular figures"
+      },
+      {
+        "block": "card",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Evidence panel on surface; strong variant on primaryContainer for the selected item"
+      },
+      {
+        "block": "stat",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Key figure: label in label style, value in headline with tabular figures"
+      },
+      {
+        "block": "banner",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Inline message with icon and text; error uses dangerContainer and role=alert, others role=status"
+      },
+      {
+        "block": "empty",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Centred icon, title and explanation, followed by the page's primary action"
+      },
+      {
+        "block": "skeleton",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Grey bars on surfaceAlt; region is aria-busy and the loading text is announced"
+      },
+      {
+        "block": "spinner",
+        "variant": "",
+        "platform": "web",
+        "library": "Generated",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "24 px ring in primary with visually hidden status text; static under reduced motion"
+      }
+    ],
+    "principles": [
+      "Dense but legible: 14 px body, 40 px rows, generous contrast",
+      "Numbers line up: amounts use tabular figures and are right-aligned",
+      "Status in words and icons, never colour alone",
+      "Visible focus everywhere: 2 px focus ring in the focus role"
+    ],
+    "assumptions": [
+      "No brand guidelines exist yet; ink blue is a neutral, trustworthy choice for a finance tool",
+      "Inter is available as a web font; the fallback stack keeps figures readable if it isn't"
+    ],
+    "openQuestions": [
+      "Is there a brand colour or logo to use?",
+      "Should a compact density setting go below 32 px rows for very large queues?"
+    ]
+  }
+}

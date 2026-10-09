@@ -1,0 +1,415 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the clinic-booking sample brief.",
+  "model": "claude-opus-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Round ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "1 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "review: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "C1 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "C2 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "fixed. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "The ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "policy ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "line ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "reads ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "clearly ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "above ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Confirm ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "booking, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "cancel ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "sheet ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "now ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "leads ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Keep ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "appointment. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Remaining ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "findings ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "minor ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(severity ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "1–2), ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "so ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "no ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "further ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rounds ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "needed.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "summary": "Round 1 fixed both major issues: the 24-hour policy and fee are stated before booking and on the late-change screen, and the cancel sheet now leads with 'Keep appointment' and shows cancelling as a separate destructive action. Four minor issues remain.",
+    "strengths": [
+      "Details are asked only after a time is chosen, and kept if that time is taken",
+      "'First available' default matches what most new patients want",
+      "Every error says what was kept and offers a way forward, including a call",
+      "Health data is limited to four intake questions, asked after booking and only for first visits",
+      "48pt targets and full-width time rows instead of a grid",
+      "Cancelling now needs a deliberate choice, and the fee is clear before anyone commits"
+    ],
+    "findings": [
+      {
+        "id": "C3",
+        "title": "Rescheduling reuses the booking wording",
+        "kind": "heuristic",
+        "heuristic": "H4 Consistency and standards",
+        "wcag": "",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "confirm-booking",
+            "state": "default"
+          },
+          {
+            "screenId": "booking-confirmed",
+            "state": "default"
+          }
+        ],
+        "evidence": "When coming from 'Change date or time', the steps still say 'Check and confirm', 'Confirm booking' and 'You're booked'.",
+        "detail": "A returning patient may think they've made a second booking rather than moved the first.",
+        "recommendation": "Add reschedule variants: 'Confirm new time', 'Your appointment has moved', and show the old time crossed out in the summary.",
+        "ownerStage": "content",
+        "source": "review"
+      },
+      {
+        "id": "C4",
+        "title": "Web content column width isn't specified in the UI blocks",
+        "kind": "heuristic",
+        "heuristic": "H8 Aesthetic and minimalist design",
+        "wcag": "",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "confirm-booking",
+            "state": "default"
+          },
+          {
+            "screenId": "intake-form",
+            "state": "default"
+          }
+        ],
+        "evidence": "The 640px column is only in notes; the rendered web frame stretches fields across the full 1280px width.",
+        "detail": "Very wide fields and lines are harder to scan, and the primary button ends up far from the fields.",
+        "recommendation": "Make the 640px maximum width part of the web layout spec and check it in the built pages.",
+        "ownerStage": "ui",
+        "source": "review"
+      },
+      {
+        "id": "C5",
+        "title": "Physio chips push times below the fold on small phones",
+        "kind": "heuristic",
+        "heuristic": "H8 Aesthetic and minimalist design",
+        "wcag": "",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "choose-time",
+            "state": "default"
+          }
+        ],
+        "evidence": "Seven physio chips plus five day chips wrap to about five rows before the first time appears on a 375pt-wide screen.",
+        "detail": "People in pain have to scroll before they see a single time, although most want 'First available'.",
+        "recommendation": "Show 'First available' and the person's last physio as chips, with 'Choose a physio' opening a select for the rest.",
+        "ownerStage": "wireframes",
+        "source": "review"
+      },
+      {
+        "id": "C6",
+        "title": "No way to see past appointments",
+        "kind": "heuristic",
+        "heuristic": "H6 Recognition rather than recall",
+        "wcag": "",
+        "severity": 1,
+        "locations": [
+          {
+            "screenId": "home",
+            "state": "default"
+          }
+        ],
+        "evidence": "Home lists only upcoming appointments.",
+        "detail": "Returning patients sometimes want to check when they last came or who they saw.",
+        "recommendation": "Consider a 'Past appointments' link on Home in a later release.",
+        "ownerStage": "architecture",
+        "source": "review"
+      }
+    ],
+    "heuristicsReviewed": [
+      {
+        "heuristic": "H1 Visibility of system status",
+        "verdict": "good",
+        "note": "Step counter, held-time note, and every loading state is announced."
+      },
+      {
+        "heuristic": "H2 Match between system and the real world",
+        "verdict": "good",
+        "note": "Plain words: 'physio', 'change date or time', clinics named by street."
+      },
+      {
+        "heuristic": "H3 User control and freedom",
+        "verdict": "good",
+        "note": "Keep is the main action when cancelling; back keeps choices."
+      },
+      {
+        "heuristic": "H4 Consistency and standards",
+        "verdict": "issues",
+        "note": "Rescheduling reuses booking wording (C3)."
+      },
+      {
+        "heuristic": "H5 Error prevention",
+        "verdict": "good",
+        "note": "Fee stated before confirming; destructive action set apart."
+      },
+      {
+        "heuristic": "H6 Recognition rather than recall",
+        "verdict": "good",
+        "note": "The summary card follows the person through the steps; details are kept after errors."
+      },
+      {
+        "heuristic": "H7 Flexibility and efficiency of use",
+        "verdict": "good",
+        "note": "'First available' by default; returning patients can go straight to times."
+      },
+      {
+        "heuristic": "H8 Aesthetic and minimalist design",
+        "verdict": "issues",
+        "note": "The physio chips wrap to three rows on small phones (C5)."
+      },
+      {
+        "heuristic": "H9 Help users recognize, diagnose, and recover from errors",
+        "verdict": "good",
+        "note": "Errors say what was kept and offer a call; slot-taken keeps the details."
+      },
+      {
+        "heuristic": "H10 Help and documentation",
+        "verdict": "good",
+        "note": "Hints on which type to choose and why details are asked; calling is always offered."
+      }
+    ],
+    "wcagChecked": [
+      {
+        "criterion": "1.3.1 Info and Relationships",
+        "result": "pass",
+        "note": "Headings label each choice group; fields have visible labels."
+      },
+      {
+        "criterion": "1.4.1 Use of Color",
+        "result": "pass",
+        "note": "Selected chips and times show a check and the word 'Selected'."
+      },
+      {
+        "criterion": "1.4.3 Contrast (Minimum)",
+        "result": "pass",
+        "note": "All text pairs meet 4.5:1 in light and dark on every platform."
+      },
+      {
+        "criterion": "1.4.11 Non-text Contrast",
+        "result": "pass",
+        "note": "Field borders 3.7:1; focus ring above 6:1."
+      },
+      {
+        "criterion": "2.4.3 Focus Order",
+        "result": "pass",
+        "note": "Cancel sheet moves focus in and back; error summaries take focus."
+      },
+      {
+        "criterion": "2.4.7 Focus Visible",
+        "result": "pass",
+        "note": "Focus states are defined for every interactive component."
+      },
+      {
+        "criterion": "2.5.8 Target Size (Minimum)",
+        "result": "pass",
+        "note": "48pt in the apps, 44px on web."
+      },
+      {
+        "criterion": "3.3.1 Error Identification",
+        "result": "pass",
+        "note": "Field errors are named in text next to the field."
+      },
+      {
+        "criterion": "4.1.2 Name, Role, Value",
+        "result": "pass",
+        "note": "No icon-only controls without names; chips are a radio group."
+      },
+      {
+        "criterion": "4.1.3 Status Messages",
+        "result": "pass",
+        "note": "Loading, booked and cancelled states are announced."
+      },
+      {
+        "criterion": "3.3.4 Error Prevention (Legal, Financial, Data)",
+        "result": "pass",
+        "note": "The fee is stated before confirming, and cancelling asks first with keep as the main action."
+      },
+      {
+        "criterion": "2.2.1 Timing Adjustable",
+        "result": "needs testing",
+        "note": "The 10-minute hold must not lose the person's details when it lapses; confirm in build."
+      }
+    ]
+  }
+}

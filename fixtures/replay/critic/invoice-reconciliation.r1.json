@@ -1,0 +1,363 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the invoice-reconciliation sample brief.",
+  "model": "claude-opus-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Round ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "1 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "review: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "C1, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "C2 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "C3 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "fixed. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "The ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "remaining ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "findings ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "minor ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(severity ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "1–2), ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "so ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "no ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "further ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rounds ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "needed.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "summary": "Round 1 fixed all three major issues: matches now name their rule, version, fields compared and tolerance; differing values are labelled 'Differs' with an icon and the size of the difference; and the confirmation moves straight to the next exception. Four minor findings remain, plus one new cosmetic one.",
+    "strengths": [
+      "Exceptions is the home page, and every exception says why it was flagged, naming the rule and both values",
+      "Invoice, purchase order and payment sit side by side, so the comparison happens on one screen",
+      "Second-person approval is built in, and self-approval is blocked with a plain explanation",
+      "Import keeps valid rows and lists rejected ones with a specific reason for each",
+      "Every loading state is announced and every error state has a way forward",
+      "Every automatic match can now be traced to a rule and version, with each field compared, which is what an auditor needs"
+    ],
+    "findings": [
+      {
+        "id": "C4",
+        "title": "Side navigation hides how much is waiting",
+        "detail": "A reviewer working elsewhere can't see that nine resolutions are waiting until they open Approvals.",
+        "kind": "heuristic",
+        "heuristic": "H1 Visibility of system status",
+        "wcag": "",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "exceptions",
+            "state": "default"
+          },
+          {
+            "screenId": "approvals",
+            "state": "default"
+          }
+        ],
+        "evidence": "The side navigation lists Exceptions and Approvals without counts; the numbers only appear in the stats on Exceptions.",
+        "recommendation": "Show counts next to Exceptions and Approvals in the side navigation, with an accessible name such as 'Approvals, 9 waiting'.",
+        "ownerStage": "ui",
+        "source": "review"
+      },
+      {
+        "id": "C5",
+        "title": "The exception queue can't be sorted",
+        "detail": "At month-end, AP specialists triage by value first (research persona behaviour); without a sort they fall back to filters or the spreadsheet.",
+        "kind": "heuristic",
+        "heuristic": "H7 Flexibility and efficiency of use",
+        "wcag": "",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "exceptions",
+            "state": "default"
+          }
+        ],
+        "evidence": "The queue is fixed to oldest first; there is no sort control for amount or age.",
+        "recommendation": "Add a sort control (oldest first, largest amount first) and remember the choice per person.",
+        "ownerStage": "wireframes",
+        "source": "review"
+      },
+      {
+        "id": "C6",
+        "title": "Amounts don't line up",
+        "detail": "Comparing amounts down a list is slower when digits don't align.",
+        "kind": "heuristic",
+        "heuristic": "H4 Consistency and standards",
+        "wcag": "",
+        "severity": 1,
+        "locations": [
+          {
+            "screenId": "exceptions",
+            "state": "default"
+          },
+          {
+            "screenId": "approvals",
+            "state": "default"
+          }
+        ],
+        "evidence": "The theme names tabular figures as a principle, but no type style sets them, and amounts sit at the end of list rows rather than in an aligned column.",
+        "recommendation": "Set font-variant-numeric: tabular-nums on the body, label and headline styles used for amounts, and right-align amounts in their own column.",
+        "ownerStage": "design-system",
+        "source": "review"
+      },
+      {
+        "id": "C7",
+        "title": "Single-key shortcuts on Approvals need a focus condition",
+        "detail": "If the keys are global, a stray keystroke or a speech-input command could approve a resolution. The fix is to extend the pattern Exceptions already uses.",
+        "kind": "wcag",
+        "heuristic": "",
+        "wcag": "2.1.4 Character Key Shortcuts",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "approvals",
+            "state": "default"
+          },
+          {
+            "screenId": "exception-detail",
+            "state": "default"
+          }
+        ],
+        "evidence": "Exceptions says shortcuts work only while the list has focus, but Approvals ('A approves · R sends back') and Exception ('J opens the next exception') don't say when the keys are active.",
+        "recommendation": "Make single-key shortcuts active only while the list or the selected resolution has focus, and add a setting to turn them off.",
+        "ownerStage": "ui",
+        "source": "review"
+      },
+      {
+        "id": "C8",
+        "title": "'Unmatch and review' doesn't say where the invoice goes",
+        "detail": "A reviewer may hesitate, unsure whether unmatching deletes anything.",
+        "kind": "heuristic",
+        "heuristic": "H1 Visibility of system status",
+        "wcag": "",
+        "severity": 1,
+        "locations": [
+          {
+            "screenId": "matches",
+            "state": "default"
+          }
+        ],
+        "evidence": "The button label and its note differ: the note says the invoice moves back to Exceptions, the label doesn't.",
+        "recommendation": "Add helper text under the button: 'Moves the invoice back to Exceptions. The match stays in the audit trail.'",
+        "ownerStage": "content",
+        "source": "review"
+      }
+    ],
+    "heuristicsReviewed": [
+      {
+        "heuristic": "H1 Visibility of system status",
+        "verdict": "issues",
+        "note": "Matches now explain themselves; minor: navigation counts (C4) and the unmatch label (C8)."
+      },
+      {
+        "heuristic": "H2 Match between system and the real world",
+        "verdict": "good",
+        "note": "Accounting terms and rule names users can trace."
+      },
+      {
+        "heuristic": "H3 User control and freedom",
+        "verdict": "good",
+        "note": "Unmatch and send back are always available; nothing is final until a second person approves."
+      },
+      {
+        "heuristic": "H4 Consistency and standards",
+        "verdict": "good",
+        "note": "One side navigation, consistent page headers and one primary action per state."
+      },
+      {
+        "heuristic": "H5 Error prevention",
+        "verdict": "good",
+        "note": "Self-approval is blocked; rows are checked on import before anything is matched."
+      },
+      {
+        "heuristic": "H6 Recognition rather than recall",
+        "verdict": "good",
+        "note": "Evidence, reasons and differences are on screen."
+      },
+      {
+        "heuristic": "H7 Flexibility and efficiency of use",
+        "verdict": "issues",
+        "note": "Next exception keeps the keyboard flow; minor: the queue can't be sorted (C5)."
+      },
+      {
+        "heuristic": "H8 Aesthetic and minimalist design",
+        "verdict": "good",
+        "note": "Dense but ordered: evidence, then decision, then actions."
+      },
+      {
+        "heuristic": "H9 Help users recognize, diagnose, and recover from errors",
+        "verdict": "good",
+        "note": "Import errors name the file, the row and the reason, and say how to fix them."
+      },
+      {
+        "heuristic": "H10 Help and documentation",
+        "verdict": "good",
+        "note": "Shortcut hints on every queue; Matching rules documents the rules behind matches."
+      }
+    ],
+    "wcagChecked": [
+      {
+        "criterion": "1.3.1 Info and Relationships",
+        "result": "pass",
+        "note": "Lists, labels and headings are structured; evidence cards have headings."
+      },
+      {
+        "criterion": "1.4.1 Use of Color",
+        "result": "pass",
+        "note": "Differing values carry a warning icon and the word 'Differs' as well as colour."
+      },
+      {
+        "criterion": "1.4.3 Contrast (Minimum)",
+        "result": "pass",
+        "note": "All text pairs meet 4.5:1 in light and dark mode (design-system check)."
+      },
+      {
+        "criterion": "1.4.11 Non-text Contrast",
+        "result": "pass",
+        "note": "Differing values carry a warning icon and the word 'Differs' as well as colour."
+      },
+      {
+        "criterion": "2.1.1 Keyboard",
+        "result": "pass",
+        "note": "Every queue, filter and action is reachable by keyboard."
+      },
+      {
+        "criterion": "2.1.4 Character Key Shortcuts",
+        "result": "needs testing",
+        "note": "Focus condition for single-key shortcuts isn't specified on Approvals and Exception (C7)."
+      },
+      {
+        "criterion": "2.4.3 Focus Order",
+        "result": "pass",
+        "note": "After submitting, focus moves to Next exception; error states move focus to Try again."
+      },
+      {
+        "criterion": "2.4.7 Focus Visible",
+        "result": "pass",
+        "note": "2 px focus ring defined for every interactive component, including list rows."
+      },
+      {
+        "criterion": "2.5.8 Target Size (Minimum)",
+        "result": "pass",
+        "note": "32 px minimum target, above the 24 px requirement."
+      },
+      {
+        "criterion": "3.3.1 Error Identification",
+        "result": "pass",
+        "note": "Field and import errors are described in text next to the item."
+      },
+      {
+        "criterion": "4.1.2 Name, Role, Value",
+        "result": "pass",
+        "note": "Icon buttons carry text; rows have full accessible names; chips expose selected state."
+      },
+      {
+        "criterion": "4.1.3 Status Messages",
+        "result": "pass",
+        "note": "Loading text is announced; confirmations use role=status."
+      }
+    ]
+  }
+}

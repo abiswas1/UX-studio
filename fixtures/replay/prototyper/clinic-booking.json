@@ -1,0 +1,1301 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the clinic-booking sample brief.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Wiring ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screens ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "along ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "task ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "flows: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "booking ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "first ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "appointment, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "changing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "time, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "cancelling ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "answering ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "intake ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "questions. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Loading ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "states ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "move ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "by ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "themselves; ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "calling ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "clinic ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "is ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "left ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "to ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "phone.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Writing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "handoff ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "behaviour, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "data, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "edge ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "cases ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "acceptance ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "criteria ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "all ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "nine ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screens. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Both ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "serious ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "critique ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "findings ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "were ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "fixed ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "round ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "1; ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "three ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "remaining ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "minor ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "ones ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "listed ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "plans.\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "entry": {
+      "screenId": "home",
+      "state": "default"
+    },
+    "links": [
+      {
+        "from": {
+          "screenId": "home",
+          "state": "*"
+        },
+        "element": "home.tab-home",
+        "to": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "home",
+          "state": "*"
+        },
+        "element": "home.tab-book",
+        "to": {
+          "screenId": "choose-service",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "home",
+          "state": "*"
+        },
+        "element": "home.tab-clinics",
+        "to": {
+          "screenId": "clinic-info",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "choose-service",
+          "state": "*"
+        },
+        "element": "home.tab-home",
+        "to": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "choose-service",
+          "state": "*"
+        },
+        "element": "home.tab-book",
+        "to": {
+          "screenId": "choose-service",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "choose-service",
+          "state": "*"
+        },
+        "element": "home.tab-clinics",
+        "to": {
+          "screenId": "clinic-info",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "clinic-info",
+          "state": "*"
+        },
+        "element": "home.tab-home",
+        "to": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "clinic-info",
+          "state": "*"
+        },
+        "element": "home.tab-book",
+        "to": {
+          "screenId": "choose-service",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "clinic-info",
+          "state": "*"
+        },
+        "element": "home.tab-clinics",
+        "to": {
+          "screenId": "clinic-info",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "element": "home.book-button",
+        "to": {
+          "screenId": "choose-service",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "element": "home.manage-button",
+        "to": {
+          "screenId": "appointment-detail",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "element": "home.intake-button",
+        "to": {
+          "screenId": "intake-form",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "element": "Follow-up with Tom Okafor · Tue 21 Oct, 9:00 AM",
+        "to": {
+          "screenId": "appointment-detail",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "element": "Follow-up with Tom Okafor · Tue 28 Oct, 9:00 AM",
+        "to": {
+          "screenId": "appointment-detail",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "home",
+          "state": "empty"
+        },
+        "element": "home.empty-button",
+        "to": {
+          "screenId": "choose-service",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "home",
+          "state": "error"
+        },
+        "element": "home.retry-button",
+        "to": {
+          "screenId": "home",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "home",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "choose-service",
+          "state": "default"
+        },
+        "element": "choose-service.next-button",
+        "to": {
+          "screenId": "choose-time",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "choose-service",
+          "state": "error"
+        },
+        "element": "choose-service.retry-button",
+        "to": {
+          "screenId": "choose-service",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "choose-service",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "choose-service",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "choose-time",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "choose-time",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "choose-time",
+          "state": "default"
+        },
+        "element": "choose-time.next-button",
+        "to": {
+          "screenId": "confirm-booking",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "choose-time",
+          "state": "default"
+        },
+        "element": "9:00 AM · Tom Okafor · Selected",
+        "to": {
+          "screenId": "confirm-booking",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "choose-time",
+          "state": "default"
+        },
+        "element": "Priya Shah",
+        "to": {
+          "screenId": "choose-time",
+          "state": "empty"
+        },
+        "trigger": "tap",
+        "note": "Demonstrates a physio with no times this week"
+      },
+      {
+        "from": {
+          "screenId": "choose-time",
+          "state": "empty"
+        },
+        "element": "choose-time.empty-button",
+        "to": {
+          "screenId": "choose-time",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "choose-time",
+          "state": "empty"
+        },
+        "element": "choose-time.any-button",
+        "to": {
+          "screenId": "choose-time",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "choose-time",
+          "state": "error"
+        },
+        "element": "choose-time.retry-button",
+        "to": {
+          "screenId": "choose-time",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "confirm-booking",
+          "state": "default"
+        },
+        "element": "confirm-booking.confirm-button",
+        "to": {
+          "screenId": "confirm-booking",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "confirm-booking",
+          "state": "default"
+        },
+        "element": "confirm-booking.change-button",
+        "to": {
+          "screenId": "choose-time",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "confirm-booking",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "booking-confirmed",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "confirm-booking",
+          "state": "error"
+        },
+        "element": "confirm-booking.other-times-button",
+        "to": {
+          "screenId": "choose-time",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "booking-confirmed",
+          "state": "default"
+        },
+        "element": "booking-confirmed.intake-button",
+        "to": {
+          "screenId": "intake-form",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "booking-confirmed",
+          "state": "default"
+        },
+        "element": "booking-confirmed.done-button",
+        "to": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "appointment-detail",
+          "state": "default"
+        },
+        "element": "appointment-detail.reschedule-button",
+        "to": {
+          "screenId": "choose-time",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": "Reschedule reuses the time and confirm steps"
+      },
+      {
+        "from": {
+          "screenId": "appointment-detail",
+          "state": "default"
+        },
+        "element": "appointment-detail.cancel-button",
+        "to": {
+          "screenId": "cancel-appointment",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "appointment-detail",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "appointment-detail",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "appointment-detail",
+          "state": "error"
+        },
+        "element": "appointment-detail.retry-button",
+        "to": {
+          "screenId": "appointment-detail",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "cancel-appointment",
+          "state": "default"
+        },
+        "element": "cancel-appointment.keep-button",
+        "to": {
+          "screenId": "appointment-detail",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "cancel-appointment",
+          "state": "default"
+        },
+        "element": "cancel-appointment.reschedule-button",
+        "to": {
+          "screenId": "choose-time",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "cancel-appointment",
+          "state": "default"
+        },
+        "element": "cancel-appointment.cancel-button",
+        "to": {
+          "screenId": "cancel-appointment",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "cancel-appointment",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "cancel-appointment",
+          "state": "success"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "cancel-appointment",
+          "state": "error"
+        },
+        "element": "cancel-appointment.retry-button",
+        "to": {
+          "screenId": "cancel-appointment",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "cancel-appointment",
+          "state": "error"
+        },
+        "element": "cancel-appointment.keep-button",
+        "to": {
+          "screenId": "appointment-detail",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "cancel-appointment",
+          "state": "success"
+        },
+        "element": "cancel-appointment.book-again-button",
+        "to": {
+          "screenId": "choose-service",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "cancel-appointment",
+          "state": "success"
+        },
+        "element": "cancel-appointment.done-button",
+        "to": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "intake-form",
+          "state": "default"
+        },
+        "element": "intake-form.submit-button",
+        "to": {
+          "screenId": "intake-form",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "intake-form",
+          "state": "default"
+        },
+        "element": "intake-form.later-button",
+        "to": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "intake-form",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "intake-form",
+          "state": "success"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "intake-form",
+          "state": "error"
+        },
+        "element": "intake-form.submit-button",
+        "to": {
+          "screenId": "intake-form",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "intake-form",
+          "state": "success"
+        },
+        "element": "intake-form.done-button",
+        "to": {
+          "screenId": "home",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "clinic-info",
+          "state": "default"
+        },
+        "element": "clinic-info.book-button",
+        "to": {
+          "screenId": "choose-service",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "clinic-info",
+          "state": "error"
+        },
+        "element": "clinic-info.retry-button",
+        "to": {
+          "screenId": "clinic-info",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "clinic-info",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "clinic-info",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      }
+    ],
+    "staticActions": [
+      {
+        "screenId": "appointment-detail",
+        "state": "partial",
+        "element": "appointment-detail.call-button",
+        "reason": "Opens the phone dialler (tel: link) with the clinic's number; outside the prototype."
+      },
+      {
+        "screenId": "clinic-info",
+        "state": "default",
+        "element": "clinic-info.call-button",
+        "reason": "Opens the phone dialler (tel: link); outside the prototype."
+      }
+    ],
+    "handoff": {
+      "overview": "Online booking for an independent physiotherapy clinic (6 physios, 2 clinics): book an appointment type with a physio at a clinic from live availability, confirm instantly, change or cancel within the 24-hour policy, and answer a few intake questions before a first visit. Responsive web first, plus the clinic's iOS and Android app shells, in light and dark mode. No patient accounts: patients are matched by mobile number and email.",
+      "screens": [
+        {
+          "screenId": "home",
+          "purpose": "Upcoming appointments and the way into booking.",
+          "behaviour": [
+            "Shows the next appointment as a card and later ones as rows; each opens Appointment",
+            "Shows the intake banner only before a first visit whose intake hasn't been sent",
+            "In the app shells, three tabs; on web, side navigation"
+          ],
+          "data": [
+            "Reads upcoming appointments for the matched patient",
+            "Reads intake status"
+          ],
+          "edgeCases": [
+            "Two appointments on the same day: both rows, earliest first",
+            "Patient matched on two devices: same list on both"
+          ],
+          "acceptanceCriteria": [
+            "Opens in under 1 s on a mid-range phone with cached data",
+            "Empty state offers booking and calling",
+            "Loading is announced as 'Loading your appointments'"
+          ]
+        },
+        {
+          "screenId": "choose-service",
+          "purpose": "Step 1: appointment type and clinic.",
+          "behaviour": [
+            "First type and first clinic preselected",
+            "Chips are a single-choice radio group that wraps"
+          ],
+          "data": [
+            "Reads bookable appointment types and clinics"
+          ],
+          "edgeCases": [
+            "Clinic offers a type at only one location: the other clinic chip is disabled with a reason"
+          ],
+          "acceptanceCriteria": [
+            "'See available times' goes to step 2 with the choices kept",
+            "Back from step 2 keeps the choices"
+          ]
+        },
+        {
+          "screenId": "choose-time",
+          "purpose": "Step 2: live availability.",
+          "behaviour": [
+            "'First available' shows every physio's times; choosing a physio filters",
+            "Days without times aren't shown",
+            "Choosing a time holds it for 10 minutes"
+          ],
+          "data": [
+            "Reads live availability for a week",
+            "Writes a 10-minute hold"
+          ],
+          "edgeCases": [
+            "The hold lapses: the person keeps their details and sees fresh times",
+            "Rescheduling: the current appointment's physio is preselected"
+          ],
+          "acceptanceCriteria": [
+            "Times shown are no more than 30 s old",
+            "Selected time shows a check and 'Selected'",
+            "Empty state offers next week and all physios"
+          ]
+        },
+        {
+          "screenId": "confirm-booking",
+          "purpose": "Step 3: details and confirmation.",
+          "behaviour": [
+            "Asks only for name, mobile and email; 'been here before' helps match records",
+            "Shows the 24-hour policy and fee above the button",
+            "Confirm can't be pressed twice"
+          ],
+          "data": [
+            "Writes the booking and patient contact details"
+          ],
+          "edgeCases": [
+            "Time taken meanwhile: error with details kept",
+            "Mobile number belongs to an existing patient: link the booking to that record"
+          ],
+          "acceptanceCriteria": [
+            "No health questions on this screen",
+            "Confirmation arrives within 3 s or shows the error",
+            "Field errors are named next to the field and the first one gets focus"
+          ]
+        },
+        {
+          "screenId": "booking-confirmed",
+          "purpose": "Booked confirmation and intake prompt.",
+          "behaviour": [
+            "Announces 'You're booked' on open",
+            "Sends email and SMS confirmation",
+            "Add to calendar downloads an .ics file",
+            "Intake prompt only for first visits"
+          ],
+          "data": [
+            "Reads the booking"
+          ],
+          "edgeCases": [
+            "Email bounces: SMS still sent; reception alerted"
+          ],
+          "acceptanceCriteria": [
+            "Shows when, where and who",
+            "Shows the exact deadline for changing online"
+          ]
+        },
+        {
+          "screenId": "appointment-detail",
+          "purpose": "One appointment, with change and cancel.",
+          "behaviour": [
+            "More than 24 hours away: change and cancel online",
+            "Less than 24 hours away: online changes off; call the clinic; fee amount shown"
+          ],
+          "data": [
+            "Reads the appointment and policy settings"
+          ],
+          "edgeCases": [
+            "The 24-hour boundary passes while the screen is open: re-check on any action"
+          ],
+          "acceptanceCriteria": [
+            "Change goes to Choose a time with the physio preselected",
+            "The policy line states the deadline in the patient's local time"
+          ]
+        },
+        {
+          "screenId": "cancel-appointment",
+          "purpose": "Confirm or back out of a cancellation.",
+          "behaviour": [
+            "Bottom sheet in the apps; dialog on web",
+            "Keep appointment is the main action; cancelling is a separate destructive button",
+            "Focus moves to the title on open and back on close"
+          ],
+          "data": [
+            "Writes the cancellation and frees the time"
+          ],
+          "edgeCases": [
+            "Cancellation reaches the 24-hour boundary while open: show the late-change message instead"
+          ],
+          "acceptanceCriteria": [
+            "Cancelled appointments disappear from Home",
+            "Confirmation is sent by email",
+            "Error keeps the appointment booked and says so"
+          ]
+        },
+        {
+          "screenId": "intake-form",
+          "purpose": "Four questions before a first visit.",
+          "behaviour": [
+            "Area as plain-word options; duration as chips; optional notes; consent",
+            "Answers saved locally until sent"
+          ],
+          "data": [
+            "Writes intake answers to the patient record, visible to the treating physio and clinic team only"
+          ],
+          "edgeCases": [
+            "Booking cancelled before the visit: answers deleted",
+            "Patient opens the form after the visit: show 'Thanks, you can tell your physio in person'"
+          ],
+          "acceptanceCriteria": [
+            "Can't be sent without area and consent",
+            "Nothing times out",
+            "Success is announced"
+          ]
+        },
+        {
+          "screenId": "clinic-info",
+          "purpose": "Addresses, access, hours and calling.",
+          "behaviour": [
+            "Lists both clinics with access notes",
+            "Call opens the dialler"
+          ],
+          "data": [
+            "Reads clinic details and hours"
+          ],
+          "edgeCases": [
+            "Clinic closed today: show next opening time"
+          ],
+          "acceptanceCriteria": [
+            "Step-free access and parking stated for each clinic"
+          ]
+        }
+      ],
+      "components": [
+        {
+          "name": "Buttons",
+          "notes": "Primary filled, secondary outlined, tertiary text, destructive danger text (never filled). Minimum height 48pt in the apps, 44px on web."
+        },
+        {
+          "name": "Choice chips",
+          "notes": "Single-choice radio group; wraps; selected shows a check; 48pt tall."
+        },
+        {
+          "name": "Time rows",
+          "notes": "Full-width list rows; selected row shows a check and 'Selected'."
+        },
+        {
+          "name": "Cancel sheet",
+          "notes": "Bottom sheet with grabber in the apps; centred dialog on web; inert background."
+        },
+        {
+          "name": "Side navigation (web)",
+          "notes": "Replaces the app tab bar on web with the same three items."
+        }
+      ],
+      "accessibility": [
+        "Targets at least 48pt in the apps and 44px on web",
+        "Text follows system text size; layouts reflow up to the largest sizes",
+        "Selection and status are never shown by colour alone",
+        "Loading, booked and cancelled states are announced politely",
+        "Focus moves into the cancel sheet and returns on close; error summaries take focus",
+        "No timeouts that lose what someone typed"
+      ],
+      "analytics": [
+        "booking_step_viewed (step, platform)",
+        "booking_confirmed (type, clinic, first_available, platform, after_hours)",
+        "slot_taken_error",
+        "appointment_rescheduled",
+        "appointment_cancelled (hours_before)",
+        "intake_sent (source: booked | reminder | home)"
+      ],
+      "openIssues": [
+        {
+          "findingId": "C3",
+          "severity": 2,
+          "title": "Rescheduling reuses the booking wording",
+          "plan": "Add reschedule variants of the confirm and booked copy in the next content pass."
+        },
+        {
+          "findingId": "C4",
+          "severity": 2,
+          "title": "Web content column width isn't specified in the UI blocks",
+          "plan": "Build web pages with a 640px max-width column; check in QA."
+        },
+        {
+          "findingId": "C5",
+          "severity": 2,
+          "title": "Physio chips push times below the fold on small phones",
+          "plan": "Test with patients; if confirmed, move the full physio list into a select."
+        }
+      ]
+    }
+  }
+}

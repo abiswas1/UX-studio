@@ -1,0 +1,3965 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the invoice-reconciliation sample brief.",
+  "model": "claude-opus-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Critique ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "round ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "1: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Exception, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "values ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "that ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "differ ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "now ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "carry ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "warning ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "icon ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "word ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "'Differs' ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "size ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "of ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "difference ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(C2), ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "confirmation ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "offers ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Next ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "exception ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "focus ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "it ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(C3). ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Matched ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "shows ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rule, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "version ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "field-by-field ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "comparison ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "from ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "updated ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "content ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(C1).\n\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "screens": [
+      {
+        "screenId": "exceptions",
+        "name": "Exceptions",
+        "presentation": "full",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Queue sorted oldest first. J/K move the selection, Enter opens it; the primary action opens the oldest exception in the current filter.",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "exceptions.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "row",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": [
+                  {
+                    "type": "select",
+                    "copy": "exceptions.period-label",
+                    "text": "September 2026",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "calendar",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "input",
+                    "copy": "exceptions.search-label",
+                    "text": "",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "search",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": "/ focuses search"
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": [
+                  {
+                    "type": "stat",
+                    "copy": "exceptions.stat-open",
+                    "text": "37",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "exceptions.stat-matched",
+                    "text": "375 of 412 invoices (91%)",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "exceptions.stat-awaiting",
+                    "text": "9",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "exceptions.stat-value",
+                    "text": "£48,210.50",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  }
+                ]
+              },
+              {
+                "type": "chips",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.filter-all",
+                  "exceptions.filter-quantity",
+                  "exceptions.filter-price",
+                  "exceptions.filter-partial",
+                  "exceptions.filter-duplicate",
+                  "exceptions.filter-currency",
+                  "exceptions.filter-no-po"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Filter by exception type; counts shown in each chip in the build",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "INV-20418 — Northwind Packaging Ltd · Quantity: invoiced 120, received 100 · £1,440.00 · 6 days",
+                  "INV-20433 — Calder Freight · Price: £4.10 per pallet over the PO price · £2,872.00 · 5 days",
+                  "INV-7781 — Ostrava Metals s.r.o. · Currency: paid €18,400.00, short by €212.60 · £15,906.12 · 4 days",
+                  "INV-20391-A — Brightline Office Supply · Possible duplicate of INV-20391 · £612.30 · 3 days",
+                  "INV-5520 — Pinecrest Cleaning · No PO found for this supplier · £1,150.00 · 2 days"
+                ],
+                "count": 0,
+                "icon": "warning",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Each row's accessible name follows exceptions.row-a11y. Rows show invoice and supplier, then reason in words, amount and age",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "exceptions.shortcuts-hint",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exceptions.open-next-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "chevron-right",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exceptions.import-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "icon": "plus",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "empty",
+            "notes": "Nothing open. Offers the two things people do next: import more, or export for close.",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "exceptions.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "row",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": [
+                  {
+                    "type": "stat",
+                    "copy": "exceptions.stat-open",
+                    "text": "0",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "exceptions.stat-matched",
+                    "text": "412 of 412 invoices (100%)",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "exceptions.stat-awaiting",
+                    "text": "0",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "exceptions.stat-value",
+                    "text": "£0.00",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  }
+                ]
+              },
+              {
+                "type": "empty",
+                "copy": "exceptions.empty-title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.empty-body"
+                ],
+                "count": 0,
+                "icon": "check",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exceptions.empty-import-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "plus",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exceptions.export-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "icon": "download",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "exceptions.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "table",
+                "copy": "exceptions.loading-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.col-invoice",
+                  "exceptions.col-supplier",
+                  "exceptions.col-reason",
+                  "exceptions.col-amount",
+                  "exceptions.col-age"
+                ],
+                "count": 8,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Column headers stay in place while rows load; region is aria-busy and announces exceptions.loading-a11y",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "exceptions.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "exceptions-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "role=alert; focus moves to Try again",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exceptions.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "refresh",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "partial",
+            "notes": "Queue still usable; the warning explains why it may be incomplete.",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "exceptions.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "exceptions.partial-banner",
+                "text": "14 rows from the last import weren't imported, so some invoices may show as exceptions until those rows are fixed.",
+                "variant": "warning",
+                "items": [],
+                "count": 0,
+                "icon": "warning",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "row",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": [
+                  {
+                    "type": "stat",
+                    "copy": "exceptions.stat-open",
+                    "text": "37",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "exceptions.stat-matched",
+                    "text": "375 of 412 invoices (91%)",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "exceptions.stat-awaiting",
+                    "text": "9",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "exceptions.stat-value",
+                    "text": "£48,210.50",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  }
+                ]
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "INV-20418 — Northwind Packaging Ltd · Quantity: invoiced 120, received 100 · £1,440.00 · 6 days",
+                  "INV-20433 — Calder Freight · Price: £4.10 per pallet over the PO price · £2,872.00 · 5 days",
+                  "INV-7781 — Ostrava Metals s.r.o. · Currency: paid €18,400.00, short by €212.60 · £15,906.12 · 4 days"
+                ],
+                "count": 0,
+                "icon": "warning",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exceptions.review-rejected-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "chevron-right",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exceptions.open-next-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "exception-detail",
+        "name": "Exception",
+        "presentation": "full",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Evidence first, decision below. Ctrl+Enter submits from anywhere on the page.",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "exception-detail.title",
+                "text": "INV-20418 · Quantity mismatch",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "exception-detail.reason-quantity",
+                "text": "Invoiced quantity (120) is more than the quantity received (100). Rule Q1 allows no quantity difference.",
+                "variant": "info",
+                "items": [],
+                "count": 0,
+                "icon": "info",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "row",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": [
+                  {
+                    "type": "stat",
+                    "copy": "exception-detail.stat-difference",
+                    "text": "£240.00 · 20 units",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "exception-detail.stat-rule",
+                    "text": "Q1 Quantity, version 1",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "exception-detail.stat-age",
+                    "text": "6 days",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  }
+                ]
+              },
+              {
+                "type": "row",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Values that differ carry a warning icon and the word 'Differs' (exception-detail.diff-label) with the size of the difference, so the comparison never relies on colour",
+                "children": [
+                  {
+                    "type": "card",
+                    "copy": "exception-detail.invoice-heading",
+                    "text": "",
+                    "variant": "none",
+                    "items": [
+                      "INV-20418",
+                      "Northwind Packaging Ltd · dated 2 Sep 2026",
+                      "Quantity 120 × £12.00 — Differs: 20 more than received",
+                      "Total £1,440.00 — Differs: £240.00 more than the PO value"
+                    ],
+                    "count": 0,
+                    "icon": "warning",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "card",
+                    "copy": "exception-detail.po-heading",
+                    "text": "",
+                    "variant": "none",
+                    "items": [
+                      "PO-4471",
+                      "Northwind Packaging Ltd · raised 18 Aug 2026",
+                      "Ordered 100 · received 100 on 29 Aug",
+                      "Value £1,200.00"
+                    ],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "card",
+                    "copy": "exception-detail.payment-heading",
+                    "text": "",
+                    "variant": "none",
+                    "items": [
+                      "exception-detail.not-paid",
+                      "Next payment run: 15 Oct 2026"
+                    ],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  }
+                ]
+              },
+              {
+                "type": "select",
+                "copy": "exception-detail.resolution-label",
+                "text": "Short-pay: approve 100 units and request a credit note for 20",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "input",
+                "copy": "exception-detail.note-label",
+                "text": "Called Northwind AP on 8 Oct; credit note CN-1182 promised by 14 Oct.",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Placeholder: exception-detail.note-placeholder",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exception-detail.submit-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "send",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exception-detail.next-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "icon": "chevron-right",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exception-detail.back-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "icon": "chevron-left",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "exception-detail.shortcuts-hint",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "exception-detail.title",
+                "text": "INV-20418 · Quantity mismatch",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "skeleton",
+                "copy": "exception-detail.loading-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 8,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exception-detail.back-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "icon": "chevron-left",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "Also used when submitting fails; the resolution and note are kept.",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "exception-detail.title",
+                "text": "INV-20418 · Quantity mismatch",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "exception-detail-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exception-detail.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "refresh",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exception-detail.back-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "icon": "chevron-left",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "success",
+            "notes": "Focus moves to Next exception, so Enter continues through the queue without losing the place. (Critique C3.)",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "exception-detail.title",
+                "text": "INV-20418 · Quantity mismatch",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "exception-detail.success-banner",
+                "text": "",
+                "variant": "success",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "role=status",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "exception-detail.resolution-label",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Short-pay: approve 100 units and request a credit note for 20",
+                  "Sent to reviewers on 8 Oct 2026 at 14:02"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exception-detail.next-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "chevron-right",
+                "emphasis": "normal",
+                "state": "focus",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "exception-detail.back-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "icon": "chevron-left",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "matches",
+        "name": "Matched",
+        "presentation": "full",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Selecting a row updates the explanation below it. The explanation names the rule and version and compares each field.",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "matches.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "matches.intro",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "chips",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "matches.filter-all",
+                  "matches.filter-exact",
+                  "matches.filter-tolerance",
+                  "matches.filter-reviewer"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "INV-20377 — Calder Freight · PO-4402 · BACS 0911 · £2,310.00",
+                  "INV-20380 — Northwind Packaging Ltd · PO-4415 · BACS 0914 · £960.00",
+                  "INV-7702 — Ostrava Metals s.r.o. · PO-4398 · SEPA 2231 · €9,850.00"
+                ],
+                "count": 0,
+                "icon": "check",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "First row selected",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "matches.why-title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "INV-20377 · PO-4402 · BACS 0911"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "strong",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "matches.why-summary",
+                "text": "Matched by rule R2, version 3, on 7 Oct 2026.",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "strong",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "matches.why-fields",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Supplier · Same: Calder Freight on invoice, PO and payment",
+                  "PO number · Same: PO-4402 on the invoice and in the payment reference",
+                  "Amount · Within tolerance: invoiced £2,310.00, paid £2,308.40"
+                ],
+                "count": 0,
+                "icon": "check",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "matches.why-tolerance",
+                "text": "Amount differs by £1.60. Rule R2 allows up to 0.5% or £5.00, whichever is lower.",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "matches.check-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "check",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "matches.unmatch-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "empty",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "matches.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "empty",
+                "copy": "matches.empty-title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "matches.empty-body"
+                ],
+                "count": 0,
+                "icon": "check",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "matches.empty-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "plus",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "matches.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "skeleton",
+                "copy": "matches.loading-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 8,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "matches.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "matches-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "matches.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "refresh",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "success",
+            "notes": "The check is recorded and the next row is selected.",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "matches.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "matches.success-banner",
+                "text": "",
+                "variant": "success",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "role=status",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "INV-20377 — Calder Freight · PO-4402 · BACS 0911 · £2,310.00 · Checked by you",
+                  "INV-20380 — Northwind Packaging Ltd · PO-4415 · BACS 0914 · £960.00",
+                  "INV-7702 — Ostrava Metals s.r.o. · PO-4398 · SEPA 2231 · €9,850.00"
+                ],
+                "count": 0,
+                "icon": "check",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Second row now selected",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "matches.why-title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "INV-20380 · PO-4415 · BACS 0914"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "strong",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "matches.why-summary",
+                "text": "Matched by rule R1, version 2, on 7 Oct 2026.",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "strong",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "matches.why-fields",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Supplier · Same: Northwind Packaging Ltd on invoice, PO and payment",
+                  "PO number · Same: PO-4415 on the invoice and in the payment reference",
+                  "Amount · Same: £960.00 on invoice, PO and payment"
+                ],
+                "count": 0,
+                "icon": "check",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "matches.check-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "check",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "matches.unmatch-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "approvals",
+        "name": "Approvals",
+        "presentation": "full",
+        "states": [
+          {
+            "state": "default",
+            "notes": "One resolution selected; its evidence and note are shown before the actions.",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "approvals.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "approvals.intro",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "INV-20402 — Calder Freight · Accept price variance of £18.40 · Proposed by J. Moreno",
+                  "INV-20388 — Northwind Packaging Ltd · Short-pay 20 units and request a credit note · Proposed by J. Moreno",
+                  "INV-20391-A — Brightline Office Supply · Mark as duplicate of INV-20391 · Proposed by you"
+                ],
+                "count": 0,
+                "icon": "clock",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Rows proposed by you can be read but not approved",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "approvals.selected-label",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Accept price variance of £18.40 on INV-20402",
+                  "Invoice £1,858.40, PO £1,840.00 · rule P1 allows up to £10.00",
+                  "Note: fuel surcharge agreed by email with Calder Freight on 2 Oct",
+                  "Proposed by J. Moreno on 8 Oct 2026 at 11:20"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "strong",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "approvals.approve-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "check",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "approvals.return-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "approvals.own-helper",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "approvals.shortcuts-hint",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "empty",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "approvals.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "empty",
+                "copy": "approvals.empty-title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "approvals.empty-body"
+                ],
+                "count": 0,
+                "icon": "check",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "approvals.empty-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "approvals.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "skeleton",
+                "copy": "approvals.loading-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 8,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "Also used when an approval can't be saved (approvals-save-failed).",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "approvals.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "approvals-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "approvals.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "refresh",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "success",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "approvals.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "approvals.success-banner",
+                "text": "Approved. INV-20402 is resolved and recorded in the audit trail.",
+                "variant": "success",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "role=status",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "INV-20388 — Northwind Packaging Ltd · Short-pay 20 units and request a credit note · Proposed by J. Moreno",
+                  "INV-20391-A — Brightline Office Supply · Mark as duplicate of INV-20391 · Proposed by you"
+                ],
+                "count": 0,
+                "icon": "clock",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "approvals.next-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "chevron-right",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "permission",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "approvals.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "empty",
+                "copy": "approvals.permission-title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "approvals.permission-body"
+                ],
+                "count": 0,
+                "icon": "user",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "approvals.permission-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "import",
+        "name": "Import files",
+        "presentation": "full",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Three file types in one import; each row is checked before matching.",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "import.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "import.intro",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Invoices · invoices-sep.csv · 412 rows",
+                  "Purchase orders · po-lines-sep.csv · 655 lines",
+                  "Bank payments · payments-sep.csv · 133 rows"
+                ],
+                "count": 0,
+                "icon": "check",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Files can also be dropped onto the page",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "import.choose-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "icon": "plus",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "row",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": [
+                  {
+                    "type": "select",
+                    "copy": "import.period-label",
+                    "text": "September 2026",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "calendar",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "select",
+                    "copy": "import.mapping-label",
+                    "text": "Saved mapping: NetSuite export",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "copy": "import.file-helper",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "import.start-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "import.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "spinner",
+                "copy": "import.loading-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "import.loading-body",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "import.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "import-not-csv",
+                "text": "We couldn't read payments-sep.xlsx. It doesn't look like a CSV file. Export it again as CSV and choose it here.",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Invoices · invoices-sep.csv · 412 rows",
+                  "Purchase orders · po-lines-sep.csv · 655 lines",
+                  "Bank payments · payments-sep.xlsx · Can't be read"
+                ],
+                "count": 0,
+                "icon": "warning",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "import.choose-other-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "plus",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "partial",
+            "notes": "Valid rows are imported and matched; rejected rows are listed with the reason and can be downloaded to fix.",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "import.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "import.partial-banner",
+                "text": "1,186 of 1,200 rows imported. 14 rows weren't imported; each is listed below with the reason.",
+                "variant": "warning",
+                "items": [],
+                "count": 0,
+                "icon": "warning",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Row 112 · payments-sep.csv · Amount is empty",
+                  "Row 240 · payments-sep.csv · Currency 'EURO' isn't a 3-letter code (use EUR)",
+                  "Row 318 · invoices-sep.csv · Date 31/09/2026 doesn't exist",
+                  "Row 402 · invoices-sep.csv · Invoice number INV-20440 appears twice in this file"
+                ],
+                "count": 0,
+                "icon": "warning",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "import.download-rejected-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "download",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "import.go-exceptions-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "icon": "chevron-right",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "success",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "import.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "import.success-banner",
+                "text": "Import complete. 375 invoices matched automatically and 37 need review.",
+                "variant": "success",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "role=status",
+                "children": []
+              },
+              {
+                "type": "row",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": [
+                  {
+                    "type": "stat",
+                    "copy": "import.stat-imported",
+                    "text": "1,200",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "import.stat-matched",
+                    "text": "375",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "stat",
+                    "copy": "import.stat-exceptions",
+                    "text": "37",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  }
+                ]
+              },
+              {
+                "type": "button",
+                "copy": "import.review-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "chevron-right",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "audit-export",
+        "name": "Audit trail",
+        "presentation": "full",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Newest first. Every event names a person, or a rule and its version.",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "audit-export.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "audit-export.intro",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "chips",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "audit-export.filter-all",
+                  "audit-export.filter-imports",
+                  "audit-export.filter-matches",
+                  "audit-export.filter-resolutions",
+                  "audit-export.filter-approvals"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "8 Oct 14:02 — J. Moreno proposed a resolution · INV-20418: short-pay 100 units, credit note for 20",
+                  "8 Oct 11:47 — S. Lindqvist approved a resolution · INV-20402: accept price variance of £18.40",
+                  "7 Oct 16:05 — Rule R2 version 3 matched automatically · INV-20377, PO-4402, BACS 0911: amount within £5.00",
+                  "7 Oct 16:04 — S. Lindqvist imported 3 files · 1,186 rows imported, 14 rejected"
+                ],
+                "count": 0,
+                "icon": "history",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "row",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": [
+                  {
+                    "type": "select",
+                    "copy": "audit-export.period-label",
+                    "text": "September 2026",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "calendar",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  },
+                  {
+                    "type": "select",
+                    "copy": "audit-export.format-label",
+                    "text": "CSV (one row per event)",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "icon": "none",
+                    "emphasis": "normal",
+                    "state": "default",
+                    "a11yLabel": "",
+                    "note": ""
+                  }
+                ]
+              },
+              {
+                "type": "text",
+                "copy": "audit-export.format-helper",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "audit-export.export-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "download",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "empty",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "audit-export.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "empty",
+                "copy": "audit-export.empty-title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "audit-export.empty-body"
+                ],
+                "count": 0,
+                "icon": "history",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "audit-export.empty-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "plus",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "audit-export.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "skeleton",
+                "copy": "audit-export.loading-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 8,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "Also used when an export fails (audit-export-failed).",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "audit-export.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "audit-export-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "audit-export.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "refresh",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "success",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "audit-export.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "audit-export.success-banner",
+                "text": "Export ready: ledgerline-audit-2026-09.csv (2,418 events).",
+                "variant": "success",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "role=status",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "8 Oct 14:02 — J. Moreno proposed a resolution · INV-20418: short-pay 100 units, credit note for 20",
+                  "8 Oct 11:47 — S. Lindqvist approved a resolution · INV-20402: accept price variance of £18.40"
+                ],
+                "count": 0,
+                "icon": "history",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "audit-export.download-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "download",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "rules",
+        "name": "Matching rules",
+        "presentation": "full",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Read-only in the first release.",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "rules.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "rules.intro",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "R1 Exact three-way match · Supplier, PO number and amount identical · version 2",
+                  "R2 Three-way match within tolerance · Amount within 0.5% or £5.00, whichever is lower · version 3",
+                  "R3 Two-way match without PO · Supplier and invoice number in the payment reference · version 1",
+                  "C1 Foreign-currency payment · Converted at the ECB rate on the payment date, within 1% · version 1",
+                  "Q1 Quantity · Invoiced quantity must equal quantity received · version 1",
+                  "P1 Unit price · Up to £10.00 per invoice over the PO price · version 2"
+                ],
+                "count": 0,
+                "icon": "info",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "rules.admin-helper",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "muted",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "rules.history-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "download",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "rules.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "skeleton",
+                "copy": "rules.loading-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 6,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "",
+            "blocks": [
+              {
+                "type": "sidebar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "exceptions.nav-exceptions",
+                  "exceptions.nav-matches",
+                  "exceptions.nav-approvals",
+                  "exceptions.nav-import",
+                  "exceptions.nav-audit",
+                  "exceptions.nav-rules"
+                ],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "Same side navigation on every page; the current page is marked with aria-current",
+                "children": []
+              },
+              {
+                "type": "appbar",
+                "copy": "rules.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "rules-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "icon": "none",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "rules.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "icon": "refresh",
+                "emphasis": "normal",
+                "state": "default",
+                "a11yLabel": "",
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "componentStates": [
+      {
+        "component": "button/primary",
+        "states": [
+          {
+            "state": "default",
+            "spec": "primary fill, onPrimary label"
+          },
+          {
+            "state": "hover",
+            "spec": "primary with an 8% onPrimary overlay"
+          },
+          {
+            "state": "focus",
+            "spec": "2 px focus ring, 2 px offset"
+          },
+          {
+            "state": "pressed",
+            "spec": "primary with a 14% overlay"
+          },
+          {
+            "state": "disabled",
+            "spec": "38% opacity; not focusable; reason given in helper text"
+          },
+          {
+            "state": "loading",
+            "spec": "spinner replaces the icon; label stays; aria-busy"
+          }
+        ]
+      },
+      {
+        "component": "button/secondary",
+        "states": [
+          {
+            "state": "default",
+            "spec": "1 px border role outline, primary label"
+          },
+          {
+            "state": "hover",
+            "spec": "surfaceAlt fill"
+          },
+          {
+            "state": "focus",
+            "spec": "2 px focus ring"
+          },
+          {
+            "state": "pressed",
+            "spec": "surfaceAlt with a 14% primary overlay"
+          },
+          {
+            "state": "disabled",
+            "spec": "38% opacity"
+          }
+        ]
+      },
+      {
+        "component": "button/tertiary",
+        "states": [
+          {
+            "state": "default",
+            "spec": "primary label, no fill"
+          },
+          {
+            "state": "hover",
+            "spec": "underline and 8% primary overlay"
+          },
+          {
+            "state": "focus",
+            "spec": "2 px focus ring"
+          },
+          {
+            "state": "pressed",
+            "spec": "14% primary overlay"
+          },
+          {
+            "state": "disabled",
+            "spec": "38% opacity"
+          }
+        ]
+      },
+      {
+        "component": "input",
+        "states": [
+          {
+            "state": "default",
+            "spec": "1 px border role, surface fill"
+          },
+          {
+            "state": "hover",
+            "spec": "border in text role"
+          },
+          {
+            "state": "focus",
+            "spec": "2 px primary inner border plus focus ring"
+          },
+          {
+            "state": "error",
+            "spec": "2 px danger border, message below in danger with an error icon"
+          },
+          {
+            "state": "disabled",
+            "spec": "surfaceAlt fill, textMuted value"
+          }
+        ]
+      },
+      {
+        "component": "select",
+        "states": [
+          {
+            "state": "default",
+            "spec": "as input, chevron in textMuted"
+          },
+          {
+            "state": "hover",
+            "spec": "border in text role"
+          },
+          {
+            "state": "focus",
+            "spec": "2 px primary inner border; Alt+Down opens"
+          },
+          {
+            "state": "selected",
+            "spec": "chosen option shown with a check in the listbox"
+          },
+          {
+            "state": "disabled",
+            "spec": "surfaceAlt fill, textMuted value"
+          }
+        ]
+      },
+      {
+        "component": "chips",
+        "states": [
+          {
+            "state": "default",
+            "spec": "1 px border role, label style"
+          },
+          {
+            "state": "hover",
+            "spec": "surfaceAlt fill"
+          },
+          {
+            "state": "focus",
+            "spec": "2 px focus ring; arrow keys move between chips"
+          },
+          {
+            "state": "pressed",
+            "spec": "14% overlay"
+          },
+          {
+            "state": "selected",
+            "spec": "primaryContainer fill, onPrimaryContainer text and a check icon"
+          },
+          {
+            "state": "disabled",
+            "spec": "38% opacity"
+          }
+        ]
+      },
+      {
+        "component": "list",
+        "states": [
+          {
+            "state": "default",
+            "spec": "40 px rows, border role dividers"
+          },
+          {
+            "state": "hover",
+            "spec": "surfaceAlt row fill"
+          },
+          {
+            "state": "focus",
+            "spec": "2 px focus ring inside the row"
+          },
+          {
+            "state": "selected",
+            "spec": "primaryContainer fill and a 3 px primary bar on the left, aria-selected=true"
+          }
+        ]
+      }
+    ],
+    "motion": [
+      "No page transitions; content swaps instantly to keep keyboard work fast",
+      "Banners fade in over 120 ms; nothing moves under prefers-reduced-motion",
+      "Selecting a row updates the explanation panel in place without moving focus"
+    ],
+    "assumptions": [
+      "The side navigation is identical on every page; the current page is marked with aria-current",
+      "Exception rows announce their full content (exceptions.row-a11y), not just the invoice number",
+      "The 'Differs' label includes the size of the difference so the reviewer doesn't have to calculate it"
+    ],
+    "openQuestions": [
+      "Should the side navigation show counts for open exceptions and waiting approvals?",
+      "Do reviewers want the full evidence cards on Approvals, or is the summary enough with a link to the Exception page?"
+    ]
+  }
+}
