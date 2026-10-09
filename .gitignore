@@ -1,0 +1,8 @@
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+.env
+.env.local
+# Your projects live here by default (see UXSTUDIO_HOME in .env.example)
+workspace/

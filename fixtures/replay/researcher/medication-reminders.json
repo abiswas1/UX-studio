@@ -1,0 +1,724 @@
+{
+  "note": "Recorded sample output for demos and tests. Written for the medication-reminders sample brief; competitor details come from general product knowledge and were not re-checked on the web.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Reading ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "brief: ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "mobile, ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "iOS ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "Android, ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "adults ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "managing ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "several ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "medications ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "carers. ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "No ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "files ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "were ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "uploaded, ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "so ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "personas ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "will ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "be ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "marked ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "as ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "assumptions.\n\n",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "I'll ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "run ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "two ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "research ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "helpers ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "parallel: ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "one ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "competitors ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "alternatives, ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "one ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "published ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "guidance.\n\n",
+      "delayMs": 35
+    },
+    {
+      "kind": "tool",
+      "name": "Agent",
+      "summary": "competitors: medication reminder apps and alternatives",
+      "delayMs": 400
+    },
+    {
+      "kind": "tool",
+      "name": "Agent",
+      "summary": "market-signals: medication adherence guidance",
+      "delayMs": 200
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "Medisafe medication reminder supporter",
+      "delayMs": 700
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "MyTherapy app features",
+      "delayMs": 700
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "Apple Health medications iPhone",
+      "delayMs": 700
+    },
+    {
+      "kind": "tool",
+      "name": "WebSearch",
+      "summary": "phone alarm medication reminder",
+      "delayMs": 700
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.medisafe.com",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.mytherapyapp.com",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://www.apple.com/ios/health/",
+      "delayMs": 600
+    },
+    {
+      "kind": "tool",
+      "name": "WebFetch",
+      "summary": "https://support.google.com/clock",
+      "delayMs": 600
+    },
+    {
+      "kind": "text",
+      "text": "Both ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "helpers ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "back. ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "Synthesising: ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "alarms ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "remind ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "but ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "don't ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "record; ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "carers ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "need ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "missed-dose ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "alerts, ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "not ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "noise; ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "schedule ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "changes ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "weak ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "spot. ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "Writing ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "personas, ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "jobs, ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "insights ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "How ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "might ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "we ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "questions ",
+      "delayMs": 35
+    },
+    {
+      "kind": "text",
+      "text": "now.\n\n",
+      "delayMs": 35
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 900
+    }
+  ],
+  "output": {
+    "problem": {
+      "statement": "Adults managing several daily medications, for themselves or a parent, lose track of what has been taken and when, which leads to missed or doubled doses.",
+      "context": "Schedules change after doctor visits, doses vary by time of day, and carers often live apart from the person they support. Current tools remind but rarely help when plans change or when someone else needs to know a dose was taken.",
+      "whoIsAffected": [
+        "Adults taking three or more medications a day",
+        "Adult children or partners who help manage someone else's medications",
+        "Older adults with low vision or limited dexterity"
+      ],
+      "currentAlternatives": [
+        "Phone alarms with ad-hoc labels",
+        "Paper charts on the fridge",
+        "Weekly pill organisers",
+        "General-purpose medication apps",
+        "Phone calls or messages between carer and parent"
+      ],
+      "constraints": [
+        "iOS and Android at launch",
+        "No medical advice or dosage recommendations",
+        "Reminders must work offline",
+        "Must be usable by older adults with low vision or limited dexterity",
+        "A carer may only follow someone with that person's consent"
+      ],
+      "successSignals": [
+        "Most scheduled doses are marked taken, skipped or snoozed rather than left unanswered",
+        "New users add their first medication in under a minute",
+        "Carers check in less often by phone because the app tells them what they need",
+        "Schedule changes are made in the app instead of on paper"
+      ]
+    },
+    "competitors": [
+      {
+        "name": "Medisafe",
+        "url": "https://www.medisafe.com",
+        "category": "direct",
+        "summary": "Dedicated medication reminder app with dose tracking and an optional supporter who is notified about missed doses.",
+        "strengths": [
+          "Mature, focused reminder and tracking flow",
+          "Supporter concept is close to the carer use case"
+        ],
+        "weaknesses": [
+          "Broad feature set can make simple tasks feel busy",
+          "Some features sit behind a paid tier"
+        ],
+        "notablePatterns": [
+          "Supporter is alerted only when a dose is missed, not on every dose"
+        ],
+        "sources": [
+          {
+            "title": "Medisafe website",
+            "url": "https://www.medisafe.com",
+            "accessed": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "name": "MyTherapy",
+        "url": "https://www.mytherapyapp.com",
+        "category": "direct",
+        "summary": "Free medication reminder and health journal combining doses with measurements and symptoms.",
+        "strengths": [
+          "Free to use",
+          "Combines reminders with a simple health diary"
+        ],
+        "weaknesses": [
+          "Diary features add steps for people who only want reminders"
+        ],
+        "notablePatterns": [
+          "Daily to-do list framing of doses"
+        ],
+        "sources": [
+          {
+            "title": "MyTherapy website",
+            "url": "https://www.mytherapyapp.com",
+            "accessed": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "name": "Apple Health (Medications)",
+        "url": "https://www.apple.com/ios/health/",
+        "category": "indirect",
+        "summary": "Built-in iPhone health app that includes medication lists, schedules and logging.",
+        "strengths": [
+          "Preinstalled and trusted on iPhone",
+          "Integrates with the wider Health app"
+        ],
+        "weaknesses": [
+          "iPhone only, so mixed-platform families can't share",
+          "Medications are one feature among many in Health"
+        ],
+        "notablePatterns": [
+          "Logging from the notification without opening the app"
+        ],
+        "sources": [
+          {
+            "title": "Apple — iOS Health",
+            "url": "https://www.apple.com/ios/health/",
+            "accessed": "2026-10-09"
+          }
+        ]
+      },
+      {
+        "name": "Phone clock alarms",
+        "url": "https://support.google.com/clock",
+        "category": "substitute",
+        "summary": "Many people simply set repeating alarms, labelled with the medication name.",
+        "strengths": [
+          "Already on every phone, no setup to learn",
+          "Loud and reliable, works offline"
+        ],
+        "weaknesses": [
+          "No record of whether a dose was taken",
+          "Painful to update when a schedule changes",
+          "Nothing for a carer to see"
+        ],
+        "notablePatterns": [
+          "Labels on alarms used as a makeshift dose list"
+        ],
+        "sources": [
+          {
+            "title": "Google Clock Help",
+            "url": "https://support.google.com/clock",
+            "accessed": "2026-10-09"
+          }
+        ]
+      }
+    ],
+    "personas": [
+      {
+        "name": "The juggling self-manager",
+        "context": "Takes four to six medications at different times of day, works, and has a schedule that changes every few months after check-ups.",
+        "goals": [
+          "Never wonder whether a dose was already taken",
+          "Update the plan quickly after a doctor's visit"
+        ],
+        "frustrations": [
+          "Alarms don't record anything",
+          "Re-entering a whole schedule when one dose changes"
+        ],
+        "behaviours": [
+          "Relies on phone notifications",
+          "Keeps an organiser at home and a few pills in a bag"
+        ],
+        "basis": "assumption",
+        "basisNote": "No user research was uploaded. Based on the brief and on patterns in competitor products; validate with interviews."
+      },
+      {
+        "name": "The remote carer",
+        "context": "An adult child who lives apart from a parent and helps manage their medications by phone and occasional visits.",
+        "goals": [
+          "Know the evening dose was taken without calling",
+          "Be told when something is missed, not on every dose"
+        ],
+        "frustrations": [
+          "Calling feels like nagging",
+          "Learning about missed doses days later"
+        ],
+        "behaviours": [
+          "Checks in by phone or message",
+          "Sets up the parent's phone"
+        ],
+        "basis": "assumption",
+        "basisNote": "No user research was uploaded. Derived from the brief's carer requirement; validate with carers."
+      },
+      {
+        "name": "The independent older adult",
+        "context": "Manages their own medications, has some loss of vision and finds small touch targets hard to use.",
+        "goals": [
+          "Stay independent",
+          "Answer a reminder with one clear tap"
+        ],
+        "frustrations": [
+          "Small text and crowded screens",
+          "Apps that change layout after updates"
+        ],
+        "behaviours": [
+          "Uses large text settings",
+          "Prefers routines that stay the same"
+        ],
+        "basis": "assumption",
+        "basisNote": "No user research was uploaded. Based on the brief's accessibility constraint; validate with older users."
+      }
+    ],
+    "jobs": [
+      {
+        "situation": "a reminder goes off while I'm busy",
+        "motivation": "answer it in one step",
+        "outcome": "keep an accurate record without stopping what I'm doing",
+        "basis": "assumption"
+      },
+      {
+        "situation": "my doctor changes one of my doses",
+        "motivation": "update just that medication from a given date",
+        "outcome": "trust that tomorrow's reminders are right",
+        "basis": "assumption"
+      },
+      {
+        "situation": "it's evening and I haven't heard from my parent",
+        "motivation": "see whether today's doses were taken",
+        "outcome": "only call when something is actually wrong",
+        "basis": "assumption"
+      },
+      {
+        "situation": "I can't remember if I took my morning pill",
+        "motivation": "check today's history at a glance",
+        "outcome": "avoid taking a double dose",
+        "basis": "assumption"
+      }
+    ],
+    "insights": [
+      {
+        "id": "I1",
+        "insight": "Alarms remind but don't remember: people still can't tell later whether a dose was taken.",
+        "implication": "Every reminder should end in an explicit taken / skipped / snoozed answer, and today's view should show those answers clearly.",
+        "basis": "evidence",
+        "supportedBy": [
+          "https://support.google.com/clock"
+        ]
+      },
+      {
+        "id": "I2",
+        "insight": "Carer apps that notify on every dose risk becoming noise; alerting on missed doses respects both people.",
+        "implication": "Default carer notifications to missed or skipped doses, with a calm daily summary available on demand.",
+        "basis": "evidence",
+        "supportedBy": [
+          "https://www.medisafe.com"
+        ]
+      },
+      {
+        "id": "I3",
+        "insight": "Schedules change often, and editing a whole plan to change one dose is where people give up and go back to paper.",
+        "implication": "Make 'change from a date' a first-class action on a single medication, keeping history intact.",
+        "basis": "assumption",
+        "supportedBy": []
+      },
+      {
+        "id": "I4",
+        "insight": "Older adults and people in a hurry both need one obvious action per reminder.",
+        "implication": "Large, clearly labelled primary actions; minimum 44–48 pt targets; text that scales with system settings.",
+        "basis": "assumption",
+        "supportedBy": []
+      }
+    ],
+    "hmw": [
+      {
+        "question": "How might we make answering a reminder a single, confident tap?",
+        "linkedInsights": [
+          "I1",
+          "I4"
+        ]
+      },
+      {
+        "question": "How might we let carers feel reassured without watching every dose?",
+        "linkedInsights": [
+          "I2"
+        ]
+      },
+      {
+        "question": "How might we make a schedule change feel as easy as telling a friend?",
+        "linkedInsights": [
+          "I3"
+        ]
+      },
+      {
+        "question": "How might we help someone check today's doses in under five seconds?",
+        "linkedInsights": [
+          "I1"
+        ]
+      }
+    ],
+    "uploadsSynthesis": [],
+    "assumptions": [
+      "Most target users already rely on phone notifications for reminders",
+      "Carers want alerts about missed doses rather than every dose",
+      "Schedule changes after check-ups are frequent enough to design for",
+      "Older users will accept an app if it stays simple and predictable"
+    ],
+    "openQuestions": [
+      "How do carers and the people they support want consent to work, and how is it withdrawn?",
+      "How long after a missed reminder should a carer be alerted?",
+      "Do people need to record pills taken outside the schedule (as-needed doses) in the first release?",
+      "Which accessibility settings do target users actually use day to day?"
+    ]
+  }
+}

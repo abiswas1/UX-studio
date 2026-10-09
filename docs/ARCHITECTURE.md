@@ -1,6 +1,6 @@
 # UX Studio — Architecture proposal
 
-Status: **proposed, awaiting approval**
+Status: **approved — phase (a) built** (orchestrator, Researcher, project storage)
 
 Decisions already made:
 - **Code-first UI.** Wireframes and hi-fi screens are structured JSON + React/Tailwind on disk. Figma is a one-way mirror you push to on demand.
@@ -122,7 +122,7 @@ Figma export is a separate "Push to Figma" action, run by a small agent with Fig
 
 Versions are full snapshots, not patches. They stay readable in any editor, and diffs are computed on demand (structural JSON diff plus a text diff of the rendered markdown). Edits you make in the app create a new version with `author: "me"`.
 
-### SQLite (`$UXSTUDIO_HOME/index.db`, better-sqlite3 + Drizzle)
+### SQLite (`$UXSTUDIO_HOME/index.db`, Node’s built-in `node:sqlite`)
 
 ```
 projects(id, slug, name, platforms, updated_at)

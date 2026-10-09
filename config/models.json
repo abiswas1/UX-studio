@@ -1,0 +1,17 @@
+{
+  "tiers": {
+    "draft": "claude-sonnet-5-5",
+    "strong": "claude-opus-5-5"
+  },
+  "agents": {
+    "researcher": "draft",
+    "architect": "draft",
+    "content": "draft",
+    "wireframer": "draft",
+    "design-system": "strong",
+    "ui": "strong",
+    "critic": "strong",
+    "prototyper": "draft"
+  },
+  "budgetUsdPerRun": 5
+}
