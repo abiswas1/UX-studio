@@ -4,6 +4,13 @@ A personal design studio that runs on your laptop. You describe a product or fea
 
 **Status: all 5 steps are built** — eight specialists (Researcher, Architect, Content designer, Wireframer, Design system, UI designer, Critic, Prototyper), Figma, the critique loop, the clickable prototype with handoff notes, a project report you can save as PDF or Markdown, and an Agents page for editing instructions and models. All three sample briefs have recorded results, so everything can be tried without an API key.
 
+## Start it (the easy way)
+
+1. Install **Node.js** (the "LTS" button) from https://nodejs.org.
+2. Double-click **Start UX Studio.command** (Mac) or **Start UX Studio.bat** (Windows).
+3. The first time, it asks for your Anthropic API key (or press Enter to try the samples only), installs what it needs, and opens http://localhost:4747 in your browser.
+4. Keep the black window open while you work; close it to stop.
+
 ## Start it
 
 You need [Node.js](https://nodejs.org) 22.13 or newer.
