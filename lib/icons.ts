@@ -29,4 +29,10 @@ export const ICON_PATHS: Record<string, string> = {
   download: "M12 4v12M7 11l5 5 5-5M5 20h14",
   send: "M4 12l16-8-6 16-3-7z",
   mail: "M3 6h18v12H3zM3 6l9 7 9-7",
+  location: "M12 21s-7-6.1-7-11.5a7 7 0 0114 0C19 14.9 12 21 12 21zM12 7a2.5 2.5 0 100 5 2.5 2.5 0 000-5z",
+  inbox: "M4 5h16v14H4zM4 13h4.5l1 2h5l1-2H20",
+  document: "M6 3h8l4 4v14H6zM14 3v4h4M9 12h6M9 16h6",
+  upload: "M12 16V4M7 9l5-5 5 5M4 20h16",
+  link: "M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1",
+  chart: "M4 20V4M4 20h16M8 16v-5M12 16V8M16 16v-3",
 };

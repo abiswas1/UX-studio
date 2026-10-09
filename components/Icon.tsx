@@ -21,5 +21,11 @@ export function tabIcon(label: string): string {
   if (/setting|account|profile/.test(l)) return "settings";
   if (/calendar|schedule|book/.test(l)) return "calendar";
   if (/search/.test(l)) return "search";
+  if (/clinic|location|place|map/.test(l)) return "location";
+  if (/exception|inbox|queue|review/.test(l)) return "inbox";
+  if (/import|upload/.test(l)) return "upload";
+  if (/match|reconcil/.test(l)) return "link";
+  if (/audit|report|invoice|document|export/.test(l)) return "document";
+  if (/dashboard|overview|insight/.test(l)) return "chart";
   return "more";
 }

@@ -24,7 +24,7 @@ function text(lookup: CopyLookup, key: string, fallback = ""): string {
   // Placeholders: use the block's sample text when it has one; counts read as "1" in mockups.
   return fallback || v.replace(/\{(count|n|number)\}/g, "1");
 }
-const item = (lookup: CopyLookup, v: string) => (KEY_RE.test(v) ? text(lookup, v) : v);
+const item = (lookup: CopyLookup, v: string) => (KEY_RE.test(v) ? text(lookup, v) : v.replace(/\{(count|n|number)\}/g, "1"));
 
 export function themeVars(theme: Theme, mode: Mode): CSSProperties {
   const p = theme.color[mode];
@@ -212,14 +212,36 @@ export function UIScreen({ blocks, lookup, theme, mode, platform, presentation, 
     </div>
   ));
   const device = platform === "web" ? "desktop" : platform;
+  // On the web, the app's tabs become side navigation, and forms and reading screens get a
+  // comfortable column; dashboards (tables, stats) use the full width.
+  const navItems = (sidebar ?? tabbar[0])?.items ?? [];
+  const activeNav = screenName ? navItems.findIndex((x) => item(lookup, x).toLowerCase() === screenName.toLowerCase()) : -1;
+  const dense = (b: UIBlockT): boolean => b.type === "table" || b.type === "stat" || ("children" in b && (b.children as UIBlockT[]).some(dense));
+  const wide = body.some(dense);
 
   return (
     <div className={`ui-frame ${device} ui-${platform} mode-${mode}`} style={themeVars(theme, mode)}>
       {platform === "web" ? (
-        <div className="ui-web">
-          {sidebar && <nav className="ui-sidebar">{sidebar.items.map((i, n) => <span key={n} className={n === 0 ? "active" : ""}>{item(lookup, i)}</span>)}</nav>}
-          <div className="ui-content">{content}</div>
-        </div>
+        presentation !== "full" ? (
+          // Sheets and modals become a centred dialog on the web.
+          <div className="ui-web-dialog-wrap">
+            <div className="ui-sheet-backdrop" />
+            <div className="ui-web-dialog" role="dialog"><div className="ui-content">{content}</div></div>
+          </div>
+        ) : (
+          <div className="ui-web">
+            {navItems.length > 0 && (
+              <nav className="ui-sidebar">
+                {navItems.map((i, n) => (
+                  <span key={n} className={n === (activeNav === -1 ? 0 : activeNav) ? "active" : ""} data-copy={KEY_RE.test(i) ? i : undefined}>
+                    <Icon name={tabIcon(item(lookup, i))} size={18} />{item(lookup, i)}
+                  </span>
+                ))}
+              </nav>
+            )}
+            <div className={`ui-content ${wide ? "" : "narrow"}`}>{content}</div>
+          </div>
+        )
       ) : (
         <>
           <div className="ui-status"><span>9:41</span>{platform === "ios" && <span className="ui-notch" />}<span className="ui-status-icons" /></div>

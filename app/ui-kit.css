@@ -113,7 +113,12 @@
 .ui-hrow > * { flex: 1; }
 .ui-web { display: flex; height: 100%; }
 .ui-sidebar { width: 200px; padding: 16px 10px; background: var(--c-surface); display: flex; flex-direction: column; gap: 2px; }
-.ui-sidebar span { padding: 8px 12px; border-radius: var(--r-md); }
+.ui-sidebar span { display: flex; align-items: center; gap: 10px; min-height: var(--target); padding: 0 12px; border-radius: var(--r-md); }
+.ui-web .ui-content { padding: 24px 32px; overflow: auto; }
+.ui-web .ui-content.narrow { max-width: 704px; margin: 0 auto; width: 100%; }
+.ui-web-dialog-wrap { flex: 1; position: relative; display: grid; place-items: center; }
+.ui-web-dialog { position: relative; width: 480px; max-width: 90%; background: var(--c-surface); border-radius: var(--r-lg); box-shadow: 0 12px 40px rgba(0,0,0,0.25); }
+.ui-web-dialog .ui-content { padding: 24px; }
 .ui-sidebar span.active { background: var(--c-primary-container); color: var(--c-on-primary-container); font-weight: 600; }
 
 .ui-sheet-wrap { flex: 1; position: relative; display: flex; flex-direction: column; justify-content: flex-end; }
