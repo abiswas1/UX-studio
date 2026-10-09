@@ -1,6 +1,5 @@
 ---
 agent: critic
-tier: strong
 maxTurns: 20
 ---
 

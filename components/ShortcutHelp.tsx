@@ -13,6 +13,8 @@ const SHORTCUTS: [string, string][] = [
   ["a", "Approve the latest version"],
   ["e", "Edit (on a stage page)"],
   ["h", "Version history (on a stage page)"],
+  ["x", "Export the project report (on a project page)"],
+  ["p", "Save as PDF (on the report page)"],
   ["Esc", "Leave a text field or close this list"],
 ];
 

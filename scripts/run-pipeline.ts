@@ -85,8 +85,9 @@ async function main() {
   }
 
   const report = { label, replay: isReplayMode(), promptHashes, createdAt: new Date().toISOString(), results };
+  const previous = await previousReport(path.join(homeDir(), "eval-runs"), stamp);
   await writeJson(path.join(outDir, "report.json"), report);
-  const md = [
+  const md: string[] = [
     `# Pipeline eval ${stamp}${label ? ` — ${label}` : ""}`, "",
     `Mode: ${report.replay ? "replay (recorded output)" : "live"}`, "",
     `Prompt versions: ${Object.entries(promptHashes).map(([a, h]) => `${a} ${h}`).join(", ")}`, "",
@@ -95,10 +96,37 @@ async function main() {
       const all = r.stages.flatMap((st) => st.checks);
       return `| ${r.brief} | ${r.status} | $${r.costUsd.toFixed(2)} | ${r.seconds}s | ${all.filter((c) => c.passed).length}/${all.length} | ${r.critiqueRounds} | ${r.openSerious ?? "—"} |`;
     }),
-  ].join("\n");
-  await writeFileAtomic(path.join(outDir, "report.md"), md + "\n");
+  ];
+  if (previous) {
+    const changed = Object.keys(promptHashes).filter((a) => previous.report.promptHashes?.[a] && previous.report.promptHashes[a] !== promptHashes[a]);
+    const lines = [`Compared with the previous run (${previous.stamp}${previous.report.label ? ` — ${previous.report.label}` : ""}):`];
+    lines.push(`- Instructions changed for: ${changed.length ? changed.join(", ") : "no agents"}`);
+    for (const r of results) {
+      const p = previous.report.results.find((x) => x.brief === r.brief);
+      if (!p) continue;
+      const pass = (x: { stages: { checks: { passed: boolean }[] }[] }) => x.stages.flatMap((st) => st.checks).filter((c) => c.passed).length;
+      const delta = (a: number, b: number, unit = "") => (a === b ? "same" : `${a > b ? "+" : ""}${Math.round((a - b) * 100) / 100}${unit}`);
+      lines.push(`- ${r.brief}: checks passed ${delta(pass(r), pass(p))}, serious issues left ${delta(r.openSerious ?? 0, p.openSerious ?? 0)}, cost ${delta(r.costUsd, p.costUsd, " $")}, status ${p.status} → ${r.status}`);
+    }
+    console.log("\n" + lines.join("\n"));
+    md.push("", ...lines);
+  }
+  await writeFileAtomic(path.join(outDir, "report.md"), md.join("\n") + "\n");
   console.log(`\nReport: ${path.join(outDir, "report.md")}`);
   process.exit(results.every((r) => r.status === "done") ? 0 : 1);
+}
+
+type EvalReport = { label: string; promptHashes: Record<string, string>; results: { brief: string; status: string; costUsd: number; openSerious: number | null; stages: { checks: { passed: boolean }[] }[] }[] };
+
+/** The most recent earlier eval report, if any, for "compared with last run". */
+async function previousReport(dir: string, current: string): Promise<{ stamp: string; report: EvalReport } | null> {
+  const fs = await import("node:fs/promises");
+  const stamps = (await fs.readdir(dir).catch(() => [] as string[])).filter((d) => d < current).sort().reverse();
+  for (const stamp of stamps) {
+    const raw = await fs.readFile(path.join(dir, stamp, "report.json"), "utf8").catch(() => null);
+    if (raw) return { stamp, report: JSON.parse(raw) };
+  }
+  return null;
 }
 
 main().catch((err) => {

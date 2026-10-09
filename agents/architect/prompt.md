@@ -1,6 +1,5 @@
 ---
 agent: architect
-tier: draft
 maxTurns: 20
 ---
 

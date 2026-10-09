@@ -1,6 +1,5 @@
 ---
 agent: content
-tier: draft
 maxTurns: 20
 ---
 

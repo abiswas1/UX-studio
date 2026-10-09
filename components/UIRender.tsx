@@ -20,7 +20,9 @@ function text(lookup: CopyLookup, key: string, fallback = ""): string {
   if (!key) return fallback;
   const v = lookup.strings[key] ?? lookup.errors[key];
   if (v === undefined) return KEY_RE.test(key) ? `⟨${key}⟩` : key;
-  return v.includes("{") && fallback ? fallback : v;
+  if (!v.includes("{")) return v;
+  // Placeholders: use the block's sample text when it has one; counts read as "1" in mockups.
+  return fallback || v.replace(/\{(count|n|number)\}/g, "1");
 }
 const item = (lookup: CopyLookup, v: string) => (KEY_RE.test(v) ? text(lookup, v) : v);
 

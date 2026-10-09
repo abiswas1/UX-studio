@@ -323,3 +323,52 @@ table.data td { padding: 8px 10px; border-bottom: 1px solid var(--border); verti
 .swatches span { display: inline-flex; align-items: center; gap: 4px; opacity: 0.85; }
 .swatches i { width: 14px; height: 14px; border-radius: 4px; border: 1px solid rgba(127,127,127,0.35); display: inline-block; }
 .proto-frame { width: 100%; height: 760px; border: 1px solid var(--border); border-radius: 12px; background: #e9e8e4; }
+
+/* Project report (print / PDF) */
+.report { max-width: 900px; }
+.report-tools { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+.report-body { line-height: 1.55; }
+.report-body h1 { font-size: 30px; margin: 8px 0 4px; }
+.report-body h2 { font-size: 22px; margin: 40px 0 10px; padding-top: 16px; border-top: 1px solid var(--border); }
+.report-body h3 { font-size: 17px; margin: 24px 0 8px; }
+.report-body h4, .report-body h5, .report-body h6 { font-size: 15px; margin: 18px 0 6px; }
+.report-body table { border-collapse: collapse; width: 100%; font-size: 13px; margin: 10px 0; }
+.report-body th, .report-body td { border: 1px solid var(--border); padding: 6px 8px; text-align: left; vertical-align: top; }
+.report-body th { background: var(--panel, transparent); }
+.report-body blockquote { margin: 10px 0; padding: 8px 14px; border-left: 3px solid var(--border); color: var(--muted, inherit); }
+.report-body pre { white-space: pre-wrap; font-size: 12px; }
+.report-body .diagram { margin: 12px 0; }
+.report-body .diagram { display: flex; justify-content: center; }
+.report-body .diagram svg { max-width: 100%; max-height: 460px; height: auto; width: auto; }
+.report-gallery h2 { font-size: 22px; margin: 40px 0 6px; padding-top: 16px; border-top: 1px solid var(--border); }
+.report-platform h3 { margin: 22px 0 10px; }
+.report-screens { display: flex; flex-wrap: wrap; gap: 18px; }
+.report-screens figure { margin: 0; break-inside: avoid; }
+.report-screens figcaption { font-size: 12px; margin-top: 6px; text-align: center; }
+.report-screens .ui-frame.ios, .report-screens .ui-frame.android { zoom: 0.5; }
+.report-screens .ui-frame.desktop { zoom: 0.66; }
+
+@media print {
+  @page { margin: 16mm 14mm; }
+  .no-print { display: none !important; }
+  body { background: #fff !important; color: #111 !important; }
+  .page.report { max-width: none; padding: 0; }
+  .report-body h2, .report-gallery h2 { break-before: page; border-top: 0; padding-top: 0; }
+  .report-body h2:first-of-type { break-before: auto; }
+  .report-body table, .report-body .diagram, .report-body pre { break-inside: avoid; }
+  .report-body .diagram svg { max-height: 300px; }
+  .report-platform { break-inside: avoid; }
+  .report-body a { color: inherit; }
+}
+
+/* Agents settings */
+.agents-layout { display: grid; grid-template-columns: 220px 1fr; gap: 20px; align-items: start; }
+.agents-list ol { list-style: none; margin: 0; padding: 0; }
+.agents-list button { all: unset; box-sizing: border-box; display: flex; justify-content: space-between; gap: 8px; width: 100%; padding: 8px 10px; border-radius: 8px; cursor: pointer; font-size: 14px; }
+.agents-list button:hover { background: var(--surface-2); }
+.agents-list button.active { background: var(--accent); color: #fff; }
+.agents-list button.active .faint { color: inherit; opacity: .8; }
+.agents-list button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.prompt-editor { width: 100%; min-height: 520px; font: 13px/1.55 var(--mono, ui-monospace, monospace); resize: vertical; }
+ul.plain { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+@media (max-width: 760px) { .agents-layout { grid-template-columns: 1fr; } }

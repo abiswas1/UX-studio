@@ -19,6 +19,7 @@
     "@anthropic-ai/sdk": "^0.93.0",
     "@modelcontextprotocol/sdk": "^1.29.0",
     "diff": "^8.0.2",
+    "marked": "^16.4.1",
     "mermaid": "^11.17.2",
     "next": "15.5.27",
     "react": "19.1.1",

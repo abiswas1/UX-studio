@@ -139,6 +139,7 @@ export function PipelineClient(props: Props) {
     Enter: () => selected?.latest && router.push(`/p/${project.slug}/${selected.id}`),
     r: () => selected && canRun(selected) && runStage(selected),
     a: () => selected && canApprove(selected) && selected.dod?.passed && approve(selected),
+    x: () => router.push(`/p/${project.slug}/report`),
   });
 
   const cost = running && liveCost !== null ? liveCost : activeRun?.cost ?? lastRun?.cost ?? 0;
@@ -151,6 +152,7 @@ export function PipelineClient(props: Props) {
           <h1 style={{ margin: 0 }}>{project.name}</h1>
           <div className="faint">{project.platforms.map((p) => ({ web: "Web", ios: "iOS", android: "Android" })[p]).join(" · ")}</div>
         </div>
+        {stages.some((s) => s.latest) && <Link className="btn" href={`/p/${project.slug}/report`}>Export <kbd>x</kbd></Link>}
         <label className="sr-only" htmlFor="mode">Run mode</label>
         <select id="mode" value={project.mode} onChange={(e) => setMode(e.target.value)} style={{ width: "auto" }} disabled={busy}>
           <option value="approve">Stop for review after each stage</option>

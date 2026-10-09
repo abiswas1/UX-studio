@@ -13,7 +13,7 @@ function toMarkdown(a: Architecture): string {
   }
   out.push("## Task flows", "");
   for (const f of a.flows) {
-    out.push(`### ${f.id}. ${f.name}`, "", `Trigger: ${f.trigger}`, "", "```mermaid", f.mermaid.trim(), "```", "", list(f.steps.map((s, i) => `${i + 1}. ${s}`)), "");
+    out.push(`### ${f.id}. ${f.name}`, "", `Trigger: ${f.trigger}`, "", "```mermaid", f.mermaid.trim(), "```", "", f.steps.map((s, i) => `${i + 1}. ${s}`).join("\n"), "");
   }
   out.push("## Sitemap", "", "```mermaid", sitemapMermaid(a), "```", "");
   out.push("## Screen inventory", "", "| Screen | Priority | Primary action | States |", "| --- | --- | --- | --- |");

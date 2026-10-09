@@ -67,11 +67,20 @@ runs/<run>/calls.jsonl       a log of every AI call (prompt, output, cost)
 
 You can open these in any editor or put the folder in git.
 
+## Sharing your work
+
+On a project, press **Export** (or <kbd>x</kbd>) to open the report: the brief, every stage's write-up with its flow diagrams, the main screens, and the assumptions, open questions and decisions.
+
+- **Save as PDF** (or <kbd>p</kbd>) opens your browser's print dialog; choose "Save as PDF".
+- **Download Markdown** gives you the same report as one `.md` file (also saved as `exports/report.md`).
+- The clickable prototype (one HTML file) and the developer handoff notes download from the Prototype stage.
+- Screens and flows can be pushed to Figma from the Wireframes, UI and Architecture stages.
+
 ## Changing the specialists
 
-Each specialist's instructions are a Markdown file you can edit: `agents/researcher/prompt.md`. Its "done" checklist is in `agents/researcher/dod.ts`.
+Open **Agents** (top right of the projects page) to edit each specialist's instructions and pick its model: *Draft* (cheaper, for research and drafting) or *Strong* (for design system, UI and critique). Every save keeps the earlier text under "Earlier versions", so you can go back. The same page sets which model each tier uses and the spending cap per run.
 
-Models are set in `config/models.json`: a cheaper model for research and drafting, a stronger one for UI and critique. The per-run spending cap also lives there.
+The instructions live in `agents/<name>/prompt.md` and the models in `config/models.json`, if you prefer a text editor. Each specialist's "done" checklist is in `agents/<name>/index.ts`.
 
 ## Testing prompt changes
 
@@ -81,7 +90,9 @@ npm run pipeline -- --brief clinic-booking
 npm run pipeline -- --label "shorter prompt"
 ```
 
-It prints which done-checks passed for each brief, plus cost and time, and saves a report under `workspace/eval-runs/`. In replay mode only the medication-reminders sample has recordings so far; the other two are filled in during step 5.
+It prints which done-checks passed for each brief, how many critique rounds it took and how many serious issues are left, plus cost and time. It saves a report under `workspace/eval-runs/`, and compares it with the previous run: which agents' instructions changed, and whether checks, serious issues and cost went up or down.
+
+Without an API key it plays back recordings for all three sample briefs, which is useful to check the app works; the comparison is only meaningful with real runs.
 
 ## For developers
 

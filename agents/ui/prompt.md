@@ -1,6 +1,5 @@
 ---
 agent: ui
-tier: strong
 maxTurns: 30
 ---
 

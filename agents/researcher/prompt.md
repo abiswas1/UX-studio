@@ -1,6 +1,5 @@
 ---
 agent: researcher
-tier: draft
 maxTurns: 40
 subagents: [competitors, market-signals, uploads]
 ---

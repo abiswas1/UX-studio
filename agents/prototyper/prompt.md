@@ -1,6 +1,5 @@
 ---
 agent: prototyper
-tier: draft
 maxTurns: 20
 ---
 

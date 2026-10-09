@@ -24,6 +24,7 @@ export default async function Home() {
       <header className="topbar">
         <Link href="/" className="brand">UX Studio</Link>
         <span className="spacer" />
+        <Link href="/agents">Agents</Link>
         {isReplayMode() && <span className="badge replay" title="No API key found: runs play back recorded sample output">Replay mode</span>}
         <span className="faint">Press <kbd>?</kbd> for shortcuts</span>
       </header>

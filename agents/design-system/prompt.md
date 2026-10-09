@@ -1,6 +1,5 @@
 ---
 agent: design-system
-tier: strong
 maxTurns: 30
 ---
 

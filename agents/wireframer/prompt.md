@@ -1,6 +1,5 @@
 ---
 agent: wireframer
-tier: draft
 maxTurns: 25
 ---
 
