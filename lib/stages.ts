@@ -34,9 +34,9 @@ export const STAGES: StageDef[] = [
   { id: "wireframes", order: 4, folder: "04-wireframes", title: "Wireframes", agent: "wireframer", phase: "b",
     summary: "Low-fi screens, one primary action each", dependsOn: ["architecture", "content"] },
   { id: "design-system", order: 5, folder: "05-design-system", title: "Design system", agent: "design-system", phase: "c",
-    summary: "Your Figma library or tokens, or a minimal system", dependsOn: [] },
+    summary: "Your Figma library or tokens, or a minimal system", dependsOn: ["wireframes"] },
   { id: "ui", order: 6, folder: "06-ui", title: "UI", agent: "ui", phase: "c",
-    summary: "High-fi screens in every interactive state", dependsOn: ["wireframes", "content", "design-system"] },
+    summary: "High-fi screens in every interactive state", dependsOn: ["wireframes", "content", "design-system", "architecture"] },
   { id: "critique", order: 7, folder: "07-critique", title: "Critique", agent: "critic", phase: "d",
     summary: "Nielsen heuristics and WCAG 2.2 AA review", dependsOn: ["ui", "wireframes", "content"] },
   { id: "prototype", order: 8, folder: "08-prototype", title: "Prototype", agent: "prototyper", phase: "d",
@@ -44,7 +44,7 @@ export const STAGES: StageDef[] = [
 ];
 
 /** Phases built so far. Stages from later phases show as "coming soon". */
-export const AVAILABLE_PHASES = new Set(["a", "b"]);
+export const AVAILABLE_PHASES = new Set(["a", "b", "c"]);
 
 export function stageById(id: string): StageDef | undefined {
   return STAGES.find((s) => s.id === id);

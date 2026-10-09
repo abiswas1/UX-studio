@@ -26,6 +26,8 @@ export interface AgentModule<T = unknown> {
   schema: z.ZodType<T>;
   /** Built-in tools the agent may use besides submit_artifact. */
   tools: string[];
+  /** Figma MCP tools (without prefix) the agent may use when the project has a Figma file. */
+  figmaTools?: string[];
   subagents?: (ctx: AgentContext) => Record<string, SubagentDef>;
   buildTask: (ctx: AgentContext) => string;
   dod: (data: T, ctx: AgentContext) => DodResult | Promise<DodResult>;

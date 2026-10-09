@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useHotkeys } from "./useHotkeys";
 import { StatusChip } from "./StatusChip";
+import { FigmaFileCard } from "./FigmaControls";
 import type { StageStatus } from "@/lib/orchestrator/status";
 import type { Assumption, OpenQuestion, Project } from "@/lib/storage/projects";
 import type { DodResult } from "@/lib/storage/artifacts";
@@ -315,6 +316,8 @@ export function PipelineClient(props: Props) {
               <p className="faint" style={{ margin: 0 }}>None yet. Interview notes, survey results, analytics exports or screenshots help the Researcher work from evidence instead of assumptions.</p>
             )}
           </div>
+
+          <FigmaFileCard slug={project.slug} url={project.figmaFileUrl} />
 
           <div className="card">
             <h3>Assumptions <span className="faint">({props.assumptions.length})</span></h3>

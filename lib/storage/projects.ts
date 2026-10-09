@@ -17,6 +17,8 @@ export interface Project {
   /** Per-agent model overrides, e.g. { "researcher": "claude-opus-5-5" }. */
   models?: Record<string, string>;
   budgetUsd?: number;
+  /** The designer's Figma file, read by the Design System agent and used for "Push to Figma". */
+  figmaFileUrl?: string;
   /** Set when the project was created from one of the sample briefs (used by replay mode). */
   sampleId?: string;
 }

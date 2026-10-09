@@ -7,6 +7,7 @@ import type { Provider, ProviderRequest, ProviderResult } from "./provider";
 // errors go back to the agent so it can correct them in the same session.
 
 const SUBMIT = "mcp__uxstudio__submit_artifact";
+export const FIGMA_PREFIX = `mcp__${process.env.UXSTUDIO_FIGMA_SERVER || "figma"}__`;
 
 function summarise(input: unknown): string {
   if (!input || typeof input !== "object") return "";
@@ -41,6 +42,9 @@ export const sdkProvider: Provider = {
       agents[name] = { description: def.description, prompt: def.prompt, tools: def.tools, model: req.model };
     }
     const builtIns = req.tools.filter((t) => t !== "Agent" || Object.keys(agents).length > 0);
+    // Figma tools come from the Figma MCP server configured in the user's Claude Code settings
+    // (claude mcp add --scope user --transport http figma https://mcp.figma.com/mcp).
+    const figma = req.figmaTools.map((t) => `${FIGMA_PREFIX}${t}`);
 
     const abortController = new AbortController();
     req.signal.addEventListener("abort", () => abortController.abort(), { once: true });
@@ -57,14 +61,14 @@ export const sdkProvider: Provider = {
           model: req.model,
           cwd: req.cwd,
           tools: builtIns,
-          allowedTools: [...builtIns, SUBMIT],
+          allowedTools: [...builtIns, ...figma, SUBMIT],
           permissionMode: "dontAsk",
           mcpServers: { uxstudio: createSdkMcpServer({ name: "uxstudio", version: "0.1.0", tools: [submit] }) },
           agents,
           maxTurns: req.maxTurns,
           maxBudgetUsd: req.maxBudgetUsd,
           includePartialMessages: true,
-          settingSources: [],
+          settingSources: figma.length ? ["user"] : [],
           persistSession: false,
           abortController,
         },
@@ -77,7 +81,7 @@ export const sdkProvider: Provider = {
         } else if (msg.type === "assistant") {
           for (const block of msg.message.content) {
             if (block.type === "tool_use") {
-              const name = block.name === SUBMIT ? "submit_artifact" : block.name;
+              const name = block.name === SUBMIT ? "submit_artifact" : block.name.replace(FIGMA_PREFIX, "figma:");
               req.onEvent({ kind: "tool", name, summary: summarise(block.input) });
             }
           }

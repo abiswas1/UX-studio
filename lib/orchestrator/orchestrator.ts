@@ -206,6 +206,7 @@ async function runStage(runId: string, slug: string, stage: StageId, signal: Abo
     const startedAt = new Date().toISOString();
     const result = await provider().run({
       agentId: agent.id, model, systemPrompt: prompt.body, task, schema: agent.schema, tools: agent.tools,
+      figmaTools: ctx.project.figmaFileUrl ? agent.figmaTools ?? [] : [],
       subagents: agent.subagents?.(ctx) ?? {}, maxTurns: prompt.maxTurns, maxBudgetUsd: remaining, cwd: ctx.projectDir,
       signal,
       onEvent: (e) =>

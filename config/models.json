@@ -11,7 +11,8 @@
     "design-system": "strong",
     "ui": "strong",
     "critic": "strong",
-    "prototyper": "draft"
+    "prototyper": "draft",
+    "figma-export": "draft"
   },
   "budgetUsdPerRun": 5
 }

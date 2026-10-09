@@ -1,12 +1,14 @@
 import { z } from "zod";
 import { getProject, setBrief, updateProject, logDecision } from "@/lib/storage/projects";
 import { emit } from "@/lib/runtime/events";
+import { figmaFileKey } from "@/lib/figma/url";
 import { handle, ok, fail } from "@/lib/api/respond";
 
 const Body = z.object({
   mode: z.enum(["approve", "unattended"]).optional(),
   brief: z.string().trim().min(20).optional(),
   budgetUsd: z.number().positive().max(500).optional(),
+  figmaFileUrl: z.string().trim().max(500).optional(),
 });
 
 export async function PATCH(req: Request, { params }: { params: Promise<{ slug: string }> }) {
@@ -20,6 +22,11 @@ export async function PATCH(req: Request, { params }: { params: Promise<{ slug: 
       await logDecision(slug, "Mode changed", body.mode === "approve" ? "Stop for review after each stage." : "Run on its own.");
     }
     if (body.budgetUsd) await updateProject(slug, { budgetUsd: body.budgetUsd });
+    if (body.figmaFileUrl !== undefined) {
+      if (body.figmaFileUrl && !figmaFileKey(body.figmaFileUrl)) return fail("That doesn't look like a Figma file link.");
+      await updateProject(slug, { figmaFileUrl: body.figmaFileUrl || undefined });
+      await logDecision(slug, body.figmaFileUrl ? "Figma file connected" : "Figma file removed", body.figmaFileUrl);
+    }
     emit(slug, { type: "changed" });
     return ok();
   });

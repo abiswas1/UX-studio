@@ -1,6 +1,6 @@
 # UX Studio — Architecture proposal
 
-Status: **approved — phases (a) and (b) built** (orchestrator, storage, Researcher, Architect, Content Designer, Wireframer)
+Status: **approved — phases (a), (b) and (c) built** (orchestrator, storage, Researcher, Architect, Content Designer, Wireframer, Design System, UI Designer, Figma read and push)
 
 Decisions already made:
 - **Code-first UI.** Wireframes and hi-fi screens are structured JSON + React/Tailwind on disk. Figma is a one-way mirror you push to on demand.

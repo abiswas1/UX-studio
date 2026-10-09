@@ -10,9 +10,13 @@ import { stageStates } from "@/lib/orchestrator/status";
 import { runningStages } from "@/lib/orchestrator/orchestrator";
 import { ArtifactView, copyLookup, type ViewContext } from "@/components/ArtifactView";
 import type { Content } from "@/agents/content/schema";
+import type { DesignSystem } from "@/agents/design-system/schema";
 import { SchemaEditor, type JsonSchema } from "@/components/SchemaEditor";
 import { StageActions } from "@/components/StageActions";
 import { StatusChip } from "@/components/StatusChip";
+import { FigmaPush } from "@/components/FigmaControls";
+import { listPushes } from "@/lib/figma/push";
+import { isReplayMode } from "@/lib/runtime/models";
 
 export const dynamic = "force-dynamic";
 
@@ -42,6 +46,10 @@ export default async function StagePage({ params, searchParams }: { params: Prom
   const contentRef = current?.meta.inputs.content;
   if (typeof contentRef === "number") {
     viewContext.lookup = copyLookup((await getVersion<Content>(slug, "content", contentRef))?.data);
+  }
+  const dsRef = current?.meta.inputs["design-system"];
+  if (typeof dsRef === "number") {
+    viewContext.designSystem = (await getVersion<DesignSystem>(slug, "design-system", dsRef))?.data ?? null;
   }
   const href = (q: Record<string, string | number | undefined>) =>
     `/p/${slug}/${stage}?` + new URLSearchParams(Object.entries({ v: vNum, ...q }).filter(([, x]) => x !== undefined).map(([k, x]) => [k, String(x)])).toString();
@@ -167,6 +175,15 @@ export default async function StagePage({ params, searchParams }: { params: Prom
             </div>
 
             <aside className="stack">
+              {(def.id === "ui" || def.id === "wireframes" || def.id === "architecture") && (
+                <FigmaPush
+                  slug={slug}
+                  stage={def.id}
+                  pushes={(await listPushes(slug)).filter((p) => p.stage === def.id)}
+                  hasFile={!!project.figmaFileUrl}
+                  replay={isReplayMode()}
+                />
+              )}
               <div className="card">
                 <h3>Done-checks for version {current.meta.version}</h3>
                 <ul className="dod">

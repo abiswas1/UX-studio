@@ -12,6 +12,8 @@ export interface ProviderRequest {
   task: string;
   schema: z.ZodType;
   tools: string[];
+  /** Figma MCP tools (unprefixed). Uses the Figma connection from the user's Claude Code settings. */
+  figmaTools: string[];
   subagents: Record<string, SubagentDef>;
   maxTurns: number;
   maxBudgetUsd: number;

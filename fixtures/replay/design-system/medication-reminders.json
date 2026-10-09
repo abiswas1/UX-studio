@@ -1,0 +1,918 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the medication-reminders sample brief. Android values were read from the Material 3 Design Kit in the designer's Figma file (Teal scheme).",
+  "model": "claude-opus-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "tool",
+      "name": "figma:get_libraries",
+      "summary": "2p2wcD2i751EzR4dxG4auF",
+      "delayMs": 450
+    },
+    {
+      "kind": "tool",
+      "name": "figma:search_design_system",
+      "summary": "Schemes/Primary, Surface, Error, Outline; Button, Text field, List item, Navigation bar",
+      "delayMs": 450
+    },
+    {
+      "kind": "tool",
+      "name": "figma:use_figma",
+      "summary": "read-only: resolve M3 Teal LT/DT variable values and text styles",
+      "delayMs": 450
+    },
+    {
+      "kind": "tool",
+      "name": "figma:use_figma",
+      "summary": "read-only: iOS 26 variables (not permitted by the library)",
+      "delayMs": 450
+    },
+    {
+      "kind": "text",
+      "text": "Found ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Material ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "3, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Simple ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Design ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "System ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Apple ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "iOS ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "kits ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "attached ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "to ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "file. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Using ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Material ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "3 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Android ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "its ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Teal ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "scheme, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Apple's ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "system ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "defaults ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "iPhone, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "because ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "iOS ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "kit's ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "variables ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "can't ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "be ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "read ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "through ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "API. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Darkened ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "iOS ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "secondary ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "text ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "red ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "to ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "pass ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "4.5:1 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "contrast. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Mapped ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "15 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "block ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "types ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "to ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "library ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "components.\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "source": {
+      "kind": "figma",
+      "fileKey": "2p2wcD2i751EzR4dxG4auF",
+      "notes": "Android values were read from the Material 3 Design Kit attached to the file (Teal light and dark schemes, M3 text styles). Apple's iOS 26 kit doesn't allow its variables to be read through the API, so the iOS theme uses Apple's published system defaults, with the brand teal from Material 3 for actions."
+    },
+    "libraries": [
+      {
+        "name": "Material 3 Design Kit",
+        "libraryKey": "lk-5a31d104cabc6a74d4edf6425e7bc6575e9c0f18cda7efb746193aef4d915b077d115c985e6cf49d36d97d455a17d5127a2cbbfbc618b8a70a38669dccb61462",
+        "platforms": [
+          "android"
+        ],
+        "usage": "Colours (Teal scheme), type scale and components for Android"
+      },
+      {
+        "name": "iOS and iPadOS 26",
+        "libraryKey": "lk-a5b98decf0fb24381005421a2986b813149fcf20f37a1169316d44e2802c483494c6fc98ab8e083540a73bd5e45cf892a38123ee61981aee097d5f4eb8487a17",
+        "platforms": [
+          "ios"
+        ],
+        "usage": "Component structure and naming for iPhone; colours from Apple's system defaults"
+      }
+    ],
+    "themes": [
+      {
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "fontFamily": "SF Pro Text",
+        "fallbackFont": "-apple-system, system-ui, sans-serif",
+        "color": {
+          "light": {
+            "background": "#F2F2F7",
+            "surface": "#FFFFFF",
+            "surfaceAlt": "#E5E5EA",
+            "text": "#000000",
+            "textMuted": "#636366",
+            "primary": "#006B60",
+            "onPrimary": "#FFFFFF",
+            "primaryContainer": "#D3F1EC",
+            "onPrimaryContainer": "#00504A",
+            "border": "#C6C6C8",
+            "danger": "#D70015",
+            "onDanger": "#FFFFFF",
+            "dangerContainer": "#FFE4E2",
+            "onDangerContainer": "#8C1D18",
+            "success": "#248A3D",
+            "warning": "#B25000",
+            "focus": "#006B60"
+          },
+          "dark": {
+            "background": "#000000",
+            "surface": "#1C1C1E",
+            "surfaceAlt": "#2C2C2E",
+            "text": "#FFFFFF",
+            "textMuted": "#EBEBF599",
+            "primary": "#82D5C7",
+            "onPrimary": "#003731",
+            "primaryContainer": "#004D45",
+            "onPrimaryContainer": "#C9F5EE",
+            "border": "#38383A",
+            "danger": "#FF6961",
+            "onDanger": "#000000",
+            "dangerContainer": "#5C1A16",
+            "onDangerContainer": "#FFDAD6",
+            "success": "#30D158",
+            "warning": "#FFB340",
+            "focus": "#82D5C7"
+          }
+        },
+        "type": {
+          "display": {
+            "size": 34,
+            "lineHeight": 41,
+            "weight": 700
+          },
+          "headline": {
+            "size": 22,
+            "lineHeight": 28,
+            "weight": 700
+          },
+          "title": {
+            "size": 20,
+            "lineHeight": 25,
+            "weight": 600
+          },
+          "body": {
+            "size": 17,
+            "lineHeight": 22,
+            "weight": 400
+          },
+          "label": {
+            "size": 17,
+            "lineHeight": 22,
+            "weight": 600
+          },
+          "caption": {
+            "size": 13,
+            "lineHeight": 18,
+            "weight": 400
+          }
+        },
+        "radius": {
+          "sm": 8,
+          "md": 10,
+          "lg": 14,
+          "full": 999
+        },
+        "spacing": [
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          32
+        ],
+        "minTarget": 44,
+        "provenance": [
+          {
+            "token": "color.primary (light)",
+            "from": "M3 Schemes/Primary, Teal LT (#006B60) — brand colour shared with Android"
+          },
+          {
+            "token": "color.primary (dark)",
+            "from": "M3 Schemes/Primary, Teal DT (#82D5C7)"
+          },
+          {
+            "token": "color.background / surface / text",
+            "from": "Apple system defaults: systemGroupedBackground, secondarySystemGroupedBackground, label"
+          },
+          {
+            "token": "color.textMuted (light)",
+            "from": "Darkened from Apple secondaryLabel (#3C3C43 at 60%), which measures 3.3:1 on the grouped background"
+          },
+          {
+            "token": "color.danger (light)",
+            "from": "Apple systemRed, accessible variant (#D70015); default #FF3B30 measures 3.55:1 with white text"
+          },
+          {
+            "token": "type",
+            "from": "Apple Dynamic Type defaults at the Large size (Body 17/22, Large Title 34/41)"
+          }
+        ]
+      },
+      {
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "fontFamily": "Roboto",
+        "fallbackFont": "Roboto, system-ui, sans-serif",
+        "color": {
+          "light": {
+            "background": "#F4FBF8",
+            "surface": "#E9EFEC",
+            "surfaceAlt": "#E3EAE7",
+            "text": "#171D1B",
+            "textMuted": "#3F4946",
+            "primary": "#006B60",
+            "onPrimary": "#FFFFFF",
+            "primaryContainer": "#9EF2E3",
+            "onPrimaryContainer": "#2E4C47",
+            "border": "#BEC9C5",
+            "danger": "#B3261E",
+            "onDanger": "#FFFFFF",
+            "dangerContainer": "#F9DEDC",
+            "onDangerContainer": "#8C1D18",
+            "success": "#376A3E",
+            "warning": "#795A0C",
+            "focus": "#006B60"
+          },
+          "dark": {
+            "background": "#0E1513",
+            "surface": "#1A211F",
+            "surfaceAlt": "#252B2A",
+            "text": "#DDE4E1",
+            "textMuted": "#BEC9C5",
+            "primary": "#82D5C7",
+            "onPrimary": "#003731",
+            "primaryContainer": "#006B5F",
+            "onPrimaryContainer": "#FFFFFF",
+            "border": "#3F4946",
+            "danger": "#F2B8B5",
+            "onDanger": "#601410",
+            "dangerContainer": "#8C1D18",
+            "onDangerContainer": "#F9DEDC",
+            "success": "#9CD49F",
+            "warning": "#E9C16C",
+            "focus": "#82D5C7"
+          }
+        },
+        "type": {
+          "display": {
+            "size": 32,
+            "lineHeight": 40,
+            "weight": 400
+          },
+          "headline": {
+            "size": 22,
+            "lineHeight": 28,
+            "weight": 400
+          },
+          "title": {
+            "size": 16,
+            "lineHeight": 24,
+            "weight": 500
+          },
+          "body": {
+            "size": 16,
+            "lineHeight": 24,
+            "weight": 400
+          },
+          "label": {
+            "size": 14,
+            "lineHeight": 20,
+            "weight": 500
+          },
+          "caption": {
+            "size": 14,
+            "lineHeight": 20,
+            "weight": 400
+          }
+        },
+        "radius": {
+          "sm": 8,
+          "md": 12,
+          "lg": 16,
+          "full": 999
+        },
+        "spacing": [
+          4,
+          8,
+          12,
+          16,
+          20,
+          24,
+          32
+        ],
+        "minTarget": 48,
+        "figma": {
+          "modes": {
+            "light": "Teal LT",
+            "dark": "Teal DT"
+          },
+          "variables": {
+            "background": "eb6111c4a47968bf3cead35c6052873423b4d3d5",
+            "surface": "39429ef475465b43ef4cb71db29f18b87b4abf4a",
+            "surfaceAlt": "872c33cf92cb21916b7722c15fe794eefc5a6e8b",
+            "text": "d708be20513001c4083ed24c1e58c2fdaca456b3",
+            "textMuted": "2669a52b8e7217f9819767cb22af92e9332d8148",
+            "primary": "76bfbbf87c5f600256e614f12eaf0699927c5a35",
+            "onPrimary": "43e2fa808c95da8ac12fd3eddae33367c25249ed",
+            "primaryContainer": "a103186b128f8b374dd67aca273d14b16f80c015",
+            "onPrimaryContainer": "3955ea91dec6375cafc103197d010e8f972b48ea",
+            "border": "62f3600b56f0544c7c806efc996e3a710e7c4314",
+            "danger": "e1a47274c0e369e5d527533bc0639058333d3894",
+            "onDanger": "11f0ad761ca9c65a9ad2ecbfd373d4bafcc62438",
+            "dangerContainer": "a9c06f50afc38482ae08829d2a95f39c0e7bf743",
+            "onDangerContainer": "1221ffb0a3af163e60f2f5ef754b971dfeb75dda"
+          },
+          "textStyles": {
+            "display": "6bbad1b27fe05ecdb1858533b6a345777d20d506",
+            "headline": "6d152883d5f7e827add2e91513fd9a90bf762baa",
+            "body": "4aeaa89a2f980c69d11b84a0e2a4f1268119c277",
+            "label": "5afceec95267887a6a779afde1b75400180752f8",
+            "caption": "1e92164361231ef1ed79f8fd256e78e0f6fbf250"
+          }
+        },
+        "provenance": [
+          {
+            "token": "color.*",
+            "from": "M3 Schemes (Teal LT / Teal DT): Surface, Surface Container, Surface Container High, On Surface, On Surface Variant, Primary, On Primary, Primary Container, On Primary Container, Outline Variant, Error, On Error, Error Container, On Error Container"
+          },
+          {
+            "token": "color.success / warning",
+            "from": "M3 Schemes/Primary in the Green and Yellow schemes"
+          },
+          {
+            "token": "type.display / headline / body / label / caption",
+            "from": "M3 text styles headline/large, title/large, body/large, label/large, body/medium (Roboto)"
+          },
+          {
+            "token": "type.title",
+            "from": "M3 title/medium (16/24, 500) — standard value, not read from the file"
+          }
+        ]
+      }
+    ],
+    "components": [
+      {
+        "block": "appbar",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Navigation Bar (large title)",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "appbar",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "App bar",
+        "componentKey": "23a20484e255cb14cf467ccc984ac918e457cefb",
+        "notes": ""
+      },
+      {
+        "block": "button",
+        "variant": "primary",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Button - Content Area (filled)",
+        "componentKey": "aa1e2901a821ff24d484362e7e8e70378ee7d388",
+        "notes": ""
+      },
+      {
+        "block": "button",
+        "variant": "secondary",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Button - Content Area (tinted)",
+        "componentKey": "aa1e2901a821ff24d484362e7e8e70378ee7d388",
+        "notes": ""
+      },
+      {
+        "block": "button",
+        "variant": "tertiary",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Button - Content Area (plain)",
+        "componentKey": "aa1e2901a821ff24d484362e7e8e70378ee7d388",
+        "notes": ""
+      },
+      {
+        "block": "button",
+        "variant": "primary",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Button (filled)",
+        "componentKey": "ab924dce8b851fd820bd0d56da24a9c489311ae6",
+        "notes": ""
+      },
+      {
+        "block": "button",
+        "variant": "secondary",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Button - outline",
+        "componentKey": "dd2040219668454df5aa170434636aa823624c1a",
+        "notes": ""
+      },
+      {
+        "block": "button",
+        "variant": "tertiary",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Button - text",
+        "componentKey": "c94bd76a8dbf75d7885f3015ad8474d898fca25b",
+        "notes": ""
+      },
+      {
+        "block": "input",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Text Field",
+        "componentKey": "7aba90bfa152536a5dd439235a094feff7d782f5",
+        "notes": ""
+      },
+      {
+        "block": "input",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Text field (outlined)",
+        "componentKey": "a54980c1c99c62912ab39e9e30fe5c267c98edb4",
+        "notes": ""
+      },
+      {
+        "block": "select",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Row - Button (with value)",
+        "componentKey": "7b9ac5d38db7ef9ca9b7c0bbba9d0e46187d1fa6",
+        "notes": ""
+      },
+      {
+        "block": "select",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Text field (exposed dropdown)",
+        "componentKey": "a54980c1c99c62912ab39e9e30fe5c267c98edb4",
+        "notes": ""
+      },
+      {
+        "block": "list",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Grouped list rows",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "list",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "List item",
+        "componentKey": "e51596a48a52120d41c1a8260b43e27018e3d4bb",
+        "notes": ""
+      },
+      {
+        "block": "card",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Built from theme tokens; no matching library component"
+      },
+      {
+        "block": "card",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Horizontal card",
+        "componentKey": "78d3f1e228edbedd6296fda77df704a36224f12b",
+        "notes": ""
+      },
+      {
+        "block": "tabbar",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Tab Bar - iPhone",
+        "componentKey": "1a05576da751e45de479836ff1f59971cedc2606",
+        "notes": ""
+      },
+      {
+        "block": "tabbar",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Navigation Bar: Vertical items",
+        "componentKey": "d044e5ea85ee8d7479269dc54c5cb55b7156821d",
+        "notes": ""
+      },
+      {
+        "block": "chips",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Segmented control",
+        "componentKey": "8922aa130fa8f99812b6f4d9791d90558295b52a",
+        "notes": ""
+      },
+      {
+        "block": "chips",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Filter chip",
+        "componentKey": "a3c83c534d78babd0613f4f14c72ac25ebae90cf",
+        "notes": ""
+      },
+      {
+        "block": "spinner",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Progress indicator",
+        "componentKey": "258d98d8186ca1fb7b753c7b6c8d9b980c3e6099",
+        "notes": ""
+      },
+      {
+        "block": "spinner",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Circular-indeterminate progress indicator",
+        "componentKey": "0f6663248f1907b46c8c4b28e4c94fee3b9bdcfe",
+        "notes": ""
+      },
+      {
+        "block": "skeleton",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Built from theme tokens; no matching library component"
+      },
+      {
+        "block": "skeleton",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Built from theme tokens; no matching library component"
+      },
+      {
+        "block": "banner",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Built from theme tokens; no matching library component"
+      },
+      {
+        "block": "banner",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Custom (M3 has no inline banner)",
+        "componentKey": "",
+        "notes": "Built from theme tokens; no matching library component"
+      },
+      {
+        "block": "empty",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Built from theme tokens; no matching library component"
+      },
+      {
+        "block": "empty",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Custom",
+        "componentKey": "",
+        "notes": "Built from theme tokens; no matching library component"
+      },
+      {
+        "block": "heading",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Text style: Title 3",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "heading",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Text style: title/medium",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "text",
+        "variant": "",
+        "platform": "ios",
+        "library": "iOS and iPadOS 26",
+        "component": "Text style: Body",
+        "componentKey": "",
+        "notes": ""
+      },
+      {
+        "block": "text",
+        "variant": "",
+        "platform": "android",
+        "library": "Material 3 Design Kit",
+        "component": "Text style: body/large",
+        "componentKey": "",
+        "notes": ""
+      }
+    ],
+    "principles": [
+      "Calm and legible: generous type, one strong action per screen",
+      "Native on each platform, one brand colour across both",
+      "Status never relies on colour alone: always an icon and words"
+    ],
+    "assumptions": [
+      "The brand colour is teal; no existing brand guidelines were provided"
+    ],
+    "openQuestions": [
+      "Is there a brand colour or logo to use instead of the Material 3 teal?",
+      "Should the iOS app support Liquid Glass materials in the first release?"
+    ]
+  }
+}
