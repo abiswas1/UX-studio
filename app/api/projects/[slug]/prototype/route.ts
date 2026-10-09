@@ -22,12 +22,9 @@ export async function GET(req: Request, { params }: { params: Promise<{ slug: st
   const pointer = await getPointer(slug, "prototype");
   const v = Number(url.searchParams.get("v")) || pointer?.latest;
   if (!v) return fail("No prototype yet", 404);
-  if (v !== pointer?.latest) await buildPrototypeFiles(slug, v);
-  let html = await fs.readFile(path.join(exportsDir, "prototype", "index.html"), "utf8").catch(() => null);
-  if (!html) {
-    await buildPrototypeFiles(slug, v);
-    html = await fs.readFile(path.join(exportsDir, "prototype", "index.html"), "utf8").catch(() => null);
-  }
+  // Rebuilt on every request so it always reflects the chosen version and the current look of the app.
+  await buildPrototypeFiles(slug, v);
+  const html = await fs.readFile(path.join(exportsDir, "prototype", "index.html"), "utf8").catch(() => null);
   if (!html) return fail("The prototype couldn't be built", 500);
   const headers: Record<string, string> = { "content-type": "text/html; charset=utf-8" };
   if (url.searchParams.get("download")) headers["content-disposition"] = `attachment; filename="${slug}-prototype.html"`;

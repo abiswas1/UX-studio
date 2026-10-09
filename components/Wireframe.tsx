@@ -132,9 +132,11 @@ function BlockView({ b, lookup, device, marker }: { b: WireBlock | Omit<WireBloc
       return (
         <div className="wf-table">
           <div className="wf-tr head">{b.items.map((i, n) => <span key={n}><Item lookup={lookup} value={i} /></span>)}</div>
-          {Array.from({ length: b.count || 5 }, (_, r) => (
-            <div key={r} className="wf-tr">{b.items.map((_, n) => <span key={n}><span className="wf-line" style={{ width: `${40 + ((r * 13 + n * 29) % 50)}%` }} /></span>)}</div>
-          ))}
+          {b.text.trim()
+            ? b.text.split("\n").filter((l) => l.trim()).map((l, r) => <div key={r} className="wf-tr">{l.split(/\s*\|\s*/).slice(0, b.items.length).map((c, n) => <span key={n}>{c}</span>)}</div>)
+            : Array.from({ length: b.count || 5 }, (_, r) => (
+              <div key={r} className="wf-tr">{b.items.map((_, n) => <span key={n}><span className="wf-line" style={{ width: `${40 + ((r * 13 + n * 29) % 50)}%` }} /></span>)}</div>
+            ))}
           {mark}
         </div>
       );

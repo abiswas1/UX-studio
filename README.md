@@ -2,7 +2,7 @@
 
 A personal design studio that runs on your laptop. You describe a product or feature, and a team of AI specialists takes it from research to a clickable prototype. You review every step, edit anything, and redo any stage.
 
-**Status: steps 1–4 of 5 are built** — all eight specialists (Researcher, Architect, Content designer, Wireframer, Design system, UI designer, Critic, Prototyper), Figma, the critique loop ("Send back" fixes serious issues, up to 2 rounds) and the clickable prototype with its handoff notes. Step 5 adds polish, more sample recordings and Markdown/PDF export.
+**Status: all 5 steps are built** — eight specialists (Researcher, Architect, Content designer, Wireframer, Design system, UI designer, Critic, Prototyper), Figma, the critique loop, the clickable prototype with handoff notes, a project report you can save as PDF or Markdown, and an Agents page for editing instructions and models. All three sample briefs have recorded results, so everything can be tried without an API key.
 
 ## Start it
 

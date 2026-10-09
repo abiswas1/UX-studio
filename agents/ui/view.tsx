@@ -1,6 +1,6 @@
 "use client";
 import { useMemo, useState } from "react";
-import { UIBlockView, UIScreen, themeVars, type Mode, type Platform } from "@/components/UIRender";
+import { UIBlockView, UIScreen, isWideScreen, themeVars, type Mode, type Platform } from "@/components/UIRender";
 import type { CopyLookup } from "@/components/Wireframe";
 import type { DesignSystem } from "../design-system/schema";
 import type { UI, UIBlockT } from "./schema";
@@ -51,7 +51,7 @@ export function UIView({ data: ui, lookup, designSystem, platforms }: { data: UI
           {screen.states.map((st) => (
             <figure key={st.state} className="wf-state">
               <figcaption><span className="badge">{st.state}</span>{screen.presentation !== "full" && <span className="faint"> · {screen.presentation}</span>}</figcaption>
-              <UIScreen blocks={st.blocks} lookup={lookup} theme={theme} mode={mode} platform={platform} presentation={screen.presentation} screenName={screen.name} />
+              <UIScreen blocks={st.blocks} lookup={lookup} theme={theme} mode={mode} platform={platform} presentation={screen.presentation} screenName={screen.name} wide={isWideScreen(screen.states)} />
               {st.notes && <div className="wf-notes">{st.notes}</div>}
             </figure>
           ))}

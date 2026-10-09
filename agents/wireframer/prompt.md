@@ -26,7 +26,7 @@ Each screen state is a top-to-bottom list of blocks. Available block types:
 | `divider` | Separator |
 | `tabbar` | Bottom tab bar (mobile). Tab labels in `items` |
 | `chips` | Filters or quick choices in `items` |
-| `table` | Desktop data table. Column headers in `items`, rows in `count` |
+| `table` | Desktop data table. Column headers in `items`. Sample rows in `text`, one per line, cells separated by ` \| ` (or just a row count in `count` for grey rows) |
 | `sidebar` | Desktop side navigation. Links in `items` |
 | `stat` | A key number: label in `copy`, value in `text` |
 | `row` | Places its `children` side by side (one level only) |

@@ -46,6 +46,18 @@ export function themeVars(theme: Theme, mode: Mode): CSSProperties {
   } as CSSProperties;
 }
 
+/** Table rows as sample data: one row per line of `text`, cells separated by " | ". */
+export function tableRows(text: string): string[][] {
+  return text.split("\n").map((l) => l.trim()).filter(Boolean).map((l) => l.split(/\s*\|\s*/));
+}
+
+const dense = (b: UIBlockT): boolean => b.type === "table" || b.type === "stat" || ("children" in b && (b.children as UIBlockT[]).some(dense));
+
+/** Web screens with tables or stats use the full width; forms and reading screens a column. Decided per screen so states don't jump. */
+export function isWideScreen(states: { blocks: UIBlockT[] }[]): boolean {
+  return states.some((st) => st.blocks.some(dense));
+}
+
 function splitRow(s: string): [string, string] {
   const i = s.indexOf(" · ");
   return i === -1 ? [s, ""] : [s.slice(0, i), s.slice(i + 3)];
@@ -187,20 +199,30 @@ export function UIBlockView({ b, lookup, platform, forceState, activeTab }: { b:
       return (
         <div className="ui-table">
           <div className="ui-tr head">{b.items.map((i, n) => <span key={n}>{item(lookup, i)}</span>)}</div>
-          {Array.from({ length: b.count || 5 }, (_, r) => <div key={r} className="ui-tr">{b.items.map((_, n) => <span key={n} className="ui-skel-cell" />)}</div>)}
+          {tableRows(b.text).length
+            ? tableRows(b.text).map((cells, r) => <div key={r} className="ui-tr">{b.items.map((_, n) => <span key={n}>{cells[n] ?? ""}</span>)}</div>)
+            : Array.from({ length: b.count || 5 }, (_, r) => <div key={r} className="ui-tr">{b.items.map((_, n) => <span key={n} className="ui-skel-cell" />)}</div>)}
         </div>
       );
     case "stat":
       return <div className="ui-stat"><div className="ui-label">{text(lookup, b.copy)}</div><div className="ui-stat-value">{b.text}</div></div>;
     case "row":
-      return <div className="ui-hrow">{"children" in b && b.children.map((c, i) => <UIBlockView key={i} b={c} lookup={lookup} platform={platform} />)}</div>;
+      return (
+        <div className="ui-hrow">
+          {"children" in b && b.children.map((c, i) => (
+            <div key={i} style={{ display: "contents" }} data-copy={c.copy || undefined}><UIBlockView b={c} lookup={lookup} platform={platform} /></div>
+          ))}
+        </div>
+      );
     default:
       return null;
   }
 }
 
-export function UIScreen({ blocks, lookup, theme, mode, platform, presentation, screenName }: {
+export function UIScreen({ blocks, lookup, theme, mode, platform, presentation, screenName, wide }: {
   blocks: UIBlockT[]; lookup: CopyLookup; theme: Theme; mode: Mode; platform: Platform; presentation: "full" | "sheet" | "modal"; screenName?: string;
+  /** Web layout width for the whole screen (see isWideScreen); defaults to this state's own content. */
+  wide?: boolean;
 }) {
   const tabbar = blocks.filter((b) => b.type === "tabbar");
   const body = blocks.filter((b) => b.type !== "tabbar" && b.type !== "sidebar");
@@ -216,8 +238,7 @@ export function UIScreen({ blocks, lookup, theme, mode, platform, presentation, 
   // comfortable column; dashboards (tables, stats) use the full width.
   const navItems = (sidebar ?? tabbar[0])?.items ?? [];
   const activeNav = screenName ? navItems.findIndex((x) => item(lookup, x).toLowerCase() === screenName.toLowerCase()) : -1;
-  const dense = (b: UIBlockT): boolean => b.type === "table" || b.type === "stat" || ("children" in b && (b.children as UIBlockT[]).some(dense));
-  const wide = body.some(dense);
+  const isWide = wide ?? body.some(dense);
 
   return (
     <div className={`ui-frame ${device} ui-${platform} mode-${mode}`} style={themeVars(theme, mode)}>
@@ -239,7 +260,7 @@ export function UIScreen({ blocks, lookup, theme, mode, platform, presentation, 
                 ))}
               </nav>
             )}
-            <div className={`ui-content ${wide ? "" : "narrow"}`}>{content}</div>
+            <div className={`ui-content ${isWide ? "" : "narrow"}`}>{content}</div>
           </div>
         )
       ) : (

@@ -4,7 +4,7 @@ import { buildReport } from "@/lib/export/report";
 import { markdownToHtml } from "@/lib/export/markdown-html";
 import { getVersion } from "@/lib/storage/artifacts";
 import { copyLookup } from "@/lib/copy";
-import { UIScreen, type Platform } from "@/components/UIRender";
+import { UIScreen, isWideScreen, type Platform } from "@/components/UIRender";
 import { ReportTools } from "@/components/ReportTools";
 import type { UI } from "@/agents/ui/schema";
 import type { DesignSystem } from "@/agents/design-system/schema";
@@ -42,7 +42,7 @@ export default async function ReportPage({ params }: { params: Promise<{ slug: s
               <div className={`report-screens ${theme.platform === "web" ? "web" : ""}`}>
                 {ui.screens.map((s) => (
                   <figure key={s.screenId}>
-                    <UIScreen blocks={s.states[0].blocks} lookup={lookup} theme={theme} mode="light" platform={theme.platform as Platform} presentation={s.presentation} screenName={s.name} />
+                    <UIScreen blocks={s.states[0].blocks} lookup={lookup} theme={theme} mode="light" platform={theme.platform as Platform} presentation={s.presentation} screenName={s.name} wide={isWideScreen(s.states)} />
                     <figcaption>{s.name} · {s.states[0].state}</figcaption>
                   </figure>
                 ))}

@@ -4,7 +4,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { createElement } from "react";
-import { UIScreen, type Mode, type Platform } from "../../components/UIRender";
+import { UIScreen, isWideScreen, type Mode, type Platform } from "../../components/UIRender";
 import { getProject } from "../storage/projects";
 import { getVersion, getMarkdown } from "../storage/artifacts";
 import { projectDir } from "../storage/paths";
@@ -30,7 +30,7 @@ export async function buildPrototypeHtml(opts: { title: string; proto: Prototype
     for (const mode of ["light", "dark"] as Mode[]) {
       for (const s of ui.screens) {
         for (const st of s.states) {
-          const html = renderToStaticMarkup(createElement(UIScreen, { blocks: st.blocks, lookup, theme, mode, platform, presentation: s.presentation, screenName: s.name }));
+          const html = renderToStaticMarkup(createElement(UIScreen, { blocks: st.blocks, lookup, theme, mode, platform, presentation: s.presentation, screenName: s.name, wide: isWideScreen(s.states) }));
           templates.push(`<template id="${esc(`${platform}|${mode}|${s.screenId}|${st.state}`)}">${html}</template>`);
         }
       }

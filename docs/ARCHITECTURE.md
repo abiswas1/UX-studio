@@ -1,6 +1,6 @@
 # UX Studio — Architecture proposal
 
-Status: **approved — phases (a)–(d) built** (orchestrator, storage, all eight agents, Figma read and push, critique loop, clickable prototype and handoff)
+Status: **approved — phases (a)–(e) built** (orchestrator, storage, all eight agents, Figma read and push, critique loop, clickable prototype and handoff, report export, agents settings, recordings for all three sample briefs)
 
 Decisions already made:
 - **Code-first UI.** Wireframes and hi-fi screens are structured JSON + React/Tailwind on disk. Figma is a one-way mirror you push to on demand.

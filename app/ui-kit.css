@@ -137,3 +137,5 @@
 .ui-states-cell { display: flex; flex-direction: column; gap: 6px; }
 .ui-states-caption { font: 12px/16px var(--sans); color: var(--c-muted); }
 .ui-states-caption strong { color: var(--c-text); text-transform: capitalize; }
+/* Desktop buttons size to their label instead of stretching across the page. */
+.ui-web .ui-content > .ui-button, .ui-web .ui-content > div[style] > .ui-button, .ui-web-dialog .ui-content .ui-button { align-self: flex-start; min-width: 160px; padding-left: 20px; padding-right: 20px; }
