@@ -1,0 +1,743 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the medication-reminders sample brief.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Building ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "approved ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "research: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "two ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "journeys ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(self-manager ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "carer), ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "five ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "task ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "flows ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "covering ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "How ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "might ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "we ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "questions, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "nine ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screens. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Four ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "P0: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Today, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Add ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "medication, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Dose ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "reminder ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "History, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "each ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "empty, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "loading ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "error ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "handling.\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "journeys": [
+      {
+        "id": "J1",
+        "persona": "The juggling self-manager",
+        "goal": "Take every dose on time and keep the plan current",
+        "stages": [
+          {
+            "stage": "Set up",
+            "actions": [
+              "Installs the app",
+              "Adds each medication with dose and times"
+            ],
+            "painPoints": [
+              "Typing several medications is tedious"
+            ],
+            "opportunities": [
+              "Add one medication in under a minute; add more later from Today"
+            ]
+          },
+          {
+            "stage": "Daily use",
+            "actions": [
+              "Gets a reminder",
+              "Marks the dose as taken, skipped or snoozed"
+            ],
+            "painPoints": [
+              "Alarms don't record anything"
+            ],
+            "opportunities": [
+              "Answer from the reminder in one tap"
+            ]
+          },
+          {
+            "stage": "Check",
+            "actions": [
+              "Wonders whether the morning dose was taken",
+              "Opens Today or History"
+            ],
+            "painPoints": [
+              "Risk of a double dose"
+            ],
+            "opportunities": [
+              "Today shows each dose's answer at a glance"
+            ]
+          },
+          {
+            "stage": "Change",
+            "actions": [
+              "Doctor changes a dose",
+              "Updates that medication from a date"
+            ],
+            "painPoints": [
+              "Re-entering the whole schedule"
+            ],
+            "opportunities": [
+              "Change one medication from a date, keeping history"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "J2",
+        "persona": "The remote carer",
+        "goal": "Know a parent's doses are on track without calling",
+        "stages": [
+          {
+            "stage": "Connect",
+            "actions": [
+              "Parent invites them from Family",
+              "Accepts the invitation"
+            ],
+            "painPoints": [
+              "Consent must be clear to both"
+            ],
+            "opportunities": [
+              "Plain explanation of what is shared, and how to stop"
+            ]
+          },
+          {
+            "stage": "Stay informed",
+            "actions": [
+              "Gets an alert only when a dose isn't marked",
+              "Opens Family to see today"
+            ],
+            "painPoints": [
+              "Too many alerts feel like surveillance"
+            ],
+            "opportunities": [
+              "Alert on missed doses only, with a calm tone"
+            ]
+          }
+        ]
+      }
+    ],
+    "flows": [
+      {
+        "id": "F1",
+        "name": "Add a first medication",
+        "trigger": "Opens the app with no medications",
+        "mermaid": "flowchart TD\n  A[Today: empty state] --> B[Add medication]\n  B --> C{Name, dose and a time entered?}\n  C -->|No| D[Show what is missing] --> B\n  C -->|Yes| E[Save medication]\n  E --> F{Saved?}\n  F -->|No| G[Keep entries and offer Try again] --> E\n  F -->|Yes| H[Today shows the new doses]",
+        "screens": [
+          "today",
+          "add-medication"
+        ],
+        "steps": [
+          "Tap Add medication on the empty Today screen",
+          "Enter name, dose and times",
+          "Save",
+          "See the doses on Today"
+        ]
+      },
+      {
+        "id": "F2",
+        "name": "Answer a dose reminder",
+        "trigger": "A dose is due",
+        "mermaid": "flowchart TD\n  A[Notification: dose due] --> B[Dose reminder sheet]\n  B --> C{Answer}\n  C -->|Mark as taken| D[Save answer]\n  C -->|Snooze| E[Remind again in 10 minutes] --> A\n  C -->|Skip| D\n  D --> F{Saved?}\n  F -->|No| G[Show error, keep the sheet open] --> B\n  F -->|Yes| H[Confirmation] --> I[Today updated]",
+        "screens": [
+          "dose-reminder",
+          "today"
+        ],
+        "steps": [
+          "Notification arrives",
+          "Open the reminder",
+          "Mark as taken",
+          "See it confirmed on Today"
+        ]
+      },
+      {
+        "id": "F3",
+        "name": "Check whether a dose was taken",
+        "trigger": "Can't remember taking a dose",
+        "mermaid": "flowchart TD\n  A[Today] --> B{Dose shows an answer?}\n  B -->|Yes| C[Done: no double dose]\n  B -->|Need older days| D[History]\n  D --> E{Loaded?}\n  E -->|No| F[Error with Try again] --> D\n  E -->|Yes| G[Find the day and dose]",
+        "screens": [
+          "today",
+          "history"
+        ],
+        "steps": [
+          "Open Today",
+          "Look at the dose's status",
+          "Open History for earlier days"
+        ]
+      },
+      {
+        "id": "F4",
+        "name": "Change a schedule after a doctor's visit",
+        "trigger": "Dose or time changes",
+        "mermaid": "flowchart TD\n  A[Today] --> B[Medication detail]\n  B --> C[Change schedule]\n  C --> D{Start date today or later?}\n  D -->|No| E[Ask for a valid date] --> C\n  D -->|Yes| F[Save new schedule]\n  F --> G[Reminders use the new times; history unchanged]",
+        "screens": [
+          "today",
+          "medication-detail",
+          "change-schedule"
+        ],
+        "steps": [
+          "Open the medication from Today",
+          "Change schedule",
+          "Pick the new times and start date",
+          "Save"
+        ]
+      },
+      {
+        "id": "F5",
+        "name": "Let a carer follow my doses",
+        "trigger": "Wants a family member to be reassured",
+        "mermaid": "flowchart TD\n  A[Family tab: empty] --> B[Invite someone]\n  B --> C[Explain what they will see]\n  C --> D{Invitation sent?}\n  D -->|No| E[Error with Try again] --> B\n  D -->|Yes| F[Invitation sent] --> G[Carer accepts]\n  G --> H[Carer sees doses and missed-dose alerts]",
+        "screens": [
+          "carer-overview",
+          "carer-invite"
+        ],
+        "steps": [
+          "Open Family",
+          "Invite someone by email or phone",
+          "They accept",
+          "They see your doses"
+        ]
+      }
+    ],
+    "sitemap": [
+      {
+        "screenId": "today",
+        "parent": null,
+        "navigation": "tab"
+      },
+      {
+        "screenId": "history",
+        "parent": null,
+        "navigation": "tab"
+      },
+      {
+        "screenId": "carer-overview",
+        "parent": null,
+        "navigation": "tab"
+      },
+      {
+        "screenId": "settings",
+        "parent": null,
+        "navigation": "tab"
+      },
+      {
+        "screenId": "add-medication",
+        "parent": "today",
+        "navigation": "modal"
+      },
+      {
+        "screenId": "dose-reminder",
+        "parent": "today",
+        "navigation": "sheet"
+      },
+      {
+        "screenId": "medication-detail",
+        "parent": "today",
+        "navigation": "stack"
+      },
+      {
+        "screenId": "change-schedule",
+        "parent": "medication-detail",
+        "navigation": "stack"
+      },
+      {
+        "screenId": "carer-invite",
+        "parent": "carer-overview",
+        "navigation": "stack"
+      }
+    ],
+    "screens": [
+      {
+        "id": "today",
+        "name": "Today",
+        "purpose": "Show today's doses and their status, and answer the next one.",
+        "priority": "P0",
+        "primaryAction": "Mark the next due dose as taken",
+        "keyContent": [
+          "Next due dose",
+          "Doses grouped by time of day with status",
+          "Add medication"
+        ],
+        "entryPoints": [
+          "App launch",
+          "Tab bar",
+          "After answering a reminder"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Doses listed with taken, due, skipped or missed status"
+          },
+          {
+            "state": "empty",
+            "description": "No medications yet"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching today's plan"
+          },
+          {
+            "state": "error",
+            "description": "Plan couldn't load"
+          },
+          {
+            "state": "offline",
+            "description": "No connection; reminders still work and changes sync later"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "add-medication",
+        "name": "Add medication",
+        "purpose": "Add a medication with its dose and schedule in under a minute.",
+        "priority": "P0",
+        "primaryAction": "Save medication",
+        "keyContent": [
+          "Name",
+          "Dose",
+          "Times",
+          "Repeat",
+          "Start date"
+        ],
+        "entryPoints": [
+          "Today: empty state",
+          "Today: add button"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Blank form with one time row"
+          },
+          {
+            "state": "error",
+            "description": "Missing fields or save failed"
+          },
+          {
+            "state": "loading",
+            "description": "Saving"
+          }
+        ],
+        "statesNotNeeded": [
+          {
+            "state": "empty",
+            "reason": "A blank form is this screen's default state."
+          }
+        ]
+      },
+      {
+        "id": "dose-reminder",
+        "name": "Dose reminder",
+        "purpose": "Answer a due dose: taken, snoozed or skipped.",
+        "priority": "P0",
+        "primaryAction": "Mark as taken",
+        "keyContent": [
+          "Medication and dose",
+          "Due time",
+          "Taken, snooze, skip"
+        ],
+        "entryPoints": [
+          "Notification",
+          "Today: tap a due dose"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Due dose with answers"
+          },
+          {
+            "state": "loading",
+            "description": "Saving the answer"
+          },
+          {
+            "state": "error",
+            "description": "Answer couldn't be saved"
+          },
+          {
+            "state": "success",
+            "description": "Confirmation"
+          }
+        ],
+        "statesNotNeeded": [
+          {
+            "state": "empty",
+            "reason": "Only opens for a specific due dose."
+          }
+        ]
+      },
+      {
+        "id": "history",
+        "name": "History",
+        "purpose": "See past doses by day.",
+        "priority": "P0",
+        "primaryAction": "Log a past dose",
+        "keyContent": [
+          "Days with each dose and its answer",
+          "Period filter"
+        ],
+        "entryPoints": [
+          "Tab bar"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Doses by day"
+          },
+          {
+            "state": "empty",
+            "description": "Nothing logged yet"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching history"
+          },
+          {
+            "state": "error",
+            "description": "History couldn't load"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "medication-detail",
+        "name": "Medication detail",
+        "purpose": "See one medication's schedule and manage it.",
+        "priority": "P1",
+        "primaryAction": "Change schedule",
+        "keyContent": [
+          "Name and dose",
+          "Schedule",
+          "Pause or delete"
+        ],
+        "entryPoints": [
+          "Today: tap a medication"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Schedule shown"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching"
+          },
+          {
+            "state": "error",
+            "description": "Couldn't load"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "change-schedule",
+        "name": "Change schedule",
+        "purpose": "Change times or dose from a date, keeping history.",
+        "priority": "P1",
+        "primaryAction": "Save new schedule",
+        "keyContent": [
+          "Start date",
+          "New times",
+          "Note that history stays"
+        ],
+        "entryPoints": [
+          "Medication detail"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Current schedule pre-filled"
+          },
+          {
+            "state": "error",
+            "description": "Invalid date or save failed"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "carer-invite",
+        "name": "Invite someone to follow",
+        "purpose": "Invite a carer with clear consent.",
+        "priority": "P1",
+        "primaryAction": "Send invitation",
+        "keyContent": [
+          "What they will see",
+          "Contact field",
+          "How to stop sharing"
+        ],
+        "entryPoints": [
+          "Family tab"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Explanation and contact field"
+          },
+          {
+            "state": "success",
+            "description": "Invitation sent"
+          },
+          {
+            "state": "error",
+            "description": "Couldn't send"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "carer-overview",
+        "name": "Family",
+        "purpose": "See the people you follow and whether their doses are on track.",
+        "priority": "P1",
+        "primaryAction": "View today's doses",
+        "keyContent": [
+          "People followed and today's status",
+          "Invite someone"
+        ],
+        "entryPoints": [
+          "Tab bar",
+          "Missed-dose alert"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "People with status"
+          },
+          {
+            "state": "empty",
+            "description": "Not following anyone"
+          },
+          {
+            "state": "loading",
+            "description": "Fetching"
+          },
+          {
+            "state": "error",
+            "description": "Couldn't load"
+          }
+        ],
+        "statesNotNeeded": []
+      },
+      {
+        "id": "settings",
+        "name": "Settings",
+        "purpose": "Notification, accessibility and account settings.",
+        "priority": "P2",
+        "primaryAction": "Change notification settings",
+        "keyContent": [
+          "Reminder sound",
+          "Text size follows system",
+          "Account"
+        ],
+        "entryPoints": [
+          "Tab bar"
+        ],
+        "states": [
+          {
+            "state": "default",
+            "description": "Settings list"
+          }
+        ],
+        "statesNotNeeded": []
+      }
+    ],
+    "assumptions": [
+      "Most reminders are answered from the notification, so the reminder sheet must work on its own",
+      "Four tabs (Today, History, Family, Settings) are enough for the first release",
+      "Carers use the same app, with a Family tab, rather than a separate app"
+    ],
+    "openQuestions": [
+      "Should Family be hidden until someone is invited, to keep the app simpler for people who don't need it?",
+      "Is 'Log a past dose' needed in the first release, or can History be read-only?"
+    ]
+  }
+}

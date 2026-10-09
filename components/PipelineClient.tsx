@@ -92,6 +92,14 @@ export function PipelineClient(props: Props) {
     logRef.current?.scrollTo({ top: logRef.current.scrollHeight });
   }, [log]);
 
+  // Follow the run: select the stage that is running or waiting for review.
+  const followStage = activeRun?.stage ?? null;
+  useEffect(() => {
+    const i = followStage ? stages.findIndex((s) => s.id === followStage) : -1;
+    if (i >= 0) setSel(i);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [followStage]);
+
   const act = async (fn: () => Promise<unknown>) => {
     setBusy(true);
     setError("");
@@ -175,9 +183,16 @@ export function PipelineClient(props: Props) {
                   <div style={{ width: `${Math.min(100, (cost / budget) * 100)}%`, height: 4, background: "var(--accent)", borderRadius: 2 }} />
                 </div>
               ) : null}
-              {activeRun?.status === "waiting_approval" && (
-                <p className="muted" style={{ margin: "8px 0 0" }}>Review the {stages.find((s) => s.id === activeRun.stage)?.title ?? ""} stage and approve it to continue.</p>
-              )}
+              {activeRun?.status === "waiting_approval" && (() => {
+                const waiting = stages.find((s) => s.id === activeRun.stage);
+                if (!waiting) return null;
+                return (
+                  <div className="row" style={{ marginTop: 8 }}>
+                    <p className="muted" style={{ margin: 0, flex: 1 }}>Review the {waiting.title} stage and approve it to continue.</p>
+                    {waiting.latest && <Link className="btn small" href={`/p/${project.slug}/${waiting.id}`}>Review {waiting.title}</Link>}
+                  </div>
+                );
+              })()}
               {lastRun?.error && !activeRun && <div className="notice bad" style={{ marginTop: 8 }}>{lastRun.error}</div>}
               {(running || log.length > 0) && (
                 <details open={running} style={{ marginTop: 10 }}>

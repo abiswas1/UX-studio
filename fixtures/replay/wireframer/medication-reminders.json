@@ -1,0 +1,1321 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the medication-reminders sample brief.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Drawing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "four ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "P0 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screens ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "every ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "state ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "from ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "architecture, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "plus ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Family ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "tab. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Mobile ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "layout ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "iOS ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Android. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Each ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "state ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "has ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "one ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "primary ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "action; ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "all ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "text ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "comes ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "from ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "content ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "deck.\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 800
+    }
+  ],
+  "output": {
+    "screens": [
+      {
+        "screenId": "today",
+        "name": "Today",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Next dose pinned at the top so the main action is one tap away.",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "today.title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.add-a11y"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "today.next-due-label",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Metformin 500 mg",
+                  "Due at 8:00 PM"
+                ],
+                "count": 0,
+                "note": "Largest element on screen",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "today.take-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "Marks the next due dose",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "today.section-morning",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Metformin 500 mg · Taken 8:04 AM",
+                  "Lisinopril 10 mg · Taken 8:04 AM"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "today.section-evening",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Metformin 500 mg · Due 8:00 PM",
+                  "Atorvastatin 20 mg · Due 9:00 PM"
+                ],
+                "count": 0,
+                "note": "Tap a row to open Medication detail",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "today.add-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.tab-today",
+                  "today.tab-history",
+                  "today.tab-family",
+                  "today.tab-settings"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "empty",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "today.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "empty",
+                "copy": "today.empty-title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.empty-body"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "today.empty-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.tab-today",
+                  "today.tab-history",
+                  "today.tab-family",
+                  "today.tab-settings"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "today.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "skeleton",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 6,
+                "note": "Announces today.loading-a11y to screen readers",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.tab-today",
+                  "today.tab-history",
+                  "today.tab-family",
+                  "today.tab-settings"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "today.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "today-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "today.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.tab-today",
+                  "today.tab-history",
+                  "today.tab-family",
+                  "today.tab-settings"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "offline",
+            "notes": "Doses can still be marked; they sync when back online.",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "today.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "today.offline-banner",
+                "text": "",
+                "variant": "warning",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "today.next-due-label",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Metformin 500 mg",
+                  "Due at 8:00 PM"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "today.take-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Metformin 500 mg · Taken 8:04 AM",
+                  "Lisinopril 10 mg · Taken 8:04 AM"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.tab-today",
+                  "today.tab-history",
+                  "today.tab-family",
+                  "today.tab-settings"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "add-medication",
+        "name": "Add medication",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Opens as a full-screen modal. Only name, dose and one time are needed to save.",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "add-medication.title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "add-medication.cancel-button"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "input",
+                "copy": "add-medication.name-label",
+                "text": "For example, Metformin",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "input",
+                "copy": "add-medication.dose-label",
+                "text": "500 mg",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "Helper: add-medication.dose-helper",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "add-medication.times-label",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "row",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": [
+                  {
+                    "type": "input",
+                    "copy": "",
+                    "text": "8:00 AM",
+                    "variant": "none",
+                    "items": [],
+                    "count": 0,
+                    "note": "",
+                    "children": []
+                  },
+                  {
+                    "type": "button",
+                    "copy": "add-medication.add-time-button",
+                    "text": "",
+                    "variant": "tertiary",
+                    "items": [],
+                    "count": 0,
+                    "note": "",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "type": "select",
+                "copy": "add-medication.repeat-label",
+                "text": "Every day",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "select",
+                "copy": "add-medication.start-label",
+                "text": "Today",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "add-medication.save-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "Pinned above the keyboard",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "notes": "Field errors appear under each field and the first one gets focus.",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "add-medication.title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "add-medication.cancel-button"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "add-missing-fields",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "input",
+                "copy": "add-medication.name-label",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "Error: add-medication.name-error",
+                "children": []
+              },
+              {
+                "type": "input",
+                "copy": "add-medication.dose-label",
+                "text": "500 mg",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "add-medication.times-label",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "add-medication.add-time-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "note": "Error: add-medication.times-error",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "add-medication.save-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "add-medication.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "input",
+                "copy": "add-medication.name-label",
+                "text": "Metformin",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "input",
+                "copy": "add-medication.dose-label",
+                "text": "500 mg",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "spinner",
+                "copy": "add-medication.saving-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "dose-reminder",
+        "name": "Dose reminder",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "notes": "Bottom sheet. Large targets, one primary action.",
+            "blocks": [
+              {
+                "type": "heading",
+                "copy": "dose-reminder.title",
+                "text": "Time for Metformin",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "dose-reminder.dose-line",
+                "text": "500 mg · due at 8:00 PM",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "dose-reminder.taken-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "dose-reminder.snooze-button",
+                "text": "",
+                "variant": "secondary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "dose-reminder.skip-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "blocks": [
+              {
+                "type": "heading",
+                "copy": "dose-reminder.title",
+                "text": "Time for Metformin",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "spinner",
+                "copy": "dose-reminder.saving-a11y",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "blocks": [
+              {
+                "type": "heading",
+                "copy": "dose-reminder.title",
+                "text": "Time for Metformin",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "reminder-save-failed",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "dose-reminder.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "dose-reminder.skip-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "success",
+            "notes": "Closes on its own after 3 seconds.",
+            "blocks": [
+              {
+                "type": "heading",
+                "copy": "dose-reminder.success-title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "text",
+                "copy": "dose-reminder.success-body",
+                "text": "Metformin 500 mg, taken at 8:02 PM.",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "dose-reminder.done-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "history",
+        "name": "History",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "history.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "chips",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "history.filter-week",
+                  "history.filter-month"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "",
+                "text": "Yesterday",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Metformin 500 mg · Taken 8:01 AM",
+                  "Metformin 500 mg · Taken 8:15 PM",
+                  "Atorvastatin 20 mg · Skipped"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "heading",
+                "copy": "",
+                "text": "Monday",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "list",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "Metformin 500 mg · Taken 7:58 AM",
+                  "Metformin 500 mg · Not marked"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "history.log-past-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.tab-today",
+                  "today.tab-history",
+                  "today.tab-family",
+                  "today.tab-settings"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "empty",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "history.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "empty",
+                "copy": "history.empty-title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "history.empty-body"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "history.empty-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.tab-today",
+                  "today.tab-history",
+                  "today.tab-family",
+                  "today.tab-settings"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "loading",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "history.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "skeleton",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 7,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.tab-today",
+                  "today.tab-history",
+                  "today.tab-family",
+                  "today.tab-settings"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "error",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "history.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "banner",
+                "copy": "history-load",
+                "text": "",
+                "variant": "error",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "history.retry-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.tab-today",
+                  "today.tab-history",
+                  "today.tab-family",
+                  "today.tab-settings"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "screenId": "carer-overview",
+        "name": "Family",
+        "form": "mobile",
+        "states": [
+          {
+            "state": "default",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "carer-overview.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "card",
+                "copy": "",
+                "text": "Mum",
+                "variant": "none",
+                "items": [
+                  "carer-overview.status-unmarked",
+                  "Evening dose due 8:00 PM"
+                ],
+                "count": 0,
+                "note": "Unmarked doses shown first",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "carer-overview.view-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "carer-overview.invite-button",
+                "text": "",
+                "variant": "tertiary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.tab-today",
+                  "today.tab-history",
+                  "today.tab-family",
+                  "today.tab-settings"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          },
+          {
+            "state": "empty",
+            "blocks": [
+              {
+                "type": "appbar",
+                "copy": "carer-overview.title",
+                "text": "",
+                "variant": "none",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "empty",
+                "copy": "carer-overview.empty-title",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "carer-overview.empty-body"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "button",
+                "copy": "carer-overview.invite-button",
+                "text": "",
+                "variant": "primary",
+                "items": [],
+                "count": 0,
+                "note": "",
+                "children": []
+              },
+              {
+                "type": "tabbar",
+                "copy": "",
+                "text": "",
+                "variant": "none",
+                "items": [
+                  "today.tab-today",
+                  "today.tab-history",
+                  "today.tab-family",
+                  "today.tab-settings"
+                ],
+                "count": 0,
+                "note": "",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      "Four tabs: Today, History, Family, Settings. Today is the launch screen.",
+      "All touch targets at least 48 × 48 pt; text follows the system text size.",
+      "Every loading state announces what is loading to screen readers."
+    ],
+    "assumptions": [
+      "The reminder sheet can be opened directly from a notification action on both iOS and Android"
+    ],
+    "openQuestions": [
+      "Should 'Mark as taken' on Today confirm with an undo toast instead of a separate screen?"
+    ]
+  }
+}

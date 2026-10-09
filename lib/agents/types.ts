@@ -28,7 +28,7 @@ export interface AgentModule<T = unknown> {
   tools: string[];
   subagents?: (ctx: AgentContext) => Record<string, SubagentDef>;
   buildTask: (ctx: AgentContext) => string;
-  dod: (data: T, ctx: AgentContext) => DodResult;
+  dod: (data: T, ctx: AgentContext) => DodResult | Promise<DodResult>;
   toMarkdown: (data: T) => string;
   /** Assumptions and open questions to merge into shared project state. */
   extractState: (data: T) => { assumptions: string[]; questions: string[] };

@@ -15,7 +15,7 @@ import { budgetFor, isReplayMode, modelFor } from "../runtime/models";
 import { isTransient, type Provider } from "../runtime/provider";
 import { sdkProvider } from "../runtime/sdk-provider";
 import { replayProvider } from "../runtime/replay-provider";
-import { currentInputs } from "./status";
+import { currentInputs, stageStates } from "./status";
 
 // The orchestrator is plain code, not an LLM: it runs stages in order, enforces approval
 // gates and definitions of done, retries, tracks cost against the budget and logs every call.
@@ -66,7 +66,15 @@ export async function startRun(slug: string, opts: StartRunOptions = {}): Promis
   for (const r of listRuns(slug, 5)) {
     if (r.status === "running" && active.has(r.id)) throw new Error("A run is already in progress for this project.");
   }
-  const stages = (opts.stages ?? STAGES.filter(isAvailable).map((s) => s.id)).filter((s) => {
+  let requested = opts.stages;
+  if (!requested) {
+    // Pick up from the first stage that isn't approved and current.
+    const states = await stageStates(slug);
+    const first = states.findIndex((s) => s.status !== "approved" && s.status !== "coming_soon");
+    if (first === -1) throw new Error("Every available stage is approved and up to date. Run a single stage to redo it.");
+    requested = states.slice(first).filter((s) => s.status !== "coming_soon").map((s) => s.stage);
+  }
+  const stages = requested.filter((s) => {
     const def = stageById(s);
     return def && isAvailable(def);
   });
@@ -225,7 +233,7 @@ async function runStage(runId: string, slug: string, stage: StageId, signal: Abo
       return { ok: false, error };
     }
 
-    const dod = agent.dod(result.output, ctx);
+    const dod = await agent.dod(result.output, ctx);
     const version = await saveVersion(
       slug, stage,
       { author: "agent", inputs: inputs as Record<string, string | number>, dod, runId, model: result.model, costUsd: result.costUsd, replay: result.replay },
@@ -274,7 +282,7 @@ export async function saveEdit(slug: string, stage: StageId, data: unknown, base
     throw new Error(parsed.error.issues.slice(0, 5).map((i) => `${i.path.join(".")}: ${i.message}`).join("; "));
   }
   const ctx = await buildContext(slug, stage);
-  const dod = agent.dod(parsed.data, ctx);
+  const dod = await agent.dod(parsed.data, ctx);
   // A hand edit is taken to reflect the current upstream work, so it clears "out of date".
   const inputs = (await currentInputs(slug, stage)) as Record<string, string | number>;
   const version = await saveVersion(

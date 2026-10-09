@@ -8,7 +8,8 @@ import { stageById, type StageId } from "@/lib/stages";
 import { agentForStage } from "@/lib/agents/registry";
 import { stageStates } from "@/lib/orchestrator/status";
 import { runningStages } from "@/lib/orchestrator/orchestrator";
-import { ArtifactView } from "@/components/ArtifactView";
+import { ArtifactView, copyLookup, type ViewContext } from "@/components/ArtifactView";
+import type { Content } from "@/agents/content/schema";
 import { SchemaEditor, type JsonSchema } from "@/components/SchemaEditor";
 import { StageActions } from "@/components/StageActions";
 import { StatusChip } from "@/components/StatusChip";
@@ -34,6 +35,14 @@ export default async function StagePage({ params, searchParams }: { params: Prom
   const tab = sp.tab === "edit" || sp.tab === "history" ? sp.tab : "view";
   const vNum = Number(sp.v) || pointer?.latest || 0;
   const current = vNum ? await getVersion(slug, def.id, vNum) : null;
+  // Visual stages get the full width when viewed; their side panels move below.
+  const wide = tab === "view" && (def.id === "wireframes" || def.id === "ui");
+  // Views that show copy (wireframes, UI) use the content version this artifact was built from.
+  const viewContext: ViewContext = { platforms: project.platforms };
+  const contentRef = current?.meta.inputs.content;
+  if (typeof contentRef === "number") {
+    viewContext.lookup = copyLookup((await getVersion<Content>(slug, "content", contentRef))?.data);
+  }
   const href = (q: Record<string, string | number | undefined>) =>
     `/p/${slug}/${stage}?` + new URLSearchParams(Object.entries({ v: vNum, ...q }).filter(([, x]) => x !== undefined).map(([k, x]) => [k, String(x)])).toString();
 
@@ -77,7 +86,7 @@ export default async function StagePage({ params, searchParams }: { params: Prom
         {!current ? (
           <div className="empty">Nothing here yet. Run this stage from the <Link href={`/p/${slug}`}>pipeline</Link>.</div>
         ) : (
-          <div className="grid-2">
+          <div className={wide ? "wide-layout" : "grid-2"}>
             <div>
               <nav className="tabs" aria-label="Views">
                 <Link className={tab === "view" ? "active" : ""} href={href({})}>View</Link>
@@ -87,7 +96,7 @@ export default async function StagePage({ params, searchParams }: { params: Prom
 
               {current.meta.replay && tab !== "history" && (
                 <div className="notice warn" style={{ marginBottom: 16 }}>
-                  Sample output from replay mode, not live research. Competitor details were not checked on the web for this run. Add your API key to run the real Researcher.
+                  Sample output from replay mode, recorded for this sample brief — not a live run. Add your API key to run the real agents.
                 </div>
               )}
               {state.status === "stale" && tab === "view" && (
@@ -101,7 +110,7 @@ export default async function StagePage({ params, searchParams }: { params: Prom
                 </div>
               )}
 
-              {tab === "view" && <ArtifactView stage={def.id} data={current.data} />}
+              {tab === "view" && <ArtifactView stage={def.id} data={current.data} context={viewContext} />}
 
               {tab === "edit" && (
                 <SchemaEditor slug={slug} stage={def.id} schema={z.toJSONSchema(agent.schema) as JsonSchema} initial={current.data} basedOn={current.meta.version} />

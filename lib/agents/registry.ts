@@ -3,9 +3,15 @@ import path from "node:path";
 import type { AgentModule } from "./types";
 import type { StageId } from "../stages";
 import { researcher } from "../../agents/researcher";
+import { architect } from "../../agents/architect";
+import { contentDesigner } from "../../agents/content";
+import { wireframer } from "../../agents/wireframer";
 
 const AGENTS: Partial<Record<StageId, AgentModule<any>>> = {
   research: researcher,
+  architecture: architect,
+  content: contentDesigner,
+  wireframes: wireframer,
 };
 
 export function agentForStage(stage: StageId): AgentModule | undefined {

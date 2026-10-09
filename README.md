@@ -2,7 +2,7 @@
 
 A personal design studio that runs on your laptop. You describe a product or feature, and a team of AI specialists takes it from research to a clickable prototype. You review every step, edit anything, and redo any stage.
 
-**Status: step 1 of 5 is built** — projects, the pipeline screen and the Researcher. The other specialists show as "Coming soon".
+**Status: steps 1–2 of 5 are built** — projects, the pipeline screen, and the Researcher, Architect, Content designer and Wireframer. The other specialists show as "Coming soon".
 
 ## Start it
 
@@ -62,7 +62,7 @@ npm run pipeline -- --brief clinic-booking
 npm run pipeline -- --label "shorter prompt"
 ```
 
-It prints which done-checks passed for each brief, plus cost and time, and saves a report under `workspace/eval-runs/`. In replay mode only the medication-reminders sample has a recording so far; the other two are filled in later in the build.
+It prints which done-checks passed for each brief, plus cost and time, and saves a report under `workspace/eval-runs/`. In replay mode only the medication-reminders sample has recordings so far; the other two are filled in during step 5.
 
 ## For developers
 

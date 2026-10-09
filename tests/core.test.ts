@@ -22,7 +22,7 @@ process.env.UXSTUDIO_REPLAY_SPEED = "0";
 const fixture = JSON.parse(fs.readFileSync("fixtures/replay/researcher/medication-reminders.json", "utf8")).output;
 
 async function waitForRun(id: string) {
-  for (let i = 0; i < 200; i++) {
+  for (let i = 0; i < 2400; i++) {
     const r = getRun(id)!;
     if (r.status !== "running") return r;
     await new Promise((res) => setTimeout(res, 25));
@@ -60,7 +60,10 @@ test("run → review gate → approve → edit → brief change marks research o
   assert.equal(research.status, "needs_review");
 
   await approveStage(p.slug, "research", 1);
-  assert.equal(getRun(run.id)!.status, "done");
+  // Approving continues the run to the next stage, which then waits for review.
+  await waitForRun(run.id);
+  assert.equal(getRun(run.id)!.status, "waiting_approval");
+  assert.equal(getRun(run.id)!.current_stage, "architecture");
   research = (await stageStates(p.slug)).find((s) => s.stage === "research")!;
   assert.equal(research.status, "approved");
 

@@ -44,7 +44,7 @@ export const STAGES: StageDef[] = [
 ];
 
 /** Phases built so far. Stages from later phases show as "coming soon". */
-export const AVAILABLE_PHASES = new Set(["a"]);
+export const AVAILABLE_PHASES = new Set(["a", "b"]);
 
 export function stageById(id: string): StageDef | undefined {
   return STAGES.find((s) => s.id === id);
