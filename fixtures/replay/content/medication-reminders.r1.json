@@ -1,0 +1,919 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the medication-reminders sample brief.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Critique ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "round ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "1: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "adding ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "confirmation, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Undo ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "'Waiting ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "to ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "sync' ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "copy ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(C3), ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "same ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "calm ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "voice.\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 700
+    }
+  ],
+  "output": {
+    "voice": {
+      "principles": [
+        "Calm, never alarming",
+        "Plain words, short sentences",
+        "Facts, not advice: we never tell anyone what to take",
+        "Respect independence"
+      ],
+      "toneByContext": [
+        {
+          "context": "Reminders",
+          "tone": "Brief and neutral; name the medication and dose first"
+        },
+        {
+          "context": "Errors",
+          "tone": "Reassuring; say reminders still work when that's true; give one next step"
+        },
+        {
+          "context": "Carer alerts",
+          "tone": "Gentle; describe what happened without implying blame"
+        },
+        {
+          "context": "Success",
+          "tone": "Quiet confirmation; no celebration"
+        }
+      ],
+      "glossary": [
+        {
+          "term": "dose",
+          "use": "One scheduled intake of a medication",
+          "avoid": [
+            "pill",
+            "intake",
+            "event"
+          ]
+        },
+        {
+          "term": "medication",
+          "use": "Anything the person takes on a schedule",
+          "avoid": [
+            "drug",
+            "med",
+            "prescription"
+          ]
+        },
+        {
+          "term": "mark as taken",
+          "use": "The action of recording a dose",
+          "avoid": [
+            "check off",
+            "complete",
+            "log"
+          ]
+        },
+        {
+          "term": "follow",
+          "use": "What a carer does with consent",
+          "avoid": [
+            "monitor",
+            "track",
+            "watch"
+          ]
+        }
+      ]
+    },
+    "screens": [
+      {
+        "screenId": "today",
+        "strings": [
+          {
+            "key": "today.title",
+            "kind": "title",
+            "state": "default",
+            "text": "Today",
+            "notes": ""
+          },
+          {
+            "key": "today.next-due-label",
+            "kind": "label",
+            "state": "default",
+            "text": "Next dose",
+            "notes": ""
+          },
+          {
+            "key": "today.take-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Mark as taken",
+            "notes": ""
+          },
+          {
+            "key": "today.add-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Add medication",
+            "notes": ""
+          },
+          {
+            "key": "today.add-a11y",
+            "kind": "a11y",
+            "state": "default",
+            "text": "Add a medication",
+            "notes": ""
+          },
+          {
+            "key": "today.section-morning",
+            "kind": "label",
+            "state": "default",
+            "text": "Morning",
+            "notes": ""
+          },
+          {
+            "key": "today.section-evening",
+            "kind": "label",
+            "state": "default",
+            "text": "Evening",
+            "notes": ""
+          },
+          {
+            "key": "today.status-taken",
+            "kind": "label",
+            "state": "default",
+            "text": "Taken",
+            "notes": ""
+          },
+          {
+            "key": "today.status-due",
+            "kind": "label",
+            "state": "default",
+            "text": "Due",
+            "notes": ""
+          },
+          {
+            "key": "today.status-missed",
+            "kind": "label",
+            "state": "default",
+            "text": "Not marked",
+            "notes": "Avoid 'missed' on the person's own screen; it can feel judgemental"
+          },
+          {
+            "key": "today.empty-title",
+            "kind": "empty",
+            "state": "empty",
+            "text": "No medications yet",
+            "notes": ""
+          },
+          {
+            "key": "today.empty-body",
+            "kind": "empty",
+            "state": "empty",
+            "text": "Add your first medication and we'll remind you when each dose is due.",
+            "notes": ""
+          },
+          {
+            "key": "today.empty-button",
+            "kind": "button",
+            "state": "empty",
+            "text": "Add medication",
+            "notes": ""
+          },
+          {
+            "key": "today.loading-a11y",
+            "kind": "a11y",
+            "state": "loading",
+            "text": "Loading today's doses",
+            "notes": ""
+          },
+          {
+            "key": "today.retry-button",
+            "kind": "button",
+            "state": "error",
+            "text": "Try again",
+            "notes": ""
+          },
+          {
+            "key": "today.offline-banner",
+            "kind": "body",
+            "state": "offline",
+            "text": "You're offline. Reminders still work, and changes will sync later.",
+            "notes": ""
+          },
+          {
+            "key": "today.tab-today",
+            "kind": "nav",
+            "state": "default",
+            "text": "Today",
+            "notes": ""
+          },
+          {
+            "key": "today.tab-history",
+            "kind": "nav",
+            "state": "default",
+            "text": "History",
+            "notes": ""
+          },
+          {
+            "key": "today.tab-family",
+            "kind": "nav",
+            "state": "default",
+            "text": "Family",
+            "notes": ""
+          },
+          {
+            "key": "today.tab-settings",
+            "kind": "nav",
+            "state": "default",
+            "text": "Settings",
+            "notes": ""
+          },
+          {
+            "key": "today.taken-toast",
+            "kind": "toast",
+            "state": "taken",
+            "text": "{medication} marked as taken",
+            "notes": "Shown for 10 seconds, or until dismissed; announced politely"
+          },
+          {
+            "key": "today.undo-button",
+            "kind": "button",
+            "state": "taken",
+            "text": "Undo",
+            "notes": "Restores the dose to Due"
+          },
+          {
+            "key": "today.pending-sync",
+            "kind": "label",
+            "state": "offline",
+            "text": "Waiting to sync",
+            "notes": "Shown on rows answered while offline"
+          }
+        ]
+      },
+      {
+        "screenId": "add-medication",
+        "strings": [
+          {
+            "key": "add-medication.title",
+            "kind": "title",
+            "state": "default",
+            "text": "Add medication",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.name-label",
+            "kind": "label",
+            "state": "default",
+            "text": "Medication name",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.name-placeholder",
+            "kind": "placeholder",
+            "state": "default",
+            "text": "For example, Metformin",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.dose-label",
+            "kind": "label",
+            "state": "default",
+            "text": "Dose",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.dose-helper",
+            "kind": "helper",
+            "state": "default",
+            "text": "As written on the label, like 500 mg or 1 tablet",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.times-label",
+            "kind": "label",
+            "state": "default",
+            "text": "When do you take it?",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.add-time-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Add a time",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.repeat-label",
+            "kind": "label",
+            "state": "default",
+            "text": "Repeats",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.start-label",
+            "kind": "label",
+            "state": "default",
+            "text": "Starting",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.save-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Save medication",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.cancel-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Cancel",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.saving-a11y",
+            "kind": "a11y",
+            "state": "loading",
+            "text": "Saving medication",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.name-error",
+            "kind": "error",
+            "state": "error",
+            "text": "Enter the medication name",
+            "notes": ""
+          },
+          {
+            "key": "add-medication.times-error",
+            "kind": "error",
+            "state": "error",
+            "text": "Add at least one time",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "dose-reminder",
+        "strings": [
+          {
+            "key": "dose-reminder.title",
+            "kind": "title",
+            "state": "default",
+            "text": "Time for {medication}",
+            "notes": ""
+          },
+          {
+            "key": "dose-reminder.dose-line",
+            "kind": "body",
+            "state": "default",
+            "text": "{dose} · due at {time}",
+            "notes": ""
+          },
+          {
+            "key": "dose-reminder.taken-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Mark as taken",
+            "notes": ""
+          },
+          {
+            "key": "dose-reminder.snooze-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Remind me in 10 minutes",
+            "notes": ""
+          },
+          {
+            "key": "dose-reminder.skip-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Skip this dose",
+            "notes": ""
+          },
+          {
+            "key": "dose-reminder.saving-a11y",
+            "kind": "a11y",
+            "state": "loading",
+            "text": "Saving your answer",
+            "notes": ""
+          },
+          {
+            "key": "dose-reminder.success-title",
+            "kind": "success",
+            "state": "success",
+            "text": "Marked as taken",
+            "notes": ""
+          },
+          {
+            "key": "dose-reminder.success-body",
+            "kind": "body",
+            "state": "success",
+            "text": "{medication} {dose}, taken at {time}.",
+            "notes": ""
+          },
+          {
+            "key": "dose-reminder.done-button",
+            "kind": "button",
+            "state": "success",
+            "text": "Back to Today",
+            "notes": ""
+          },
+          {
+            "key": "dose-reminder.retry-button",
+            "kind": "button",
+            "state": "error",
+            "text": "Try again",
+            "notes": ""
+          },
+          {
+            "key": "dose-reminder.undo-button",
+            "kind": "button",
+            "state": "success",
+            "text": "Undo",
+            "notes": "Available while the confirmation is shown"
+          }
+        ]
+      },
+      {
+        "screenId": "history",
+        "strings": [
+          {
+            "key": "history.title",
+            "kind": "title",
+            "state": "default",
+            "text": "History",
+            "notes": ""
+          },
+          {
+            "key": "history.filter-week",
+            "kind": "label",
+            "state": "default",
+            "text": "This week",
+            "notes": ""
+          },
+          {
+            "key": "history.filter-month",
+            "kind": "label",
+            "state": "default",
+            "text": "This month",
+            "notes": ""
+          },
+          {
+            "key": "history.status-taken",
+            "kind": "label",
+            "state": "default",
+            "text": "Taken",
+            "notes": ""
+          },
+          {
+            "key": "history.status-skipped",
+            "kind": "label",
+            "state": "default",
+            "text": "Skipped",
+            "notes": ""
+          },
+          {
+            "key": "history.status-unmarked",
+            "kind": "label",
+            "state": "default",
+            "text": "Not marked",
+            "notes": ""
+          },
+          {
+            "key": "history.log-past-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Log a past dose",
+            "notes": ""
+          },
+          {
+            "key": "history.empty-title",
+            "kind": "empty",
+            "state": "empty",
+            "text": "Nothing here yet",
+            "notes": ""
+          },
+          {
+            "key": "history.empty-body",
+            "kind": "empty",
+            "state": "empty",
+            "text": "Doses you mark as taken or skipped will appear here.",
+            "notes": ""
+          },
+          {
+            "key": "history.empty-button",
+            "kind": "button",
+            "state": "empty",
+            "text": "Go to Today",
+            "notes": ""
+          },
+          {
+            "key": "history.loading-a11y",
+            "kind": "a11y",
+            "state": "loading",
+            "text": "Loading history",
+            "notes": ""
+          },
+          {
+            "key": "history.retry-button",
+            "kind": "button",
+            "state": "error",
+            "text": "Try again",
+            "notes": ""
+          },
+          {
+            "key": "history.loading-a11y-note",
+            "kind": "a11y",
+            "state": "loading",
+            "text": "Loading history",
+            "notes": "Same text as history.loading-a11y; announced politely"
+          }
+        ]
+      },
+      {
+        "screenId": "medication-detail",
+        "strings": [
+          {
+            "key": "medication-detail.schedule-label",
+            "kind": "label",
+            "state": "default",
+            "text": "Schedule",
+            "notes": ""
+          },
+          {
+            "key": "medication-detail.change-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Change schedule",
+            "notes": ""
+          },
+          {
+            "key": "medication-detail.pause-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Pause reminders",
+            "notes": ""
+          },
+          {
+            "key": "medication-detail.delete-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Delete medication",
+            "notes": ""
+          },
+          {
+            "key": "medication-detail.loading-a11y",
+            "kind": "a11y",
+            "state": "loading",
+            "text": "Loading medication",
+            "notes": ""
+          },
+          {
+            "key": "medication-detail.retry-button",
+            "kind": "button",
+            "state": "error",
+            "text": "Try again",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "change-schedule",
+        "strings": [
+          {
+            "key": "change-schedule.title",
+            "kind": "title",
+            "state": "default",
+            "text": "Change schedule",
+            "notes": ""
+          },
+          {
+            "key": "change-schedule.from-label",
+            "kind": "label",
+            "state": "default",
+            "text": "Change from",
+            "notes": ""
+          },
+          {
+            "key": "change-schedule.times-label",
+            "kind": "label",
+            "state": "default",
+            "text": "New times",
+            "notes": ""
+          },
+          {
+            "key": "change-schedule.history-note",
+            "kind": "helper",
+            "state": "default",
+            "text": "Your past doses stay as they were.",
+            "notes": ""
+          },
+          {
+            "key": "change-schedule.save-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Save new schedule",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "carer-invite",
+        "strings": [
+          {
+            "key": "carer-invite.title",
+            "kind": "title",
+            "state": "default",
+            "text": "Invite someone to follow",
+            "notes": ""
+          },
+          {
+            "key": "carer-invite.body",
+            "kind": "body",
+            "state": "default",
+            "text": "They'll see whether today's doses are marked and get an alert if one isn't. You can stop sharing at any time.",
+            "notes": ""
+          },
+          {
+            "key": "carer-invite.contact-label",
+            "kind": "label",
+            "state": "default",
+            "text": "Their email or phone number",
+            "notes": ""
+          },
+          {
+            "key": "carer-invite.send-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Send invitation",
+            "notes": ""
+          },
+          {
+            "key": "carer-invite.success-title",
+            "kind": "success",
+            "state": "success",
+            "text": "Invitation sent",
+            "notes": ""
+          },
+          {
+            "key": "carer-invite.success-body",
+            "kind": "body",
+            "state": "success",
+            "text": "We'll let you know when they accept.",
+            "notes": ""
+          },
+          {
+            "key": "carer-invite.done-button",
+            "kind": "button",
+            "state": "success",
+            "text": "Back to Family",
+            "notes": ""
+          }
+        ]
+      },
+      {
+        "screenId": "carer-overview",
+        "strings": [
+          {
+            "key": "carer-overview.title",
+            "kind": "title",
+            "state": "default",
+            "text": "Family",
+            "notes": ""
+          },
+          {
+            "key": "carer-overview.status-on-track",
+            "kind": "label",
+            "state": "default",
+            "text": "All doses marked today",
+            "notes": ""
+          },
+          {
+            "key": "carer-overview.status-unmarked",
+            "kind": "label",
+            "state": "default",
+            "text": "{count} dose not marked yet",
+            "notes": ""
+          },
+          {
+            "key": "carer-overview.view-button",
+            "kind": "button",
+            "state": "default",
+            "text": "View today's doses",
+            "notes": ""
+          },
+          {
+            "key": "carer-overview.invite-button",
+            "kind": "button",
+            "state": "default",
+            "text": "Invite someone",
+            "notes": ""
+          },
+          {
+            "key": "carer-overview.empty-title",
+            "kind": "empty",
+            "state": "empty",
+            "text": "You're not following anyone yet",
+            "notes": ""
+          },
+          {
+            "key": "carer-overview.empty-body",
+            "kind": "empty",
+            "state": "empty",
+            "text": "Ask the person you help to invite you, or invite someone to follow your doses.",
+            "notes": ""
+          },
+          {
+            "key": "carer-overview.loading-a11y",
+            "kind": "a11y",
+            "state": "loading",
+            "text": "Loading family",
+            "notes": ""
+          },
+          {
+            "key": "carer-overview.retry-button",
+            "kind": "button",
+            "state": "error",
+            "text": "Try again",
+            "notes": ""
+          }
+        ]
+      }
+    ],
+    "errors": [
+      {
+        "id": "today-load",
+        "screenId": "today",
+        "situation": "Today's plan couldn't load",
+        "message": "We couldn't load today's plan. Your reminders are still on. Check your connection and try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "add-save-failed",
+        "screenId": "add-medication",
+        "situation": "Saving failed",
+        "message": "We couldn't save this medication. Your entries are still here, so try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "add-missing-fields",
+        "screenId": "add-medication",
+        "situation": "Name or time missing",
+        "message": "Enter a name and at least one time to save this medication.",
+        "action": ""
+      },
+      {
+        "id": "reminder-save-failed",
+        "screenId": "dose-reminder",
+        "situation": "Answer couldn't be saved",
+        "message": "We couldn't save your answer. Check your connection and try again. The reminder stays until you answer.",
+        "action": "Try again"
+      },
+      {
+        "id": "history-load",
+        "screenId": "history",
+        "situation": "History couldn't load",
+        "message": "We couldn't load your history. Check your connection and try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "detail-load",
+        "screenId": "medication-detail",
+        "situation": "Medication couldn't load",
+        "message": "We couldn't load this medication. Try again in a moment.",
+        "action": "Try again"
+      },
+      {
+        "id": "schedule-past-date",
+        "screenId": "change-schedule",
+        "situation": "Start date in the past",
+        "message": "Choose today or a later date. Past doses stay as they were.",
+        "action": ""
+      },
+      {
+        "id": "invite-failed",
+        "screenId": "carer-invite",
+        "situation": "Invitation didn't send",
+        "message": "The invitation didn't send. Check the email or phone number and try again.",
+        "action": "Try again"
+      },
+      {
+        "id": "family-load",
+        "screenId": "carer-overview",
+        "situation": "Family couldn't load",
+        "message": "We couldn't load the people you follow. Check your connection and try again.",
+        "action": "Try again"
+      }
+    ],
+    "notifications": [
+      {
+        "id": "dose-due",
+        "trigger": "A dose is due",
+        "title": "Time for {medication}",
+        "body": "{dose} · tap to mark as taken"
+      },
+      {
+        "id": "carer-unmarked",
+        "trigger": "A followed person's dose is not marked 1 hour after it was due",
+        "title": "{name}'s {time} dose",
+        "body": "Not marked yet. You might want to check in."
+      }
+    ],
+    "assumptions": [
+      "'Not marked' is gentler than 'missed' and accurate, since we only know it wasn't recorded",
+      "10 seconds is long enough to notice a mistaken tap; people can also change an answer from Today"
+    ],
+    "openQuestions": [
+      "How long after a due time should the carer alert wait? The copy assumes 1 hour."
+    ]
+  }
+}

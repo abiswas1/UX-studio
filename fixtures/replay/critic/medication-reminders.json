@@ -1,0 +1,529 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the medication-reminders sample brief.",
+  "model": "claude-opus-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Walked ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "every ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screen ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "state ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "along ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "five ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "task ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "flows. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Ran ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "automated ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "checks: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "one ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "minor ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "issue ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(History ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "loading ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "isn't ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "announced). ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Found ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "four ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "major ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "issues: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "no ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "undo ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "after ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "marking ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "dose, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "offline ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "answers ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "that ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "look ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "saved, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "missing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "copy ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "both, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "and ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "unspecified ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "focus ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "in ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "reminder ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "sheet.\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 700
+    }
+  ],
+  "output": {
+    "summary": "A calm, consistent design that follows both platforms well. Three things need fixing before release: marking a dose can't be undone, offline answers look already saved, and the reminder sheet's focus behaviour isn't specified.",
+    "strengths": [
+      "One clear primary action on every screen, sized for older users",
+      "Status is never shown by colour alone",
+      "Errors are calm, specific and always offer a way forward",
+      "The reminder sheet keeps the most common answer within thumb reach"
+    ],
+    "findings": [
+      {
+        "id": "A1",
+        "title": "Loading state isn't announced to screen readers",
+        "kind": "wcag",
+        "heuristic": "",
+        "wcag": "4.1.3 Status Messages",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "history",
+            "state": "loading"
+          }
+        ],
+        "evidence": "Skeleton or spinner without an accessible status text",
+        "detail": "Screen reader users aren't told that content is loading.",
+        "recommendation": "Reference the screen's loading a11y string on the skeleton or spinner.",
+        "ownerStage": "ui",
+        "source": "automated"
+      },
+      {
+        "id": "C1",
+        "title": "'Mark as taken' can't be undone",
+        "kind": "heuristic",
+        "heuristic": "H3 User control and freedom",
+        "wcag": "",
+        "severity": 3,
+        "locations": [
+          {
+            "screenId": "today",
+            "state": "default"
+          },
+          {
+            "screenId": "dose-reminder",
+            "state": "default"
+          }
+        ],
+        "evidence": "Marking a dose moves straight on with no confirmation and no undo.",
+        "detail": "A mistaken tap records a dose as taken when it wasn't; the person may skip it, and a carer won't be alerted.",
+        "recommendation": "After marking, show a confirmation with an Undo action for a few seconds, and let people change a dose's answer from Today.",
+        "ownerStage": "ui",
+        "source": "review"
+      },
+      {
+        "id": "C2",
+        "title": "Offline answers look already saved",
+        "kind": "heuristic",
+        "heuristic": "H1 Visibility of system status",
+        "wcag": "",
+        "severity": 3,
+        "locations": [
+          {
+            "screenId": "today",
+            "state": "offline"
+          }
+        ],
+        "evidence": "Rows marked while offline show 'Taken 8:04 AM' exactly like synced rows.",
+        "detail": "The carer's view won't update until the phone reconnects, so they may get a not-marked alert for a dose that was taken.",
+        "recommendation": "Show 'Waiting to sync' on rows answered while offline, and clear it once synced.",
+        "ownerStage": "ui",
+        "source": "review"
+      },
+      {
+        "id": "C3",
+        "title": "No words for undo and waiting-to-sync",
+        "kind": "heuristic",
+        "heuristic": "H1 Visibility of system status",
+        "wcag": "",
+        "severity": 3,
+        "locations": [
+          {
+            "screenId": "today",
+            "state": "default"
+          },
+          {
+            "screenId": "today",
+            "state": "offline"
+          }
+        ],
+        "evidence": "The content deck has no strings for these states.",
+        "detail": "The fixes for C1 and C2 need copy that matches the voice.",
+        "recommendation": "Add a confirmation, an Undo label and a 'Waiting to sync' status.",
+        "ownerStage": "content",
+        "source": "review"
+      },
+      {
+        "id": "C4",
+        "title": "Reminder sheet focus behaviour isn't specified",
+        "kind": "wcag",
+        "heuristic": "",
+        "wcag": "2.4.3 Focus Order",
+        "severity": 3,
+        "locations": [
+          {
+            "screenId": "dose-reminder",
+            "state": "default"
+          }
+        ],
+        "evidence": "No note on where focus goes when the sheet opens or whether the screen behind is inert.",
+        "detail": "Screen reader and keyboard users may land behind the sheet and not find the answers.",
+        "recommendation": "Move focus to the sheet title on open, make the screen behind inert, and return focus to the dose on close.",
+        "ownerStage": "ui",
+        "source": "review"
+      },
+      {
+        "id": "C5",
+        "title": "One generic message for two different form errors",
+        "kind": "heuristic",
+        "heuristic": "H9 Help users recognize, diagnose, and recover from errors",
+        "wcag": "",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "add-medication",
+            "state": "error"
+          }
+        ],
+        "evidence": "The banner says 'Enter a name and at least one time' even when only the time is missing.",
+        "detail": "People have to work out which field is wrong.",
+        "recommendation": "Show only the message for the field that is missing; keep the banner as a summary when both are.",
+        "ownerStage": "content",
+        "source": "review"
+      },
+      {
+        "id": "C6",
+        "title": "'Log a past dose' is the primary action on History",
+        "kind": "heuristic",
+        "heuristic": "H4 Consistency and standards",
+        "wcag": "",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "history",
+            "state": "default"
+          }
+        ],
+        "evidence": "A filled primary button on a read-mostly screen, for a feature the architecture lists as an open question.",
+        "detail": "It draws attention away from reading the history, and the feature may not ship.",
+        "recommendation": "Make it secondary, or remove it until the open question is decided.",
+        "ownerStage": "wireframes",
+        "source": "review"
+      },
+      {
+        "id": "C7",
+        "title": "Settings tab shown although Settings isn't designed",
+        "kind": "heuristic",
+        "heuristic": "H8 Aesthetic and minimalist design",
+        "wcag": "",
+        "severity": 1,
+        "locations": [
+          {
+            "screenId": "today",
+            "state": "default"
+          }
+        ],
+        "evidence": "Settings is P2 with only a default state.",
+        "detail": "An empty or placeholder Settings screen would feel unfinished.",
+        "recommendation": "Keep the tab only if Settings ships in the first release.",
+        "ownerStage": "architecture",
+        "source": "review"
+      }
+    ],
+    "heuristicsReviewed": [
+      {
+        "heuristic": "H1 Visibility of system status",
+        "verdict": "issues",
+        "note": "Offline answers look the same as synced ones (C2)."
+      },
+      {
+        "heuristic": "H2 Match between system and the real world",
+        "verdict": "good",
+        "note": "Plain words; 'Not marked' avoids blaming people."
+      },
+      {
+        "heuristic": "H3 User control and freedom",
+        "verdict": "issues",
+        "note": "No way to undo 'Mark as taken' (C1)."
+      },
+      {
+        "heuristic": "H4 Consistency and standards",
+        "verdict": "good",
+        "note": "Platform conventions followed on iOS and Android."
+      },
+      {
+        "heuristic": "H5 Error prevention",
+        "verdict": "issues",
+        "note": "A mistaken tap records a dose that wasn't taken (C1)."
+      },
+      {
+        "heuristic": "H6 Recognition rather than recall",
+        "verdict": "good",
+        "note": "Today shows each dose's status; nothing to remember."
+      },
+      {
+        "heuristic": "H7 Flexibility and efficiency of use",
+        "verdict": "good",
+        "note": "Answering from the notification is one tap."
+      },
+      {
+        "heuristic": "H8 Aesthetic and minimalist design",
+        "verdict": "good",
+        "note": "One primary action per screen; calm layouts."
+      },
+      {
+        "heuristic": "H9 Help users recognize, diagnose, and recover from errors",
+        "verdict": "issues",
+        "note": "Generic validation message (C5)."
+      },
+      {
+        "heuristic": "H10 Help and documentation",
+        "verdict": "not applicable",
+        "note": "No help content is in scope for the first release."
+      }
+    ],
+    "wcagChecked": [
+      {
+        "criterion": "1.3.1 Info and Relationships",
+        "result": "pass",
+        "note": "Lists, headings and labels are structured."
+      },
+      {
+        "criterion": "1.4.1 Use of Color",
+        "result": "pass",
+        "note": "Status uses icons and words as well as colour."
+      },
+      {
+        "criterion": "1.4.3 Contrast (Minimum)",
+        "result": "pass",
+        "note": "All text pairs meet 4.5:1 in both modes (design-system check)."
+      },
+      {
+        "criterion": "1.4.11 Non-text Contrast",
+        "result": "pass",
+        "note": "Focus ring and control borders meet 3:1."
+      },
+      {
+        "criterion": "2.4.3 Focus Order",
+        "result": "fail",
+        "note": "The reminder sheet doesn't say where focus goes or that the screen behind is inert (C4)."
+      },
+      {
+        "criterion": "2.4.7 Focus Visible",
+        "result": "pass",
+        "note": "Focus states are defined for every interactive component."
+      },
+      {
+        "criterion": "2.5.8 Target Size (Minimum)",
+        "result": "pass",
+        "note": "44pt (iOS) and 48dp (Android) minimums."
+      },
+      {
+        "criterion": "3.3.1 Error Identification",
+        "result": "pass",
+        "note": "Field errors are named in text next to the field."
+      },
+      {
+        "criterion": "4.1.2 Name, Role, Value",
+        "result": "pass",
+        "note": "Icon-only controls have accessible names."
+      },
+      {
+        "criterion": "4.1.3 Status Messages",
+        "result": "fail",
+        "note": "History loading isn't announced (A1)."
+      }
+    ]
+  }
+}

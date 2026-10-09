@@ -51,7 +51,7 @@ export function UIView({ data: ui, lookup, designSystem, platforms }: { data: UI
           {screen.states.map((st) => (
             <figure key={st.state} className="wf-state">
               <figcaption><span className="badge">{st.state}</span>{screen.presentation !== "full" && <span className="faint"> · {screen.presentation}</span>}</figcaption>
-              <UIScreen blocks={st.blocks} lookup={lookup} theme={theme} mode={mode} platform={platform} presentation={screen.presentation} />
+              <UIScreen blocks={st.blocks} lookup={lookup} theme={theme} mode={mode} platform={platform} presentation={screen.presentation} screenName={screen.name} />
               {st.notes && <div className="wf-notes">{st.notes}</div>}
             </figure>
           ))}

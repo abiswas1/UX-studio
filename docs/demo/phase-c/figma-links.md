@@ -13,3 +13,9 @@ Fixes found while pushing, now built into the generator:
 - SF Pro isn't renderable outside Apple devices → Apple fonts are swapped for Inter.
 - Auto-layout could leave growing text columns at zero width → a "settle" pass sizes them.
 - Variable-bound paints lose their opacity → the sheet scrim is a plain 32% black fill.
+
+## Task flows in FigJam
+
+All five flows from the Architecture stage, on one board in the "Calibrate minds" team:
+[Dose — task flows](https://www.figma.com/board/dSv672QAo6e6f4AfU8tmgx). Generated with
+`lib/figma/figjam.ts`, which quotes labels and makes node ids FigJam-safe.

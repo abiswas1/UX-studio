@@ -1,4 +1,5 @@
 // Small stroke icon set for high-fidelity previews (24×24, currentColor).
+import * as React from "react";
 import { ICON_PATHS as PATHS } from "@/lib/icons";
 
 export function Icon({ name, size = 20, strokeWidth = 1.8 }: { name: string; size?: number; strokeWidth?: number }) {

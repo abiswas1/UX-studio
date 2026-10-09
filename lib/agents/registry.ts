@@ -8,6 +8,8 @@ import { contentDesigner } from "../../agents/content";
 import { wireframer } from "../../agents/wireframer";
 import { designSystemAgent } from "../../agents/design-system";
 import { uiDesigner } from "../../agents/ui";
+import { critic } from "../../agents/critic";
+import { prototyper } from "../../agents/prototyper";
 
 const AGENTS: Partial<Record<StageId, AgentModule<any>>> = {
   research: researcher,
@@ -16,6 +18,8 @@ const AGENTS: Partial<Record<StageId, AgentModule<any>>> = {
   wireframes: wireframer,
   "design-system": designSystemAgent,
   ui: uiDesigner,
+  critique: critic,
+  prototype: prototyper,
 };
 
 export function agentForStage(stage: StageId): AgentModule | undefined {

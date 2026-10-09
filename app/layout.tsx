@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./ui-kit.css";
 import { ShortcutHelp } from "@/components/ShortcutHelp";
 
 export const metadata: Metadata = {

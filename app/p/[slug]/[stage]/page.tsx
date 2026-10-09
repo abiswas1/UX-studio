@@ -15,6 +15,9 @@ import { SchemaEditor, type JsonSchema } from "@/components/SchemaEditor";
 import { StageActions } from "@/components/StageActions";
 import { StatusChip } from "@/components/StatusChip";
 import { FigmaPush } from "@/components/FigmaControls";
+import { CritiqueLoopButton } from "@/components/CritiqueLoopButton";
+import { seriousFindings } from "@/agents/critic";
+import type { Critique } from "@/agents/critic/schema";
 import { listPushes } from "@/lib/figma/push";
 import { isReplayMode } from "@/lib/runtime/models";
 
@@ -40,9 +43,9 @@ export default async function StagePage({ params, searchParams }: { params: Prom
   const vNum = Number(sp.v) || pointer?.latest || 0;
   const current = vNum ? await getVersion(slug, def.id, vNum) : null;
   // Visual stages get the full width when viewed; their side panels move below.
-  const wide = tab === "view" && (def.id === "wireframes" || def.id === "ui");
+  const wide = tab === "view" && (def.id === "wireframes" || def.id === "ui" || def.id === "prototype");
   // Views that show copy (wireframes, UI) use the content version this artifact was built from.
-  const viewContext: ViewContext = { platforms: project.platforms };
+  const viewContext: ViewContext = { platforms: project.platforms, slug, version: current?.meta.version ?? 0 };
   const contentRef = current?.meta.inputs.content;
   if (typeof contentRef === "number") {
     viewContext.lookup = copyLookup((await getVersion<Content>(slug, "content", contentRef))?.data);
@@ -182,6 +185,13 @@ export default async function StagePage({ params, searchParams }: { params: Prom
                   pushes={(await listPushes(slug)).filter((p) => p.stage === def.id)}
                   hasFile={!!project.figmaFileUrl}
                   replay={isReplayMode()}
+                />
+              )}
+              {def.id === "critique" && current.meta.version === pointer?.latest && (
+                <CritiqueLoopButton
+                  slug={slug}
+                  serious={seriousFindings(current.data as Critique).length}
+                  round={Number(current.meta.note?.match(/round (\d)/)?.[1]) || 0}
                 />
               )}
               <div className="card">

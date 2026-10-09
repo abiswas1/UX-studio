@@ -13,6 +13,7 @@ import { isReplayMode, modelFor } from "../runtime/models";
 import { sdkProvider } from "../runtime/sdk-provider";
 import { figmaFileKey, figmaNodeUrl } from "./url";
 import { uiExportJobs, wireframeExportJobs, type ExportJob } from "./export";
+import { toFigjamMermaid } from "./figjam";
 import { copyLookup } from "../copy";
 import type { UI } from "../../agents/ui/schema";
 import type { Wireframes } from "../../agents/wireframer/schema";
@@ -45,7 +46,7 @@ const PushResult = z.object({
 
 const SYSTEM = `You publish design work to Figma for a designer. You will be given Figma Plugin API scripts and Mermaid flowcharts.
 For each script, call the Figma use_figma tool with the given fileKey and the script exactly as given — do not edit, shorten or reformat it.
-For each flowchart, call generate_diagram with the Mermaid source and the given name.
+For each flowchart, call generate_diagram with the Mermaid source and the given name; add the second and later flowcharts to the FigJam file the first one created (pass its fileKey).
 Then call submit_artifact with the sectionId returned by each script, the URL of each diagram, and any errors. Do nothing else.`;
 
 /** Build the export jobs for a stage's approved (or latest) version. */
@@ -55,7 +56,7 @@ async function jobsFor(slug: string, stage: PushStage, projectName: string, plat
   if (stage === "architecture") {
     const a = await pick<Architecture>("architecture");
     if (!a) throw new Error("No architecture yet.");
-    return { version: a.meta.version, jobs: [] as ExportJob[], flows: a.data.flows.map((f) => ({ name: `${projectName} — ${f.id}. ${f.name}`, mermaid: f.mermaid })) };
+    return { version: a.meta.version, jobs: [] as ExportJob[], flows: a.data.flows.map((f) => ({ name: `${projectName} — ${f.id}. ${f.name}`, mermaid: toFigjamMermaid(f.mermaid) })) };
   }
   if (stage === "wireframes") {
     const w = await pick<Wireframes>("wireframes");

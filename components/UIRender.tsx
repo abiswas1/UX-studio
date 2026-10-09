@@ -1,11 +1,13 @@
-"use client";
+// React is imported explicitly so this renders outside Next.js too (prototype builds in scripts and tests).
+import * as React from "react";
 import type { CSSProperties } from "react";
 import type { UIBlockT } from "@/agents/ui/schema";
 import type { Theme } from "@/agents/design-system/schema";
 import type { CopyLookup } from "./Wireframe";
 import { Icon, tabIcon } from "./Icon";
 
-// Renders high-fidelity screens from the UI spec, themed by the design system.
+// Renders high-fidelity screens from the UI spec, themed by the design system. Pure (no hooks),
+// so it renders in the app and, server-side, into the static HTML prototype.
 // Platform styling follows each platform's conventions: iOS (large titles, inset grouped lists,
 // sheets), Android/Material (top app bar, pill buttons, navigation bar) and web.
 
@@ -54,7 +56,7 @@ function statusIcon(sub: string): { name: string; tone: string } | null {
   return null;
 }
 
-export function UIBlockView({ b, lookup, platform, forceState }: { b: UIBlockT | Omit<UIBlockT, "children">; lookup: CopyLookup; platform: Platform; forceState?: string }) {
+export function UIBlockView({ b, lookup, platform, forceState, activeTab }: { b: UIBlockT | Omit<UIBlockT, "children">; lookup: CopyLookup; platform: Platform; forceState?: string; activeTab?: string }) {
   const label = text(lookup, b.copy, b.text);
   const state = forceState ?? b.state;
   const st = `ui-state-${state}`;
@@ -64,14 +66,14 @@ export function UIBlockView({ b, lookup, platform, forceState }: { b: UIBlockT |
         <div className="ui-appbar ios">
           <div className="ui-appbar-row">
             <span />
-            <span className="ui-appbar-actions">{b.items.map((i, n) => <span key={n} className="ui-icon-btn" aria-label={item(lookup, i)}><Icon name={b.icon !== "none" ? b.icon : "plus"} size={22} /></span>)}</span>
+            <span className="ui-appbar-actions">{b.items.map((i, n) => <span key={n} className="ui-icon-btn" role="button" aria-label={item(lookup, i)} data-copy={i}><Icon name={b.icon !== "none" ? b.icon : "plus"} size={22} /></span>)}</span>
           </div>
           <div className="ui-large-title">{label}</div>
         </div>
       ) : (
         <div className={`ui-appbar ${platform}`}>
           <span className="ui-appbar-title">{label}</span>
-          <span className="ui-appbar-actions">{b.items.map((i, n) => <span key={n} className="ui-icon-btn" aria-label={item(lookup, i)}><Icon name={b.icon !== "none" ? b.icon : "plus"} size={22} /></span>)}</span>
+          <span className="ui-appbar-actions">{b.items.map((i, n) => <span key={n} className="ui-icon-btn" role="button" aria-label={item(lookup, i)} data-copy={i}><Icon name={b.icon !== "none" ? b.icon : "plus"} size={22} /></span>)}</span>
         </div>
       );
     case "heading":
@@ -114,7 +116,7 @@ export function UIBlockView({ b, lookup, platform, forceState }: { b: UIBlockT |
             const [title, sub] = splitRow(item(lookup, r));
             const s = statusIcon(sub);
             return (
-              <div key={i} className="ui-row">
+              <div key={i} className="ui-row" data-copy={r}>
                 <span className="ui-row-lead" style={{ color: s?.tone ?? "var(--c-primary)" }}><Icon name={s?.name ?? (b.icon !== "none" ? b.icon : "pill")} size={20} /></span>
                 <span className="ui-row-text"><span>{title}</span>{sub && <span className="ui-row-sub">{sub}</span>}</span>
                 <Icon name="chevron-right" size={16} />
@@ -166,8 +168,10 @@ export function UIBlockView({ b, lookup, platform, forceState }: { b: UIBlockT |
         <nav className={`ui-tabbar ${platform}`}>
           {b.items.map((i, n) => {
             const l = item(lookup, i);
+            // The tab named like the current screen is active; otherwise the first.
+            const match = activeTab ? b.items.findIndex((x) => item(lookup, x).toLowerCase() === activeTab.toLowerCase()) : -1;
             return (
-              <span key={n} className={n === 0 ? "active" : ""}>
+              <span key={n} className={n === (match === -1 ? 0 : match) ? "active" : ""} data-copy={i}>
                 <span className="ui-tab-icon"><Icon name={tabIcon(l)} size={22} /></span>
                 {l}
               </span>
@@ -176,7 +180,7 @@ export function UIBlockView({ b, lookup, platform, forceState }: { b: UIBlockT |
         </nav>
       );
     case "chips":
-      return <div className={`ui-chips ${platform}`}>{b.items.map((i, n) => <span key={n} className={n === 0 ? "selected" : ""}>{n === 0 && <Icon name="check" size={14} />}{item(lookup, i)}</span>)}</div>;
+      return <div className={`ui-chips ${platform}`}>{b.items.map((i, n) => <span key={n} className={n === 0 ? "selected" : ""} data-copy={i}>{n === 0 && <Icon name="check" size={14} />}{item(lookup, i)}</span>)}</div>;
     case "table":
       return (
         <div className="ui-table">
@@ -193,13 +197,18 @@ export function UIBlockView({ b, lookup, platform, forceState }: { b: UIBlockT |
   }
 }
 
-export function UIScreen({ blocks, lookup, theme, mode, platform, presentation }: {
-  blocks: UIBlockT[]; lookup: CopyLookup; theme: Theme; mode: Mode; platform: Platform; presentation: "full" | "sheet" | "modal";
+export function UIScreen({ blocks, lookup, theme, mode, platform, presentation, screenName }: {
+  blocks: UIBlockT[]; lookup: CopyLookup; theme: Theme; mode: Mode; platform: Platform; presentation: "full" | "sheet" | "modal"; screenName?: string;
 }) {
   const tabbar = blocks.filter((b) => b.type === "tabbar");
   const body = blocks.filter((b) => b.type !== "tabbar" && b.type !== "sidebar");
   const sidebar = blocks.find((b) => b.type === "sidebar");
-  const content = body.map((b, i) => <UIBlockView key={i} b={b} lookup={lookup} platform={platform} />);
+  // display:contents wrappers carry the block's content key for prototype hotspots without affecting layout.
+  const content = body.map((b, i) => (
+    <div key={i} style={{ display: "contents" }} data-copy={b.copy || undefined}>
+      <UIBlockView b={b} lookup={lookup} platform={platform} />
+    </div>
+  ));
   const device = platform === "web" ? "desktop" : platform;
 
   return (
@@ -223,7 +232,7 @@ export function UIScreen({ blocks, lookup, theme, mode, platform, presentation }
           ) : (
             <>
               <div className="ui-content">{content}</div>
-              {tabbar.map((b, i) => <UIBlockView key={i} b={b} lookup={lookup} platform={platform} />)}
+              {tabbar.map((b, i) => <UIBlockView key={i} b={b} lookup={lookup} platform={platform} activeTab={screenName} />)}
             </>
           )}
           <div className="ui-home"><span /></div>

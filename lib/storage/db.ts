@@ -32,6 +32,9 @@ function open(): Db {
     );
     CREATE INDEX IF NOT EXISTS calls_run ON agent_calls(run_id);
   `);
+  // Added in step 4: position of the current step in a run's queue.
+  const cols = db.prepare(`PRAGMA table_info(runs)`).all() as { name: string }[];
+  if (!cols.some((c) => c.name === "position")) db.exec(`ALTER TABLE runs ADD COLUMN position INTEGER`);
   g.__uxDb = db;
   return db;
 }
@@ -51,6 +54,7 @@ export interface RunRow {
   cost_usd: number;
   started_at: string;
   finished_at: string | null;
+  position: number | null;
 }
 
 export interface CallRow {
@@ -73,7 +77,7 @@ export interface CallRow {
   started_at: string;
 }
 
-export function insertRun(r: Omit<RunRow, "cost_usd" | "finished_at" | "error" | "current_stage">): void {
+export function insertRun(r: Omit<RunRow, "cost_usd" | "finished_at" | "error" | "current_stage" | "position">): void {
   open()
     .prepare(
       `INSERT INTO runs (id, project, mode, stages, status, replay, budget_usd, started_at)
@@ -82,7 +86,7 @@ export function insertRun(r: Omit<RunRow, "cost_usd" | "finished_at" | "error" |
     .run(r.id, r.project, r.mode, r.stages, r.status, r.replay, r.budget_usd, r.started_at);
 }
 
-export function updateRun(id: string, patch: Partial<Pick<RunRow, "status" | "current_stage" | "error" | "finished_at">>): void {
+export function updateRun(id: string, patch: Partial<Pick<RunRow, "status" | "current_stage" | "error" | "finished_at" | "position" | "stages">>): void {
   const keys = Object.keys(patch) as (keyof typeof patch)[];
   if (!keys.length) return;
   open()

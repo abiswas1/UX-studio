@@ -10,7 +10,8 @@ import path from "node:path";
 import { listSamples } from "../lib/samples";
 import { createProject } from "../lib/storage/projects";
 import { getRun, listCalls } from "../lib/storage/db";
-import { getLatest } from "../lib/storage/artifacts";
+import { getLatest, listVersions } from "../lib/storage/artifacts";
+import type { Critique } from "../agents/critic/schema";
 import { startRun } from "../lib/orchestrator/orchestrator";
 import { stageStates } from "../lib/orchestrator/status";
 import { isReplayMode } from "../lib/runtime/models";
@@ -66,12 +67,16 @@ async function main() {
       });
     }
     const calls = listCalls(runId);
+    const critique = await getLatest<Critique>(project.slug, "critique");
+    const critiqueRounds = Math.max(0, (await listVersions(project.slug, "critique")).length - 1);
+    const openSerious = critique ? critique.data.findings.filter((f) => f.severity >= 3).length : null;
     const result = {
       brief: s.id, project: project.slug, runId, status: run.status, error: run.error, costUsd: run.cost_usd,
-      seconds: Math.round((Date.now() - started) / 100) / 10, attempts: calls.length, stages,
+      seconds: Math.round((Date.now() - started) / 100) / 10, attempts: calls.length, critiqueRounds, openSerious, stages,
     };
     results.push(result);
-    console.log(`${run.status}${run.error ? ` — ${run.error}` : ""} · $${run.cost_usd.toFixed(2)} · ${result.seconds}s`);
+    console.log(`${run.status}${run.error ? ` — ${run.error}` : ""} · $${run.cost_usd.toFixed(2)} · ${result.seconds}s` +
+      (critique ? ` · critique rounds ${critiqueRounds}, serious issues left ${openSerious}` : ""));
     for (const st of stages) {
       const failed = st.checks.filter((c) => !c.passed);
       console.log(`   ${st.stage.padEnd(14)} ${st.status.padEnd(14)} checks ${st.checks.length - failed.length}/${st.checks.length}`);
@@ -85,10 +90,10 @@ async function main() {
     `# Pipeline eval ${stamp}${label ? ` — ${label}` : ""}`, "",
     `Mode: ${report.replay ? "replay (recorded output)" : "live"}`, "",
     `Prompt versions: ${Object.entries(promptHashes).map(([a, h]) => `${a} ${h}`).join(", ")}`, "",
-    "| Brief | Status | Cost | Time | Checks passed |", "| --- | --- | --- | --- | --- |",
+    "| Brief | Status | Cost | Time | Checks passed | Critique rounds | Serious issues left |", "| --- | --- | --- | --- | --- | --- | --- |",
     ...results.map((r) => {
       const all = r.stages.flatMap((st) => st.checks);
-      return `| ${r.brief} | ${r.status} | $${r.costUsd.toFixed(2)} | ${r.seconds}s | ${all.filter((c) => c.passed).length}/${all.length} |`;
+      return `| ${r.brief} | ${r.status} | $${r.costUsd.toFixed(2)} | ${r.seconds}s | ${all.filter((c) => c.passed).length}/${all.length} | ${r.critiqueRounds} | ${r.openSerious ?? "—"} |`;
     }),
   ].join("\n");
   await writeFileAtomic(path.join(outDir, "report.md"), md + "\n");

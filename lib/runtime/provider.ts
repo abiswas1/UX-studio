@@ -21,7 +21,7 @@ export interface ProviderRequest {
   signal: AbortSignal;
   onEvent: (e: ProviderEvent) => void;
   /** Used by replay mode to find recorded output. */
-  replayKey: { project: string; agentId: string };
+  replayKey: { project: string; agentId: string; round?: number };
 }
 
 export interface ProviderResult {

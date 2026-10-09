@@ -1,0 +1,766 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the medication-reminders sample brief.",
+  "model": "claude-sonnet-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Wiring ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screens ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "along ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "task ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "flows: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "answering ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "reminder, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "adding ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "a ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "medication, ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "checking ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "history. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Loading ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "states ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "move ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "on ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "by ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "themselves. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Writing ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "the ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "handoff ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "with ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "acceptance ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "criteria ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "for ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "each ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "screen.\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 700
+    }
+  ],
+  "output": {
+    "entry": {
+      "screenId": "today",
+      "state": "default"
+    },
+    "links": [
+      {
+        "from": {
+          "screenId": "today",
+          "state": "*"
+        },
+        "element": "today.tab-today",
+        "to": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "today",
+          "state": "*"
+        },
+        "element": "today.tab-history",
+        "to": {
+          "screenId": "history",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "today",
+          "state": "*"
+        },
+        "element": "today.tab-family",
+        "to": {
+          "screenId": "carer-overview",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "history",
+          "state": "*"
+        },
+        "element": "today.tab-today",
+        "to": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "history",
+          "state": "*"
+        },
+        "element": "today.tab-history",
+        "to": {
+          "screenId": "history",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "history",
+          "state": "*"
+        },
+        "element": "today.tab-family",
+        "to": {
+          "screenId": "carer-overview",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "carer-overview",
+          "state": "*"
+        },
+        "element": "today.tab-today",
+        "to": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "carer-overview",
+          "state": "*"
+        },
+        "element": "today.tab-history",
+        "to": {
+          "screenId": "history",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "carer-overview",
+          "state": "*"
+        },
+        "element": "today.tab-family",
+        "to": {
+          "screenId": "carer-overview",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "element": "today.take-button",
+        "to": {
+          "screenId": "today",
+          "state": "taken"
+        },
+        "trigger": "tap",
+        "note": "Marks Metformin 8:00 PM"
+      },
+      {
+        "from": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "element": "today.add-button",
+        "to": {
+          "screenId": "add-medication",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "today",
+          "state": "*"
+        },
+        "element": "today.add-a11y",
+        "to": {
+          "screenId": "add-medication",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "element": "Metformin 500 mg · Due 8:00 PM",
+        "to": {
+          "screenId": "dose-reminder",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": "Same sheet as the notification"
+      },
+      {
+        "from": {
+          "screenId": "today",
+          "state": "taken"
+        },
+        "element": "today.undo-button",
+        "to": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "today",
+          "state": "taken"
+        },
+        "element": "today.take-button",
+        "to": {
+          "screenId": "dose-reminder",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "today",
+          "state": "empty"
+        },
+        "element": "today.empty-button",
+        "to": {
+          "screenId": "add-medication",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "today",
+          "state": "error"
+        },
+        "element": "today.retry-button",
+        "to": {
+          "screenId": "today",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "today",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "today",
+          "state": "offline"
+        },
+        "element": "today.take-button",
+        "to": {
+          "screenId": "today",
+          "state": "taken"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "add-medication",
+          "state": "default"
+        },
+        "element": "add-medication.save-button",
+        "to": {
+          "screenId": "add-medication",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "add-medication",
+          "state": "*"
+        },
+        "element": "add-medication.cancel-button",
+        "to": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "add-medication",
+          "state": "error"
+        },
+        "element": "add-medication.save-button",
+        "to": {
+          "screenId": "add-medication",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "add-medication",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "dose-reminder",
+          "state": "default"
+        },
+        "element": "dose-reminder.taken-button",
+        "to": {
+          "screenId": "dose-reminder",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "dose-reminder",
+          "state": "default"
+        },
+        "element": "dose-reminder.snooze-button",
+        "to": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "dose-reminder",
+          "state": "default"
+        },
+        "element": "dose-reminder.skip-button",
+        "to": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "dose-reminder",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "dose-reminder",
+          "state": "success"
+        },
+        "trigger": "auto",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "dose-reminder",
+          "state": "error"
+        },
+        "element": "dose-reminder.retry-button",
+        "to": {
+          "screenId": "dose-reminder",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "dose-reminder",
+          "state": "error"
+        },
+        "element": "dose-reminder.skip-button",
+        "to": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "dose-reminder",
+          "state": "success"
+        },
+        "element": "dose-reminder.done-button",
+        "to": {
+          "screenId": "today",
+          "state": "taken"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "dose-reminder",
+          "state": "success"
+        },
+        "element": "dose-reminder.undo-button",
+        "to": {
+          "screenId": "dose-reminder",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "history",
+          "state": "empty"
+        },
+        "element": "history.empty-button",
+        "to": {
+          "screenId": "today",
+          "state": "default"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "history",
+          "state": "error"
+        },
+        "element": "history.retry-button",
+        "to": {
+          "screenId": "history",
+          "state": "loading"
+        },
+        "trigger": "tap",
+        "note": ""
+      },
+      {
+        "from": {
+          "screenId": "history",
+          "state": "loading"
+        },
+        "element": "",
+        "to": {
+          "screenId": "history",
+          "state": "default"
+        },
+        "trigger": "auto",
+        "note": ""
+      }
+    ],
+    "staticActions": [
+      {
+        "screenId": "history",
+        "state": "default",
+        "element": "history.log-past-button",
+        "reason": "Logging past doses is an open question in the architecture (and critique C6)."
+      },
+      {
+        "screenId": "carer-overview",
+        "state": "default",
+        "element": "carer-overview.view-button",
+        "reason": "The carer's dose view isn't designed yet (P1)."
+      },
+      {
+        "screenId": "carer-overview",
+        "state": "empty",
+        "element": "carer-overview.invite-button",
+        "reason": "Invite someone to follow isn't designed at high fidelity yet (P1)."
+      }
+    ],
+    "handoff": {
+      "overview": "Dose helps adults who manage several daily medications, and the carers who support them, take the right dose at the right time. This handoff covers the first-release P0 screens (Today, Add medication, Dose reminder, History) and the Family tab, on iOS and Android, in light and dark mode.",
+      "screens": [
+        {
+          "screenId": "today",
+          "purpose": "Today's doses and their status; answer the next one.",
+          "behaviour": [
+            "'Mark as taken' records the next due dose with the current time and shows the confirmation with Undo for 10 s (paused while focused).",
+            "Tapping a due dose opens the Dose reminder sheet.",
+            "Offline: answers are stored locally and shown with 'Waiting to sync' until confirmed by the server."
+          ],
+          "data": [
+            "Reads today's schedule and answers",
+            "Writes dose answers (taken, skipped, snoozed) with timestamps"
+          ],
+          "edgeCases": [
+            "Two doses due at the same time: the card shows the earliest; the list shows both",
+            "Device time zone changes while travelling"
+          ],
+          "acceptanceCriteria": [
+            "Marking a dose shows the confirmation within 300 ms, even offline",
+            "Undo restores the dose to Due and removes the answer",
+            "Rows answered offline show 'Waiting to sync' until synced"
+          ]
+        },
+        {
+          "screenId": "add-medication",
+          "purpose": "Add a medication with dose and schedule in under a minute.",
+          "behaviour": [
+            "Only name, dose and one time are required",
+            "Errors show next to each field; the first invalid field gets focus",
+            "Save keeps entries if it fails"
+          ],
+          "data": [
+            "Writes medication, dose and schedule"
+          ],
+          "edgeCases": [
+            "Duplicate medication name",
+            "Times entered in 12- or 24-hour format"
+          ],
+          "acceptanceCriteria": [
+            "A new medication can be added with keyboard or switch control only",
+            "A failed save never loses entered data"
+          ]
+        },
+        {
+          "screenId": "dose-reminder",
+          "purpose": "Answer a due dose from the notification or Today.",
+          "behaviour": [
+            "Opens as a bottom sheet; focus moves to the title and the screen behind is inert",
+            "Snooze schedules a new reminder in 10 minutes",
+            "The reminder stays until answered"
+          ],
+          "data": [
+            "Writes the answer for one dose"
+          ],
+          "edgeCases": [
+            "Answering a dose from a notification after it was answered on another device"
+          ],
+          "acceptanceCriteria": [
+            "The sheet can be answered with one tap from the notification on iOS and Android",
+            "On close, focus returns to the dose on Today"
+          ]
+        },
+        {
+          "screenId": "history",
+          "purpose": "See past doses by day.",
+          "behaviour": [
+            "Filters by this week or this month",
+            "Loading is announced to screen readers"
+          ],
+          "data": [
+            "Reads past answers"
+          ],
+          "edgeCases": [
+            "Long gaps with no doses",
+            "Medication deleted after doses were recorded"
+          ],
+          "acceptanceCriteria": [
+            "History shows each dose with its answer and time",
+            "Empty history explains what will appear"
+          ]
+        },
+        {
+          "screenId": "carer-overview",
+          "purpose": "People you follow and whether their doses are on track.",
+          "behaviour": [
+            "Unmarked doses are listed first"
+          ],
+          "data": [
+            "Reads followed people's dose status (with their consent)"
+          ],
+          "edgeCases": [
+            "Consent withdrawn while the screen is open"
+          ],
+          "acceptanceCriteria": [
+            "Only people who invited you are shown"
+          ]
+        }
+      ],
+      "components": [
+        {
+          "name": "Buttons",
+          "notes": "Material 3 Button (filled, outlined, text) on Android; filled, tinted and plain on iOS. Minimum target 48dp / 44pt."
+        },
+        {
+          "name": "Confirmation with Undo",
+          "notes": "Custom banner in primaryContainer; polite live region; 10 s timer that pauses on focus."
+        },
+        {
+          "name": "Dose reminder sheet",
+          "notes": "Material bottom sheet / iOS sheet with a grabber; inert background."
+        }
+      ],
+      "accessibility": [
+        "Text follows the system text size; layouts reflow up to the largest Dynamic Type and font scale",
+        "Status is always shown with an icon and words, not colour alone",
+        "Loading states and confirmations are announced politely",
+        "Focus moves into sheets and modals and returns on close"
+      ],
+      "analytics": [
+        "dose_answered (answer, source: notification | today, offline)",
+        "dose_undone",
+        "medication_added"
+      ],
+      "openIssues": []
+    }
+  }
+}

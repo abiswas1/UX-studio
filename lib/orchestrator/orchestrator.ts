@@ -16,6 +16,8 @@ import { isTransient, type Provider } from "../runtime/provider";
 import { sdkProvider } from "../runtime/sdk-provider";
 import { replayProvider } from "../runtime/replay-provider";
 import { currentInputs, stageStates } from "./status";
+import type { Critique } from "../../agents/critic/schema";
+import { seriousFindings } from "../../agents/critic";
 
 // The orchestrator is plain code, not an LLM: it runs stages in order, enforces approval
 // gates and definitions of done, retries, tracks cost against the budget and logs every call.
@@ -66,14 +68,47 @@ export interface StartRunOptions {
   notes?: string;
 }
 
+/** One step of a run. Revision steps carry notes (e.g. critique findings) for the agent. */
+export interface QueueItem {
+  stage: StageId;
+  notes?: string;
+  /** 0 for a normal run; 1–2 for critique-loop rounds (also picks the replay recording). */
+  round?: number;
+  /** Always stop for review after this step, even in an unattended run. */
+  gate?: boolean;
+}
+
+const MAX_CRITIQUE_ROUNDS = 2;
+const OWNER_ORDER: StageId[] = ["research", "architecture", "content", "wireframes", "design-system", "ui"];
+
+function newRunId(): string {
+  return `run_${new Date().toISOString().replace(/[-:T]/g, "").slice(0, 14)}_${crypto.randomBytes(3).toString("hex")}`;
+}
+
+async function launch(slug: string, queue: QueueItem[], mode: RunMode, label: string): Promise<string> {
+  const project = (await getProject(slug))!;
+  for (const r of listRuns(slug, 5)) {
+    if (r.status === "running" && active.has(r.id)) throw new Error("A run is already in progress for this project.");
+  }
+  // A new run replaces any older run still waiting at an approval gate.
+  for (const r of listRuns(slug, 10).filter((x) => x.status === "waiting_approval")) {
+    updateRun(r.id, { status: "stopped", error: "Replaced by a newer run.", finished_at: new Date().toISOString(), current_stage: null });
+  }
+  const id = newRunId();
+  insertRun({
+    id, project: slug, mode, stages: JSON.stringify(queue), status: "running",
+    replay: isReplayMode() ? 1 : 0, budget_usd: budgetFor(project), started_at: new Date().toISOString(),
+  });
+  await logDecision(slug, `${label} (${id})`, `Stages: ${queue.map((q) => q.stage).join(", ")}. Mode: ${mode}.${isReplayMode() ? " Replay mode." : ""}`);
+  void drive(id, queue, 0);
+  return id;
+}
+
 /** Start a run in the background. Returns the run id immediately. */
 export async function startRun(slug: string, opts: StartRunOptions = {}): Promise<string> {
   checkOrphans();
   const project = await getProject(slug);
   if (!project) throw new Error("Project not found");
-  for (const r of listRuns(slug, 5)) {
-    if (r.status === "running" && active.has(r.id)) throw new Error("A run is already in progress for this project.");
-  }
   let requested = opts.stages;
   if (!requested) {
     // Pick up from the first stage that isn't approved and current.
@@ -87,30 +122,64 @@ export async function startRun(slug: string, opts: StartRunOptions = {}): Promis
     return def && isAvailable(def);
   });
   if (!stages.length) throw new Error("Nothing to run: the selected stages are not available yet.");
+  const queue: QueueItem[] = stages.map((stage) => ({ stage, notes: stages.length === 1 ? opts.notes : undefined }));
+  return launch(slug, queue, opts.mode ?? project.mode, "Run started");
+}
 
-  const id = `run_${new Date().toISOString().replace(/[-:T]/g, "").slice(0, 14)}_${crypto.randomBytes(3).toString("hex")}`;
-  insertRun({
-    id, project: slug, mode: opts.mode ?? project.mode, stages: JSON.stringify(stages), status: "running",
-    replay: isReplayMode() ? 1 : 0, budget_usd: budgetFor(project), started_at: new Date().toISOString(),
-  });
-  await logDecision(slug, `Run started (${id})`, `Stages: ${stages.join(", ")}. Mode: ${opts.mode ?? project.mode}.${isReplayMode() ? " Replay mode." : ""}`);
-  void drive(id, stages, opts.notes);
-  return id;
+/** Revision steps for the serious findings of a critique: each owning stage and everything after it, then a new critique. */
+function critiqueRevisionQueue(critique: Critique, round: number): QueueItem[] {
+  const serious = seriousFindings(critique);
+  if (!serious.length) return [];
+  const owners = new Set<StageId>(serious.map((f) => f.ownerStage));
+  const first = OWNER_ORDER.findIndex((s) => owners.has(s));
+  const queue: QueueItem[] = OWNER_ORDER.slice(first)
+    .filter((s) => isAvailable(stageById(s)!))
+    .map((stage) => {
+      const mine = serious.filter((f) => f.ownerStage === stage);
+      return {
+        stage,
+        round,
+        notes: mine.length
+          ? `Critique round ${round}: fix these findings.\n` + mine.map((f) => `- ${f.id} (severity ${f.severity}) ${f.title}: ${f.detail} Recommendation: ${f.recommendation}`).join("\n")
+          : undefined,
+      };
+    });
+  queue.push({ stage: "critique", round });
+  return queue;
+}
+
+/** Send the latest critique's severity 3–4 findings back to their owners (used from the Critique page). */
+export async function startCritiqueLoop(slug: string): Promise<string> {
+  checkOrphans();
+  const latest = await getLatest<Critique>(slug, "critique");
+  if (!latest) throw new Error("Run the critique first.");
+  const round = (Number(latest.meta.note?.match(/round (\d)/)?.[1]) || 0) + 1;
+  if (round > MAX_CRITIQUE_ROUNDS) throw new Error(`Already ran ${MAX_CRITIQUE_ROUNDS} rounds of fixes. Fix the remaining issues by hand, or approve them as known issues.`);
+  const queue = critiqueRevisionQueue(latest.data, round);
+  if (!queue.length) throw new Error("There are no severity 3 or 4 findings to send back.");
+  // Revision rounds run on their own; the new critique stops for your review.
+  queue[queue.length - 1].gate = true;
+  return launch(slug, queue, "unattended", `Critique round ${round} started`);
 }
 
 /** Continue a run that paused at an approval gate. */
 async function resumeAfterApproval(slug: string, approvedStage: StageId): Promise<void> {
   const waiting = listRuns(slug, 10).find((r) => r.status === "waiting_approval" && r.current_stage === approvedStage);
   if (!waiting) return;
-  const stages = JSON.parse(waiting.stages) as StageId[];
-  const rest = stages.slice(stages.indexOf(approvedStage) + 1);
-  if (!rest.length) {
+  const queue = parseQueue(waiting.stages);
+  const next = (waiting.position ?? queue.findIndex((q) => q.stage === approvedStage)) + 1;
+  if (next >= queue.length) {
     finish(waiting, "done");
     return;
   }
   updateRun(waiting.id, { status: "running" });
   emit(slug, { type: "run", runId: waiting.id, status: "running" });
-  void drive(waiting.id, rest);
+  void drive(waiting.id, queue, next);
+}
+
+function parseQueue(json: string): QueueItem[] {
+  const raw = JSON.parse(json) as (StageId | QueueItem)[];
+  return raw.map((x) => (typeof x === "string" ? { stage: x } : x));
 }
 
 function finish(run: RunRow, status: "done" | "failed" | "stopped", error?: string): void {
@@ -118,23 +187,26 @@ function finish(run: RunRow, status: "done" | "failed" | "stopped", error?: stri
   emit(run.project, { type: "run", runId: run.id, status, error });
 }
 
-async function drive(runId: string, stages: StageId[], notes?: string): Promise<void> {
+async function drive(runId: string, initial: QueueItem[], startAt: number): Promise<void> {
   const run = getRun(runId)!;
   const slug = run.project;
   const abort = new AbortController();
   active.set(runId, { abort, stage: null });
+  const queue = [...initial];
   try {
-    for (const stage of stages) {
+    for (let i = startAt; i < queue.length; i++) {
+      const item = queue[i];
+      const stage = item.stage;
       const latestRun = getRun(runId)!;
       if (latestRun.budget_usd !== null && latestRun.cost_usd >= latestRun.budget_usd) {
         finish(latestRun, "stopped", `Spending cap of $${latestRun.budget_usd.toFixed(2)} reached. Raise it in settings or run the remaining stages.`);
         return;
       }
       active.get(runId)!.stage = stage;
-      updateRun(runId, { current_stage: stage });
+      updateRun(runId, { current_stage: stage, position: i });
       emit(slug, { type: "stage", runId, stage, status: "running" });
 
-      const result = await runStage(runId, slug, stage, abort.signal, stages.length === 1 ? notes : undefined);
+      const result = await runStage(runId, slug, stage, abort.signal, item.notes, item.round ?? 0);
       active.get(runId)!.stage = null;
       emit(slug, { type: "changed" });
 
@@ -143,13 +215,27 @@ async function drive(runId: string, stages: StageId[], notes?: string): Promise<
         return;
       }
       const mode = run.mode as RunMode;
-      if (mode === "unattended" && result.version.meta.dod.passed) {
+
+      // Critique loop: in unattended runs, serious findings go straight back to their owners.
+      if (stage === "critique" && mode === "unattended" && !item.gate) {
+        const round = (item.round ?? 0) + 1;
+        const revision = round <= MAX_CRITIQUE_ROUNDS ? critiqueRevisionQueue(result.version.data as Critique, round) : [];
+        if (revision.length) {
+          await logDecision(slug, `Critique round ${round}`, `${seriousFindings(result.version.data as Critique).length} serious finding(s) sent back to ${[...new Set(revision.filter((q) => q.notes).map((q) => q.stage))].join(", ")}.`);
+          queue.splice(i + 1, 0, ...revision);
+          updateRun(runId, { stages: JSON.stringify(queue) });
+        } else if (seriousFindings(result.version.data as Critique).length) {
+          await logDecision(slug, "Critique rounds used up", `${seriousFindings(result.version.data as Critique).length} serious finding(s) remain and are listed in the handoff.`);
+        }
+      }
+
+      if (mode === "unattended" && !item.gate && result.version.meta.dod.passed) {
         await setApproved(slug, stage, result.version.meta.version);
         await logDecision(slug, `${stageById(stage)!.title} v${result.version.meta.version} auto-approved`, "Unattended run; all done-checks passed.");
         continue;
       }
       // Approval gate: pause here; approving the stage continues the run.
-      updateRun(runId, { status: "waiting_approval", current_stage: stage });
+      updateRun(runId, { status: "waiting_approval", current_stage: stage, position: i });
       emit(slug, { type: "run", runId, status: "waiting_approval", stage });
       return;
     }
@@ -182,7 +268,7 @@ async function buildContext(slug: string, stage: StageId): Promise<AgentContext>
   };
 }
 
-async function runStage(runId: string, slug: string, stage: StageId, signal: AbortSignal, notes?: string): Promise<StageResult> {
+async function runStage(runId: string, slug: string, stage: StageId, signal: AbortSignal, notes?: string, round = 0): Promise<StageResult> {
   const agent = agentForStage(stage);
   if (!agent) return { ok: false, error: `No agent for ${stage} yet.` };
   const ctx = await buildContext(slug, stage);
@@ -213,10 +299,10 @@ async function runStage(runId: string, slug: string, stage: StageId, signal: Abo
         e.kind === "text"
           ? emit(slug, { type: "text", runId, stage, text: e.text })
           : emit(slug, { type: "tool", runId, stage, name: e.name, summary: e.summary }),
-      replayKey: { project: slug, agentId: agent.id },
+      replayKey: { project: slug, agentId: agent.id, round },
     });
 
-    const callId = `${runId}_${stage}_${attempt}`;
+    const callId = `${runId}_${stage}_r${round}_${attempt}`;
     insertCall({
       id: callId, run_id: runId, project: slug, stage, agent: agent.id, model: result.model, attempt,
       status: result.error ? "error" : "ok", input_tokens: result.inputTokens, output_tokens: result.outputTokens,
@@ -245,12 +331,16 @@ async function runStage(runId: string, slug: string, stage: StageId, signal: Abo
     const dod = await agent.dod(result.output, ctx);
     const version = await saveVersion(
       slug, stage,
-      { author: "agent", inputs: inputs as Record<string, string | number>, dod, runId, model: result.model, costUsd: result.costUsd, replay: result.replay },
+      {
+        author: "agent", inputs: inputs as Record<string, string | number>, dod, runId, model: result.model, costUsd: result.costUsd, replay: result.replay,
+        ...(round ? { note: stage === "critique" ? `Critique round ${round}` : `Revised in critique round ${round}` } : {}),
+      },
       result.output,
       agent.toMarkdown(result.output),
     );
     const st = agent.extractState(result.output);
     await replaceStageState(slug, stage, st.assumptions, st.questions);
+    await agent.afterSave?.(slug, version.meta.version);
 
     if (!dod.passed && revisions < MAX_DOD_REVISIONS && !result.replay) {
       // One automatic revision: send the failed checks back to the agent.
@@ -302,6 +392,7 @@ export async function saveEdit(slug: string, stage: StageId, data: unknown, base
   );
   const st = agent.extractState(parsed.data);
   await replaceStageState(slug, stage, st.assumptions, st.questions);
+  await agent.afterSave?.(slug, version.meta.version);
   await logDecision(slug, `${stageById(stage)!.title} edited by hand → v${version.meta.version}`, note ?? "");
   emit(slug, { type: "changed" });
   return version;

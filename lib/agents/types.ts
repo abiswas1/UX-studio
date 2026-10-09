@@ -34,4 +34,6 @@ export interface AgentModule<T = unknown> {
   toMarkdown: (data: T) => string;
   /** Assumptions and open questions to merge into shared project state. */
   extractState: (data: T) => { assumptions: string[]; questions: string[] };
+  /** Runs after a version is saved (by an agent or by hand), e.g. to build export files. */
+  afterSave?: (slug: string, version: number) => Promise<void>;
 }

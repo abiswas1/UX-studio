@@ -36,9 +36,13 @@ export const replayProvider: Provider = {
     if (!project?.sampleId) {
       return { ...base, output: null, error: "Replay mode only has recorded output for the sample briefs. Add your API key in .env to run on your own brief." };
     }
-    const file = path.join(process.cwd(), "fixtures", "replay", req.replayKey.agentId, `${project.sampleId}.json`);
+    // Critique-loop rounds use "<sample>.r<round>.json" when recorded, else the base recording.
+    const dir = path.join(process.cwd(), "fixtures", "replay", req.replayKey.agentId);
+    const round = req.replayKey.round ?? 0;
     let rec: Recording;
     try {
+      const roundFile = path.join(dir, `${project.sampleId}.r${round}.json`);
+      const file = round > 0 && (await fs.stat(roundFile).catch(() => null)) ? roundFile : path.join(dir, `${project.sampleId}.json`);
       rec = JSON.parse(await fs.readFile(file, "utf8"));
     } catch {
       return { ...base, output: null, error: `No recorded output for this stage on the "${project.sampleId}" sample yet.` };

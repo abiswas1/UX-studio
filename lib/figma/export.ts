@@ -442,11 +442,12 @@ async function tabbar(n) {
   bar.paddingLeft = bar.paddingRight = 20; bar.paddingTop = 8; bar.paddingBottom = D.platform === "android" ? 16 : 4;
   bar.fills = [paint(D.platform === "android" ? "surfaceAlt" : "background")];
   if (D.platform === "ios") { bar.strokes = [paint("border")]; bar.strokeTopWeight = 1; bar.strokeBottomWeight = 0; bar.strokeLeftWeight = 0; bar.strokeRightWeight = 0; }
+  const match = (n.sub || []).findIndex((l) => l.toLowerCase() === D.screenName.toLowerCase());
   for (let i = 0; i < (n.sub || []).length; i++) {
     const label = n.sub[i];
     const item = box("VERTICAL", { name: "Tab / " + label, itemSpacing: 2 });
     item.counterAxisAlignItems = "CENTER";
-    const active = i === 0;
+    const active = i === (match === -1 ? 0 : match);
     const color = active ? (D.platform === "android" ? "onPrimaryContainer" : "primary") : "textMuted";
     const name = (TAB_ICONS.find((t) => t[0].test(label)) || [null, "more"])[1];
     const pill = box("HORIZONTAL", { name: "Indicator" });

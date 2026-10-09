@@ -1,0 +1,301 @@
+{
+  "note": "Recorded sample output for demos and tests, written for the medication-reminders sample brief.",
+  "model": "claude-opus-5-5",
+  "costUsd": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "cacheRead": 0,
+    "cacheWrite": 0
+  },
+  "events": [
+    {
+      "kind": "text",
+      "text": "Round ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "1 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "review: ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "C1–C4 ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "fixed. ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "Remaining ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "findings ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "minor ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "(severity ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "1–2), ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "so ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "no ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "further ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "rounds ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "are ",
+      "delayMs": 30
+    },
+    {
+      "kind": "text",
+      "text": "needed.\n",
+      "delayMs": 30
+    },
+    {
+      "kind": "tool",
+      "name": "submit_artifact",
+      "summary": "",
+      "delayMs": 700
+    }
+  ],
+  "output": {
+    "summary": "Round 1 fixed all four major issues: Undo after marking a dose, a visible 'Waiting to sync' status, and specified focus handling in the reminder sheet. Three minor issues and one new minor finding remain.",
+    "strengths": [
+      "One clear primary action on every screen, sized for older users",
+      "Status is never shown by colour alone",
+      "Errors are calm, specific and always offer a way forward",
+      "The reminder sheet keeps the most common answer within thumb reach",
+      "Undo is offered in both places a dose can be marked"
+    ],
+    "findings": [
+      {
+        "id": "C5",
+        "title": "One generic message for two different form errors",
+        "kind": "heuristic",
+        "heuristic": "H9 Help users recognize, diagnose, and recover from errors",
+        "wcag": "",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "add-medication",
+            "state": "error"
+          }
+        ],
+        "evidence": "The banner says 'Enter a name and at least one time' even when only the time is missing.",
+        "detail": "People have to work out which field is wrong.",
+        "recommendation": "Show only the message for the field that is missing; keep the banner as a summary when both are.",
+        "ownerStage": "content",
+        "source": "review"
+      },
+      {
+        "id": "C6",
+        "title": "'Log a past dose' is the primary action on History",
+        "kind": "heuristic",
+        "heuristic": "H4 Consistency and standards",
+        "wcag": "",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "history",
+            "state": "default"
+          }
+        ],
+        "evidence": "A filled primary button on a read-mostly screen, for a feature the architecture lists as an open question.",
+        "detail": "It draws attention away from reading the history, and the feature may not ship.",
+        "recommendation": "Make it secondary, or remove it until the open question is decided.",
+        "ownerStage": "wireframes",
+        "source": "review"
+      },
+      {
+        "id": "C7",
+        "title": "Settings tab shown although Settings isn't designed",
+        "kind": "heuristic",
+        "heuristic": "H8 Aesthetic and minimalist design",
+        "wcag": "",
+        "severity": 1,
+        "locations": [
+          {
+            "screenId": "today",
+            "state": "default"
+          }
+        ],
+        "evidence": "Settings is P2 with only a default state.",
+        "detail": "An empty or placeholder Settings screen would feel unfinished.",
+        "recommendation": "Keep the tab only if Settings ships in the first release.",
+        "ownerStage": "architecture",
+        "source": "review"
+      },
+      {
+        "id": "C8",
+        "title": "Undo confirmation is time-limited",
+        "kind": "wcag",
+        "heuristic": "",
+        "wcag": "2.2.1 Timing Adjustable",
+        "severity": 2,
+        "locations": [
+          {
+            "screenId": "today",
+            "state": "taken"
+          }
+        ],
+        "evidence": "The confirmation disappears after 10 seconds.",
+        "detail": "Some people need longer to notice and act.",
+        "recommendation": "Keep the timer paused while focused (already specified) and make the answer changeable from Today afterwards.",
+        "ownerStage": "ui",
+        "source": "review"
+      }
+    ],
+    "heuristicsReviewed": [
+      {
+        "heuristic": "H1 Visibility of system status",
+        "verdict": "good",
+        "note": "Offline answers now say 'Waiting to sync'."
+      },
+      {
+        "heuristic": "H2 Match between system and the real world",
+        "verdict": "good",
+        "note": "Plain words; 'Not marked' avoids blaming people."
+      },
+      {
+        "heuristic": "H3 User control and freedom",
+        "verdict": "good",
+        "note": "Undo after marking a dose."
+      },
+      {
+        "heuristic": "H4 Consistency and standards",
+        "verdict": "good",
+        "note": "Platform conventions followed on iOS and Android."
+      },
+      {
+        "heuristic": "H5 Error prevention",
+        "verdict": "good",
+        "note": "Mistaken taps can be undone."
+      },
+      {
+        "heuristic": "H6 Recognition rather than recall",
+        "verdict": "good",
+        "note": "Today shows each dose's status; nothing to remember."
+      },
+      {
+        "heuristic": "H7 Flexibility and efficiency of use",
+        "verdict": "good",
+        "note": "Answering from the notification is one tap."
+      },
+      {
+        "heuristic": "H8 Aesthetic and minimalist design",
+        "verdict": "good",
+        "note": "One primary action per screen; calm layouts."
+      },
+      {
+        "heuristic": "H9 Help users recognize, diagnose, and recover from errors",
+        "verdict": "issues",
+        "note": "Generic validation message (C5)."
+      },
+      {
+        "heuristic": "H10 Help and documentation",
+        "verdict": "not applicable",
+        "note": "No help content is in scope for the first release."
+      }
+    ],
+    "wcagChecked": [
+      {
+        "criterion": "1.3.1 Info and Relationships",
+        "result": "pass",
+        "note": "Lists, headings and labels are structured."
+      },
+      {
+        "criterion": "1.4.1 Use of Color",
+        "result": "pass",
+        "note": "Status uses icons and words as well as colour."
+      },
+      {
+        "criterion": "1.4.3 Contrast (Minimum)",
+        "result": "pass",
+        "note": "All text pairs meet 4.5:1 in both modes (design-system check)."
+      },
+      {
+        "criterion": "1.4.11 Non-text Contrast",
+        "result": "pass",
+        "note": "Focus ring and control borders meet 3:1."
+      },
+      {
+        "criterion": "2.4.3 Focus Order",
+        "result": "pass",
+        "note": "Focus moves into the sheet, the screen behind is inert, and focus returns on close."
+      },
+      {
+        "criterion": "2.4.7 Focus Visible",
+        "result": "pass",
+        "note": "Focus states are defined for every interactive component."
+      },
+      {
+        "criterion": "2.5.8 Target Size (Minimum)",
+        "result": "pass",
+        "note": "44pt (iOS) and 48dp (Android) minimums."
+      },
+      {
+        "criterion": "3.3.1 Error Identification",
+        "result": "pass",
+        "note": "Field errors are named in text next to the field."
+      },
+      {
+        "criterion": "4.1.2 Name, Role, Value",
+        "result": "pass",
+        "note": "Icon-only controls have accessible names."
+      },
+      {
+        "criterion": "4.1.3 Status Messages",
+        "result": "pass",
+        "note": "Loading and confirmations are announced politely."
+      }
+    ]
+  }
+}
